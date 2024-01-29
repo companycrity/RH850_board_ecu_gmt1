@@ -1,0 +1,121 @@
+Verification of SF004B_AssiSumLim_DataDict
+15-Jul-2015 15:15:55
+Tool Release:  2.13.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF99A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<ShoName><TriggerName>
+--------------------------------------
+SetManTqCmd                 	.SrvRunnnable:	Name must end with "Server Runnable Name"
+SetManTqCmd                 	.Return.Name	Field is empty.
+SetManTqCmd                 	.Return.TestTolerance	Field is empty.
+(variables: 1, errors: 3)
+
+------------
+Client:	
+------------
+(variables: 2, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+EotAssiSca                  	Cannot match name to list of known Nexteer signals.
+EotMotTqLim                 	Cannot match name to list of known Nexteer signals.
+MotTqCmdLimDi               	Cannot match name to list of known Nexteer signals.
+MotTqCmdOvrl                	Cannot match name to list of known Nexteer signals.
+PinionCentrLrnCmd           	Cannot match name to list of known Nexteer signals.
+PinionCentrLrnEna           	Cannot match name to list of known Nexteer signals.
+PwrLimrRednFac              	Cannot match name to list of known Nexteer signals.
+StallMotTqLim               	Cannot match name to list of known Nexteer signals.
+ThermRednFac                	Cannot match name to list of known Nexteer signals.
+TqLoaCmd                    	Cannot match name to list of known Nexteer signals.
+TqSteerMtgtnCmd             	Cannot match name to list of known Nexteer signals.
+VehSpdMotTqLim              	Cannot match name to list of known Nexteer signals.
+(variables: 23, errors: 12)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+(variables: 5, errors: 0)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 2, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 3, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 5, errors: 0)
+
+----------------
+CSArguments:	
+----------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+44 variables,  15 issues to fix.
+
+
+End of Report

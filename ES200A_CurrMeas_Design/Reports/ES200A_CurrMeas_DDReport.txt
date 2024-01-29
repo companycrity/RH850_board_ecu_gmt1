@@ -1,0 +1,134 @@
+Verification of ES200A_CurrMeas_DataDict
+02-Aug-2016 17:04:17
+Tool Release:  2.43.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 4, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+CurrMeasEolGainReq          	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+CurrMeasEolGainStsReq       	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+CurrMeasEolOffsReq          	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+CurrMeasEolOffsStsReq       	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+CurrMeasGainReadReq         	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+CurrMeasGainWrReq           	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+CurrMeasOffsReadReq         	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+CurrMeasOffsWrReq           	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+(variables: 8, errors: 8)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+CurrMeasEolGainCalSet_SetRamBlockStatus	.Client:	Name should not contain FDDs <ShoName>
+CurrMeasEolOffsCalSet_SetRamBlockStatus	.Client:	Name should not contain FDDs <ShoName>
+(variables: 6, errors: 2)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+MotCtrlMotCurrAdcVlyAAdcFaild	Cannot match name to list of known Nexteer signals.
+MotCtrlMotCurrAdcVlyBAdcFaild	Cannot match name to list of known Nexteer signals.
+MotCtrlMotCurrAdcVlyCAdcFaild	Cannot match name to list of known Nexteer signals.
+MotCtrlMotCurrAdcVlyDAdcFaild	Cannot match name to list of known Nexteer signals.
+MotCtrlMotCurrAdcVlyEAdcFaild	Cannot match name to list of known Nexteer signals.
+MotCtrlMotCurrAdcVlyFAdcFaild	Cannot match name to list of known Nexteer signals.
+(variables: 41, errors: 6)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+CurrMeasWrmIninTestCmpl     	Name does not match required pattern.
+(variables: 15, errors: 1)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+CurrMeasEolFixdPwmPerd      	Found in data dictionary but not in model.
+(variables: 22, errors: 1)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 1, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+CurrMeasEolGainCalSet       	Name does not match required pattern.
+CurrMeasEolOffsCalSet       	Name does not match required pattern.
+(variables: 2, errors: 2)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 55, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+FLTINJ_CURRMEAS_MOTCURRCORRDA    	Name does not match required pattern as it is a special case.
+FLTINJ_CURRMEAS_MOTCURRCORRDD    	Name does not match required pattern as it is a special case.
+FLTINJ_CURRMEAS_TESTOK           	Name does not match required pattern as it is a special case.
+(variables: 9, errors: 3)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 1, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 4, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+169 variables,  23 issues to fix.
+
+
+End of Report

@@ -1,0 +1,132 @@
+Verification of CM620A_MotAg0Meas_DataDict
+13-Mar-2016 12:53:12
+Tool Release:  2.34.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 3, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+MotAg0MeasMotAg0CoeffTblRead	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+MotAg0MeasMotAg0CoeffTblWr  	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+(variables: 2, errors: 2)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 7, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+MotAg0ErrReg                	Cannot match name to list of known Nexteer signals.
+MotAg0ParFltCnt             	Cannot match name to list of known Nexteer signals.
+MotAg0VltgFltCnt            	Cannot match name to list of known Nexteer signals.
+MotCtrlMotAgMecl0Polarity   	Cannot match name to list of known Nexteer signals.
+(variables: 5, errors: 4)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+DmaMotAg0RawData            	Cannot match name to list of known Nexteer signals.
+(variables: 8, errors: 1)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+MotAg0CoeffTbl              	.TuningOwner:   Value is '?'.
+(variables: 1, errors: 1)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 3, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 10, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+FLTINJ_MOTAG0MEAS_MOTCTRLMOTAG0MECL	Name does not match required pattern as it is a special case.
+FLTINJ_MOTAG0MEAS_TESTOK         	Name does not match required pattern as it is a special case.
+MOTAG0MEAS_MOTAG0READPTRRST_CNT_U32	Found in data dictionary but not in model.
+MOTAG0MEAS_MOTAG0TRSMSTRTININ_CNT_U32	Found in data dictionary but not in model.
+(variables: 22, errors: 4)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 1, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 1, errors: 0)
+
+------
+OTHER:
+------
+Data Store
+Memory2:dMotAg0MeasMotAg0RawErrReg	'Data Store Memory Block'	'StateMustResolveToSignalObject' property must be enabled.
+Data Store
+Memory3:dMotAg0MeasMotAg0RawTurnCntrReg	'Data Store Memory Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay1:                	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay2:                	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay3:                	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+(variables: 0, errors: 7)
+ 
+************************
+Grand Totals:
+64 variables,  19 issues to fix.
+
+
+End of Report

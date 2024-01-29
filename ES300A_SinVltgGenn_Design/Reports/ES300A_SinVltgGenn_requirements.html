@@ -1,0 +1,863 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Requirements Traceability Report for ES300A_SinVltgGenn</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div lang="en" class="book" title="Requirements Traceability Report for ES300A_SinVltgGenn"><div class="titlepage"><div><div><h1 class="title"><a name="d0e1"></a>Requirements Traceability Report for ES300A_SinVltgGenn</h1></div><div><h2 class="subtitle"></h2></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="chapter"><a href="#d0e8">1. Model Information for "ES300A_SinVltgGenn"</a></span></dt><dt><span class="chapter"><a href="#d0e69">2. Traceability Summary for "ES300A_SinVltgGenn"</a></span></dt><dt><span class="chapter"><a href="#6e8145a3d3e4ebfe5dc4fcf3b3b1436c">3. System - SinVltgGenn</a></span></dt><dt><span class="chapter"><a href="#29ef80010d2aff0ef551fc4786cae8ad">4. System - SinVltgGennInit1</a></span></dt><dt><span class="chapter"><a href="#66a41a6f7679f0769b0332c893494cba">5. System - SinVltgGennPer1 </a></span></dt><dt><span class="chapter"><a href="#3f17b07db16ed2e3f1e638fa9f0e9c9f">6. System - SinVltgGennPer2</a></span></dt><dt><span class="chapter"><a href="#4ea2ffd9cc26195525fc3152fc1850dd">7. System - ApplyPWMMtrElecMechPol</a></span></dt><dt><span class="chapter"><a href="#2b5f286542def92f910c40911cb416e8">8. System - PWMPeriodDither_U16 </a></span></dt><dt><span class="chapter"><a href="#18efe257c639091862934670a92978e2">9. System - Subsystem1</a></span></dt><dt><span class="chapter"><a href="#4c5f4715bf08d74c0ccf991d302c05d5">10. System - Subsystem2</a></span></dt><dt><span class="chapter"><a href="#a92cadd00d92d4ef6ae47248394df28c">11. System - Subsystem3</a></span></dt></dl></div><div class="list-of-tables"><p><b>List of Tables</b></p><dl><dt>1.1. <a href="#d0e12">ES300A_SinVltgGenn<span>  Version Information</span>
+    </a></dt><dt>2.1. <a href="#d0e73">Artifacts linked in model</a></dt><dt>3.1. <a href="#d0e159">Objects in ES300A_SinVltgGenn/SinVltgGenn that have Requirements Traceability Links</a></dt><dt>4.1. <a href="#d0e1260">Objects in ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennInit1 that have Requirements Traceability Links</a></dt><dt>5.1. <a href="#d0e1771">Objects in ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1  that have Requirements Traceability Links</a></dt><dt>6.1. <a href="#d0e2135">ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer2 Requirements Traceability Data</a></dt><dt>6.2. <a href="#d0e2221">Objects in ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer2 that have Requirements Traceability Links</a></dt><dt>7.1. <a href="#d0e2507">ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennInit1/ApplyPWMMtrElecMechPol Requirements Traceability Data</a></dt><dt>8.1. <a href="#d0e2680">ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /PWMPeriodDither_U16  Requirements Traceability Data</a></dt><dt>9.1. <a href="#d0e2792">ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /Subsystem1 Requirements Traceability Data</a></dt><dt>10.1. <a href="#d0e3101">ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /Subsystem2 Requirements Traceability Data</a></dt><dt>11.1. <a href="#d0e3410">ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /Subsystem3 Requirements Traceability Data</a></dt></dl></div><div class="chapter" title="Chapter&nbsp;1.&nbsp;Model Information for &#34;ES300A_SinVltgGenn&#34;"><div class="titlepage"><div><div><h2 class="title"><a name="d0e8"></a>Chapter&nbsp;1.&nbsp;Model Information for "ES300A_SinVltgGenn"</h2></div></div></div><div class="table"><a name="d0e12"></a><p class="title"><b>Table&nbsp;1.1.&nbsp;ES300A_SinVltgGenn<span>  Version Information</span>
+    </b></p><div class="table-contents"><table summary="ES300A_SinVltgGenn  Version Information&#xA;    " width="100%" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; "><colgroup><col width="2880*" align="left"><col width="6720*" align="left"><col width="4320*" align="left"><col width="10080*" align="left"></colgroup><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>ModelVersion</em></span>
+                </td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">003</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>ConfigurationManager</em></span>
+                </td><td style="border-bottom: 0.5pt solid ; " align="left">None</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>Created</em></span>
+                </td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">Fri Jul 20 19:06:27 2012</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>Creator</em></span>
+                </td><td style="border-bottom: 0.5pt solid ; " align="left">Prerit Pramod</td></tr><tr><td style="border-right: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>LastModifiedDate</em></span>
+                </td><td style="border-right: 0.5pt solid ; " align="left">Fri Jan 15 14:39:44 2016</td><td style="border-right: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>LastModifiedBy</em></span>
+                </td><td style="" align="left">HZY4G9</td></tr></tbody></table></div></div><br class="table-break"></div><div class="chapter" title="Chapter&nbsp;2.&nbsp;Traceability Summary for &#34;ES300A_SinVltgGenn&#34;"><div class="titlepage"><div><div><h2 class="title"><a name="d0e69"></a>Chapter&nbsp;2.&nbsp;Traceability Summary for "ES300A_SinVltgGenn"</h2></div></div></div><a name="d0e73"></a><div class="table"><p class="title"><b>Table&nbsp;2.1.&nbsp;Artifacts linked in model</b></p><div class="table-contents"><table summary="Artifacts linked in model" border="1" cellspacing="0" fastRender="1"><col width="60*"><col width="540*"><col width="240*"><col width="60*"><thead><tr>
+            <th align="left">ID</th>
+            <th align="left">Artifact names stored by RMI</th>
+            <th align="left">Last modified</th>
+            <th align="left"># links</th>
+        </tr></thead><tbody><tr>
+            <td align="left">DOC1</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-M-0000c478" target="_top">0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn)</a>
+            </td>
+            <td align="left">15 January 2016 by Nayeem Mahmud</td>
+            <td align="left">43</td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;3.&nbsp;System - SinVltgGenn"><div class="titlepage"><div><div><h2 class="title"><a name="6e8145a3d3e4ebfe5dc4fcf3b3b1436c"></a>Chapter&nbsp;3.&nbsp;System - SinVltgGenn</h2></div></div></div><div class="mediaobject"><map name="d0e124"><area coords="300,100,315,107" shape="rect" href="#0ea409bdc8123e3d42a91f4a27fca4d2"><area coords="527,317,542,324" shape="rect" href="#cace19a653ad3772e58a22f14f745be5"><area coords="212,133,227,140" shape="rect" href="#e0b4e249c6b22fdc354754c0c5057909"><area coords="212,161,227,168" shape="rect" href="#be097715324c21b55b4f38110680d81a"><area coords="212,188,227,195" shape="rect" href="#440180429083bb4df5858f2e7d57253e"><area coords="23,259,38,266" shape="rect" href="#fdbd5c4cf174ad94495c0487d995203e"><area coords="89,203,174,319" shape="rect" href="#29ef80010d2aff0ef551fc4786cae8ad"><area coords="275,123,401,316" shape="rect" href="#66a41a6f7679f0769b0332c893494cba"><area coords="512,349,630,432" shape="rect" href="#3f17b07db16ed2e3f1e638fa9f0e9c9f"><area coords="703,140,718,147" shape="rect" href="#14cfd61bfdce9147fa15ddf306c547ea"><area coords="708,178,723,185" shape="rect" href="#a88f90aa760f17a0cd8c1ea438f6cb20"><area coords="703,216,718,223" shape="rect" href="#b41ebea08b7056a512f9fd72ff1fecf1"><area coords="703,254,718,261" shape="rect" href="#ec0524e794c97640ef41919c4ade4744"><area coords="703,291,718,298" shape="rect" href="#a14f922bf5e27809b985fa3dd2d6d9ca"><area coords="703,359,718,366" shape="rect" href="#d4eda8df5d01716fa04588564c52849d"><area coords="703,387,718,394" shape="rect" href="#d12c2e89ab7250ea89858ac52abbfcd2"><area coords="703,415,718,422" shape="rect" href="#86624330047fab47ab30b20a0e8a2352"></map><img src="./ES300A_SinVltgGenn_requirements_html_files/image-004-sl.png" usemap="%0A                #d0e124" ismap="" border="0"></div><a name="d0e159"></a><div class="table"><p class="title"><b>Table&nbsp;3.1.&nbsp;Objects in ES300A_SinVltgGenn/SinVltgGenn that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in ES300A_SinVltgGenn/SinVltgGenn that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="0ea409bdc8123e3d42a91f4a27fca4d2"></a>call_SinVltgGennPer1</td>
+            <td align="left">
+                <a name="d0e183"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_262"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-262-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall execute SinVltgGennPer1 before it executes SinVltgGennPer2 at each motor phase cycle.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>17 March 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr><tr><td>Review Date: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-262-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_262</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="cace19a653ad3772e58a22f14f745be5"></a>call_SinVltgGennPer2</td>
+            <td align="left">
+                <a name="d0e262"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_262"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-262-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall execute SinVltgGennPer1 before it executes SinVltgGennPer2 at each motor phase cycle.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>17 March 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr><tr><td>Review Date: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-262-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_262</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="a88f90aa760f17a0cd8c1ea438f6cb20"></a>MotCtrlCmuOffs</td>
+            <td align="left">
+                <a name="d0e341"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_216"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-216-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlCmuOffs: Motor commutation offset.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>08 March 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>01 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-216-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_216</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="be097715324c21b55b4f38110680d81a"></a>MotCtrlMotAgElec</td>
+            <td align="left">
+                <a name="d0e416"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_103"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-103-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlMotAgElec:  Corrected Motor Position after back emf correction.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>21 January 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>13 January 2016</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-103-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_103</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="e0b4e249c6b22fdc354754c0c5057909"></a>MotCtrlMotModlnIdx</td>
+            <td align="left">
+                <a name="d0e491"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_104"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-104-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlMotModlnIdx: Modulation Index</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>21 January 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-104-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_104</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="440180429083bb4df5858f2e7d57253e"></a>MotCtrlMotPhaAdv</td>
+            <td align="left">
+                <a name="d0e566"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_102"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-102-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlMotPhaAdv: Motor phase advance in MotRevElec.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>21 January 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-102-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_102</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="b41ebea08b7056a512f9fd72ff1fecf1"></a>MotCtrlPhaOnTiA</td>
+            <td align="left">
+                <a name="d0e641"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_268"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-268-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlPhaOnTiA: Phase ON Time for Phase A in NanoSec.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>29 July 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-268-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_268</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="ec0524e794c97640ef41919c4ade4744"></a>MotCtrlPhaOnTiB</td>
+            <td align="left">
+                <a name="d0e716"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_267"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-267-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlPhaOnTiB: Phase ON Time for Phase B in NanoSec.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>29 July 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-267-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_267</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="a14f922bf5e27809b985fa3dd2d6d9ca"></a>MotCtrlPhaOnTiC</td>
+            <td align="left">
+                <a name="d0e791"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_266"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-266-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlPhaOnTiC: Phase ON Time for Phase C in NanoSec.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>29 July 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-266-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_266</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="d4eda8df5d01716fa04588564c52849d"></a>MotCtrlPhaOnTiSumA</td>
+            <td align="left">
+                <a name="d0e866"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_265"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-265-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlPhaOnTiSumA: Accumulated phase on time for phase A.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>01 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-265-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_265</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="d12c2e89ab7250ea89858ac52abbfcd2"></a>MotCtrlPhaOnTiSumB</td>
+            <td align="left">
+                <a name="d0e941"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_264"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-264-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlPhaOnTiSumB: Accumulated phase on time for phase B.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>01 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-264-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_264</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="86624330047fab47ab30b20a0e8a2352"></a>MotCtrlPhaOnTiSumC</td>
+            <td align="left">
+                <a name="d0e1016"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_263"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-263-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlPhaOnTiSumC:  Accumulated phase on time for phase C.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>01 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-263-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_263</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="14cfd61bfdce9147fa15ddf306c547ea"></a>MotCtrlPwmPerd</td>
+            <td align="left">
+                <a name="d0e1091"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_205"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-205-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotCtrlPwmPerd: PWM period in NanoSec with dithering.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>04 March 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>01 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-205-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_205</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="fdbd5c4cf174ad94495c0487d995203e"></a>MotElecMeclPolarity</td>
+            <td align="left">
+                <a name="d0e1166"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_101"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-101-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* MotElecMeclPolarity: Motor electrical mechanical polarity.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>21 January 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-101-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_101</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;4.&nbsp;System - SinVltgGennInit1"><div class="titlepage"><div><div><h2 class="title"><a name="29ef80010d2aff0ef551fc4786cae8ad"></a>Chapter&nbsp;4.&nbsp;System - SinVltgGennInit1</h2></div></div></div><div class="mediaobject"><map name="d0e1243"><area coords="172,96,442,224" shape="rect" href="#4ea2ffd9cc26195525fc3152fc1850dd"><area coords="602,113,632,127" shape="rect" href="#40da5a39c6b7c8b62ddd688024ae3b4f"><area coords="602,153,632,167" shape="rect" href="#bc01770ad5c5fc1d4dcc7813ef6a641b"><area coords="602,193,632,207" shape="rect" href="#de064fc15a172a6e3f3c4cfb26506d23"></map><img src="./ES300A_SinVltgGenn_requirements_html_files/image-006-sl.png" usemap="%0A                #d0e1243" ismap="" border="0"></div><a name="d0e1260"></a><div class="table"><p class="title"><b>Table&nbsp;4.1.&nbsp;Objects in ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennInit1 that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennInit1 that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="40da5a39c6b7c8b62ddd688024ae3b4f"></a>PhaDptOffsA</td>
+            <td align="left">
+                <a name="d0e1284"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_207"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-207-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* PhaDptOffsA: Phase dependent offset for phase A.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>04 March 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>01 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-207-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_207</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_281"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-281-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall compute the following Phase Dependant Offsets such that at zero motor angle electrical, Vab has zero crossing upslope:</td></tr><tr><td>* PhaDptOffsA = 0&deg; (Positive Polarity) or 60&deg; (Negative Polarity)</td></tr><tr><td>* PhaDptOffsB = PhaDptOffsA -  (120&deg; *MotElecMeclPolarity)</td></tr><tr><td>* PhaDptOffsC = PhaDptOffsA + (120&deg; *MotElecMeclPolarity)</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>15 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-281-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_281</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="bc01770ad5c5fc1d4dcc7813ef6a641b"></a>PhaDptOffsB</td>
+            <td align="left">
+                <a name="d0e1435"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_271"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-271-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* PhaDptOffsB: Phase dependent offset for phase B.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>01 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-271-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_271</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_281"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-281-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall compute the following Phase Dependant Offsets such that at zero motor angle electrical, Vab has zero crossing upslope:</td></tr><tr><td>* PhaDptOffsA = 0&deg; (Positive Polarity) or 60&deg; (Negative Polarity)</td></tr><tr><td>* PhaDptOffsB = PhaDptOffsA -  (120&deg; *MotElecMeclPolarity)</td></tr><tr><td>* PhaDptOffsC = PhaDptOffsA + (120&deg; *MotElecMeclPolarity)</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>15 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-281-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_281</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="de064fc15a172a6e3f3c4cfb26506d23"></a>PhaDptOffsC</td>
+            <td align="left">
+                <a name="d0e1586"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_270"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-270-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* PhaDptOffsC: Phase dependent offset for phase C.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>NA</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>False</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>01 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-270-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_270</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_281"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-281-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall compute the following Phase Dependant Offsets such that at zero motor angle electrical, Vab has zero crossing upslope:</td></tr><tr><td>* PhaDptOffsA = 0&deg; (Positive Polarity) or 60&deg; (Negative Polarity)</td></tr><tr><td>* PhaDptOffsB = PhaDptOffsA -  (120&deg; *MotElecMeclPolarity)</td></tr><tr><td>* PhaDptOffsC = PhaDptOffsA + (120&deg; *MotElecMeclPolarity)</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>15 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-281-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_281</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;5.&nbsp;System - SinVltgGennPer1"><div class="titlepage"><div><div><h2 class="title"><a name="66a41a6f7679f0769b0332c893494cba"></a>Chapter&nbsp;5.&nbsp;System - SinVltgGennPer1 </h2></div></div></div><div class="mediaobject"><map name="d0e1739"><area coords="99,267,186,318" shape="rect" href="#2b5f286542def92f910c40911cb416e8"><area coords="479,132,562,224" shape="rect" href="#18efe257c639091862934670a92978e2"><area coords="479,239,562,331" shape="rect" href="#4c5f4715bf08d74c0ccf991d302c05d5"><area coords="479,348,562,440" shape="rect" href="#a92cadd00d92d4ef6ae47248394df28c"><area coords="299,289,312,296" shape="rect" href="#83053fedb485f782ca9ba2564bcca969"><area coords="784,176,797,182" shape="rect" href="#2f11481654c10d1a36bb45be4157f2b0"><area coords="784,283,797,289" shape="rect" href="#276188fd7c934150706d80207765df23"><area coords="784,392,797,398" shape="rect" href="#186f5ed86d44ca1a36510e7fddb6ab5b"></map><img src="./ES300A_SinVltgGenn_requirements_html_files/image-008-sl.png" usemap="%0A                #d0e1739" ismap="" border="0"></div><a name="d0e1771"></a><div class="table"><p class="title"><b>Table&nbsp;5.1.&nbsp;Objects in ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1  that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1  that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="2f11481654c10d1a36bb45be4157f2b0"></a>MotCtrlPhaOnTiA</td>
+            <td align="left">
+                <a name="d0e1795"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_277"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-277-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate MotCtrlPhaOnTiA, MotCtrlPhaOnTiB, MotCtrlPhaOnTiC at each motor phase cycle with TBD resolution.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>10 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr><tr><td>Review Date: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-277-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_277</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="276188fd7c934150706d80207765df23"></a>MotCtrlPhaOnTiB</td>
+            <td align="left">
+                <a name="d0e1874"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_277"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-277-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate MotCtrlPhaOnTiA, MotCtrlPhaOnTiB, MotCtrlPhaOnTiC at each motor phase cycle with TBD resolution.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>10 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr><tr><td>Review Date: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-277-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_277</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="186f5ed86d44ca1a36510e7fddb6ab5b"></a>MotCtrlPhaOnTiC</td>
+            <td align="left">
+                <a name="d0e1953"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_277"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-277-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate MotCtrlPhaOnTiA, MotCtrlPhaOnTiB, MotCtrlPhaOnTiC at each motor phase cycle with TBD resolution.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>10 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr><tr><td>Review Date: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-277-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_277</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="83053fedb485f782ca9ba2564bcca969"></a>MotCtrlPwmPerd</td>
+            <td align="left">
+                <a name="d0e2032"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_15"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-15-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate MotCtrlPwmPerd at each motor phase cycle with TBD resolution.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Mark Kushion</td></tr><tr><td>Created On: </td><td>12 February 2014</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr><tr><td>Review Date: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-15-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_15</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;6.&nbsp;System - SinVltgGennPer2"><div class="titlepage"><div><div><h2 class="title"><a name="3f17b07db16ed2e3f1e638fa9f0e9c9f"></a>Chapter&nbsp;6.&nbsp;System - SinVltgGennPer2</h2></div></div></div><div class="mediaobject"><map name="d0e2113"><area coords="598,212,625,225" shape="rect" href="#fb0b995715e279515bb3e1e8b976a7cf"><area coords="598,334,625,347" shape="rect" href="#b689ad687c0b3b06b45b5505dfd3e107"><area coords="598,465,625,478" shape="rect" href="#28e221aa6879bc7d6ab0073f83986a0f"></map><img src="./ES300A_SinVltgGenn_requirements_html_files/image-010-sl.png" usemap="%0A                #d0e2113" ismap="" border="0"></div><a name="d0e2135"></a><div class="table"><p class="title"><b>Table&nbsp;6.1.&nbsp;ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer2 Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer2 Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_222"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-222-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Accumulated Phase On Time and shall account for the correct rolling-over for each phase using the folloiwing equations:</td></tr><tr><td>* If the difference between the maximum value of the variable type and the PhaOnTiSumXPrev is GREATER than or equal to the new Phase On Time, then</td></tr><tr><td>* MotCtrlPhaOnTiSumX = MotCtrlPhaOnTiX + PhaOnTiSumXPrev  [X = A, B, C]</td></tr><tr><td>* If the difference between the maximum value of the variable type and the PhaOnTiSumXPrev is LESS than the new Phase On Time, then</td></tr><tr><td>* MotCtrlPhaOnTiSumX = MotCtrlPhaOnTiX - (Maximum value of the variable type - PhaOnTiSumXPrev)  [X = A, B, C]</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>16 March 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-222-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_222</a>
+            </td>
+        </tr></tbody></table></div></div><a name="d0e2221"></a><div class="table"><p class="title"><b>Table&nbsp;6.2.&nbsp;Objects in ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer2 that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer2 that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="fb0b995715e279515bb3e1e8b976a7cf"></a>MotCtrlPhaOnTiSumA</td>
+            <td align="left">
+                <a name="d0e2245"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_276"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-276-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate MotCtrlPhaOnTiSumA, MotCtrlPhaOnTiSumB, MotCtrlPhaOnTiSumC at each motor phase cycle with TBD resolution.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>10 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr><tr><td>Review Date: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-276-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_276</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="b689ad687c0b3b06b45b5505dfd3e107"></a>MotCtrlPhaOnTiSumB</td>
+            <td align="left">
+                <a name="d0e2324"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_276"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-276-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate MotCtrlPhaOnTiSumA, MotCtrlPhaOnTiSumB, MotCtrlPhaOnTiSumC at each motor phase cycle with TBD resolution.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>10 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr><tr><td>Review Date: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-276-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_276</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="28e221aa6879bc7d6ab0073f83986a0f"></a>MotCtrlPhaOnTiSumC</td>
+            <td align="left">
+                <a name="d0e2403"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_276"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-276-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate MotCtrlPhaOnTiSumA, MotCtrlPhaOnTiSumB, MotCtrlPhaOnTiSumC at each motor phase cycle with TBD resolution.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>10 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr><tr><td>Review Date: </td><td>10 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-276-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_276</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;7.&nbsp;System - ApplyPWMMtrElecMechPol"><div class="titlepage"><div><div><h2 class="title"><a name="4ea2ffd9cc26195525fc3152fc1850dd"></a>Chapter&nbsp;7.&nbsp;System - ApplyPWMMtrElecMechPol</h2></div></div></div><div class="mediaobject"><map name="d0e2484"></map><img src="./ES300A_SinVltgGenn_requirements_html_files/image-012-sl.png" usemap="%0A                #d0e2484" ismap="" border="0"></div><a name="d0e2507"></a><div class="table"><p class="title"><b>Table&nbsp;7.1.&nbsp;ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennInit1/ApplyPWMMtrElecMechPol Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennInit1/ApplyPWMMtrElecMechPol Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_279"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-279-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall account for the two types of motor polarities:</td></tr><tr><td>* 1) Va leading Vb leading Vc - Positive Polarity Motor and</td></tr><tr><td>* 2) Va leading Vc leading Vb - Negative Polarity Motor</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>14 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-279-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_279</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_281"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-281-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall compute the following Phase Dependant Offsets such that at zero motor angle electrical, Vab has zero crossing upslope:</td></tr><tr><td>* PhaDptOffsA = 0&deg; (Positive Polarity) or 60&deg; (Negative Polarity)</td></tr><tr><td>* PhaDptOffsB = PhaDptOffsA -  (120&deg; *MotElecMeclPolarity)</td></tr><tr><td>* PhaDptOffsC = PhaDptOffsA + (120&deg; *MotElecMeclPolarity)</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>15 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-281-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_281</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;8.&nbsp;System - PWMPeriodDither_U16"><div class="titlepage"><div><div><h2 class="title"><a name="2b5f286542def92f910c40911cb416e8"></a>Chapter&nbsp;8.&nbsp;System - PWMPeriodDither_U16 </h2></div></div></div><div class="mediaobject"><map name="d0e2665"></map><img src="./ES300A_SinVltgGenn_requirements_html_files/image-014-sl.png" usemap="%0A                #d0e2665" ismap="" border="0"></div><a name="d0e2680"></a><div class="table"><p class="title"><b>Table&nbsp;8.1.&nbsp;ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /PWMPeriodDither_U16  Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /PWMPeriodDither_U16  Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_219"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-219-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall provide a mechanism to minimize audible noise with dithering for selected nominal &plusmn; 2Khz of the PWM frequency.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>16 March 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>10 April 2015</td></tr><tr><td>Review Date: </td><td>10 April 2015</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-219-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_219</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;9.&nbsp;System - Subsystem1"><div class="titlepage"><div><div><h2 class="title"><a name="18efe257c639091862934670a92978e2"></a>Chapter&nbsp;9.&nbsp;System - Subsystem1</h2></div></div></div><div class="mediaobject"><map name="d0e2773"></map><img src="./ES300A_SinVltgGenn_requirements_html_files/image-016-sl.png" usemap="%0A                #d0e2773" ismap="" border="0"></div><a name="d0e2792"></a><div class="table"><p class="title"><b>Table&nbsp;9.1.&nbsp;ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /Subsystem1 Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /Subsystem1 Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_211"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase so that the line-to-line voltages applied to the motor are three phase sinusoidal 120&deg; apart.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>04 March 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_211</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_211"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase so that the line-to-line voltages applied to the motor are three phase sinusoidal 120&deg; apart.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>04 March 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_211</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 3. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_283"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-283-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase such that at any motor position one phase outputs a maximum of zero volts.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>15 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-283-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_283</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 4. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_282"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-282-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase as per the following equations which satisfies the requirements described in ES300A_211 and ES300A_283:</td></tr><tr><td>* MotCtrlPhaOnTiA =   MotCtrlMotModlnIdx * MotCtrlPwmPerd *   Sin (ThetaA)  for 0&deg; &lt; ThetaA &lt; 120&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd * - Sin(ThetaA + 120&deg;) for 120&deg; &lt; ThetaA &lt; 240&deg;</td></tr><tr><td>* =    0        for ThetaA &gt; 240&deg;</td></tr><tr><td>* MotCtrlPhaOnTiB =    0        for 0&deg; &lt; ThetaB &lt; 120&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd *   Sin(ThetaB)  for 120&deg; &lt; ThetaB &lt; 240&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd * - Sin(ThetaB + 120&deg;) for ThetaB &gt; 240&deg;</td></tr><tr><td>* MotCtrlPhaOnTiC =    MotCtrlMotModlnIdx * MotCtrlPwmPerd * -Sin(ThetaC + 120&deg;) for 0&deg; &lt; ThetaC &lt; 120&deg;</td></tr><tr><td>* =   0        for 120&deg; &lt; ThetaC &lt; 240&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd * Sin(ThetaC)  for ThetaC &gt; 240&deg;</td></tr><tr><td>* Where,</td></tr><tr><td>* ThetaA = (MotCtrlMotAgElec + MotCtrlMotPhaAdv + PhaDptOffsA)</td></tr><tr><td>* ThetaB = (MotCtrlMotAgElec + MotCtrlMotPhaAdv + PhaDptOffsB)</td></tr><tr><td>* ThetaC = (MotCtrlMotAgElec + MotCtrlMotPhaAdv + PhaDptOffsC)</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>15 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-282-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_282</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;10.&nbsp;System - Subsystem2"><div class="titlepage"><div><div><h2 class="title"><a name="4c5f4715bf08d74c0ccf991d302c05d5"></a>Chapter&nbsp;10.&nbsp;System - Subsystem2</h2></div></div></div><div class="mediaobject"><map name="d0e3084"></map><img src="./ES300A_SinVltgGenn_requirements_html_files/image-018-sl.png" usemap="%0A                #d0e3084" ismap="" border="0"></div><a name="d0e3101"></a><div class="table"><p class="title"><b>Table&nbsp;10.1.&nbsp;ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /Subsystem2 Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /Subsystem2 Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_211"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase so that the line-to-line voltages applied to the motor are three phase sinusoidal 120&deg; apart.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>04 March 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_211</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_211"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase so that the line-to-line voltages applied to the motor are three phase sinusoidal 120&deg; apart.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>04 March 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_211</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 3. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_283"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-283-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase such that at any motor position one phase outputs a maximum of zero volts.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>15 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-283-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_283</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 4. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_282"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-282-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase as per the following equations which satisfies the requirements described in ES300A_211 and ES300A_283:</td></tr><tr><td>* MotCtrlPhaOnTiA =   MotCtrlMotModlnIdx * MotCtrlPwmPerd *   Sin (ThetaA)  for 0&deg; &lt; ThetaA &lt; 120&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd * - Sin(ThetaA + 120&deg;) for 120&deg; &lt; ThetaA &lt; 240&deg;</td></tr><tr><td>* =    0        for ThetaA &gt; 240&deg;</td></tr><tr><td>* MotCtrlPhaOnTiB =    0        for 0&deg; &lt; ThetaB &lt; 120&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd *   Sin(ThetaB)  for 120&deg; &lt; ThetaB &lt; 240&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd * - Sin(ThetaB + 120&deg;) for ThetaB &gt; 240&deg;</td></tr><tr><td>* MotCtrlPhaOnTiC =    MotCtrlMotModlnIdx * MotCtrlPwmPerd * -Sin(ThetaC + 120&deg;) for 0&deg; &lt; ThetaC &lt; 120&deg;</td></tr><tr><td>* =   0        for 120&deg; &lt; ThetaC &lt; 240&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd * Sin(ThetaC)  for ThetaC &gt; 240&deg;</td></tr><tr><td>* Where,</td></tr><tr><td>* ThetaA = (MotCtrlMotAgElec + MotCtrlMotPhaAdv + PhaDptOffsA)</td></tr><tr><td>* ThetaB = (MotCtrlMotAgElec + MotCtrlMotPhaAdv + PhaDptOffsB)</td></tr><tr><td>* ThetaC = (MotCtrlMotAgElec + MotCtrlMotPhaAdv + PhaDptOffsC)</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>15 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-282-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_282</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;11.&nbsp;System - Subsystem3"><div class="titlepage"><div><div><h2 class="title"><a name="a92cadd00d92d4ef6ae47248394df28c"></a>Chapter&nbsp;11.&nbsp;System - Subsystem3</h2></div></div></div><div class="mediaobject"><map name="d0e3393"></map><img src="./ES300A_SinVltgGenn_requirements_html_files/image-020-sl.png" usemap="%0A                #d0e3393" ismap="" border="0"></div><a name="d0e3410"></a><div class="table"><p class="title"><b>Table&nbsp;11.1.&nbsp;ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /Subsystem3 Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES300A_SinVltgGenn/SinVltgGenn/SinVltgGennPer1 /Subsystem3 Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_211"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase so that the line-to-line voltages applied to the motor are three phase sinusoidal 120&deg; apart.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>04 March 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_211</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_211"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase so that the line-to-line voltages applied to the motor are three phase sinusoidal 120&deg; apart.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>04 March 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-211-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_211</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 3. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_283"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-283-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase such that at any motor position one phase outputs a maximum of zero volts.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>15 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-283-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_283</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 4. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ: ES300A_282"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-282-0000c478" target="_top">------- Details from 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Sine Voltage Generation function shall calculate Phase On Time for each phase as per the following equations which satisfies the requirements described in ES300A_211 and ES300A_283:</td></tr><tr><td>* MotCtrlPhaOnTiA =   MotCtrlMotModlnIdx * MotCtrlPwmPerd *   Sin (ThetaA)  for 0&deg; &lt; ThetaA &lt; 120&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd * - Sin(ThetaA + 120&deg;) for 120&deg; &lt; ThetaA &lt; 240&deg;</td></tr><tr><td>* =    0        for ThetaA &gt; 240&deg;</td></tr><tr><td>* MotCtrlPhaOnTiB =    0        for 0&deg; &lt; ThetaB &lt; 120&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd *   Sin(ThetaB)  for 120&deg; &lt; ThetaB &lt; 240&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd * - Sin(ThetaB + 120&deg;) for ThetaB &gt; 240&deg;</td></tr><tr><td>* MotCtrlPhaOnTiC =    MotCtrlMotModlnIdx * MotCtrlPwmPerd * -Sin(ThetaC + 120&deg;) for 0&deg; &lt; ThetaC &lt; 120&deg;</td></tr><tr><td>* =   0        for 120&deg; &lt; ThetaC &lt; 240&deg;</td></tr><tr><td>* =   MotCtrlMotModlnIdx * MotCtrlPwmPerd * Sin(ThetaC)  for ThetaC &gt; 240&deg;</td></tr><tr><td>* Where,</td></tr><tr><td>* ThetaA = (MotCtrlMotAgElec + MotCtrlMotPhaAdv + PhaDptOffsA)</td></tr><tr><td>* ThetaB = (MotCtrlMotAgElec + MotCtrlMotPhaAdv + PhaDptOffsB)</td></tr><tr><td>* ThetaC = (MotCtrlMotAgElec + MotCtrlMotPhaAdv + PhaDptOffsC)</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Nayeem Mahmud</td></tr><tr><td>Created On: </td><td>15 January 2016</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Nayeem Mahmud</td></tr><tr><td>Last Modified On: </td><td>15 January 2016</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000004&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-282-0000c478" target="_top">DOORS module 0000c478 (/ESG Group/FDD Module Requirements/EA4 Specific/ES300A_SinVltgGenn), object ES300A_282</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div></div></body></html>

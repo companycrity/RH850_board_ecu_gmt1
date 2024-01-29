@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="c5d808fb-a128-4d91-8106-00572ef16a1d">
+      <SHORT-NAME>TTTECH</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="131bca6e-5077-43f1-8c17-db0dc790c3d7">
+          <SHORT-NAME>WdgM_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="e84975a7-c463-4056-a307-0077e615f88a">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="5fdfa237-2c1b-4ac7-825a-b14c68a186e9">
+                  <SHORT-NAME>WdgM</SHORT-NAME>
+                  <PROVIDED-ENTRYS>
+                    <BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                      <BSW-MODULE-ENTRY-REF DEST="BSW-MODULE-ENTRY">/TTTECH/WdgM_ib_bswmd/BswModuleDescriptions/WdgM_MainFunction</BSW-MODULE-ENTRY-REF>
+                    </BSW-MODULE-ENTRY-REF-CONDITIONAL>
+                  </PROVIDED-ENTRYS>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="26df8376-9079-44f6-993c-c28a791872bf">
+                      <SHORT-NAME>WdgMBehavior</SHORT-NAME>
+                      <EXCLUSIVE-AREAS>
+                        <EXCLUSIVE-AREA UUID="416ae496-bca3-48a3-bc2e-e9873c267de2">
+                          <SHORT-NAME>WDGM_EXCLUSIVE_AREA_0</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                      </EXCLUSIVE-AREAS>
+                      <ENTITYS>
+                        <BSW-SCHEDULABLE-ENTITY UUID="d1c9f4ff-2f29-4eea-9656-e85035adcd58">
+                          <SHORT-NAME>WdgM_MainFunction</SHORT-NAME>
+                          <IMPLEMENTED-ENTRY-REF DEST="BSW-MODULE-ENTRY">/TTTECH/WdgM_ib_bswmd/BswModuleDescriptions/WdgM_MainFunction</IMPLEMENTED-ENTRY-REF>
+                        </BSW-SCHEDULABLE-ENTITY>
+                      </ENTITYS>
+                      <EVENTS>
+                        <BSW-TIMING-EVENT UUID="1478a44c-cca1-4b43-bd62-1b53839c8813">
+                          <SHORT-NAME>WdgM_MainFunctionTimingEvent0</SHORT-NAME>
+                          <STARTS-ON-EVENT-REF DEST="BSW-SCHEDULABLE-ENTITY">/TTTECH/WdgM_ib_bswmd/BswModuleDescriptions/WdgM/WdgMBehavior/WdgM_MainFunction</STARTS-ON-EVENT-REF>
+                          <PERIOD>0.004</PERIOD>
+                        </BSW-TIMING-EVENT>
+                      </EVENTS>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+                <BSW-MODULE-ENTRY UUID="965f6c78-0bb1-4b05-b7a3-31669a49b05b">
+                  <SHORT-NAME>WdgM_MainFunction</SHORT-NAME>
+                  <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                  <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                </BSW-MODULE-ENTRY>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

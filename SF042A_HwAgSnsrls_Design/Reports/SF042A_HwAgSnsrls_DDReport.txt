@@ -1,0 +1,114 @@
+Verification of SF042A_HwAgSnsrls_DataDict
+09-Nov-2016 08:14:54
+Tool Release:  2.49.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 2, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 4, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+(variables: 14, errors: 0)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+HwAgSnsrls                  	Name does not match required pattern.
+HwAgSnsrlsConf              	Name does not match required pattern.
+(variables: 2, errors: 2)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 2, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 26, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 2, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 1, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 4, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 26, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 11, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+NTCNR_0X0BF         	Found in model but not in data dictionary.
+(variables: 0, errors: 1)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+97 variables,  3 issues to fix.
+
+
+End of Report

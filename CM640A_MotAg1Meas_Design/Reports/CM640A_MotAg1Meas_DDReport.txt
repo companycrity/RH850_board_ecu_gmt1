@@ -1,0 +1,125 @@
+Verification of CM640A_MotAg1Meas_DataDict
+13-Mar-2016 14:27:38
+Tool Release:  2.34.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 3, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+MotAg1MeasMotAg1CoeffTblRead	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+MotAg1MeasMotAg1CoeffTblWr  	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+(variables: 2, errors: 2)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 4, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+MotAg1ErrReg                	Cannot match name to list of known Nexteer signals.
+MotAg1ParFltCnt             	Cannot match name to list of known Nexteer signals.
+MotAg1VltgFltCnt            	Cannot match name to list of known Nexteer signals.
+MotCtrlMotAgMecl1Polarity   	Cannot match name to list of known Nexteer signals.
+(variables: 5, errors: 4)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+DmaMotAg1RawData            	Cannot match name to list of known Nexteer signals.
+(variables: 7, errors: 1)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 1, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 3, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 10, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+MOTAG1MEAS_MOTAG1READPTRRST_CNT_U32	Found in data dictionary but not in model.
+MOTAG1MEAS_MOTAG1TRSMSTRTININ_CNT_U32	Found in data dictionary but not in model.
+(variables: 21, errors: 2)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 1, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 1, errors: 0)
+
+------
+OTHER:
+------
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay2:                	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay3:                	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay4:                	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+(variables: 0, errors: 5)
+ 
+************************
+Grand Totals:
+59 variables,  14 issues to fix.
+
+
+End of Report

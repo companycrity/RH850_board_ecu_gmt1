@@ -1,0 +1,1199 @@
+/* Kernbauer Version: 2.16 Konfiguration: RH850 Erzeugungsgangnummer: 242 Zweig: 4 */
+
+/*****************************************************************************
+| Project Name: MICROSAR OS
+|    File Name: RH850_P1M.i41
+|
+|  General code: @Version: 9.01.06@
+|  Module version: $vv$=1.29
+|
+|  Description: Definition of implementation specific attributes
+|
+|-----------------------------------------------------------------------------
+|               C O P Y R I G H T
+|-----------------------------------------------------------------------------
+| Copyright (c) 2001-2015 Vector Informatik GmbH          All rights reserved.
+|****************************************************************************/
+
+
+IMPLEMENTATION
+RH850_P1M
+
+{
+   // **********************************************************************
+   // OS
+   // **********************************************************************
+   OS {
+      //#######################################
+      // AUTOSAR standard attributes
+      //#######################################
+      // attribute SCALABILITYCLASS fullfills [SR:272] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      ENUM [SC3] SCALABILITYCLASS=SC3:"@DSC3@\c
+      \This parameter specifies the scalability class to be supported by the OS. If the scalability class is omitted this translates to the OIL AUTO mechanism.\
+      \ \
+      \SC1: Basic functionality\
+      \SC2: Timing Protection\
+      \SC3: Memory protection\
+      \SC4: Full functionality";
+
+
+      ENUM [EXTENDED] STATUS=EXTENDED:"@DEXTENDED@\c
+      This choice specifies whether a system with standard or extended status has to be used. Automatic assignment is not supported for this attribute.";
+
+
+      BOOLEAN STARTUPHOOK=TRUE:"@DTRUE@\c
+      \This choice specifies the usage of the startup hook.\
+      \ \
+      \TRUE: \
+      \The startup hook routine is called during system startup.\
+      \ \
+      \FALSE: \
+      \The startup hook is not called.\
+      \ \
+      \Note: \
+      \The function StartupHook has to be provided by the application.";
+      
+      BOOLEAN ERRORHOOK=TRUE:"@DTRUE@This choice specifies the usage of the error hook.\
+      This choice specifies the usage of the error hook.\
+      \ \
+      \TRUE: \
+      \The error hook routine is called, if an API function returns with an error code unequal to E_OK. It is also called if OS internal errors are detected. \
+      \ \
+      \FALSE: \
+      \The error hook is not called.\
+      \ \
+      \Note: \
+      \The function ErrorHook has to be provided by the application.";
+      
+      BOOLEAN SHUTDOWNHOOK=TRUE:"@DTRUE@\c
+      This choice specifies the usage of the shutdown hook.\
+      \ \
+      \TRUE: \
+      \The shutdown hook routine is called when the OS shuts down.\
+      \ \
+      \FALSE: \
+      \The shutdown hook is not called.\
+      \ \
+      \Note: \
+      \The function ShutdownHook has to be provided by the application.";
+      
+      BOOLEAN PRETASKHOOK:" \c
+                     \This choice specifies the usage of the PreTask hook.\
+                     \ \
+                     \TRUE:  \
+                     \The PreTaskHook routine will be called whenever the operating system starts or resumes a task. \
+                     \ \
+                     \FALSE: \
+                     \The PreTask hook is not called.\
+                     \ \
+                     \Note: \
+                     \The function PreTaskHook has to be provided by the application.\
+                     \ \
+                     \This is a debug feature only. It is not certified for use in safety critical \c
+                     \environments, and will generate a warning during generation.";
+      
+      BOOLEAN POSTTASKHOOK:" \c
+                     \This choice specifies the usage of the PostTask hook.\
+                     \ \
+                     \TRUE:  \
+                     \The PostTaskHook routine will be called whenever the operating system  preempts or terminates a task. \
+                     \ \
+                     \FALSE: \
+                     \The PostTask hook is not called.\
+                     \ \
+                     \Note: \
+                     \The function PostTaskHook has to be provided by the application.\
+                     \ \
+                     \This is a debug feature only. It is not certified for use in safety critical \c
+                     \environments, and will generate a warning during generation.";
+      
+      // the attribute PROTECTIONHOOK fullfills [SR:263] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      BOOLEAN PROTECTIONHOOK=TRUE:"@DTRUE@ \c
+                     \This choice specifies the usage of the protection hook.\
+                     \ \
+                     \TRUE: \
+                     \The protection hook routine is called when a timing (SC2, SC4) or memory (SC3, SC4) violation has been detected.\
+                     \ \
+                     \FALSE: \
+                     \The protection hook is not called.\
+                     \ \
+                     \Note: \
+                     \The function ProtectionHook has to be provided by the application.\
+                     \ \
+                     \Note: \
+                     \The protection hook is not addressed in scalability class SC1.";
+      
+      // attributes USEGETSERVICEID and USEPARAMETERACCESS fulfils [SR:154] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      BOOLEAN USEGETSERVICEID=TRUE:"@DTRUE@ \c
+      \This choice specifies whether the  the access macros to the service ID information in the error hook are enabled.\
+      \ \
+      \TRUE: \
+      \The macros are enabled.\
+      \ \
+      \FALSE: \
+      \The macros are disabled. Disabling these macros will save memory and run time."; 
+      
+      BOOLEAN USEPARAMETERACCESS=FALSE:"@DFALSE@ \c
+      \Access macros to the context related information \c
+      \in the error hook is not supported with Microsar OS SafeContext.";
+      
+      BOOLEAN USERESSCHEDULER = FALSE:"@DFALSE@This choice specifies whether the resource RES_SCHEDULER is used within the application. It is not used in ASR4, RES_SCHEDULER is no special case anymore.";
+      
+      BOOLEAN CallISRHooks = FALSE:"This choice specifies whether ISR hook routines shall be enabled.\
+                              \ \
+                              \TRUE: \
+                              \UserPreIsrHook and UserPostIsrHook are called before and after ISR handler, respectively.\
+                              \ \
+                              \This is a debug feature only. It is not certified for use in safety critical\c
+                              \environments, and will generate a warning during generation.\
+                              \ \
+                              \FALSE: \
+                              \UserPreIsrHook and UserPostIsrHook are disabled.";
+
+      
+      //#######################################
+      // specific attributes 
+      //#######################################
+      ENUM WITH_AUTO [NON, FULL, MIXED] SCHEDULE = NO_DEFAULT:"@DAUTO@ \c
+      \This parameter specifies whether the scheduling policy is determined automatically.\
+      \ \
+      \AUTO: \
+      \The scheduling policy is determined automatically.\
+      \ \
+      \NON_AUTO: \
+      \The scheduling policy is manually defined. \
+      \ \
+      \This attribute should usually be set to AUTO. The exact scheduling policy is calculated from other attribute values, e.g. the tasks' properties.\
+      \ \
+      \It is possible to preselect the SCHEDULE attribute, if there are requirements enforcing  a special scheduling policy for a project. A warning message is created if there are differences between the preselected and the calculated scheduling policy and the preselected value is overwritten to the calculated value.\
+      \ \
+      \NON: All tasks are non-preemptive.\
+      \FULL: All tasks are full-preemptive.\
+      \MIXED: A mixture of full- and non-preemptive tasks is allowed.";
+      
+
+
+      ENUM WITH_AUTO [BCC1, BCC2, ECC1, ECC2] CC = NO_DEFAULT:"@DAUTO@This \c
+      \attribute should usually be set to AUTO. The exact conformance class can be \c
+      \calculated from other attribute values. \
+      \It is possible to preselect the CC attribute, if there are restrictions \c
+      \to use a specific conformance class for a project. An error message is \c
+      \created if there are differences between the preselected and the \c
+      \calculated conformance class.";
+
+
+      UINT32 [1..65535] UserConfigurationVersion = 1:"@D1@This value specifies the current version of the OS configuration. It is not used by the OS at all but may be read back by the user.";
+
+      ENUM [
+               Selected {
+                  BOOLEAN SHUTDOWN = TRUE:"@DTRUE@This choice specifies the use of the return value PRO_SHUTDOWN.\
+                                       \ \
+                                       \TRUE: \
+                                       \ProtectionHook may return the value PRO_SHUTDOWN.\
+                                       \ \
+                                       \FALSE: \
+                                       \The above return value is not allowed.";
+               }
+           ] ProtectionHookReaction = Selected:"@DSelected@This parameter specifies which return values shall be allowed in the protection hook. \
+                                              \ \
+                                              \Note: \
+                                              \Only PRO_SHUTDOWN is supported by this implementation.";
+
+
+      UINT32 [0..0xFFFF] SystemStackSize = NO_DEFAULT:"@D200@System and \c
+      \interrupt stack size in bytes.";   
+
+
+      // attribute STACKMONITORING fullfills [SR:070] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      // attribute STACKMONITORING fullfills [SR:151] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      // attribute STACKMONITORING fullfills [SR:273] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      BOOLEAN STACKMONITORING=TRUE:"@DTRUE@\c
+                        \This choice specifies whether the stack of tasks and category 2 ISRs is monitored.\
+                        \ \
+                        \TRUE: \
+                        \Stacks are monitored\
+                        \ \
+                        \FALSE: \
+                        \Stacks are not monitored";
+      
+      BOOLEAN WITH_AUTO StackUsageMeasurement = AUTO:"@DAUTO@This choice specifies whether the stack usage shall be measured.\
+                        \ \
+                        \AUTO: \
+                        \The stack measurement is performed only if OsOSStackMonitoring is set to TRUE.\
+                        \ \
+                        \TRUE: \
+                        \The API function osGetStackUsage is provided to measure the stack usage. The parameter OsStackMonitoring has to be set to TRUE.\
+                        \ \
+                        \FALSE: \
+                        \The stack usage is not measured and the API function osGetStackUsage is not provided.";
+
+
+
+      
+      BOOLEAN 
+         [
+         TRUE {
+            BOOLEAN [
+               TRUE {
+                  APPLICATION_TYPE OwnerApplication:"The PreAlarmHook is running with the access rights of this application (valid for SC3/SC4 only).\c
+                  \Note: Owner must be a trusted application!";
+               },
+               FALSE
+            ] AssignOwnerApplication= FALSE:"@DFALSE@This choice specifies whether a trusted OS Application shall be assigned as owner of the PreAlarmHook.\
+                              \ \
+                              TRUE: \
+                              \A trusted OS Application shall be assigned as owner.\
+                              \ \
+                              \FALSE: \
+                              \The PreAlarm hook is not assigned to an OS Application.\
+                              \ \
+                              \Note: \
+                              \If set to FALSE, no API functions can be called in  PreAlarmHook with scalability classes SC3/SC4.";
+         },
+         FALSE
+         ] 
+         PreAlarmHook= FALSE:"@DFALSE@\c
+      \If set to TRUE PreAlarmHook will be called in every system timer interrupt.";
+
+
+
+      BOOLEAN MemoryProtection = TRUE:"@DTRUE@Switches on memory protection (mandatory for SC3 and SC4)";
+      BOOLEAN CheckIntAPIStatus = TRUE:"@DTRUE@Switches on the check for interrupt API status";
+      BOOLEAN SupportFPU = FALSE:"@DFALSE@Switches on the support for FPU";
+
+      
+      ENUM [Additional] OSInternalChecks = Additional:"@DAdditional@ \c
+      This parameter specifies the mode of error checking.\
+      \ \
+      \ADDITIONAL:\
+      \Some additional checks are performed. \
+      \ \
+      \STANDARD: \
+      \The operating system performs standard OSEK error checking.\
+      \ \
+      \Note: \
+      \Setting to Additional increases the execution time of API functions.";
+
+
+      
+
+      ENUM [
+             GHS
+           ] Compiler = GHS:"@DGHS@";
+           
+
+
+      
+      BOOLEAN EnumeratedUnhandledISRs = FALSE:"@DFALSE@This attribute determines \c
+      \the handling of unassigned interrupt sources (no ISR configured for them).\
+      \\
+      \FALSE: Exceptions from unassigned interrupt sources are caught by one common handler.\c
+      \\
+      \TRUE:  the variables ossISRUnhandledException_Number and ossUnhandledExceptionDetail are set to \c
+      \the exception number before calling the handler osUnhandledException.\c
+      \This is useful to determine the interrupt source quickly in case of an unhandled \c
+      \exception error.";
+
+      
+      BOOLEAN
+      [
+         TRUE 
+         {
+            ENUM [
+               ProtectAndMeasureAll,
+               AsSelected, 
+               OnlyMeasureAll
+            ] GlobalConfig=AsSelected:"@DAsSelected@This parameter globally specifies, how timing protection and timing measurement shall be performed.\
+                                       \ \
+                                       \ProtectAndMeasureAll:\
+                                       \Timing protection is provided for all tasks and ISRs. In case the timing protection subattribute OnlyMeasure \c
+                                       \is selected for a task or ISR, that setting is ignored with a warning. Timing measurement is provided for all \c
+                                       \tasks and ISRs independently from their configuration.\
+                                       \ \
+                                       \AsSelected:\
+                                       \Timing protection is provided as selected with the attribute TimingProtection of each task and ISR. The \c
+                                       \subattribte OnlyMeasure is respected and disables timing protection if selected for a task or ISR. Timing \c
+                                       \measurement is provided for tasks and ISRs with OnlyMeasure selected.\
+                                       \ \
+                                       \OnlyMeasureAll:\
+                                       \Timing Measurement is provided for all tasks and ISRs. Timing protection however is disabled for all tasks \c
+                                       \and ISRs. For each task and ISR that has a timing protection configured and not set the subattribute OnlyMeasure, \c
+                                       a warning is generated to remind the user that this setting is not meant for production code.";
+         },
+         FALSE
+      ]
+        TimingMeasurement=FALSE:"@FALSE@This choice specifies whether timing measurement shall be applied.\
+                              \ \
+                              \TRUE: \
+                              \Timing measurement is performed according to the setting of attribute OsOsGobalConfig.\
+                              \ \
+                              \FALSE: \
+                              \Timing measurement is performed only for those tasks and ISRs which have timing protection \c
+                              \configured. A warning is generated for tasks which have the attribute OnlyMeasure activated.";
+
+
+      BOOLEAN ORTIDebugSupport = TRUE:"@DTRUE@ \c
+      \This choice specifies whether ORTI debug information is supported. \
+      \ \
+      \TRUE: \
+      \This implementation supports ORTI debug information (ORTI-file).\
+      \ \
+      \FALSE: \
+      \ORTI is not supported.";
+
+
+      ENUM [
+         ORTI_22_Additional
+      ] ORTIDebugLevel = ORTI_22_Additional:"@ORTI_22_Additional@ \c
+      \\
+      \ORTI_22_Additional:\
+      \Support of ORTI 2.2, additional features. This selection requires some additional runtime and memory.
+      \ ";
+
+
+      
+      BOOLEAN ConditionalGenerating = FALSE:"@DFALSE@If selected, the generated files are only modified if the configuration was changed.\c
+      \This is useful if the build environment detects changes in header files using the file modification date.";
+
+
+         STRING TimingHooks="":"@D@Include file for OS Timing Hooks, if this string is empty, no include takes place.";
+
+
+      BOOLEAN TypeHeaderInclude=TRUE:"@DTRUE@This choice specifies whether AUTOSAR header files  shall be included.\
+                                    \ \
+                                    \TRUE: \
+                                    \The Autosar header files are included into the header files of the operating system.\
+                                    \ \
+                                    \FALSE: \
+                                    \The AUTOSAR header files are not included.\
+                                    \ \
+                                    \The AUTOSAR header files provide types like uint8, sint32, etc. The operating system doesn't use these types. Therefore it is safe to deselect this attribute.";
+
+
+      BOOLEAN
+      [
+         TRUE {
+            STRING Semaphore[]= NO_DEFAULT:"@F1@Identifier for a Semaphore";
+         },
+         FALSE
+      ] UseSemaphores = FALSE:"@A0x100@If UseSemaphore is set to TRUE a list of identifiers for \c
+      \binary Semaphores can be set up. Semaphores do not need to be assigned to tasks.";
+
+
+          ENUM
+          [      
+             Enable
+             {
+                STRING StartAddr = "0x00000000";
+                STRING EndAddr   = "0x00000000";
+                UINT32 AccessRights = 0x00;
+                BOOLEAN ASID = FALSE:"@FALSE@Specifies whether ASID matching is enabled for this MPU region.";
+                UINT32 Identifier = 0x3FF:"ASID value to be used as area match condition.";
+             }
+          ] MpuRegion[];
+
+      
+      ENUM [
+         Region {
+            UINT32 StartAddress = NO_DEFAULT:"Specifies the start address of the peripheral region which shall be configured (StartAddress <= memory to be accessed).";
+            UINT32 EndAddress = NO_DEFAULT:"Specifies the end address of the peripheral region which shall be configured (memory to be accessed <= EndAddress).";
+            STRING Identifier = NO_DEFAULT:"Unique C Identifier which must be used in an application which accesses the peripheral region.";
+            APPLICATION_TYPE ACCESSING_APPLICATION[]:"The applications with access right to this peripheral region are defined here.";
+         }
+      ] PeripheralRegion[]:"List of Peripheral regions which are assigned to be accessible for the corresponding application.";
+
+
+
+   }:"@M1@This container specifies the attributes of the OS. Per project exactly one OS object has to be defined.";
+
+   // **********************************************************************
+   // APPLICATION
+   // **********************************************************************
+   APPLICATION
+   {
+      //#######################################
+      // AUTOSAR standard attributes
+      //#######################################
+      BOOLEAN [
+      // TR:SPMF34:0002 Start        
+         TRUE {
+              BOOLEAN [
+                  TRUE {
+                     STRING NAME:"This parameter specifies the name of a trusted function, which shall be available to other OS-Applications. \
+                           \ \
+                           \Note:\
+                           \This also supersedes the OSEK OIL attribute TRUSTED in APPLICATION because the optionality of this parameter is describing that already.";
+                     STRING Params=" ":"@D @This parameter specifies the arguments of the trusted function. Empty string means void. The parameter is used for stub generation only.";
+                     STRING ReturnType=" ":"@D @This parameter specifies the return value data type of the trusted function. Empty string means void. The parameter is used for stub generation only.";
+                  },
+                  FALSE
+              ] TRUSTED_FUNCTION[]:"List of trusted functions provided by this application.";
+      // TR:SPMF34:0001 Start        
+              BOOLEAN GenerateStub = FALSE:"@DFALSE@This choice specifies whether stubs for the trusted functions shall be generated.\
+            \ \
+            \TRUE:\
+            \Stub functions are generated for all trusted functions of this application.\
+            \ \
+            \FALSE:\
+            \Stub functions are not generated.";
+      // TR:SPMF34:0001 End        
+         },
+      // TR:SPMF34:0002 End
+         FALSE
+      ] TRUSTED = FALSE:"This choice specifies whether the OS Application is trusted.\
+                     \ \
+                     \TRUE:\
+                     \The Application is trusted.\
+                     \ \
+                     \FALSE:\
+                     \The Application is non-trusted.";
+      STRING  NonTrusted_Function[]:"List of non-trusted functions provided by this application (only for non trusted applications).";
+
+
+          BOOLEAN STARTUPHOOK:"@DFALSE@Application specific hook routines are \c
+          \not supported by Microsar OS SafeContext.";
+          BOOLEAN SHUTDOWNHOOK:"@DFALSE@Application specific hook routines are \c
+          \not supported by Microsar OS SafeContext.";
+          BOOLEAN ERRORHOOK:"@DFALSE@Application specific hook routines are \c
+          \not supported by Microsar OS SafeContext.";
+
+
+          BOOLEAN [
+         TRUE {TASK_TYPE RESTARTTASK:"This parameter specifies the reference to the task to be activated when the application is terminated by the protection hook with restart option. \
+                              \ \
+                              \Note: \
+                              \This parameter is optional. If no reference is given there will be no restart after a termination by the protection hook.\
+                              \ \
+                              \Note: \
+                              \The task has to be a member of the tasks assigned to this application";},
+         FALSE
+      ] HAS_RESTARTTASK:"Set to TRUE if application has a restart task.";
+
+
+      TASK_TYPE TASK[]:"This container lists the references to all tasks belonging to this OS Application.";
+      ISR_TYPE ISR[]:"This container lists the references to all ISR belonging to this OS Application.";
+      ALARM_TYPE ALARM[]:"This container lists the references to all alarms belonging to this OS Application.";
+      SCHEDULETABLE_TYPE SCHEDULETABLE[]:"This container lists the references to all ScheduleTables belonging to this OS Application.";
+      COUNTER_TYPE COUNTER[]:"This container lists the references to all counters belonging to this OS Application.";
+
+
+      //#######################################
+      // specific attributes 
+      //#######################################
+      
+      
+          UINT32 ASID = 0x3FF:"@D0x3FF@Value to be written to ASID register on application switch.";
+          ENUM [
+                  Enable
+                  {
+                     STRING StartAddr = "0x00000000";
+                     STRING EndAddr   = "0x00000000";
+                  }
+          ] MpuRegion[];
+
+   }
+   :"@M32@";
+
+
+   // **********************************************************************
+   // TASK
+   // **********************************************************************
+   TASK {
+      STRING Component= "Main Component":"@A0x01@";
+
+      //#######################################
+      // AUTOSAR standard attributes
+      //#######################################
+      ENUM WITH_AUTO [BASIC, EXTENDED] TYPE = AUTO:"@DAUTO@This parameter specifies the type of the task. \
+      \ \
+      \BASIC: The task doesn't have a Wait state and cannot handle OS Events. \
+      \ \
+      \AUTO: \
+      \The type is set automatically depending on the reference to OS Events.\
+      \ \
+      \EXTENDED: \
+      \The task has a Wait state and can handle OS Events. \
+      \ \
+      \Note: \
+      \This attribute should usually be set to AUTO. If the type is preselected there will be an error message whenever the preselected and the calculated task type differ.";
+
+
+      ENUM [NON, FULL] SCHEDULE:"This parameter specifies the preemptability of the task.\
+                           \ \
+                           \FULL:\
+                           \The task is full preemptive.\
+                           \ \
+                           \NON: \
+                           \Task is not preemptive.\
+                           \ \
+                           \Note: \
+                           \If this parameter is set to NON, no internal resources may be assigned to this task.";
+
+
+      UINT32 PRIORITY:"This value specifies the priority of a task. \c
+                  \Gaps are allowed in the consecutive order of priority numbers.\c
+                  \The greater the value, the higher is the priority of the task.\c
+                  \Zero represents the lowest priority";
+
+
+      UINT32 [1..255] ACTIVATION:"\c
+               \@D1@This value specifies the maximum number of queued activation requests for the task. \c
+               \A value equal to '1' means that at any time only a single activation is permitted for this task. \
+               \ \
+               \Note: \
+               \The value must be a natural number starting at 1.";
+
+
+      APPLICATION_TYPE ACCESSING_APPLICATION[]:"This container lists the references to all OS Applications which shall have an access to this object.\
+      \ \
+      \Note: The owner application needs not to be listed as it has always access implicitly.";
+
+
+      // fullfills [SR:280] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      BOOLEAN [
+         TRUE {
+            UINT64 EXECUTIONBUDGET: "@F2@This parameter specifies the maximum allowed execution time of the task.";
+            UINT64 [1..0x7FFFFFFFFFFFFFFF] TIMEFRAME: "@F2@ Defines the minimum time between task activations.";
+            UINT64 MAXOSINTERRUPTLOCKTIME: "@F2@This value specifies the maximum time for which the task is allowed to lock all Category 2 interrupts via SuspendOSInterrupts().";
+            UINT64 MAXALLINTERRUPTLOCKTIME: "@F2@This value specifies the maximum time for which the task is allowed to lock all interrupts via SuspendAllInterrupts() or DisableAllInterrupts().";
+            BOOLEAN OnlyMeasure= FALSE: "This choice specifies whether timing protection parameters shall only be measured.\
+                                 \ \
+                                 \TRUE:\
+                                 \All parameters will be measured, but timing fault detection is disabled.\
+                                 \ \
+                                 \FALSE:\
+                                 \Timing protection is fully enabled.";
+      
+         ENUM [
+               RESOURCELOCK {
+                  RESOURCE_TYPE RESOURCE:"This parameter defines the reference to the Resource to which the locking time budget shall be applied.";
+                  UINT64 RESOURCELOCKTIME: "@F2@This value specifies the maximum time, the resource can be held for per call of GetResource.";
+              }
+            ] LOCKINGTIME []:"switches timing protection for resource locking on";
+         },
+         FALSE
+      ] TIMING_PROTECTION:"This choice specifies whether timing protection is enabled for this task.\
+                     \ \
+                     \TRUE:\
+                     \Timing protection is enabled.\
+                     \ \
+                     \FALSE:\
+                     \Timing protection is disabled.";
+
+
+      BOOLEAN [
+         TRUE 
+         { 
+            APPMODE_TYPE APPMODE[]:"@M8@This container lists the references to all application modes which shall activate the task automatically at system startup."; 
+         },
+         FALSE
+      ] AUTOSTART:"This choice specifies whether the task is automatically activated at system startup.\
+               \ \
+               \TRUE: \
+               \The task is automatically activated during system start-up.\
+               \ \
+               \FALSE: \
+               \The task has to be activated explicitly by the application.\
+               \ \
+               \Note: \
+               \If the choice is set to true, at least one OsAppMode has to be referenced.";
+
+
+      EVENT_TYPE EVENT[]:"@M32@\c
+      \This container lists the references to all events to which this task shall react. \
+      \\
+      \Note:\
+      \If events are to be received by the task, the activation attribute has to be \c
+      \set to 1.";
+
+     
+      RESOURCE_TYPE RESOURCE[]:"@A0x40@This container lists the references to all Resources accessed by this Task. \c
+      \An assignment of the resource to the task is elementary \c
+      \to the calculation of the resources ceiling priority and therefore for \c
+      \the correct behaviour of the resource handling";
+
+
+
+      //#######################################
+      // specific attributes 
+      //#######################################
+ 
+      UINT32 [0..0xFFFF] StackSize = NO_DEFAULT
+      :"@D300@\c
+      \This value specifies the stack size of the task in bytes";
+
+      
+      
+   }
+   :"@M65533@This container defines the attributes of a task.";
+   
+
+   // **********************************************************************
+   // COUNTER
+   // **********************************************************************
+   COUNTER { 
+      STRING Component= "Main Component":"@A0x01@";
+
+      //#######################################
+      // AUTOSAR standard attributes
+      //#######################################
+      UINT32 [0..0x3FFFFFFF] MINCYCLE:
+      "This value specifies the smallest number of counter ticks allowed for a cyclic alarm linked to the counter.";
+   
+
+      UINT32 [0..0x7FFFFFFF] MAXALLOWEDVALUE:
+      "This value specifies the largest number of counter ticks to be used with alarm and schedule table values.";
+   
+
+      UINT32 TICKSPERBASE:"This value specifies the number of ticks required to reach a counterspecific unit. The interpretation is implementation specific.";
+
+      
+      // the attribute TYPE fullfills [SR:261] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      // the attribute TYPE fullfills [SR:024] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      // the attribute TYPE fullfills [SR:025] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      ENUM [ 
+         SOFTWARE,
+         HARDWARE
+      ] TYPE :"This parameter specifies the physical type of the counter.\
+               \ \
+               \HARDWARE: This counter may not be incremented by means of the API function IncrementCounter\
+               \ \
+               \SOFTWARE: This counter shall be incremented by means of the API function IncrementCounter\
+               \ \
+               \Note: user-defined counters have to be of type SOFTWARE.";
+                     
+                     
+      ENUM [
+         TIMECONSTANT {
+            // the attribute TIMECONSTANT fullfills [SR:283] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+            FLOAT VALUE : "@F2@This parameter contains the value of the constant in seconds.";
+            STRING CONSTNAME="" : "Name of the time constant";
+         }
+      ] TIMECONSTANT []:"A list of time constants for this counter can be specified here";
+                     
+      ENUM [DRIVER
+         {
+            ENUM[
+               OSTM {
+                  BOOLEAN EnableNesting = NO_DEFAULT:"@DFALSE@If this attribute is\c
+                  \ set to true the global interrupt flag (ID flag of PSW) will be\c
+                  \ cleared inside the timer ISR.";
+                                             
+                  UINT32 [0..15] InterruptPriority = 15:"@D15@EIINT interrupt priority.";
+
+                  
+                  UINT32 [0..0xFFFF] StackSize = NO_DEFAULT:"@D300@\c
+                  \Stack size of the Timer ISR in bytes";
+               }
+               ,OSTM_HIRES {
+                  BOOLEAN EnableNesting = NO_DEFAULT:"@DFALSE@If this attribute is\c
+                  \ set to true the global interrupt flag (ID flag of PSW) will be\c
+                  \ cleared inside the timer ISR.";
+               
+                  UINT32 [0..15] InterruptPriority = 15:"@D15@EIINT interrupt priority.";
+                              
+                  
+                  UINT32 [0..0xFFFF] StackSize = NO_DEFAULT:"@D300@\c
+                  \Stack size of the Timer ISR in bytes";
+                  
+                  UINT32 MinTimeBetweenTimerIrqs = 0;
+               }
+
+            ] Timer=NO_DEFAULT:"";
+         }
+      ] DRIVER[]:"@M1@This Container contains the information who will drive the counter.";
+
+      
+      FLOAT [0.0..1234567889.0] SECONDSPERTICK :"This value specifies the duration of one counter tick.\
+                                                 \ \
+                                                 \ NOTE: Older versions of MICROSAR OS used the special value 1234567890 \c
+                                                 \to signal that this value was unused. That value is no longer allowed!";
+
+
+      APPLICATION_TYPE ACCESSING_APPLICATION[]:"This container lists the references to all OS Applications which shall have an access to this object.\
+      \ \
+      \Note: The owner application needs not to be listed as it has always access implicitly.";
+
+   }
+   :"@M256@This container specifies the attributes of an OS Counter.";
+   
+
+
+   // **********************************************************************
+   // ALARM
+   // **********************************************************************
+   ALARM {
+      STRING Component= "Main Component":"@A0x01@";
+
+      //#######################################
+      // AUTOSAR standard attributes
+      //#######################################
+      COUNTER_TYPE COUNTER:"This parameter specifies the reference to the counter providing the time base for the alarm.";
+
+
+      ENUM [
+         ACTIVATETASK {
+            TASK_TYPE TASK:"This parameter specifies the reference to the task that will be activated when the alarm expires.";
+         }, 
+         SETEVENT {
+            TASK_TYPE TASK:"This parameter specifies the reference to the task receiving the event.";
+      
+            EVENT_TYPE EVENT:"This parameter specifies the reference to the OS Event that will be set when the alarm expires.";
+         }, 
+         ALARMCALLBACK {
+            STRING ALARMCALLBACKNAME:"@F1@This parameter specifies the name of the function that is called when the alarm expires.";
+         },
+         INCREMENTCOUNTER {
+            // fullfills [SR:004] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+            // fullfills [SR:163] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+            COUNTER_TYPE COUNTER:"This parameter specifies the reference to the counter that will be incremented when the alarm expires.";
+         } 
+      ] ACTION:"This parameter specifies the activity to be processed when the alarm expires. \
+      \ \
+      \ActivateTask:\
+      \The referenced task is activated.\
+      \ \
+      \CallBack:\
+      \This selection is not allowed for this implementation. It is only available to be compliant to the Autosar Standard.\
+      \ \
+      \IncrementCounter:\
+      \The given counter is incremented.\
+      \ \
+      \SetEvent:\
+      \The event is send to the configured task.\
+      \ \
+      \Note: CallBack is only supported in scalability class SC1.";
+
+
+      BOOLEAN [
+      // TR:SPMF20:0004 Start
+       TRUE {
+          // standard attributes
+          UINT32 ALARMTIME:"This value specifies the relative or absolute time interval when the alarm expires for the first time. \
+      \ \
+      \Note: \
+      \If the alarm is set to RELATIVE, this value must be greater than 0.";
+      
+          UINT32 CYCLETIME:"This value specifies the cycle time of an alarm.\
+      \If the value is set to 0,  the alarm is not cyclic.";
+      
+          ENUM [ABSOLUTE, RELATIVE] TYPE:"This specifies the type of autostart for the alarm.\
+      \ \
+      \ABSOLUTE:\
+      \AlarmTime starts at counter value Zero.\
+      \ \
+      \RELATIVE: \
+      \AlarmTime starts at current counter value."; /* TR:SASR40:0476*/
+      
+          APPMODE_TYPE APPMODE[]:"@M8@This container lists the references to all application modes which shall start the alarm automatically at system startup.";
+       },
+       FALSE
+      ] AUTOSTART:"This choice specifies whether the alarm is started automatically at system startup.\
+      \ \
+      \TRUE: \
+      \The alarm is automatically started during system start-up depending on the application mode.\
+      \ \
+      \FALSE: \
+      \The alarm has to be started explicitly by the application.\
+      \ \
+      \Note: \
+      \If the choice is set to true, at least one OsAppMode has to be referenced.";
+      
+
+
+      APPLICATION_TYPE ACCESSING_APPLICATION[]:"This container lists the references to all OS Applications which shall have an access to this object.\
+      \ \
+      \Note: The owner application needs not to be listed as it has always access implicitly.";
+
+   }
+   :"@M32766@This container specifies the attributes of an OS alarm. An OsAlarm may be used to asynchronously inform or activate a specific task.";
+   
+
+
+   // **********************************************************************
+   // EVENT
+   // **********************************************************************
+   EVENT  {
+      STRING Component= "Main Component":"@A0x01@";
+
+      UINT64 WITH_AUTO [0x00000001..0x80000000] MASK:"@DAUTO@\c
+      \This value specifies the Bit mask of the event. An Event is represented as a single bit in a field of bits. To address the \c
+      \bit an event mask is used. The event mask can either be calculated automatically \c
+      \or it can be set up manually if the event-bit should be located on a certain \c
+      \position.\
+      \ \
+      \Note: \
+      \If the input is empty, the mask will be defined automatically.";
+
+   }:"This container specifies an OS Event. OS Events are a means to trigger and coordinate tasks.";
+
+
+   // **********************************************************************
+   // ISR
+   // **********************************************************************
+   ISR {
+      STRING Component= "Main Component":"@A0x01@";
+
+      //#######################################
+      // AUTOSAR standard attributes
+      //#######################################
+      UINT32 [1, 2] CATEGORY:"This parameter specifies the category of the ISR.\
+                        \ \
+                        \CATEGORY_1:\
+                        \OS services must not be used in the ISR.\
+                        \ \
+                        \CATEGORY_2:\
+                        \Most OS services may be used by the ISR.\
+                        \ \
+                        \Note:\
+                        \Although category 1 ISRs are not controlled by the OS, they have to be configured as the OS generates the interrupt vector table.\
+                        \ \
+                        \Note:\
+                        \Interrupts levels/priorities shall be configured in a way that interruption of CATEGORY 1 ISRs by CATEGORY 2 ISRs is prevented.";
+
+
+      RESOURCE_TYPE RESOURCE[]
+      :"@M0@@A0x40@\c
+      This parameter is not allowed in this implementation. It is only here to be compliant with the Autosar Standard.";
+
+
+      BOOLEAN [
+         TRUE {
+            UINT64 [0..0x7FFFFFFFFFFFFFFF] EXECUTIONTIME: "@F2@The value specifies the maximum allowed execution time of the interrupt.";
+            UINT64 [1..0x7FFFFFFFFFFFFFFF] TIMEFRAME: "@F2@This parameter specifies the minimum inter-arrival time between activations and/or releases of a task.";
+            UINT64 MAXOSINTERRUPTLOCKTIME: "@F2@This value specifies the maximum time for which the ISR is allowed to lock all Category 2 interrupts via SuspendOSInterrupts().";
+            UINT64 MAXALLINTERRUPTLOCKTIME: "@F2@This value specifies the maximum time for which the ISR is allowed to lock all interrupts via SuspendAllInterrupts() or DisableAllInterrupts().";
+            BOOLEAN OnlyMeasure= FALSE: "This choice specifies whether timing protection parameters shall only be measured.\
+                                 \ \
+                                 \TRUE: \
+                                 \All parameters will be measured, but timing fault detection is disabled.\
+                                 \ \
+                                 \FALSE: \
+                                 \Timing protection is fully enabled and the parameters are measured.";
+      
+         ENUM [
+               RESOURCELOCK {
+                  RESOURCE_TYPE RESOURCE:"This parameter defines the reference to the Resource to which the locking time budget shall be applied.";
+                  UINT64 [0..0x7FFFFFFFFFFFFFFF] RESOURCELOCKTIME: "@F2@This value specifies the maximum time the interrupt is allowed to hold the given resource.";
+               }
+              ] LOCKINGTIME []:"switches timing protection for resource locking on";
+         },
+         FALSE
+      ] TIMING_PROTECTION:"This choice specifies whether timing protection is enabled for this ISR.\
+                     \ \
+                     \TRUE: \
+                     \Timing protection is enabled.\
+                     \ \
+                     \FALSE: \
+                     \Timing protection is disabled.";
+
+
+      //#######################################
+      // specific attributes 
+      //#######################################
+
+      BOOLEAN EnableNesting=FALSE:"@DFALSE@This choice defines whether IRQs with higher priority can interrupt. This attribute is valid only for ISRs of category 2.\
+                                 \ \
+                                 \TRUE: \
+                                 \Interrupts are enabled before entering the ISR, so ISRs with higher priority can interrupt. \
+                                 \ \
+                                 \FALSE: \
+                                 \Interrupts stay disabled at the start of the ISR. \
+                                 \ \
+                                 \Note: \
+                                 \NMIs and exceptions will interrupt independent from this choice.";                      
+
+
+      ENUM [GENERAL_EXCEPTION 
+            { 
+               UINT32 ExceptionAddress= NO_DEFAULT:"Exception vector address. Must be a multiple of 16\
+               \\
+               \The interrupt vector table is generated by the operating system \c
+               \automatically. All interrupts used in a software system have to \c
+               \be entered in the OIL-configurator.";
+            },
+            EIINT
+            {
+               UINT32 [0..383] IntChannel = NO_DEFAULT:"EIINT interrupt channel.";
+
+      
+               UINT32 [0..15] InterruptPriority = 15:"@D15@EIINT interrupt priority.";
+
+      
+               UINT32 [0..0xFFFF] InterruptStackSize=NO_DEFAULT:"@D200@Interrupt stack size in bytes.";
+            }
+           ] ExceptionType=EIINT:"@DEIINT@Type of exception: EIINT or other exceptions.";
+
+
+      BOOLEAN [
+         TRUE {
+            // TR:SPMF22:0002 Start         
+            STRING FunctionName = NO_DEFAULT:"This parameter specifies the name of the interrupt handler function.";
+            // TR:SPMF22:0002 End      
+         },
+         FALSE
+      ] UseSpecialFunctionName = FALSE:"This choice specifies whether a specific function shall be selected as the interrupt handler function.\
+                              \ \
+                              \TRUE: \
+                              \A user defined function name can be entered as interupt handler. This is necessary if multiple interrupt sources share the same interrupt handler function.\
+                              \ \
+                              \FALSE: \
+                              \The ISR attribute <name> is used as function name for the ISR handler. This is the default.";
+
+   }:"This container specifies the attributes of an interrupt service routine.";
+
+
+   // **********************************************************************
+   // RESOURCE
+   // fullfills [SR:274] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+   // **********************************************************************
+   RESOURCE {
+      STRING Component= "Main Component":"@A0x01@";
+
+      //#######################################
+      // AUTOSAR standard attributes
+      //#######################################
+     ENUM [
+        STANDARD,
+        LINKED 
+        { 
+           RESOURCE_TYPE LINKEDRESOURCE:"This parameter specifies the reference to the other resource to be linked.\
+                                \ \
+                                \Note:\
+                                \The reference must be valid if OsResourceProperty is set to LINKED. \
+                                \If OsResourceProperty is not set to LINKED, this parameter is ignored.";
+        },
+        INTERNAL
+     ] RESOURCEPROPERTY:"@DSTANDARD@This parameter specifies the type of the resource.\
+                             \ \
+                             \STANDARD: \
+                             \Resource is used for temporary allocation of shared objects.\
+                             \ \
+                             \INTERNAL: \
+                             \Internal resources are not supported in this implementation.\
+                             \ \
+                             \LINKED: \
+                             \Resource is used to link two resources to the same shared object.";
+
+
+      APPLICATION_TYPE ACCESSING_APPLICATION[]:"This container lists the references to all OS Applications which shall have an access to this object.\
+      \ \
+      \Note: The owner application needs not to be listed as it has always access implicitly.";
+
+   }
+   :"@M8192@@A0x40@";
+   
+
+
+   // **********************************************************************
+   // SCHEDULETABLE
+   // fullfills [SR:275] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+   // fullfills [SR:037] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+   // fullfills [SR:151] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+   // **********************************************************************
+   SCHEDULETABLE
+   {
+      //#######################################
+      // AUTOSAR standard attributes
+      //#######################################
+      UINT64 DURATION: "This value specifies the length of the schedule table in ticks.";
+
+
+      // fullfills [SR:276] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      // fullfills [SR:039] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      BOOLEAN REPEATING:"This choice specifies whether the ScheduleTable shall continue after the final ExpiryPoint.\
+                     \ \
+                     \TRUE: \
+                     \The schedule table shall continue with the first ExpiryPoint after the final ExpiryPoint is processed and final delay is passed.\
+                     \ \
+                     \FALSE: \
+                     \The schedule table processing stops when the final ExpiryPoint is processed and final delay is passed.";
+
+
+      // fullfills [SR:277] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      COUNTER_TYPE COUNTER:"This parameter specifies the reference to the counter which drives the schedule table.";
+
+
+      // fullfills [SR:278] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      BOOLEAN [
+         TRUE {
+            ENUM [ABSOLUT{
+                      UINT64 ABSVALUE: "Specifies the absolute start time of the schedule table in ticks";
+                         },
+                  RELATIVE{
+                      UINT64 RELOFFSET: "Specifies the relative start time of the schedule table in ticks";
+                          },
+                  SYNCHRON
+            ]TYPE: "This parameter specifies the type of the autostart of the schedule table.  The options to start a schedule table correspond to the API calls to start schedule tables during runtime.\
+               \ \
+               \ABSOLUTE: \
+               \Start value equals the counter value.\
+               \ \
+               \RELATIVE: \
+               \Start value is added to current counter value.\
+               \ \
+               \SYNCHRON: \
+               \ScheduleTable is started when the global time passes 0.";
+            APPMODE_TYPE APPMODE[]:"This container lists the references to all application modes which shall start the schedule table automatically at system startup.";
+         },
+         FALSE
+      ] AUTOSTART:"IThis choice specifies whether the schedule table is started on startup of the Operating System. \
+               \ \
+               \TRUE: \
+               \The ScheduleTable is automatically started during system start-up.\
+               \ \
+               \FALSE: \
+               \The ScheduleTable has to be started explicitly by the application.\
+               \ \
+               \Note: \
+               \If the choice is set to true, at least one OsAppMode has to be referenced.";
+
+
+      // fullfills [SR:279] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      // OFFSET fullfills [SR:029] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      // ACTION fullfills [SR:016],[SR:027],[SR:028] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+      // TR:SPMF50:0001 Start    
+      // TR:SPMF50:0002 Start    
+      // TR:SPMF50:0003 Start    
+      // TR:SPMF50:0004 Start    
+      // TR:SPMF50:0005 Start    
+      // TR:SPMF50:0006 Start    
+      ENUM [
+         EXPIRY_POINT{
+            UINT64 OFFSET: "This parameter specifies the offset from the ScheduleTable start at which the ExpiryPoint is to be processed.";
+            BOOLEAN [
+               TRUE{
+                  UINT64 MAXLENGTHEN:"This value specifies the maximum positive adjustment (retardation) that may be \c
+                              \added to the ExpiryPoint offset in order to achieve synchronization."; // TR:SASR40:0416
+                  UINT64 MAXSHORTEN:"This value specifies the maximum negative adjustment (acceleration) that may be \c
+                              \added to the ExpiryPoint offset in order to achieve synchronization."; // TR:SASR40:0415
+               },
+               FALSE
+            ]ADJUST:"This choice defines whether the ExpiryPoint is adjustable or not. Adjustable means synchronization with an external global time.\
+               \ \
+               \TRUE: \
+               \ExpiryPoint execution may be retarded / advanced within the given limits to match with the external time. \
+               \ \
+               \FALSE: \
+               \ExpiryPoint timing is not manipulated.\
+               \ \
+               \Note: \
+               \An ExpiryPoint is only adjustable, if the Schedule Table synchronization strategy is set to EXPLICIT.";
+            
+            ENUM[
+              ACTIVATETASK{
+                TASK_TYPE TASK:"This parameter specifies the reference to the task that will be activated when the ExpiryPoint becomes active.";
+                  BOOLEAN [ 
+                     FALSE,
+                     TRUE {
+                        UINT64 CycleTime = NO_DEFAULT : "This value specifies the cycle time for the repetition of the activity.\
+                                             \ \
+                                             \Note: \
+                                             \The value has to be greater than 0";
+                     }
+                  ]Cyclic = FALSE : "@DFALSE@This choice defines whether this activity of the ExpiryPoint shall be repeated cyclically within the ScheduleTable duration.\
+                                    \ \
+                                    \TRUE: \
+                                    \Activity is executed cyclically.\
+                                    \ \
+                                    \FALSE: \
+                                    \Activity is executed once.";
+             },
+             SETEVENT{
+                  EVENT_TYPE EVENT:"This parameter specifies the reference to the OS Event that will be set when the ExpiryPoint becomes active.";
+                  TASK_TYPE TASK:"The task, the event shall be sent to, is defined here.";
+                  BOOLEAN [ 
+                     FALSE,
+                     TRUE {
+                        UINT64 CycleTime = NO_DEFAULT : "TThis value specifies the cycle time for the repetition of the activity.\
+                                             \ \
+                                             \Note: \
+                                             \The value has to be greater than 0";
+                     }
+                  ]Cyclic = FALSE : "@DFALSE@This choice defines whether this activity of the ExpiryPoint shall be repeated cyclically within the ScheduleTable duration.\
+                                    \ \
+                                    \TRUE: \
+                                    \Activity is executed cyclically.\
+                                    \ \
+                                    \FALSE: \
+                                    \Activity is executed once.";
+             }
+           ]ACTION []:"A list of all actions which have to be triggered if this expiry point is reached.";
+         }
+      ]EXPIRY_POINT []:"This container specifies the attributes of an ExpiryPoint, i.e. the  time interval of the ScheduleTable at which tasks are activated and/or OS Events set.";
+      // TR:SPMF50:0001 End    
+      // TR:SPMF50:0002 End    
+      // TR:SPMF50:0003 End    
+      // TR:SPMF50:0004 End    
+      // TR:SPMF50:0005 End    
+      // TR:SPMF50:0006 End    
+      // List of ACTION fullfills [SR:016] of $\AutosarOS\general\Generation5\_doc\12_SystemRequirements\RequirementsSpec_MicrosarOS.doc
+
+
+           BOOLEAN [
+               TRUE {
+                ENUM[
+                  EXPLICIT{
+                     UINT64 PRECISION: "This value specifies the limit to set the ScheduleTable to 'out of sync'. \
+                              \This value is required only when the synchronization strategy is set to EXPLICIT.\
+                              \In that case the ScheduleTable will be set to 'out of sync' whenever the difference \
+                              \between the global time and the internal counter exceeds this limit.";
+                  },
+                  IMPLICIT,
+                  NONE
+               ]SYNC_STRATEGY=NONE:"This parameter specifies the synchronization strategy for the ScheduleTable.\
+                              \ \
+                              \EXPLICIT: \
+                              \ExpiryPoints can be adjusted to an external time base.\
+                              \ \
+                              \IMPLICIT: \
+                              \Synchronous start of the ScheduleTable is possible. \
+                              \ExpiryPoints are synchronous by definition.\
+                              \ \
+                              \NONE: \
+                              \ScheduleTable is always running asynchronous.";
+               },
+               FALSE
+            ] LOCAL_TO_GLOBAL_TIME_SYNCHRONIZATION = FALSE:"If selected, this schedule table \c
+            \might be synchronized to a global time by means of the OS-service SyncScheduleTable. \c
+            \If not selected, no synchronization is possible with this schedule table.";
+      
+
+
+      APPLICATION_TYPE ACCESSING_APPLICATION[]:"This container lists the references to all OS Applications which shall have an access to this object.\
+      \ \
+      \Note: The owner application needs not to be listed as it has always access implicitly.";
+
+   }
+   :"@M65535@";
+
+
+
+
+   // **********************************************************************
+   // NM / APPMODE
+   // **********************************************************************
+
+
+   NM {}:"@M0@";
+
+   APPMODE {}:"@M8@This parameter specifies an OS AppMode. OsAppMode is the object used to define the OS behavior at system start-up.\
+   \ \
+   \An OsAppMode called OSDEFAULTAPPMODE exists for OSEK/VDX compatibility.";
+}:"@B1:Components:Off@
+@B2:Procedure Support:Off@
+@B3:Internal Trace:Off@
+@B4:API Optimization:On@
+@B6:Application Modes:On@
+@B7:Resource Usage:On@
+@B8:Timing Analysis:Off@
+@B9:Semaphores:Off@
+
+
+@V:1.06.02@
+@X:1.06.02@
+
+";
+
+// End of RH850_P1M.i41
+

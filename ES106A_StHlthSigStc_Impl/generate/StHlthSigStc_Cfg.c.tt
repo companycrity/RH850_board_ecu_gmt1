@@ -1,0 +1,172 @@
+<#@ AutosarXml processor="ArDirectiveProcessor" requires="arPrefix='ar';arNamespace='http://autosar.org/4.0.3'" #><#@ template inherits="AutosarDirectiveProcessor.ArGtcBase" debug="true" #><#@ output extension="" #><#@ include file="Helper.tt" #><#@ include file="Logger.tt" #><#@ include file="StHlthSigStc_helper.tt" #><#
+#>/**********************************************************************************************************************
+* Copyright 2015, 2016 Nexteer 
+* Nexteer Confidential
+*
+* Module File Name: StHlthSigStc_Cfg.c
+* Module Description: Code generator for user configurations of State of Health Signal Statistics
+* Project           : CBD
+* Author            : Akilan Rathakrishnan
+***********************************************************************************************************************
+* Version Control:
+* %version:          2 %
+* %derived_by:       tzyksv %
+*----------------------------------------------------------------------------------------------------------------------
+* Date      Rev      Author         Change Description                                                           SCR #
+* -------   -------  --------  ---------------------------------------------------------------------------     --------
+* 02/15/16  1        AR        Initial Version																	EA4#3760
+* 05/05/16  2        AR        Updated for EA4#5553                                                             EA4#5553
+**********************************************************************************************************************/
+
+/************************************************ Include Statements *************************************************/
+#include "Rte_StHlthSigStc.h"
+#include "Std_Types.h"
+#include "os.h"
+#include "osek.h"
+#include "StHlthSigStc_Cfg.h"
+
+
+<# uint SignalCount = 0; #>
+<# ChangeContext( Xp.ModuleConfAtDefRefTo( "StHlthSigStc" ) ); #>
+<# !LOOP( Xp.ContainerAtDefRefTo( "StHlthSigStcSignalList" ) ) #>
+<# SignalCount++; #>
+<# !ENDLOOP #>
+/******************************************** File Level Rule Deviations *********************************************/
+
+/****************************************************** Macros *******************************************************/
+#define StHlthSigStc_START_SEC_CODE
+#include "StHlthSigStc_MemMap.h" 
+<#     
+string  SignalName;
+bool UpdatedInMotorIsr;
+string TaskReference;
+uint LoopCount = 0;
+string CrcStartSymbol;
+uint NvmOffsetNext = 1; /* Considering CRC byte at start */
+uint RamOffsetNext = 0;
+uint NvmOffsetCurrent = 1; /* Considering CRC byte at start */
+uint RamOffsetCurrent = 0;
+string ErrorText ="";
+uint SampleCount = 0;
+#>
+
+<# !LOOP( Xp.ContainerAtDefRefTo("StHlthSigStcSignalList" )) #>
+<# SignalName = ValueOf( Xp.ValueAtDefRefTo("StHlthSigStcSignalSettings/StHlthSigStcSignalName")); #>
+/* Wrapper function to get State of Health Signal data for the signal <#=SignalName#> */ 
+static FUNC(uint8, RTE_STHLTHSIGSTC_APPL_CODE) StHlthSigStc_Get<#=SignalName#>Val(void);
+<# !ENDLOOP #>
+
+
+
+<# 
+if(SignalCount > 0) 
+{ #>
+/* CRC Symbols to be referred from configuration */
+<# !LOOP( Xp.ContainerAtDefRefTo( "StHlthSigStcCrConfigList" ) ) #>
+<# CrcStartSymbol = ValueOf( Xp.ValueAtDefRefTo("StHlthSigStcCrConfigList/StHlthSigStcCrcStartSymbol"));#>
+extern CONST(uint32, AUTOMATIC) <#= CrcStartSymbol #>;
+<# !ENDLOOP #>
+
+/****************************** State of Health Signal Configurations ****************************************/
+CONST(StHlthSigStcPrmRec1, StHlthSigStc_CONST) StHlthSigStcPrmRecInst[SIGCNT_ULS_U08] =
+{
+<# !LOOP( Xp.ContainerAtDefRefTo("StHlthSigStcSignalList" )) #>
+    {
+<#
+
+    SignalName = ValueOf( Xp.ValueAtDefRefTo("StHlthSigStcSignalSettings/StHlthSigStcSignalName"));
+    UpdatedInMotorIsr = ValueOf( Xp.ValueAtDefRefTo("StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr"));
+    SampleCount = ValueOf( Xp.ValueAtDefRefTo("StHlthSigStcSignalSettings/StHlthSigStcLoopTime"));
+    
+    if(SampleCount == 0)
+    {   /* Throw error and exit*/
+        ErrorText = "\n**ERROR**\nStHlthSigStcConfigErr_005: Loop-time cannot be 0. Please check StHlthSigStcLoopTime parameter for the signal " + SignalName +"\n";
+        Assert(false, ErrorText);
+    }    
+    
+    SampleCount = 1000000/SampleCount;
+    TaskReference = "";
+	if (Exists (Xp.DefRefTo("StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference")))
+    {    
+        TaskReference = LastValueSegmentOf( Xp.ValueRefAtDefRefTo( "StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference" ));
+    }
+    
+    if (UpdatedInMotorIsr != false) 
+    {
+        if(TaskReference != "")
+        {   /* Throw error and exit*/
+            ErrorText = "\n**ERROR**\nStHlthSigStcConfigErr_001: Samples cannot be taken from both Motor ISR and from a Task. Please check StHlthSigStcUpdatedInMotorIsr and StHlthSigStcSignalTaskReference parameters for the signal " + SignalName +"\n";
+            Assert(false, ErrorText);
+        }
+    }
+    else
+    {
+        if(TaskReference == "")
+        {   /* Throw error and exit*/
+            ErrorText = "\n**ERROR**\nStHlthSigStcConfigErr_004: Source of update for every signal has to be mentioned. Please check StHlthSigStcUpdatedInMotorIsr and StHlthSigStcSignalTaskReference parameters for the signal " + SignalName +"\n";
+            Assert(false, ErrorText);
+        }    
+    }   
+
+    if (UpdatedInMotorIsr != false)
+    {
+        TaskReference = "MOTISRREF_CNT_U16";        
+    }
+    /* NVM size required for each signal: Max value - 1  byte, Min Value - 1 byte, 
+    Average Value - 2 byte, ECU life cycle sample counter - 4 bytes: Total 8 bytes */
+    NvmOffsetNext = NvmOffsetNext + 8; 
+    /* RAM size required for each signal: Raw Value - 1 byte, Max value - 1  byte, Min Value - 1 byte */    
+    RamOffsetNext = RamOffsetNext+3;                
+
+    LoopCount++;
+#>   
+        /* State of Health data get function */               &StHlthSigStc_Get<#=SignalName#>Val, 
+        /* Samples per second */                              <#= SampleCount #>U,	
+        /* Task in which signal is updated */                 <#= TaskReference #>,         
+        /* Sample storage offset in the SoHS RAM buffer */    <#= FormatHex(RamOffsetCurrent) #>U,
+        /* Start sample location of the signal in the NVM*/   <#= NvmOffsetCurrent #>U,	
+    },
+<# 
+    NvmOffsetCurrent = NvmOffsetNext;
+    RamOffsetCurrent = RamOffsetNext;
+#>
+<# !ENDLOOP #>
+<# WriteReport(); #>
+};
+
+/* CRC configurations */
+CONST(StHlthSigStcCrcAdrRec1, StHlthSigStc_CONST) StHlthSigStcCrcAdrRecInst[NROFCRCAREA_CNT_U08] =
+{
+<# !LOOP( Xp.ContainerAtDefRefTo( "StHlthSigStcCrConfigList" ) ) #>
+<#CrcStartSymbol = ValueOf( Xp.ValueAtDefRefTo("StHlthSigStcCrConfigList/StHlthSigStcCrcStartSymbol"));#>
+    {
+        (P2CONST(uint32, AUTOMATIC, AUTOMATIC))&<#= CrcStartSymbol #>,
+    },
+<# !ENDLOOP #>
+};
+/* Overall configuration structure */
+CONST(StHlthSigStcCfgRec1, StHlthSigStc_CONST) StHlthSigStcCfgRecInst =
+{
+  &StHlthSigStcPrmRecInst[0],
+  &StHlthSigStcCrcAdrRecInst[0]
+};
+
+<# } #>
+
+<# !LOOP( Xp.ContainerAtDefRefTo("StHlthSigStcSignalList" )) #>
+<# SignalName = ValueOf( Xp.ValueAtDefRefTo("StHlthSigStcSignalSettings/StHlthSigStcSignalName")); #>
+/* Wrapper function to get State of Health Signal data for the signal <#=SignalName#> */ 
+static FUNC(uint8, RTE_STHLTHSIGSTC_APPL_CODE) StHlthSigStc_Get<#=SignalName#>Val(void)
+{
+    uint8 RetVal = 0U;
+    
+    (void)Rte_Read_<#=SignalName#>_Val(&RetVal);
+     
+     return(RetVal);
+}
+<# !ENDLOOP #>
+
+#define StHlthSigStc_STOP_SEC_CODE
+#include "StHlthSigStc_MemMap.h"
+
+

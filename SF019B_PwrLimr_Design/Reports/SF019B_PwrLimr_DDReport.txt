@@ -1,0 +1,162 @@
+Verification of SF019B_PwrLimr_DataDict
+31-Mar-2016 13:46:32
+Tool Release:  2.36.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+[Warning: In workspace, CSArguments.EngMin is not within the data types Min/Max limits and has been limited to 0.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMax is not within the data types Min/Max limits and has been limited to 4294967295.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMin is not within the data types Min/Max limits and has been limited to 0.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMax is not within the data types Min/Max limits and has been limited to 4294967295.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMin is not within the data types Min/Max limits and has been limited to 0.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMax is not within the data types Min/Max limits and has been limited to 4294967295.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMin is not within the data types Min/Max limits and has been limited to 0.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMax is not within the data types Min/Max limits and has been limited to 65535.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMin is not within the data types Min/Max limits and has been limited to 0.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMax is not within the data types Min/Max limits and has been limited to 255.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMin is not within the data types Min/Max limits and has been limited to 0.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMax is not within the data types Min/Max limits and has been limited to 255.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMin is not within the data types Min/Max limits and has been limited to 0.
+Please update your saved files.] 
+[Warning: In workspace, CSArguments.EngMax is not within the data types Min/Max limits and has been limited to 65535.
+Please update your saved files.] 
+(errors: 14)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 3, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 3, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+AltFltActv                  	Cannot match name to list of known Nexteer signals.
+(variables: 6, errors: 1)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+PwrLimrRednFac              	Name does not match required pattern.
+(variables: 2, errors: 1)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+MotEnvlpSpd                 	.Description: 	Field is empty.
+(variables: 3, errors: 1)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+PwrLimrAssiRednLpFilFrq          	.TuningOwner:   Value is '?'.
+PwrLimrBackEmfConStdT            	.TuningOwner:   Value is '?'.
+PwrLimrBrdgVltgAdjSlew           	.TuningOwner:   Value is '?'.
+PwrLimrBrdgVltgAltFltAdj         	.TuningOwner:   Value is '?'.
+PwrLimrFilAssiRednThd            	.TuningOwner:   Value is '?'.
+PwrLimrLoVoltAssiRcvrThd         	.TuningOwner:   Value is '?'.
+PwrLimrLoVoltAssiRcvrTi          	.TuningOwner:   Value is '?'.
+PwrLimrMotEnvlpX                 	.TuningOwner:   Value is '?'.
+PwrLimrMotEnvlpY                 	.TuningOwner:   Value is '?'.
+PwrLimrMotVelLpFilFrq            	.TuningOwner:   Value is '?'.
+PwrLimrSpdAdjSlewDec             	.TuningOwner:   Value is '?'.
+PwrLimrSpdAdjSlewEna             	.TuningOwner:   Value is '?'.
+PwrLimrSpdAdjSlewInc             	.TuningOwner:   Value is '?'.
+PwrLimrStdOperMotEnvlpX          	.TuningOwner:   Value is '?'.
+PwrLimrStdOperMotEnvlpY          	.TuningOwner:   Value is '?'.
+PwrLimrVltgDptMotVelOffsX        	.TuningOwner:   Value is '?'.
+PwrLimrVltgDptMotVelOffsY        	.TuningOwner:   Value is '?'.
+(variables: 17, errors: 17)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 13, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+MotVelLpFil                 	.DocUnits:    	Field is empty.
+TqLimAssiRednLpFil          	.DocUnits:    	Field is empty.
+(variables: 8, errors: 2)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 7, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 1, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 1, errors: 0)
+
+------
+OTHER:
+------
+Hold_Prev_value:            	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+(variables: 0, errors: 1)
+ 
+************************
+Grand Totals:
+65 variables,  37 issues to fix.
+
+
+End of Report

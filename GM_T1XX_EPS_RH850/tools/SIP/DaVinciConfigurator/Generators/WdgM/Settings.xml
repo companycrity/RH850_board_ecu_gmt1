@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Settings>
+	<Settings Name="com.vector.cfg.gen.extgens.tttech.wdg.settings">
+		<Settings Name="ModuleList">
+			<Settings Name="WdgM">
+				<Setting Name="Package" Value="/TTTECH"/>
+				<Setting Name="ModuleName" Value="WdgM"/>
+				<Setting Name="GeneratorPath" Value="$(SipRootPath)\..\..\..\WdgM\generate\Wdg_Mgr_Cfg_Gen.exe"/>
+				<Setting Name="SwcXsltPath" Value="$(SipRootPath)\..\..\..\WdgM\generate\SWC_WdgM.xsl"/>
+			</Settings>
+		</Settings>
+	</Settings>
+	<!-- internal behavior -->
+	<Settings Name="com.vector.cfg.model.services.bswintbehavior.synchronization.Settings">
+		<Settings Name="ModuleList">
+			<Settings Name="If_AsrWdgIfTttechSub">
+				<XmlSetting Name="Xml"><![CDATA[
+          <Synchronization>
+            <BswImplementationName>/TTTECH/WdgM_Impl</BswImplementationName>
+            <ModuleName>WdgM</ModuleName>
+            <ExclusiveAreas>
+              <ExclusiveArea name="WDGM_EXCLUSIVE_AREA_0"/>
+            </ExclusiveAreas>
+            <TimingEvents>
+				<Event entityName="WdgM_MainFunction"> 
+					<DefRef package="/TTTECH" moduleDefRef="WdgM/WdgMConfigSet/WdgMMode/WdgMSupervisionCycle"/>
+					</Event>
+            </TimingEvents>
+          </Synchronization>
+          ]]></XmlSetting>
+			</Settings>
+		</Settings>
+	</Settings>
+</Settings>

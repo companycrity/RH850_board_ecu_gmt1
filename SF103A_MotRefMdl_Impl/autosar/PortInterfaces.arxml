@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file was saved with a tool from Vector Informatik GmbH
+-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Nexteer</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>Calibrations</SHORT-NAME>
+          <ELEMENTS>
+            <PARAMETER-INTERFACE UUID="9C25DFE9-F857-4050-B224-692C873997A8">
+              <SHORT-NAME>Ag4</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="11E22733-CA96-46EB-BE2D-A7FFE9257ABB">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Ag13</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="2FC1554C-A061-4895-A451-6AACEAE77E59">
+              <SHORT-NAME>AgAry1D2</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="B6691907-9383-4540-84DA-1CBDA1E2957C">
+                  <SHORT-NAME>Ary1D</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-ARRAY-DATA-TYPE">/Nexteer/DataTypes/AgAry1D4</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="67EEB1EB-03FB-4B4B-BA64-177331243EE7">
+              <SHORT-NAME>Cnt6</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="A4A1EC96-58FF-4C89-81F7-082C5E7F794B">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Cnt14</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="3759896F-64E2-4A88-AB94-251D9DAEE858">
+              <SHORT-NAME>Cnt7</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="61245C5E-DEE6-44E7-A4AA-8BE754047F5E">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Cnt28</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="DDCEAE1A-7F46-4756-BB4A-710D32E92BAF">
+              <SHORT-NAME>Cnt8</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="457C5F0E-8D37-4BE8-BE09-2F2F58D0E615">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Cnt29</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="2CB82499-ED00-4AA3-8C11-2ECAB88903F8">
+              <SHORT-NAME>Curr3</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="0332CB65-1C76-4FAF-9C0E-107DC5978CF9">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Curr9</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="B533F04E-D08A-4747-8982-2898A9CC95E7">
+              <SHORT-NAME>Frq2</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="2E873E7A-170A-495E-BA65-41C22FC46C67">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Frq2</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="1F550159-85D4-4755-A8C1-D29B2399E381">
+              <SHORT-NAME>Logl1</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="D99CAE3A-5DF8-4179-BAFD-9D152FB2E833">
+                  <SHORT-NAME>Logl</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Logl1</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="C595394B-C36A-47C7-8A00-688261820D5E">
+              <SHORT-NAME>Ti9</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="30255428-C303-4079-B69B-FDDBE6094308">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Ti12</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="3DF29EA7-9DCA-4ACB-A617-B49C58A76608">
+              <SHORT-NAME>TqAry1D1</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="0D05B358-4807-4A87-A69E-A55BA65C15EE">
+                  <SHORT-NAME>Ary1D</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-ARRAY-DATA-TYPE">/Nexteer/DataTypes/TqAry1D6</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="4CCDFAEB-0B1B-47C5-853B-CB726FAB0146">
+              <SHORT-NAME>Uls3</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="7751DC06-AAB3-412B-9754-9F37958D3BF1">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Uls9</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="B0DAC0F0-0E13-43B4-BD5C-99E3EBA3CE62">
+              <SHORT-NAME>Uls4</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="91ABC2A0-115D-4706-8C05-7951EC657F4C">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Uls2</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="79B02933-8F1E-4CF0-A98D-4E28A5274D1D">
+              <SHORT-NAME>Uls6</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="3F81924B-20F6-4411-AA31-B138D83CC800">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Uls14</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="11633B79-F6BD-40D9-A5BA-C6050B3582AB">
+              <SHORT-NAME>UlsAry1D3</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="1335069D-4046-48C0-960F-934CBCA63F0A">
+                  <SHORT-NAME>Ary1D</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-ARRAY-DATA-TYPE">/Nexteer/DataTypes/UlsAry1D5</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="CDC1F30E-902E-459F-AA4D-2D6B40E3C1DE">
+              <SHORT-NAME>VelAry1D3</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="F5C9C857-57EA-4FC3-9034-9ECAF9249E5B">
+                  <SHORT-NAME>Ary1D</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-ARRAY-DATA-TYPE">/Nexteer/DataTypes/VelAry1D3</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+            <PARAMETER-INTERFACE UUID="B4915E1C-F69E-479C-8ED9-0B6F739B390B">
+              <SHORT-NAME>VoltAry1D1</SHORT-NAME>
+              <PARAMETERS>
+                <PARAMETER-DATA-PROTOTYPE UUID="FBE8EC60-67A5-4C94-BF35-43EA8C7296C9">
+                  <SHORT-NAME>Ary1D</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-ARRAY-DATA-TYPE">/Nexteer/DataTypes/VoltAry1D1</TYPE-TREF>
+                </PARAMETER-DATA-PROTOTYPE>
+              </PARAMETERS>
+            </PARAMETER-INTERFACE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>PortInterfaces</SHORT-NAME>
+          <ELEMENTS>
+            <SENDER-RECEIVER-INTERFACE UUID="4BF2FC76-EB78-4F25-A5A6-D270A8002544">
+              <SHORT-NAME>Ag6</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="46C61FF2-070C-44F3-8777-965B52729F72">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Ag10</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/Ag6/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="3BFA6E11-C39A-4676-940D-80A855DE6C41">
+              <SHORT-NAME>Curr2</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="FC9BF521-D4AE-4266-8FAE-C43030ABF59A">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Curr6</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/Curr2/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="FAD5B641-A520-472C-B80E-06DF649DC73F">
+              <SHORT-NAME>Curr3</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="97D403A0-CB28-46B5-B017-49070BE087F3">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Curr7</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/Curr3/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="C5407D1B-FB4C-43FF-8E72-AE4CBE8AD24F">
+              <SHORT-NAME>float32_PortIf1</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="2079986A-92B1-4D02-808D-3609D534038B">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/PlatformTypes/float32</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/float32_PortIf1/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="81B1244E-210A-402A-B3FA-156A1B41C306">
+              <SHORT-NAME>Indu2</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="5A29835D-BA9B-4DE6-AFC6-1D633BFC1514">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Indu1</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/Indu2/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="C2335700-DEA0-4897-97E6-839D2B7113AE">
+              <SHORT-NAME>Logl2</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="C29F4098-E6AD-47CB-B4AF-11D0D8ABD3B1">
+                  <SHORT-NAME>Logl</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Logl1</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/Logl2/Logl</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="4619E1F2-8528-42F9-B009-DBC33D361132">
+              <SHORT-NAME>MotCon1</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="1876CEAF-234D-4B5F-8FC9-24B36E8109AF">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/MotCon1</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/MotCon1/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="0A0C3389-777B-46AC-A03F-2F1AA3AA4985">
+              <SHORT-NAME>MotQuad1</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="CB493E60-E5E4-4295-82DA-2FFF6C03960E">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Nexteer/DataTypes/MotQuad1</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/MotQuad1/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="DD2ECD17-225B-4B52-9018-C57864EE2956">
+              <SHORT-NAME>R4</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="90EC857E-6B7B-4CC5-86E1-483E3D7C2981">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/R5</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/R4/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="0F94E634-3EC9-4057-8F6D-C7E3758CC180">
+              <SHORT-NAME>R5</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="7AD29F7D-DA2C-487A-9080-D7AB44DC994C">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/R7</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/R5/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="BB064DCC-B429-4E6A-B3E4-49E706B3024C">
+              <SHORT-NAME>Tq1</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="54994C9E-D119-4E53-93FA-D48AED0F9314">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Tq1</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/Tq1/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="4DC45A7A-841A-4F41-B284-5BE3C30442CC">
+              <SHORT-NAME>Vel1</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="29A721C3-5142-49E8-964D-7BAE98CCE674">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Vel1</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/Vel1/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="6FFB1242-2C9D-496A-A4F5-CD402F1686CC">
+              <SHORT-NAME>Volt1</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="CE2883C8-A01D-43F6-9717-6CB0D50DBD7B">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Volt1</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/Volt1/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+            <SENDER-RECEIVER-INTERFACE UUID="CBE360FC-9279-4EAC-9BD3-F3F344583878">
+              <SHORT-NAME>Volt6</SHORT-NAME>
+              <IS-SERVICE>false</IS-SERVICE>
+              <DATA-ELEMENTS>
+                <VARIABLE-DATA-PROTOTYPE UUID="A52C2285-B16D-4BB3-81EA-09B334071004">
+                  <SHORT-NAME>Val</SHORT-NAME>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                  <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Nexteer/DataTypes/Volt17</TYPE-TREF>
+                </VARIABLE-DATA-PROTOTYPE>
+              </DATA-ELEMENTS>
+              <INVALIDATION-POLICYS>
+                <INVALIDATION-POLICY>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Nexteer/PortInterfaces/Volt6/Val</DATA-ELEMENT-REF>
+                  <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                </INVALIDATION-POLICY>
+              </INVALIDATION-POLICYS>
+            </SENDER-RECEIVER-INTERFACE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

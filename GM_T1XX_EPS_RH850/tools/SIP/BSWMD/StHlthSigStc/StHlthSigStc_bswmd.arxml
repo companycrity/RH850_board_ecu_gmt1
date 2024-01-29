@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-0-3.xsd"><ADMIN-DATA>
+    <DOC-REVISIONS>
+      <DOC-REVISION>
+        <REVISION-LABEL>4.2.0</REVISION-LABEL>
+        <ISSUED-BY>AUTOSAR</ISSUED-BY>
+        <DATE>2011-11-09</DATE>
+      </DOC-REVISION>
+    </DOC-REVISIONS>
+  </ADMIN-DATA><AR-PACKAGES>
+    <AR-PACKAGE UUID="4133f0ac-ad89-4e1f-9c43-880a721fbe18">
+      <SHORT-NAME>Nexteer</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-DEF UUID="ECUC:0bcd9041-886e-56ce-90b0-227a9f4bfc24">
+          <SHORT-NAME>StHlthSigStc</SHORT-NAME>
+          <DESC>
+            <L-2 L="EN"/>
+          </DESC>
+          <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+          <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+          <SUPPORTED-CONFIG-VARIANTS>
+            <SUPPORTED-CONFIG-VARIANT>VARIANT-PRE-COMPILE</SUPPORTED-CONFIG-VARIANT>
+          </SUPPORTED-CONFIG-VARIANTS>
+          <CONTAINERS>
+            <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:8604d97e-231c-526f-ae80-037542dc260e">
+              <SHORT-NAME>StHlthSigStcSignalList</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">List of signals to be monitored by State of Health Software
+</L-2>
+              </DESC>
+              <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+              <UPPER-MULTIPLICITY>65536</UPPER-MULTIPLICITY>
+              <SUB-CONTAINERS>
+                <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:ae720b5e-6356-574b-bd67-860610d1da97">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Signal Basic Settings
+</L-2>
+                  </DESC>
+                  <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                  <PARAMETERS>
+                    <ECUC-STRING-PARAM-DEF UUID="ECUC:3628668c-8457-50f6-885d-f8805646302c">
+                      <SHORT-NAME>StHlthSigStcSignalName</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Monitored Signal Name
+</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <IMPLEMENTATION-CONFIG-CLASSES>
+                        <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                        <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>LINK</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-LINK-TIME</CONFIG-VARIANT>
+                        </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                        <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+                        </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                      </IMPLEMENTATION-CONFIG-CLASSES>
+                      <ORIGIN>Nexteer</ORIGIN>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <ECUC-STRING-PARAM-DEF-VARIANTS>
+                        <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                          <DEFAULT-VALUE></DEFAULT-VALUE>
+                        </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                      </ECUC-STRING-PARAM-DEF-VARIANTS>
+                    </ECUC-STRING-PARAM-DEF>
+                    <ECUC-INTEGER-PARAM-DEF UUID="ECUC:fb0de1d2-6168-5249-99c8-4445c6c54fd6">
+                      <SHORT-NAME>StHlthSigStcLoopTime</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Time interval by which the signal gets updated
+</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <IMPLEMENTATION-CONFIG-CLASSES>
+                        <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                        <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>LINK</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-LINK-TIME</CONFIG-VARIANT>
+                        </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                        <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+                        </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                      </IMPLEMENTATION-CONFIG-CLASSES>
+                      <ORIGIN>Nexteer</ORIGIN>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>1</DEFAULT-VALUE>
+                      <MAX>100000</MAX>
+                      <MIN>1</MIN>
+                    </ECUC-INTEGER-PARAM-DEF>                   
+                    <ECUC-BOOLEAN-PARAM-DEF UUID="ECUC:75b74cdf-5c4e-5cd5-8ada-4fd006607a9a">
+                      <SHORT-NAME>StHlthSigStcUpdatedInMotorIsr</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Signal updated in Motor ISR
+</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <IMPLEMENTATION-CONFIG-CLASSES>
+                        <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                        <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>LINK</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-LINK-TIME</CONFIG-VARIANT>
+                        </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                        <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+                        </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                      </IMPLEMENTATION-CONFIG-CLASSES>
+                      <ORIGIN>Nexteer</ORIGIN>
+                      <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+                      <DEFAULT-VALUE>false</DEFAULT-VALUE>
+                    </ECUC-BOOLEAN-PARAM-DEF>                    
+                  </PARAMETERS>
+                  <REFERENCES>
+                    <ECUC-REFERENCE-DEF UUID="ECUC:ac9efd7a-49a0-5a3d-a123-329987d4c278">
+                      <SHORT-NAME>StHlthSigStcSignalTaskReference</SHORT-NAME>
+                      <DESC>
+                        <L-2 L="EN">Reference to the OS task in which this signal is updated. This  need not be updated if the signal is updated in Motor ISR
+</L-2>
+                      </DESC>
+                      <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                      <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                      <IMPLEMENTATION-CONFIG-CLASSES>
+                        <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                          <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                          <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                        </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                      </IMPLEMENTATION-CONFIG-CLASSES>
+                      <ORIGIN>Nexteer</ORIGIN>
+                      <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/Os/OsTask</DESTINATION-REF>
+                    </ECUC-REFERENCE-DEF>            
+                  </REFERENCES>        
+                </ECUC-PARAM-CONF-CONTAINER-DEF>
+            </SUB-CONTAINERS>
+            </ECUC-PARAM-CONF-CONTAINER-DEF>
+            <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:e6fed8ac-0bbf-51bd-aa95-9210d1222e36">
+              <SHORT-NAME>StHlthSigStcCrConfigList</SHORT-NAME>
+              <DESC>
+                <L-2>EN</L-2>
+              </DESC>
+              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+              <UPPER-MULTIPLICITY>10</UPPER-MULTIPLICITY>
+              <PARAMETERS>
+             <ECUC-STRING-PARAM-DEF UUID="ECUC:3628668c-8457-50f6-885d-f8805646302c">
+              <SHORT-NAME>StHlthSigStcCrcStartSymbol</SHORT-NAME>
+              <DESC>
+                <L-2 L="EN">Start area of CRC
+</L-2>
+              </DESC>
+              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+              <UPPER-MULTIPLICITY>10</UPPER-MULTIPLICITY>
+              <IMPLEMENTATION-CONFIG-CLASSES>
+                <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                  <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                  <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                  <CONFIG-CLASS>LINK</CONFIG-CLASS>
+                  <CONFIG-VARIANT>VARIANT-LINK-TIME</CONFIG-VARIANT>
+                </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                  <CONFIG-CLASS>POST-BUILD</CONFIG-CLASS>
+                  <CONFIG-VARIANT>VARIANT-POST-BUILD</CONFIG-VARIANT>
+                </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+              </IMPLEMENTATION-CONFIG-CLASSES>
+              <ORIGIN>Nexteer</ORIGIN>
+              <SYMBOLIC-NAME-VALUE>false</SYMBOLIC-NAME-VALUE>
+              <ECUC-STRING-PARAM-DEF-VARIANTS>
+                <ECUC-STRING-PARAM-DEF-CONDITIONAL>
+                  <DEFAULT-VALUE></DEFAULT-VALUE>
+                </ECUC-STRING-PARAM-DEF-CONDITIONAL>
+              </ECUC-STRING-PARAM-DEF-VARIANTS>
+            </ECUC-STRING-PARAM-DEF> 
+            </PARAMETERS>
+            </ECUC-PARAM-CONF-CONTAINER-DEF>
+            <ECUC-PARAM-CONF-CONTAINER-DEF UUID="ECUC:e6fed8ac-0bbf-51bd-aa95-9210d1222e36">
+              <SHORT-NAME>StHlthSigStcApplicationConfig</SHORT-NAME>
+              <DESC>
+                <L-2>EN</L-2>
+              </DESC>
+              <LOWER-MULTIPLICITY>1</LOWER-MULTIPLICITY>
+              <UPPER-MULTIPLICITY>10</UPPER-MULTIPLICITY>
+              <PARAMETERS>
+                <ECUC-REFERENCE-DEF UUID="ECUC:ac9efd7a-49a0-5a3d-a123-329987d4c278">
+                  <SHORT-NAME>StHlthSigStcOsApplicationReference</SHORT-NAME>
+                  <DESC>
+                    <L-2 L="EN">Application in which StHlthSigStc component is running
+</L-2>
+                  </DESC>
+                  <LOWER-MULTIPLICITY>0</LOWER-MULTIPLICITY>
+                  <UPPER-MULTIPLICITY>1</UPPER-MULTIPLICITY>
+                  <IMPLEMENTATION-CONFIG-CLASSES>
+                    <ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                      <CONFIG-CLASS>PRE-COMPILE</CONFIG-CLASS>
+                      <CONFIG-VARIANT>VARIANT-PRE-COMPILE</CONFIG-VARIANT>
+                    </ECUC-IMPLEMENTATION-CONFIGURATION-CLASS>
+                  </IMPLEMENTATION-CONFIG-CLASSES>
+                  <ORIGIN>Nexteer</ORIGIN>
+                  <DESTINATION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR/EcucDefs/Os/OsApplication</DESTINATION-REF>
+                </ECUC-REFERENCE-DEF>                
+            </PARAMETERS>         
+            </ECUC-PARAM-CONF-CONTAINER-DEF>              
+          </CONTAINERS>
+        </ECUC-MODULE-DEF>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES></AUTOSAR>

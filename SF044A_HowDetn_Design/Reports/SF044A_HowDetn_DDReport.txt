@@ -1,0 +1,131 @@
+Verification of SF044A_HowDetn_DataDict
+21-Nov-2016 14:05:14
+Tool Release:  2.50.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+[Warning: In workspace, Struct.EngMin has been increased to the EngMin of the Struct data type.
+Please update your saved files.] 
+[> In <a href="matlab: opentoline('C:\Users\xzb1db\Desktop\Sneha_Work\04. FDD_Tools\Data_Management v2.50.0\+bt\@struct\struct.m',44,1)">struct.struct>struct.validateUserEngMin at 44</a>
+  In <a href="matlab: opentoline('C:\Users\xzb1db\Desktop\Sneha_Work\04. FDD_Tools\Data_Management v2.50.0\+DataDict\@PIM\PIM.m',139,1)">PIM.PIM>PIM.set.EngMin at 139</a>
+  In <a href="matlab: opentoline('C:\Users\xzb1db\Desktop\Sneha_Work\01_EA4_FDDs\SF044A_HowDetn_Design\21Nov2016\SF044A_HowDetn_DataDict.m',680,1)">SF044A_HowDetn_DataDict at 680</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2013b\toolbox\matlab\lang\run.m',63,1)">run at 63</a>
+  In C:\Users\xzb1db\Desktop\Sneha_Work\04. FDD_Tools\Tools v2.1.0\Design_Tools\VerifyDD.p>ImportVars at 2085
+  In C:\Users\xzb1db\Desktop\Sneha_Work\04. FDD_Tools\Tools v2.1.0\Design_Tools\VerifyDD.p>VerifyDD at 247] 
+[Warning: In workspace, Struct.EngMax has been increased to the EngMax of the Struct data type.
+Please update your saved files.] 
+[> In <a href="matlab: opentoline('C:\Users\xzb1db\Desktop\Sneha_Work\04. FDD_Tools\Data_Management v2.50.0\+bt\@struct\struct.m',72,1)">struct.struct>struct.validateUserEngMax at 72</a>
+  In <a href="matlab: opentoline('C:\Users\xzb1db\Desktop\Sneha_Work\04. FDD_Tools\Data_Management v2.50.0\+DataDict\@PIM\PIM.m',149,1)">PIM.PIM>PIM.set.EngMax at 149</a>
+  In <a href="matlab: opentoline('C:\Users\xzb1db\Desktop\Sneha_Work\01_EA4_FDDs\SF044A_HowDetn_Design\21Nov2016\SF044A_HowDetn_DataDict.m',681,1)">SF044A_HowDetn_DataDict at 681</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2013b\toolbox\matlab\lang\run.m',63,1)">run at 63</a>
+  In C:\Users\xzb1db\Desktop\Sneha_Work\04. FDD_Tools\Tools v2.1.0\Design_Tools\VerifyDD.p>ImportVars at 2085
+  In C:\Users\xzb1db\Desktop\Sneha_Work\04. FDD_Tools\Tools v2.1.0\Design_Tools\VerifyDD.p>VerifyDD at 247] 
+(errors: 2)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 2, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+(variables: 2, errors: 0)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+HowDetnEstimn               	Name does not match required pattern.
+HowDetnFlg                  	Name does not match required pattern.
+HowDetnFlg                  	Cannot match name to list of known Nexteer signals.
+HowDetnSt                   	Name does not match required pattern.
+(variables: 3, errors: 4)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 17, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 2, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 11, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 12, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+52 variables,  6 issues to fix.
+
+
+End of Report

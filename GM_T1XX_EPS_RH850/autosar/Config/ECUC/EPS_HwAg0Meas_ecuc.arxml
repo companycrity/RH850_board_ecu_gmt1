@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="B7EDD042-4044-414C-9970-1C2313A88AC7">
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="7e2bd7d8-beb8-479f-80e4-1cd4e385c3ea">
+          <SHORT-NAME>HwAg0Meas</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/Nexteer/HwAg0Meas</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="11d273a9-612e-4d57-b067-a0b25badccdd">
+              <SHORT-NAME>HwAg0MeasGeneral</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/HwAg0Meas/HwAg0MeasGeneral</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/HwAg0Meas/HwAg0MeasGeneral/NTC_HwAg0MfgFlt</DEFINITION-REF>
+                  <VALUE>NTCNR_0X1F9</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/HwAg0Meas/HwAg0MeasGeneral/NTC_HwAg0IfFlt</DEFINITION-REF>
+                  <VALUE>NTCNR_0X094</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/HwAg0Meas/HwAg0MeasGeneral/NTC_HwAg0Snsr0PrtclFlt</DEFINITION-REF>
+                  <VALUE>NTCNR_0X093</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/HwAg0Meas/HwAg0MeasGeneral/NTC_HwAg0Snsr1PrtclFlt</DEFINITION-REF>
+                  <VALUE>NTCNR_0X095</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

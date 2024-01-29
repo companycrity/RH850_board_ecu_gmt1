@@ -1,0 +1,127 @@
+Verification of CM455A_Tauj0CfgAndUse_DataDict
+14-Mar-2016 16:19:54
+Tool Release:  2.32.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+CM455A              	Tauj		Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variable: 1, errors: 1)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+Tauj0CfgAndUseInit1         	    Tauj           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Tauj0CfgAndUsePer1          	    Tauj           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 2, errors: 2)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+PhaFbA                      	Cannot match name to list of known Nexteer signals.
+PhaFbB                      	Cannot match name to list of known Nexteer signals.
+PhaFbC                      	Cannot match name to list of known Nexteer signals.
+RegInpTAUJ0CNT0             	    U              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpTAUJ0CNT0             	    J              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpTAUJ0CNT1             	    U              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpTAUJ0CNT1             	    J              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpTAUJ0CNT3             	    U              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpTAUJ0CNT3             	    J              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 6, errors: 9)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+(variables: 3, errors: 0)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 3, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 4, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+(variables: 0, errors: 4)
+ 
+************************
+Grand Totals:
+19 variables,  16 issues to fix.
+
+
+End of Report

@@ -1,0 +1,170 @@
+Verification of CM200A_DmaCfgAndUse_DataDict
+21-Dec-2015 13:02:33
+Tool Release:  2.22.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+CM200A              	.DesignASIL: Field is empty.
+CM200A              	.Dependencies: Wrong format is being used. Convert it into a new format Ex:{'<FDD ShoName>','SignlCondn','MotCtrlPrmEstimn'}.
+CM200A              	.Dependencies: Wrong format is being used. Convert it into a new format Ex:{'<FDD ShoName>','SignlCondn','MotCtrlPrmEstimn'}.
+(variable: 1, errors: 3)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+DmaWaitForMotCtrlTo2MilliSecTrf	.Return.TestTolerance	Field is empty.
+(variables: 2, errors: 1)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 3, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+DmaAdc0ResTrig              	Cannot match name to list of known Nexteer signals.
+DmaAdc1ResTrig              	Cannot match name to list of known Nexteer signals.
+DmaMotAg0RawData            	Cannot match name to list of known Nexteer signals.
+DmaMotAg0SpiStrt            	Cannot match name to list of known Nexteer signals.
+DmaMotAg1RawData            	Cannot match name to list of known Nexteer signals.
+DmaMotAg1SpiStrt            	Cannot match name to list of known Nexteer signals.
+DmaTSG31Upd                 	Cannot match name to list of known Nexteer signals.
+DmaTSG31Upd                 	    G              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+DmaVlyTrig                  	Cannot match name to list of known Nexteer signals.
+MotCtrlMgr_MotCtrlToTwoMilliSec_Rec	Name does not match required pattern. Correct format is <ShoName>_<Identity>_<Element>
+MotCtrlMgr_MotCtrlToTwoMilliSec_Rec	Cannot match name to list of known Nexteer signals.
+MotCtrlMgr_MotCtrlToTwoMilliSec_Rec	.EngInit:    	Field is empty.
+MotCtrlMgr_MotCtrlToTwoMilliSec_Rec	    Mgr_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlMgr_MotCtrlToTwoMilliSec_Rec	    Two            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlMgr_MotCtrlToTwoMilliSec_Rec	    Sec_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlMgr_TwoMilliSecToMotCtrl_Rec	Name does not match required pattern. Correct format is <ShoName>_<Identity>_<Element>
+MotCtrlMgr_TwoMilliSecToMotCtrl_Rec	Cannot match name to list of known Nexteer signals.
+MotCtrlMgr_TwoMilliSecToMotCtrl_Rec	.EngInit:    	Field is empty.
+MotCtrlMgr_TwoMilliSecToMotCtrl_Rec	    Mgr_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlMgr_TwoMilliSecToMotCtrl_Rec	    Two            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlMgr_TwoMilliSecToMotCtrl_Rec	    Ctrl_          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlTSG31CMPWE           	    G              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlTSG31DCMP0E          	    G              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpCSIH1RX0W             	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpCSIH1RX0W             	    H              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpCSIH3RX0W             	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpCSIH3RX0W             	    H              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 17, errors: 27)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+MotCtrlMgr_MotCtrlFromTwoMilliSec_Rec	Name does not match required pattern. Correct format is <ShoName>_<Identity>_<Element>
+MotCtrlMgr_MotCtrlFromTwoMilliSec_Rec	.EngInit:    	Field is empty.
+MotCtrlMgr_MotCtrlFromTwoMilliSec_Rec	    Mgr_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlMgr_MotCtrlFromTwoMilliSec_Rec	    Two            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlMgr_MotCtrlFromTwoMilliSec_Rec	    Sec_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlMgr_TwoMilliSecFromMotCtrl_Rec	Name does not match required pattern. Correct format is <ShoName>_<Identity>_<Element>
+MotCtrlMgr_TwoMilliSecFromMotCtrl_Rec	.EngInit:    	Field is empty.
+MotCtrlMgr_TwoMilliSecFromMotCtrl_Rec	    Mgr_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlMgr_TwoMilliSecFromMotCtrl_Rec	    Two            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+MotCtrlMgr_TwoMilliSecFromMotCtrl_Rec	    Ctrl_          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpCSIH1MCTL2           	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpCSIH1MCTL2           	    H              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpCSIH1MRWP0           	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpCSIH1MRWP0           	    H              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpCSIH3MCTL2           	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpCSIH3MCTL2           	    H              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpCSIH3MRWP0           	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpCSIH3MRWP0           	    H              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpDMASSDRQC14          	    Q              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpDMASSDRQC9           	    Q              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpTSG31CMPWE           	    G              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpTSG31DCMP0E          	    G              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+DmaWaitForMotCtrlTo2MilliSecTrf_StdRtn	Found in data dictionary but not in model.
+(variables: 21, errors: 23)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+DmaCfgAndUse2MilliSecAdcStrtTi	Name does not match required pattern.
+(variables: 5, errors: 1)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+MOTAG0MEAS_MOTAG0READPTRRST_CNT_U32	<ShoName> does not match neither .ShoName in FDD variable nor FDD.Dependencies list.
+MOTAG0MEAS_MOTAG0TRSMSTRTININ_CNT_U32	<ShoName> does not match neither .ShoName in FDD variable nor FDD.Dependencies list.
+MOTAG1MEAS_MOTAG1READPTRRST_CNT_U32	<ShoName> does not match neither .ShoName in FDD variable nor FDD.Dependencies list.
+MOTAG1MEAS_MOTAG1TRSMSTRTININ_CNT_U32	<ShoName> does not match neither .ShoName in FDD variable nor FDD.Dependencies list.
+(variables: 4, errors: 4)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+55 variables,  59 issues to fix.
+
+
+End of Report

@@ -1,0 +1,19 @@
+-it "wchar_t=long"
+-d "__inline ="
+-d "__interrupt ="
+-d "_Pragma=_ignore_paren"
+-d "__CORE_V850E3V5__="
+-i "..\..\..\TL103A_CplrSuprt\include\2015.1.5\ansi"
+-i "..\..\..\TL103A_CplrSuprt\include\2015.1.5\v800"
+-q "..\..\..\TL103A_CplrSuprt\include\2015.1.5\ansi"
+-q "..\..\..\TL103A_CplrSuprt\include\2015.1.5\v800"
+-ar+
+-bits+
+-u-
+-sl-
+-na 397
+-xn 397
+-xc+
+-ex asm
+-ex longlong
+-fpc-

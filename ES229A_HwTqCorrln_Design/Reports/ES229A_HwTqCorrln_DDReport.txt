@@ -1,0 +1,131 @@
+Verification of ES229A_HwTqCorrln_DataDict
+12-Sep-2016 11:16:52
+Tool Release:  2.45.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 4, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 5, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+HwTqA                       	Cannot match name to list of known Nexteer signals.
+HwTqAQlfr                   	Cannot match name to list of known Nexteer signals.
+HwTqARollgCntr              	Cannot match name to list of known Nexteer signals.
+HwTqB                       	Cannot match name to list of known Nexteer signals.
+HwTqBQlfr                   	Cannot match name to list of known Nexteer signals.
+HwTqBRollgCntr              	Cannot match name to list of known Nexteer signals.
+HwTqC                       	Cannot match name to list of known Nexteer signals.
+HwTqCQlfr                   	Cannot match name to list of known Nexteer signals.
+HwTqCRollgCntr              	Cannot match name to list of known Nexteer signals.
+HwTqD                       	Cannot match name to list of known Nexteer signals.
+HwTqDQlfr                   	Cannot match name to list of known Nexteer signals.
+HwTqDRollgCntr              	Cannot match name to list of known Nexteer signals.
+(variables: 14, errors: 12)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+HwTqChACorrlnTraErr         	Cannot match name to list of known Nexteer signals.
+HwTqChBCorrlnTraErr         	Cannot match name to list of known Nexteer signals.
+HwTqCorrlnSts               	Name does not match required pattern.
+(variables: 4, errors: 3)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 4, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 30, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 2, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 16, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+FLTINJ_HWTQCORRLN_IDPTSIG        	Name does not match required pattern as it is a special case.
+(variables: 9, errors: 1)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+HwTqSnsrChACorrlnFlt	Found in data dictionary but not in model.
+HwTqSnsrChBCorrlnFlt	Found in data dictionary but not in model.
+NTCNR_0X070         	Found in model but not in data dictionary.
+NTCNR_0X071         	Found in model but not in data dictionary.
+(variables: 4, errors: 4)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+93 variables,  20 issues to fix.
+
+
+End of Report

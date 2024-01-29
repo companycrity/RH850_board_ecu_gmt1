@@ -1,0 +1,103 @@
+Verification of ES003A_PwrDiscnct_DataDict
+10-Apr-2015 14:16:16
+Tool Release:  2.8.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF99A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+--------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init
+--------------------------------------------------
+(variables: 1, errors: 0)
+
+-------------------------------------
+SrvRunnable:	<ShoName><TriggerName>
+-------------------------------------
+(variables: 0, errors: 0)
+
+------------
+Client:	
+------------
+(variables: 2, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+BattVltg                    	Cannot match name to list of known Nexteer signals.
+BattVltgSwd1                	Cannot match name to list of known Nexteer signals.
+BattVltgSwd2                	Cannot match name to list of known Nexteer signals.
+(variables: 5, errors: 3)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+(variables: 2, errors: 0)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 5, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<ShoName><Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<ShoName><Identity>Prev
+-----------------------------------------------
+PwrDiscnctDeltaVltg1        	Name does not match required pattern. Name should end with "Prev".
+PwrDiscnctDeltaVltg2        	Name does not match required pattern. Name should end with "Prev".
+PwrDiscnctSeqATestCmplPrev  	.DocUnits:  	Not on approved list.
+(variables: 3, errors: 3)
+
+------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: <IDENTITY>_<UNITS>_<DATATYPE>
+------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------
+CSArguments:	
+----------------
+(variables: 0, errors: 0)
+
+--------------
+ConfigConst:	
+--------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+19 variables,  6 issues to fix.
+
+
+End of Report

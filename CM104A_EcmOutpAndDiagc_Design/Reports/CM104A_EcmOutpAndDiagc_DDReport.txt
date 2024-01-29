@@ -1,0 +1,117 @@
+Verification of CM104A_EcmOutpAndDiagc_DataDict
+01-Aug-2016 13:23:05
+Tool Release:  2.41.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+Missing Model 	Unable to find model for comparison to data dictionary.
+(errors:  1)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+EcmOutpAndDiagcInit1        	.Runnnable:	TimeStep should be a either 'ISR' or 'MotorControl' or 'MotorControlx2' when Context is 'NonRte'.
+EcmOutpAndDiagcInit3        	.Runnnable:	TimeStep should be a either 'ISR' or 'MotorControl' or 'MotorControlx2' when Context is 'NonRte'.
+EcmOutpAndDiagcInit4        	.Runnnable:	TimeStep should be a either 'ISR' or 'MotorControl' or 'MotorControlx2' when Context is 'NonRte'.
+(variables: 4, errors: 3)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 1, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 3, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+(variables: 0, errors: 0)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+STD_HIGH                         	Name does not match required pattern.
+STD_LOW                          	Name does not match required pattern.
+(variables: 2, errors: 2)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+11 variables,  6 issues to fix.
+
+
+End of Report

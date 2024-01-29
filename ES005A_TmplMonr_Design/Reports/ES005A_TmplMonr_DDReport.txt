@@ -1,0 +1,146 @@
+Verification of ES005A_TmplMonr_DataDict
+28-Nov-2016 17:50:47
+Tool Release:  2.48.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 3, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+Call_Spi_AsyncTransmit      	Name does not match required pattern.
+Call_Spi_AsyncTransmit      	    Call_          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Call_Spi_AsyncTransmit      	    Spi_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Call_Spi_AsyncTransmit      	    Transmit       Unknown Keyword used.Only Nexteer approved Keywords should be used.
+IoHwAb_GetGpioPwrOutpEnaFb  	    Ab_            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+IoHwAb_SetGpioSysFlt2A      	    Ab_            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+IoHwAb_SetGpioSysFlt2B      	    Ab_            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+IoHwAb_SetGpioTmplMonrWdg   	.Client:	Name should not contain FDDs <ShoName>
+IoHwAb_SetGpioTmplMonrWdg   	    Ab_            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_ReadIB                  	    Spi_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_ReadIB                  	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_WriteIB                 	    Spi_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_WriteIB                 	    Write          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_WriteIB                 	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 9, errors: 14)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+(variables: 3, errors: 0)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+TmplMonrIninTestCmpl        	Name does not match required pattern.
+(variables: 1, errors: 1)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+TmplMonrIninCntr            	Name does not match required pattern.
+TmplMonrIninTestCmplFlg     	Name does not match required pattern.
+TmplMonrNtc40PrmByte        	Name does not match required pattern.
+TmplMonrSpiReadWrOrderFlg1  	Name does not match required pattern.
+TmplMonrSpiReadWrOrderFlg2  	Name does not match required pattern.
+TmplMonrWdgRstrtCnt         	Name does not match required pattern.
+(variables: 6, errors: 6)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+STD_HIGH                         	Name does not match required pattern.
+STD_LOW                          	Name does not match required pattern.
+SpiConf_SpiChannel_TmplMonrCh1   	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_TmplMonrCh1   	Name does not match required pattern.
+SpiConf_SpiChannel_TmplMonrCh2   	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_TmplMonrCh2   	Name does not match required pattern.
+SpiConf_SpiChannel_TmplMonrCh3   	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_TmplMonrCh3   	Name does not match required pattern.
+SpiConf_SpiSequence_TmplMonrSeq1 	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_TmplMonrSeq1 	Name does not match required pattern.
+SpiConf_SpiSequence_TmplMonrSeq2 	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_TmplMonrSeq2 	Name does not match required pattern.
+SpiConf_SpiSequence_TmplMonrSeq3 	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_TmplMonrSeq3 	Name does not match required pattern.
+(variables: 16, errors: 14)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 2, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+41 variables,  35 issues to fix.
+
+
+End of Report

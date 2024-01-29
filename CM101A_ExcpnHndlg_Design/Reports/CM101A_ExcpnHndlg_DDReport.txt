@@ -1,0 +1,118 @@
+Verification of CM101A_ExcpnHndlg_DataDict
+31-Mar-2016 16:21:55
+Tool Release:  2.35.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+Missing Model 	Unable to find model for comparison to data dictionary.
+(errors:  1)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+AlgnErrIrq                  	.Runnnable:	Name must end with 'Init' or 'Per1', 'Per2', etc.
+FpuErrIrq                   	.Runnnable:	Name must end with 'Init' or 'Per1', 'Per2', etc.
+ResdOperIrq                 	.Runnnable:	Name must end with 'Init' or 'Per1', 'Per2', etc.
+SysErrIrq                   	.Runnnable:	Name must end with 'Init' or 'Per1', 'Per2', etc.
+(variables: 7, errors: 4)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+FeNmiOperModErrSngChipInactv	    Chip           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 24, errors: 1)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 1, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+(variables: 1, errors: 0)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+(variables: 2, errors: 0)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+ExcpnHndlgOsErrCod          	Name does not match required pattern.
+(variables: 1, errors: 1)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 23, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+60 variables,  7 issues to fix.
+
+
+End of Report

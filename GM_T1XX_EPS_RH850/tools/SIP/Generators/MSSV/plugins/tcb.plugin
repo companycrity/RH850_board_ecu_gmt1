@@ -1,0 +1,1062 @@
+/**********************************************************************************************************************
+*  COPYRIGHT
+*  --------------------------------------------------------------------------------------------------------------------
+*  Copyright (c) 2016 by Vector Informatik GmbH.                                                  All rights reserved.
+*
+*                This software is copyright protected and proprietary to Vector Informatik GmbH.
+*                Vector Informatik GmbH grants to you only those rights as set out in the license conditions.
+*                All other rights remain with Vector Informatik GmbH.
+*  --------------------------------------------------------------------------------------------------------------------
+*  FILE DESCRIPTION
+*  --------------------------------------------------------------------------------------------------------------------
+*  File       :  tcb.plugin
+*  Module     :  Elisa
+*
+*  Description:  Entry point of Elisa Core.
+*
+*  --------------------------------------------------------------------------------------------------------------------
+*  AUTHOR IDENTITY
+*  --------------------------------------------------------------------------------------------------------------------
+*  Name                          Initials      Company
+*  --------------------------------------------------------------------------------------------------------------------
+*  Senol Cendere                 visces        Vector Informatik GmbH
+*  --------------------------------------------------------------------------------------------------------------------
+*  REVISION HISTORY
+*  --------------------------------------------------------------------------------------------------------------------
+*  Version    Date          Author   Change Id        Description
+*  --------------------------------------------------------------------------------------------------------------------
+*  01.00.00   2016-01-12    visces   -                Creation for MICROSAR OS RH850 SC3
+*  01.01.00   2016-01-14    visces   -                Rework after MSSV inspection
+**********************************************************************************************************************/
+
+/**********************************************************************************************************************
+* Mandatory Functions
+**********************************************************************************************************************/
+
+/**********************************************************************************************************************
+* Name         : RegisterPlugin
+* Return value : Reference to a structure which contains the registration information about the plugin
+* Description  : Elisa_core calls this function to query necessary information about the plugin.
+*                This function is mandatory.
+**********************************************************************************************************************/
+def RegisterPlugin()
+{
+  var reg = ModulePluginRegistration()
+  reg.SetVersion(0x010100)                       /* the version number of the plugin */
+  reg.SetPackageName("Tcb")                      /* the package name of the module (as in ALM). */
+  reg.SetInputFiles(["tcb.c","osconfigblock.c"]) /* a list of all required C-files to be checked */
+  return reg
+}
+
+def CheckVersions()
+{
+   var osdVrmGenMajRelNum = Define("osdVrmGenMajRelNumRef").GetValueAsNumber()
+   var osdVrmGenMinRelNum = Define("osdVrmGenMinRelNumRef").GetValueAsNumber()
+   Assert(osdVrmGenMajRelNum, Equal, 1)
+   Assert(osdVrmGenMinRelNum, Equal, 6)
+}
+
+/**********************************************************************************************************************
+* Name         : main
+* Parameter    : None
+* Return value : None
+* Description  : This is the entry point of the Elisa plugin. main calls all rule functions to check the configuration.
+*                This function is mandatory.
+**********************************************************************************************************************/
+def main()
+{
+  InvokeRule("1. Check each element of oskAlarmToAppl < osdNumberOfApplications", tcbOskAlarmToAppl) 
+  InvokeRule("2. Check each element of oskCounterToAppl < osdNumberOfApplications", tcbOskCounterToAppl)  
+  InvokeRule("3. Check each element of oskScheduleTableToAppl < osdNumberOfApplications", tcbOskScheduleTableToAppl)  
+  InvokeRule("4. Check each element of osConfigBlock.acTaskToAppl < osdNumberOfApplications", tcbAcTaskToAppl)
+  InvokeRule("5. Check each element of osConfigBlock.acIsrToAppl < osdNumberOfApplications", tcbAcIsrToAppl)  
+  InvokeRule("6. Check osApplicationState is declared with size = osdNumberOfApplications", tcbOsApplicationState)
+  InvokeRule("7. Check osSTNextTable is declared with size = osdNumberOfScheduleTables", tcbOsSTNextTable)
+  InvokeRule("8. Check osAlarmTime is declared with size = osdNumberOfAlarms + osdNumberOfScheduleTables", tcbOsAlarmTime)  
+  InvokeRule("9. Check osSTState is declared with size = osdNumberOfScheduleTables", tcbOsSTState)   
+  InvokeRule("10. Check osSTCurrentIndex is declared with size = osNumberOfScheduleTables", tcbOsSTCurrentIndex)    
+  
+  InvokeRule("11. Check osResActualTask is declared with size = osdNumberOfAllResources", tcbOsResActualTask)    
+  InvokeRule("12. Check osResOccupationCounter is declared with size = osdNumberOfAllResources", tcbOsResOccupationCounter)
+  InvokeRule("13. Check osResSavedPrio is declared with size = osdNumberOfAllResources", tcbOsResSavedPrio)
+  InvokeRule("14. Check osResNextLockedResource is declared with size = osdNumberOfAllResources", tcbOsResNextLockedResource)  
+  InvokeRule("15. Check oskResCeilingPrioOffset is declared with size = osdNumberOfTaskResources", tcbOskResCeilingPrioOffset_1)  
+  InvokeRule("16. Check each element of oskResCeilingPrioOffset < osdRTSize", tcbOskResCeilingPrioOffset_2)
+  InvokeRule("17. Check osTcbResourceCounter is declared with size = osdNumberOfAllTasks", tcbOsTcbResourceCounter)
+  InvokeRule("18. Check osTcbActualPrio is declared with size = osdNumberOfAllTasks", tcbOsTcbActualPrio)  
+  InvokeRule("19. Check osTcbORTIServiceId is declared with size = osdNumberOfAllTasks", tcbOsTcbORTIServiceId)    
+  InvokeRule("20. Check osTcbLockedResource is declared with size = osdNumberOfAllTasks", tcbOsTcbLockedResource)  
+  
+  /* Rule 21 is not used */
+  InvokeRule("22. Check osTcbActivationCount is declared with size = osdNumberOfAllTasks", tcbOsTcbActivationCount)
+  InvokeRule("23. Check osTcbTaskState is declared with size = osdNumberOfAllTasks", tcbOsTcbTaskState)  
+  InvokeRule("24. Check osdNumberOfExtendedTasks <= osdNumberOfAllTasks", tcbOsdNumberOfExtendedTasks)
+  InvokeRule("25. Check osTcbInSystemFct is declared with size = osdNumberOfAllTasks", tcbOsTcbInSystemFct)  
+  InvokeRule("26. Check osIcbLockedResource is declared with size = osdNumberOfCat2ISRs", tcbOsIcbLockedResource)  
+  InvokeRule("27. Check osrNumberOfSemaphores = osdNumberOfSemaphores", tcbOsrNumberOfSemaphores)    
+  InvokeRule("28. Check osSemaphoreState is declared with size = osdNumberOfSemaphores", tcbOsSemaphoreState) 
+  InvokeRule("29. Check osSemaOwner is declared with size = osdNumberOfSemaphores", tcbOsSemaOwner)     
+  InvokeRule("30. Check osCounter is declared with size osdNumberOfCounters", tcbOsCounter)
+  
+  InvokeRule("31. Check osrRTSize = osdRTSize", tcbOsrRTSize)
+  InvokeRule("32. Check osrNumberOfPriorities = osdNumberOfPriorities", tcbOsrNumberOfPriorities)
+  InvokeRule("33. Check osrNumberOfAppModes = osdNumberOfAppModes", tcbOsrNumberOfAppModes)
+  InvokeRule("34. Check osrNumberOfAllTasks = osdNumberOfAllTasks", tcbOsrNumberOfAllTasks)
+  InvokeRule("35. Check osrNumberOfAllResources = osdNumberOfAllResources", tcbOsrNumberOfAllResources)
+  InvokeRule("36. Check osrNumberOfTaskResources = osdNumberOfTaskResources", tcbOsrNumberOfTaskResources)
+  InvokeRule("37. Check osrNumberOfInternalResources = osdNumberOfInternalResources", tcbOsrNumberOfInternalResources)
+  InvokeRule("38. Check osrNumberOfExtendedTasks = osdNumberOfExtendedTasks", tcbOsrNumberOfExtendedTasks)    
+  InvokeRule("39. Check osTcbWaitForSemaphore is declared with size = osdNumberOfExtendedTasks", tcbOsTcbWaitForSemaphore)       
+  InvokeRule("40. Check osrNumberOfAlarms = osdNumberOfAlarms", tcbOsrNumberOfAlarms)  
+  
+  InvokeRule("41. Check osrNumberOfScheduleTables = osdNumberOfScheduleTables", tcbOsrNumberOfScheduleTables)
+  InvokeRule("42. Check osrNumberOfCounters = osdNumberOfCounters", tcbOsrNumberOfCounters)  
+  InvokeRule("43. Check osAlarmActivated is declared with size = osdNumberOfAlarms", tcbOsAlarmActivated)
+  InvokeRule("44. Check osAlarmCycleTime is declared with size = osdNumberOfAlarms", tcbOsAlarmCycleTime)
+  InvokeRule("45. Check osTcbSetEventMask is declared with size = osdNumberOfExtendedTasks", tcbOsTcbSetEventMask)
+  InvokeRule("46. Check oskQActivationQueues is declared with size = osdNumberOfPriorities", tcbOskQActivationQueues)
+  InvokeRule("47. Check each element of oskTcbReadyPrioOffset < osdRTSize", tcbOskTcbReadyPrioOffset_1)  
+  InvokeRule("48. Check oskTcbReadyPrioOffset is declared with size = osdNumberOfAllTasks", tcbOskTcbReadyPrioOffset_2)    
+  InvokeRule("49. Check osdNumberOfSWCounters <= osdNumberOfCounters", tcbOsdNumberOfSWCounters)
+  InvokeRule("50. Check osNextAllowedTimerInt is declared with size = osdNumberOfCounters-osdNumberOfSWAndSRCounters", tcbOsNextAllowedTimerInt)  
+
+  /* Rule 51 is not used */          
+  InvokeRule("52. Check each element of oskCounterOfST < osdNumberOfCounters", tcbOskCounterOfST_1)  
+  InvokeRule("53. Check oskCounterOfST is declared with size = osdNumberOfScheduleTables", tcbOskCounterOfST_2)  
+  InvokeRule("54. Check each element of oskAlarmCounterRef < osdNumberOfCounters", tcbOskAlarmCounterRef_1)
+  InvokeRule("55. Check oskAlarmCounterRef is declared with size = osdNumberOfAlarms", tcbOskAlarmCounterRef_2)
+  InvokeRule("56. Check oskAlarmHeaps is declared with size = osdNumberOfCounters", tcbOskAlarmHeaps)
+  InvokeRule("57. Check osTcbWaitEventMask declared with size osdNumberOfExtendedTasks if osdNumberOfExtendedTasks greater than zero", tcbOsTcbWaitEventMask)  
+  InvokeRule("58. Check each element of oskResCeilingPrio < osdNumberOfPriorities", tcbOskResCeilingPrio_1)   
+  InvokeRule("59. Check oskResCeilingPrio is declared with size = osdNumberOfAllResources", tcbOskResCeilingPrio_2)
+}
+
+
+/**********************************************************************************************************************
+* Rules
+**********************************************************************************************************************/
+
+/**********************************************************************************************************************
+* Name         : tcbOskAlarmToAppl
+* Parameter    : None
+* Return value : None
+* Description  : Check each element of array oskAlarmToAppl < osdNumberOfApplications
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOskAlarmToAppl()
+{
+   var oskAlarmToAppl = Array("oskAlarmToAppl")
+   var osdNumberOfApplications = Define("osdNumberOfApplications")
+   AssertAllArrayElems(oskAlarmToAppl, LessThan, osdNumberOfApplications)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskCounterToAppl
+* Parameter    : None
+* Return value : None
+* Description  : Check each element of oskCounterToAppl < osdNumberOfApplications
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOskCounterToAppl()
+{
+  var oskCounterToAppl = Array("oskCounterToAppl")
+  var osdNumberOfApplications = Define("osdNumberOfApplications")
+  AssertAllArrayElems(oskCounterToAppl, LessThan, osdNumberOfApplications)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskScheduleTableToAppl
+* Parameter    : None
+* Return value : None
+* Description  : Check each element of oskScheduleTableToAppl < osdNumberOfApplications
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOskScheduleTableToAppl()
+{
+  var oskScheduleTableToAppl = Array("oskScheduleTableToAppl")
+  var osdNumberOfApplications = Define("osdNumberOfApplications")
+  AssertAllArrayElems(oskScheduleTableToAppl, LessThan, osdNumberOfApplications)   
+}
+
+/**********************************************************************************************************************
+* Name         : tcbAcTaskToAppl
+* Parameter    : None
+* Return value : None
+* Description  : Check each element of acTaskToAppl < osdNumberOfApplications
+* Precondition : None
+**********************************************************************************************************************/
+def tcbAcTaskToAppl()
+{
+   var osConfigBlock = Struct("osConfigBlock")
+   var acTaskToAppl = osConfigBlock.GetMemberAsArray("acTaskToAppl")
+   var osdNumberOfApplications = Define("osdNumberOfApplications")
+   var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")   
+   for(var i=0; i < osdNumberOfAllTasks.GetValueAsNumber(); ++i)
+   {
+      AssertArrayElem(acTaskToAppl, i, LessThan, osdNumberOfApplications)
+   }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbAcIsrToAppl
+* Parameter    : None
+* Return value : None
+* Description  : Check each element of acIsrToAppl < osdNumberOfApplications
+* Precondition : None
+**********************************************************************************************************************/
+def tcbAcIsrToAppl()
+{
+  var osConfigBlock = Struct("osConfigBlock")
+  var acIsrToAppl = osConfigBlock.GetMemberAsArray("acIsrToAppl")
+  var osdNumberOfApplications = Define("osdNumberOfApplications")
+  var osdNumberOfCat2ISRs = Define("osdNumberOfCat2ISRs")
+  for(var i=0; i < osdNumberOfCat2ISRs.GetValueAsNumber(); ++i)
+  {
+     AssertArrayElem(acIsrToAppl, i, LessThan, osdNumberOfApplications)
+  }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsApplicationState
+* Parameter    : None
+* Return value : None
+* Description  : Check osApplicationState is declared with size = osdNumberOfApplications
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsApplicationState()
+{
+  var osApplicationState = Array("osApplicationState")
+  var osdNumberOfApplications = Define("osdNumberOfApplications")
+  AssertArraySize(osApplicationState, Equal, osdNumberOfApplications)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsSTNextTable
+* Parameter    : None
+* Return value : None
+* Description  : Check osSTNextTable is declared with size = osdNumberOfScheduleTables
+* Precondition : osdNumberOfScheduleTables > 0
+**********************************************************************************************************************/
+def tcbOsSTNextTable()
+{
+  var osdNumberOfScheduleTables = Define("osdNumberOfScheduleTables")
+  var osSTNextTable = Array("osSTNextTable")
+  if(osdNumberOfScheduleTables.GetValueAsNumber() > 0)
+  {
+     AssertArraySize(osSTNextTable, Equal, osdNumberOfScheduleTables)
+  }
+  else
+  {
+     AssertArraySize(osSTNextTable, Equal, 1)
+  }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsAlarmTime
+* Parameter    : None
+* Return value : None
+* Description  : Check osAlarmTime is declared with size = osdNumberOfAlarms + osdNumberOfScheduleTables
+* Precondition : osdNumberOfAlarms + osdNumberOfScheduleTables > 0
+**********************************************************************************************************************/
+def tcbOsAlarmTime()
+{
+  var osdNumberOfAlarms = Define("osdNumberOfAlarms")
+  var osdNumberOfScheduleTables = Define("osdNumberOfScheduleTables")
+  var value = osdNumberOfAlarms.GetValueAsNumber() + osdNumberOfScheduleTables.GetValueAsNumber()
+  var osAlarmTime = Array("osAlarmTime")
+  if(value > 0)
+  {
+     AssertArraySize(osAlarmTime, Equal, value)
+  }
+  else
+  {
+     AssertArraySize(osAlarmTime, Equal, 1)
+  }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsSTState
+* Parameter    : None
+* Return value : None
+* Description  : Check osSTState is declared with size = osdNumberOfScheduleTables
+* Precondition : osdNumberOfScheduleTables > 0
+**********************************************************************************************************************/
+def tcbOsSTState()
+{
+  var osdNumberOfScheduleTables = Define("osdNumberOfScheduleTables")
+  var osSTState = Array("osSTState")
+  if(osdNumberOfScheduleTables.GetValueAsNumber() > 0)
+  {
+    AssertArraySize(osSTState, Equal, osdNumberOfScheduleTables)
+  }
+  else
+  {
+    AssertArraySize(osSTState, Equal, 1)
+  }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsSTCurrentIndex
+* Parameter    : None
+* Return value : None
+* Description  : Check osSTCurrentIndex is declared with size = osdNumberOfScheduleTables
+* Precondition : osdNumberOfScheduleTables > 0
+**********************************************************************************************************************/
+def tcbOsSTCurrentIndex()
+{
+  var osdNumberOfScheduleTables = Define("osdNumberOfScheduleTables")
+  var osSTCurrentIndex = Array("osSTCurrentIndex")
+  if(osdNumberOfScheduleTables.GetValueAsNumber() > 0)
+  {
+     AssertArraySize(osSTCurrentIndex, Equal, osdNumberOfScheduleTables)
+  }
+  else
+  {
+     AssertArraySize(osSTCurrentIndex, Equal, 1)
+  }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsResActualTask
+* Parameter    : None
+* Return value : None
+* Description  : Check osResActualTask declared with size = osdNumberOfAllResources
+* Precondition : osdNumberOfAllResources > 0
+**********************************************************************************************************************/
+def tcbOsResActualTask()
+{
+  var osResActualTask = Array("osResActualTask")
+  var osdNumberOfAllResources = Define("osdNumberOfAllResources")
+  if(osdNumberOfAllResources.GetValueAsNumber() > 0)
+  {
+    AssertArraySize(osResActualTask, Equal, osdNumberOfAllResources)
+  }
+  else
+  {
+    AssertArraySize(osResActualTask, Equal, 1)   
+  }     
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsResOccupationCounter
+* Parameter    : None
+* Return value : None
+* Description  : Check osResOccupationCounter declared with size = osdNumberOfAllResources
+* Precondition : osdNumberOfAllResources > 0
+**********************************************************************************************************************/
+def tcbOsResOccupationCounter()
+{
+  var osResOccupationCounter = Array("osResOccupationCounter")
+  var osdNumberOfAllResources = Define("osdNumberOfAllResources")
+  if(osdNumberOfAllResources.GetValueAsNumber() > 0)
+  {
+    AssertArraySize(osResOccupationCounter, Equal, osdNumberOfAllResources)
+  }
+  else
+  {
+    AssertArraySize(osResOccupationCounter, Equal, 1)
+  }       
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsResSavedPrio
+* Parameter    : None
+* Return value : None
+* Description  : Check osResSavedPrio declared with size = osdNumberOfAllResources
+* Precondition : osdNumberOfAllResources > 0
+**********************************************************************************************************************/
+def tcbOsResSavedPrio()
+{
+  var osResSavedPrio = Array("osResSavedPrio")
+  var osdNumberOfAllResources = Define("osdNumberOfAllResources")
+  if(osdNumberOfAllResources.GetValueAsNumber() > 0)
+  {
+    AssertArraySize(osResSavedPrio, Equal, osdNumberOfAllResources)
+  }
+  else
+  {
+    AssertArraySize(osResSavedPrio, Equal, 1)
+  }       
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsResNextLockedResource
+* Parameter    : None
+* Return value : None
+* Description  : osResNextLockedResource declared with size osdNumberOfAllResources
+* Precondition : osdNumberOfAllResources > 0
+**********************************************************************************************************************/
+def tcbOsResNextLockedResource()
+{
+  var osdNumberOfAllResources = Define("osdNumberOfAllResources")  
+  var osResNextLockedResource = Array("osResNextLockedResource")  
+  if(osdNumberOfAllResources.GetValueAsNumber() > 0)
+  {
+    AssertArraySize(osResNextLockedResource, Equal, osdNumberOfAllResources)
+  }
+  else
+  {
+    AssertArraySize(osResNextLockedResource, Equal, 1)
+  }         
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskResCeilingPrioOffset_1
+* Parameter    : None
+* Return value : None
+* Description  : oskResCeilingPrioOffset declared with size = osdNumberOfTaskResources
+* Precondition : osdNumberOfTaskResources > 0
+**********************************************************************************************************************/
+def tcbOskResCeilingPrioOffset_1()
+{
+  var osdNumberOfTaskResources = Define("osdNumberOfTaskResources")
+  var oskResCeilingPrioOffset = Array("oskResCeilingPrioOffset")
+  if(osdNumberOfTaskResources.GetValueAsNumber() > 0)
+  {
+    AssertArraySize(oskResCeilingPrioOffset, Equal, osdNumberOfTaskResources)
+  }
+  else
+  {
+    AssertArraySize(oskResCeilingPrioOffset, Equal, 1)
+  }           
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskResCeilingPrioOffset_2
+* Parameter    : None
+* Return value : None
+* Description  : Check oskResCeilingPrioOffset each element < osdRTSize
+* Precondition : osdNumberOfTaskResources > 0
+**********************************************************************************************************************/
+def tcbOskResCeilingPrioOffset_2()
+{
+  var oskResCeilingPrioOffset = Array("oskResCeilingPrioOffset")
+  var osdRTSize = Define("osdRTSize")
+  var osdNumberOfTaskResources = Define("osdNumberOfTaskResources")  
+  if(osdNumberOfTaskResources.GetValueAsNumber() > 0)
+  {  
+    AssertAllArrayElems(oskResCeilingPrioOffset, LessThan, osdRTSize)
+  }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsTcbResourceCounter
+* Parameter    : None
+* Return value : None
+* Description  : Check osTcbResourceCounter is declared with size = osdNumberOfAllTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsTcbResourceCounter()
+{
+  var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")
+  var osTcbResourceCounter = Array("osTcbResourceCounter")
+  AssertArraySize(osTcbResourceCounter, Equal, osdNumberOfAllTasks)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsTcbActualPrio
+* Parameter    : None
+* Return value : None
+* Description  : Check osTcbActualPrio is declared with size = osdNumberOfAllTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsTcbActualPrio()
+{
+  var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")
+  var osTcbActualPrio = Array("osTcbActualPrio")
+  AssertArraySize(osTcbActualPrio, Equal, osdNumberOfAllTasks)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsTcbORTIServiceId
+* Parameter    : None
+* Return value : None
+* Description  : Check osTcbORTIServiceId is declared with size = osdNumberOfAllTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsTcbORTIServiceId()
+{
+  var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")
+  var osTcbORTIServiceId = Array("osTcbORTIServiceId")
+  AssertArraySize(osTcbORTIServiceId, Equal, osdNumberOfAllTasks)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsTcbLockedResource
+* Parameter    : None
+* Return value : None
+* Description  : Check osTcbLockedResource is declared with size = osdNumberOfAllTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsTcbLockedResource()
+{
+  var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")
+  var osTcbLockedResource = Array("osTcbLockedResource")
+  AssertArraySize(osTcbLockedResource, Equal, osdNumberOfAllTasks)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsTcbActivationCount
+* Parameter    : None
+* Return value : None
+* Description  : Check osTcbActivationCount is declared with size = osdNumberOfAllTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsTcbActivationCount()
+{
+   var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")
+   var osTcbActivationCount = Array("osTcbActivationCount")
+   AssertArraySize(osTcbActivationCount, Equal, osdNumberOfAllTasks)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsTcbTaskState
+* Parameter    : None
+* Return value : None
+* Description  : Check osTcbTaskState declared with size = osdNumberOfAllTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsTcbTaskState()
+{
+  var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")
+  var osTcbTaskState = Array("osTcbTaskState")
+  AssertArraySize(osTcbTaskState, Equal, osdNumberOfAllTasks)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsdNumberOfExtendedTasks
+* Parameter    : None
+* Return value : None
+* Description  : Check osdNumberOfExtendedTasks <= osdNumberOfAllTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsdNumberOfExtendedTasks()
+{
+  var osdNumberOfExtendedTasks = Define("osdNumberOfExtendedTasks")
+  var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")
+  Assert(osdNumberOfExtendedTasks, LessEqual, osdNumberOfAllTasks)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsTcbInSystemFct
+* Parameter    : None
+* Return value : None
+* Description  : Check osTcbInSystemFct declared with size = osdNumberOfAllTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsTcbInSystemFct()
+{
+  var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")
+  var osTcbInSystemFct = Array("osTcbInSystemFct")
+  AssertArraySize(osTcbInSystemFct, Equal, osdNumberOfAllTasks)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsIcbLockedResource
+* Parameter    : None
+* Return value : None
+* Description  : Check osIcbLockedResource declared with size osdNumberOfCat2ISRs
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsIcbLockedResource()
+{
+  var osdNumberOfCat2ISRs = Define("osdNumberOfCat2ISRs")
+  var osIcbLockedResource = Array("osIcbLockedResource")
+  AssertArraySize(osIcbLockedResource, Equal, osdNumberOfCat2ISRs)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfSemaphores
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfSemaphores = osdNumberOfSemaphores
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfSemaphores()
+{
+  var osrNumberOfSemaphores = Define("osrNumberOfSemaphores")
+  var osdNumberOfSemaphores = Define("osdNumberOfSemaphores")
+  Assert(osrNumberOfSemaphores, Equal, osdNumberOfSemaphores.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsSemaphoreState
+* Parameter    : None
+* Return value : None
+* Description  : Check osSemaphoreState declared with size osdNumberOfSemaphores
+* Precondition : osdNumberOfSemaphores > 0
+**********************************************************************************************************************/
+def tcbOsSemaphoreState()
+{
+  var osdNumberOfSemaphores = Define("osdNumberOfSemaphores")
+  var osSemaphoreState = Array("osSemaphoreState")
+  if(osdNumberOfSemaphores.GetValueAsNumber() > 0)
+  {  
+    AssertArraySize(osSemaphoreState, Equal, osdNumberOfSemaphores)
+  }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsTcbWaitForSemaphore
+* Parameter    : None
+* Return value : None
+* Description  : Check osTcbWaitForSemaphore declared with size osdNumberOfExtendedTasks
+* Precondition : osdNumberOfSemaphores > 0
+**********************************************************************************************************************/
+def tcbOsTcbWaitForSemaphore()
+{
+  var osdNumberOfExtendedTasks = Define("osdNumberOfExtendedTasks")
+  var osdNumberOfSemaphores = Define("osdNumberOfSemaphores")
+  var osTcbWaitForSemaphore = Array("osTcbWaitForSemaphore")
+  if(osdNumberOfSemaphores.GetValueAsNumber() > 0)
+  {    
+    AssertArraySize(osTcbWaitForSemaphore, Equal, osdNumberOfExtendedTasks)
+  }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsSemaOwner
+* Parameter    : None
+* Return value : None
+* Description  : Check osSemaOwner declared with size osdNumberOfSemaphores
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsSemaOwner()
+{
+  var osdNumberOfSemaphores = Define("osdNumberOfSemaphores")
+  var osSemaOwner = Array("osSemaOwner")
+  AssertArraySize(osSemaOwner, Equal, osdNumberOfSemaphores)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsCounter
+* Parameter    : None
+* Return value : None
+* Description  : Check osCounter declared with size = osdNumberOfCounters
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsCounter()
+{
+  var osdNumberOfCounters = Define("osdNumberOfCounters")
+  var osCounter = Array("osCounter")
+  AssertArraySize(osCounter, Equal, osdNumberOfCounters)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrRTSize
+* Parameter    : None
+* Return value : None
+* Description  : Check osrRTSize = osdRTSize 
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrRTSize()
+{
+  var osrRTSize = Define("osrRTSize")
+  var osdRTSize = Define("osdRTSize")
+  Assert(osrRTSize, Equal, osdRTSize.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfPriorities    
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfPriorities = osdNumberOfPriorities 
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfPriorities()
+{
+  var osrNumberOfPriorities = Define("osrNumberOfPriorities")
+  var osdNumberOfPriorities = Define("osdNumberOfPriorities")
+  Assert(osrNumberOfPriorities, Equal, osdNumberOfPriorities.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfAppModes     
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfAppModes = osdNumberOfAppModes
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfAppModes()
+{
+  var osrNumberOfAppModes = Define("osrNumberOfAppModes")
+  var osdNumberOfAppModes = Define("osdNumberOfAppModes")
+  Assert(osrNumberOfAppModes, Equal, osdNumberOfAppModes.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfAllTasks     
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfAllTasks = osdNumberOfAllTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfAllTasks()
+{
+  var osrNumberOfAllTasks = Define("osrNumberOfAllTasks")
+  var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")
+  Assert(osrNumberOfAllTasks, Equal, osdNumberOfAllTasks.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfAllResources     
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfAllResources = osdNumberOfAllResources
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfAllResources()
+{
+  var osrNumberOfAllResources = Define("osrNumberOfAllResources")
+  var osdNumberOfAllResources = Define("osdNumberOfAllResources")
+  Assert(osrNumberOfAllResources, Equal, osdNumberOfAllResources.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfTaskResources     
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfTaskResources = osdNumberOfTaskResources
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfTaskResources()
+{
+  var osrNumberOfTaskResources = Define("osrNumberOfTaskResources")
+  var osdNumberOfTaskResources = Define("osdNumberOfTaskResources")
+  Assert(osrNumberOfTaskResources, Equal, osdNumberOfTaskResources.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfInternalResources     
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfInternalResources = osdNumberOfInternalResources
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfInternalResources()
+{
+  var osrNumberOfInternalResources = Define("osrNumberOfInternalResources")
+  var osdNumberOfInternalResources = Define("osdNumberOfInternalResources")
+  Assert(osrNumberOfInternalResources, Equal, osdNumberOfInternalResources.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfExtendedTasks     
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfExtendedTasks = osdNumberOfExtendedTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfExtendedTasks()
+{
+  var osrNumberOfExtendedTasks = Define("osrNumberOfExtendedTasks")
+  var osdNumberOfExtendedTasks = Define("osdNumberOfExtendedTasks")
+  Assert(osrNumberOfExtendedTasks, Equal, osdNumberOfExtendedTasks.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfAlarms     
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfAlarms = osdNumberOfAlarms
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfAlarms()
+{
+  var osrNumberOfAlarms = Define("osrNumberOfAlarms")
+  var osdNumberOfAlarms = Define("osdNumberOfAlarms")
+  Assert(osrNumberOfAlarms, Equal, osdNumberOfAlarms.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfScheduleTables     
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfScheduleTables = osdNumberOfScheduleTables
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfScheduleTables()
+{
+  var osrNumberOfScheduleTables = Define("osrNumberOfScheduleTables")
+  var osdNumberOfScheduleTables = Define("osdNumberOfScheduleTables")
+  Assert(osrNumberOfScheduleTables, Equal, osdNumberOfScheduleTables.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsrNumberOfCounters     
+* Parameter    : None
+* Return value : None
+* Description  : Check osrNumberOfCounters = osdNumberOfCounters
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsrNumberOfCounters()
+{
+  var osrNumberOfCounters = Define("osrNumberOfCounters")
+  var osdNumberOfCounters = Define("osdNumberOfCounters")
+  Assert(osrNumberOfCounters, Equal, osdNumberOfCounters.GetName())
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsAlarmActivated
+* Parameter    : None
+* Return value : None
+* Description  : Check osAlarmActivated declared with size = osdNumberOfAlarms
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsAlarmActivated()
+{
+  var osdNumberOfAlarms = Define("osdNumberOfAlarms")
+  var osAlarmActivated = Array("osAlarmActivated")
+  AssertArraySize(osAlarmActivated, Equal, osdNumberOfAlarms)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsAlarmCycleTime
+* Parameter    : None
+* Return value : None
+* Description  : Check osAlarmCycleTime declared with size = osdNumberOfAlarms
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsAlarmCycleTime()
+{
+  var osdNumberOfAlarms = Define("osdNumberOfAlarms")
+  var osAlarmCycleTime = Array("osAlarmCycleTime")
+  AssertArraySize(osAlarmCycleTime, Equal, osdNumberOfAlarms)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsTcbSetEventMask
+* Parameter    : None
+* Return value : None
+* Description  : Check osTcbSetEventMask declared with size = osdNumberOfExtendedTasks
+* Precondition : osdNumberOfExtendedTasks > 0
+**********************************************************************************************************************/
+def tcbOsTcbSetEventMask()
+{
+  var osdNumberOfExtendedTasks = Define("osdNumberOfExtendedTasks")
+  var osTcbSetEventMask = Array("osTcbSetEventMask")
+  if(osdNumberOfExtendedTasks.GetValueAsNumber() > 0)  
+  {
+    AssertArraySize(osTcbSetEventMask, Equal, osdNumberOfExtendedTasks)
+  }
+  else
+  {
+    AssertArraySize(osTcbSetEventMask, Equal, 1)    
+  }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskQActivationQueues
+* Parameter    : None
+* Return value : None
+* Description  : Check oskQActivationQueues declared with size = osdNumberOfPriorities
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOskQActivationQueues()
+{
+  var osdNumberOfPriorities = Define("osdNumberOfPriorities")
+  var oskQActivationQueues = Array("oskQActivationQueues")
+  AssertArraySize(oskQActivationQueues, Equal, osdNumberOfPriorities)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskTcbReadyPrioOffset_1
+* Parameter    : None
+* Return value : None
+* Description  : Check each element of oskTcbReadyPrioOffset < osdRTSize
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOskTcbReadyPrioOffset_1()
+{
+  var oskTcbReadyPrioOffset = Array("oskTcbReadyPrioOffset")
+  var osdRTSize = Define("osdRTSize")
+  AssertAllArrayElems(oskTcbReadyPrioOffset, LessThan, osdRTSize)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskTcbReadyPrioOffset_2
+* Parameter    : None
+* Return value : None
+* Description  : Check oskTcbReadyPrioOffset is declared with size = osdNumberOfAllTasks
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOskTcbReadyPrioOffset_2()
+{
+  var oskTcbReadyPrioOffset = Array("oskTcbReadyPrioOffset")
+  var osdNumberOfAllTasks = Define("osdNumberOfAllTasks")
+  AssertArraySize(oskTcbReadyPrioOffset, Equal, osdNumberOfAllTasks)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsdNumberOfSWCounters
+* Parameter    : None
+* Return value : None
+* Description  : Check osdNumberOfSWCounters <= osdNumberOfCounters
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsdNumberOfSWCounters()
+{
+  var osdNumberOfSWCounters = Define("osdNumberOfSWCounters")
+  var osdNumberOfCounters = Define("osdNumberOfCounters")
+  Assert(osdNumberOfSWCounters, LessEqual, osdNumberOfCounters)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsNextAllowedTimerInt
+* Parameter    : None
+* Return value : None
+* Description  : Check osNextAllowedTimerInt is declared with size = osdNumberOfCounters - osdNumberOfSWAndSRCounters
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOsNextAllowedTimerInt()
+{
+  var osNextAllowedTimerInt = Array("osNextAllowedTimerInt")
+  var osdNumberOfCounters = Define("osdNumberOfCounters")
+  var osdNumberOfSWAndSRCounters = Define("osdNumberOfSWAndSRCounters")  
+  var value = osdNumberOfCounters.GetValueAsNumber() - osdNumberOfSWAndSRCounters.GetValueAsNumber()  
+  if(value > 0)
+  {
+    AssertArraySize(osNextAllowedTimerInt, Equal, value)
+  }
+  else
+  {
+    AssertArraySize(osNextAllowedTimerInt, Equal, 1)  
+  }
+}
+
+
+/**********************************************************************************************************************
+* Name         : tcbOskCounterOfST_1
+* Parameter    : None
+* Return value : None
+* Description  : Check each element of oskCounterOfST < osdNumberOfCounters
+* Precondition : osdNumberOfScheduleTables > 0
+**********************************************************************************************************************/
+def tcbOskCounterOfST_1()
+{
+  var oskCounterOfST = Array("oskCounterOfST")
+  var osdNumberOfCounters = Define("osdNumberOfCounters")
+  var osdNumberOfScheduleTables = Define("osdNumberOfScheduleTables")  
+  if(osdNumberOfScheduleTables.GetValueAsNumber() > 0)
+  {  
+    AssertAllArrayElems(oskCounterOfST, LessThan, osdNumberOfCounters)
+  }
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskCounterOfST_2
+* Parameter    : None
+* Return value : None
+* Description  : Check oskCounterOfST is declared with size = osdNumberOfScheduleTables
+* Precondition : osdNumberOfScheduleTables > 0
+**********************************************************************************************************************/
+def tcbOskCounterOfST_2()
+{
+  var oskCounterOfST = Array("oskCounterOfST")
+  var osdNumberOfScheduleTables = Define("osdNumberOfScheduleTables")
+  if(osdNumberOfScheduleTables.GetValueAsNumber() > 0)
+  {  
+    AssertArraySize(oskCounterOfST, Equal, osdNumberOfScheduleTables)
+  }  
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskAlarmCounterRef_1
+* Parameter    : None
+* Return value : None
+* Description  : Check each element of oskAlarmCounterRef < osdNumberOfCounters
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOskAlarmCounterRef_1()
+{
+  var oskAlarmCounterRef = Array("oskAlarmCounterRef")
+  var osdNumberOfCounters = Define("osdNumberOfCounters")
+  AssertAllArrayElems(oskAlarmCounterRef, LessThan, osdNumberOfCounters)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskAlarmCounterRef_2
+* Parameter    : None
+* Return value : None
+* Description  : Check oskAlarmCounterRef is declared with size = osdNumberOfAlarms
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOskAlarmCounterRef_2()
+{
+  var oskAlarmCounterRef = Array("oskAlarmCounterRef")
+  var osdNumberOfAlarms = Define("osdNumberOfAlarms")
+  AssertArraySize(oskAlarmCounterRef, Equal, osdNumberOfAlarms)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskAlarmHeaps
+* Parameter    : None
+* Return value : None
+* Description  : Check oskAlarmHeaps is declared with size = osdNumberOfCounters
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOskAlarmHeaps()
+{
+  var oskAlarmHeaps = Array("oskAlarmHeaps")
+  var osdNumberOfCounters = Define("osdNumberOfCounters")
+  AssertArraySize(oskAlarmHeaps, Equal, osdNumberOfCounters)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOsTcbWaitEventMask
+* Parameter    : None
+* Return value : None
+* Description  : Check osTcbWaitEventMask is declared with size = osdNumberOfExtendedTasks
+* Precondition : osdNumberOfExtendedTasks > 0
+**********************************************************************************************************************/
+def tcbOsTcbWaitEventMask()
+{
+  var osTcbWaitEventMask = Array("osTcbWaitEventMask")
+  var osdNumberOfExtendedTasks = Define("osdNumberOfExtendedTasks")
+  if(osdNumberOfExtendedTasks.GetValueAsNumber() > 0)  
+  {
+    AssertArraySize(osTcbWaitEventMask, Equal, osdNumberOfExtendedTasks)
+  }
+  else
+  {
+    AssertArraySize(osTcbWaitEventMask, Equal, 1)
+  }  
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskResCeilingPrio_1
+* Parameter    : None
+* Return value : None
+* Description  : Check each element of oskResCeilingPrio < osdNumberOfPriorities
+* Precondition : None
+**********************************************************************************************************************/
+def tcbOskResCeilingPrio_1()
+{
+  var oskResCeilingPrio = Array("oskResCeilingPrio")
+  var osdNumberOfPriorities = Define("osdNumberOfPriorities")
+  AssertAllArrayElems(oskResCeilingPrio, LessThan, osdNumberOfPriorities)
+}
+
+/**********************************************************************************************************************
+* Name         : tcbOskResCeilingPrio_2
+* Parameter    : None
+* Return value : None
+* Description  : Check oskResCeilingPrio is declared with size = osdNumberOfAllResources
+* Precondition : osdNumberOfAllResources > 0
+**********************************************************************************************************************/
+def tcbOskResCeilingPrio_2()
+{
+  var oskResCeilingPrio = Array("oskResCeilingPrio")
+  var osdNumberOfAllResources = Define("osdNumberOfAllResources")
+  if(osdNumberOfAllResources.GetValueAsNumber() > 0)
+  {
+    AssertArraySize(oskResCeilingPrio, Equal, osdNumberOfAllResources)
+  }
+  else
+  {
+    AssertArraySize(oskResCeilingPrio, Equal, 1)   
+  }     
+}
+
+
+

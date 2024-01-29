@@ -1,0 +1,121 @@
+<RDEF> I Includes
+<R>I C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c C:/Component/AR300A_MotCtrlMgr_Impl/include/CDD_MotCtrlMgr_Irq.h 23
+<DEFINE> CDD_MOTCTRLMGR_IRQ_H C:/Component/AR300A_MotCtrlMgr_Impl/include/CDD_MotCtrlMgr_Irq.h 22 I DF OM - - - O
+<R>I C:/Component/AR300A_MotCtrlMgr_Impl/include/CDD_MotCtrlMgr_Irq.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 25
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Platform_Types.h 63
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h 64
+<R>I C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h C:/Component/AR201A_ArCplrSuprt_Impl/tools/contract/Compiler_Cfg.h 52
+<R>I C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h C:/Component/AR201A_ArCplrSuprt_Impl/tools/contract/Renesas_Compiler.h 55
+<EXTN> MotCtrlMgrIrq C:/Component/AR300A_MotCtrlMgr_Impl/include/CDD_MotCtrlMgr_Irq.h 30
+<DEFINE> MotCtrlMgrIrq C:/Component/AR300A_MotCtrlMgr_Impl/include/CDD_MotCtrlMgr_Irq.h 30 I DC OF F X (.,.) -
+<R>I C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/RteGen/MotCtrlRunnable.h 24
+<DEFINE> CDD_MotCtrlMgr_Irq_START_SEC_CODE C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 37 N DF OM - - - O
+<R>I C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c C:/Component/AR300A_MotCtrlMgr_Impl/include/MotCtrlMgr_MemMap.h 38
+<DEFINE> MEMMAP_ERROR C:/Component/AR300A_MotCtrlMgr_Impl/include/MotCtrlMgr_MemMap.h 24 I DF OM - - - O
+<DEFINE> MotCtrl_START_SEC_CODE C:/Component/AR300A_MotCtrlMgr_Impl/include/MotCtrlMgr_MemMap.h 29 I DF OM - - - O
+<R>I C:/Component/AR300A_MotCtrlMgr_Impl/include/MotCtrlMgr_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 30
+<PRAGMA> C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 42 ghs interrupt
+<EXTD> MotCtrlMgrIrq C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 43
+<DEFINE> MotCtrlMgrIrq C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 43 N DR OF F X (.,.) -
+<DEFINE> MotCtrlMgrIrq C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 43 N DF OF F X (.,.) -
+<DEFINE> MotCtrlLoopCntr_Cnt_F_u8 C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 45 N DC OV B N uc S
+<DEFINE> MotCtrlLoopCntr_Cnt_F_u8 C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 45 N DF OV B N uc S
+<LIT> 1 U P C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 45 81 N DN ui B O
+<LIT> 1 U P C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 47 41 N DN ui B X
+<RDEF> C Calls
+<R>C MotCtrlMgrIrq MotCtrlReadRunPer1 49
+<RDEF> X Refers-to
+<R>X MotCtrlMgrIrq MotCtrlReadRunPer1 49 R
+<R>C MotCtrlMgrIrq MotCtrlWriteRunPer1 51
+<R>X MotCtrlMgrIrq MotCtrlWriteRunPer1 51 R
+<LIT> 1 U P C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 52 37 N DN ui B X
+<CTLG> MotCtrlMgrIrq 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 3
+<CTLG> 3 4
+<CTLG> 4 6
+<CTLGN> 44 47 47 53 53 53 
+<S>
+<S>STFIL  C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c
+<S>STNAM  MotCtrlMgrIrq
+<S>STCYC  2
+<S>STMCC  0 (2:2)
+<S>STMIF  1
+<S>STSUB  2
+<S>STAKI  4
+<S>STLIN  8
+<S>STXLN  5
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  2
+<S>STPDN  0.40   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  5
+<S>STAV2  6
+<S>STAV3  8
+<S>STST1  6
+<S>STST2  5
+<S>STST3  4
+<S>STPAR  0
+<S>STCAL  2
+<S>STFN1  22
+<S>STFN2  11
+
+<DEFINE> CDD_MotCtrlMgr_Irq_STOP_SEC_CODE C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c 55 N DF OM - - - O
+<R>I C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c C:/Component/AR300A_MotCtrlMgr_Impl/include/MotCtrlMgr_MemMap.h 56
+<DEFINE> MEMMAP_ERROR C:/Component/AR300A_MotCtrlMgr_Impl/include/MotCtrlMgr_MemMap.h 24 I DF OM - - - O
+<DEFINE> MotCtrl_STOP_SEC_CODE C:/Component/AR300A_MotCtrlMgr_Impl/include/MotCtrlMgr_MemMap.h 36 I DF OM - - - O
+<R>I C:/Component/AR300A_MotCtrlMgr_Impl/include/MotCtrlMgr_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 37
+<S>
+<S>STFIL  C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c
+<S>STNAM  MotCtrlMgrIrq
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c
+<S>STNAM  C:/Component/AR300A_MotCtrlMgr_Impl/tools/contract/generate/CDD_MotCtrlMgr_Irq.c
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  0
+<S>STECT  0
+<S>STFNC  1
+<S>STFCO  2
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  9
+<S>STOPT  15
+<S>STOPN  12
+<S>STTOT  56
+<S>STZIP  105
+<S>STHAL  102
+<S>STSHN  324
+<S>STDIF  7.00   
+<S>STEFF  1863
+<S>STVOL  266
+<S>STDEV  0.31   
+<S>STBUG  0
+<S>STTPP  58
+<S>STTLN  10
+<S>STM20  14
+<S>STM21  38
+<S>STM22  4
+<S>STM28  7
+<S>STM33  0
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  0.121  
+<S>STBMS  0.124  
+<S>STBME  0.118  
+<S>STTDO  1.120  
+<S>STTDS  1.203  
+<S>STTDE  1.262  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  4.211  
+

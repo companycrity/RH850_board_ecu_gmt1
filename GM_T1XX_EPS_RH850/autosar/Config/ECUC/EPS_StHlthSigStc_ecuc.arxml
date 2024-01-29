@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="B7EDD042-4044-414C-9970-1C2313A88AC7">
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="8fd032dc-c2c4-4efa-bfe8-101054c11fd8">
+          <SHORT-NAME>StHlthSigStc</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/Nexteer/StHlthSigStc</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="a707b15e-cbb9-482f-ad1e-1b131ff6124b">
+              <SHORT-NAME>StHlthSigStcCrConfigList</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcCrConfigList</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcCrConfigList/StHlthSigStcCrcStartSymbol</DEFINITION-REF>
+                  <VALUE>ApplCRCAddress</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="86afddde-3589-46bc-acd5-82798eb56c45">
+              <SHORT-NAME>StHlthSigStcApplicationConfig</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcApplicationConfig</DEFINITION-REF>
+              <REFERENCE-VALUES>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcApplicationConfig/StHlthSigStcOsApplicationReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Appl10</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+              </REFERENCE-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="67a86525-c7d1-4e74-b57a-754e3f371c00">
+              <SHORT-NAME>CtrlrTStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="d1f906d5-1e0f-40a8-bb77-4189693f95da">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>CtrlrTStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>100000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_100ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="d847f7b1-b08e-4690-8112-a02ed800ed8e">
+              <SHORT-NAME>OutpAssiStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="3a334631-0413-4bba-bc80-90de0bc50ae6">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>OutpAssiStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="cade1191-797b-4221-9522-0e98a32ca5e4">
+              <SHORT-NAME>DigTqSnsrAStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="e7e4dca4-067b-40ba-a375-8c241bed4fb5">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>DigTqSnsrAStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>4000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_4ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="b0548907-56ee-4859-8408-ab315ced76d1">
+              <SHORT-NAME>DigTqSnsrBStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="e8cc97d3-607d-4bf7-aaf6-bdb6440b0980">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>DigTqSnsrBStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>4000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_4ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="73aafeff-f8d9-4978-b2a4-9026f638b7cf">
+              <SHORT-NAME>DigTqIdptSigStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="e460405d-a706-4208-b5e9-c26576aa82e6">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>DigTqIdptSigStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>4000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_4ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="bce54a01-31a4-4158-8dc1-9a055900d74e">
+              <SHORT-NAME>DutyCycStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="1387e1aa-c53e-4766-981e-7cc30b314049">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>DutyCycStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>100000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_100ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="b1af1b5c-310e-4b1c-81a2-1c4cb71e7791">
+              <SHORT-NAME>EotImpctStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="f3b9372a-b24c-4b55-acf9-1b8e17242d36">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>EotImpctStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="6f9b3d61-24c1-4a43-8f55-efdc199ff032">
+              <SHORT-NAME>MotPosStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="c9a25b5a-f45b-4378-beb1-355beddf5d82">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>MotPosStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="327bbaf2-7191-4f7a-8ae2-b7d6cc1abca9">
+              <SHORT-NAME>MotPosABDiffStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="3167744c-ec70-4e12-9047-4a6b1fc3c8ad">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>AbsltMotPosABDifStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="040cd894-8d2d-49f9-ab0c-c63ca201d12d">
+              <SHORT-NAME>MotPosACDiffStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="ee7c44df-02bb-4651-9161-bd9efcde4b63">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>AbsltMotPosACDifStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="df28e33f-dfd4-4048-b007-531e18d36eb2">
+              <SHORT-NAME>MotPosBCDiffStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="87b7c63b-8cd5-4140-beda-1fb6a5804f5e">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>AbsltMotPosBCDifStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="7e82eae8-e348-4076-8be6-418fd23eb936">
+              <SHORT-NAME>CurrMotSumABCStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="c82b63ea-451d-4ead-9a07-d01944a17b06">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>CurrMotSumABCStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="c4d73aa0-1332-459d-be6a-6442ca7cf3e8">
+              <SHORT-NAME>CurrMotSumDEFStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="4c623aa5-9e7a-4b32-89ba-e5925bdeec8b">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>CurrMotSumDEFStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="752d4566-31af-40f0-bca0-362b163eb519">
+              <SHORT-NAME>MotPosPhaseAStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="fa756450-d2b3-4c60-9a42-78a43a1e145b">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>PhaAStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="d3322b0b-59af-480b-a1c7-2cb7da793bf9">
+              <SHORT-NAME>MotPosPhaseBStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="38f2d9da-5b8f-422f-9cb2-98ee7ff2408e">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>PhaBStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="a8225dc6-4a0d-4881-a3af-da2255a909c3">
+              <SHORT-NAME>MotPosPhaseCStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="14893769-ffa7-4a1a-b6e0-e8d16a4d2d6a">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>PhaCStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="97d324a4-7540-43b5-8126-ab8e4277aa73">
+              <SHORT-NAME>MotPosPhaseDStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="02c4f6fa-e56a-47f9-a65e-9fe0ed3edbfb">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>PhaDStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="809cfa02-66f5-46fc-a02a-815c67ec92ba">
+              <SHORT-NAME>MotPosPhaseEStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="77e7a101-d216-4396-afc7-40ba9f0c2cba">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>PhaEStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="61b436fc-73fe-454d-9ef5-5f480315f54a">
+              <SHORT-NAME>MotPosPhaseFStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="5c87e005-a47f-47c6-b2df-4b5d627dcc58">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>PhaFStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="0b67aa19-4cf7-4a9a-9862-7b03adb8b36c">
+              <SHORT-NAME>RamEccSngBitCorrnStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="4504cead-2b59-4a69-b7de-316a1c15bd66">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>RamEccSngBitCorrnStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="9fb13da0-49c7-4fd4-a5d0-b018e40e10f0">
+              <SHORT-NAME>FricEstimnStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="94d58ae6-698d-46fd-a5c5-0f15375c0d64">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>FricEstimnStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>10000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_10ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="a6d8b97a-4231-413e-a0b3-9e1d515538c2">
+              <SHORT-NAME>WhlImbMaxCmpStHlth</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="d1e43dbf-c976-4df6-9bb5-94158b6faa6c">
+                  <SHORT-NAME>StHlthSigStcSignalSettings</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalName</DEFINITION-REF>
+                      <VALUE>WhlImbMaxCmpStHlth</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcLoopTime</DEFINITION-REF>
+                      <VALUE>2000</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcUpdatedInMotorIsr</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/Nexteer/StHlthSigStc/StHlthSigStcSignalList/StHlthSigStcSignalSettings/StHlthSigStcSignalTaskReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/Os/Task_2ms_Appl10</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

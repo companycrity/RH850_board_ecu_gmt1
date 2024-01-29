@@ -1,0 +1,134 @@
+Verification of DF002A_Swp_DataDict
+03-Feb-2016 17:21:43
+Tool Release:  2.26.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 3, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 2, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+(variables: 4, errors: 0)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+(variables: 2, errors: 0)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+SwpSinTq                    	Name does not match required pattern.
+(variables: 1, errors: 1)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+SwpCfg                      	Name does not match required pattern.
+SwpCosTq                    	Name does not match required pattern.
+SwpDwellStrtTi              	Name does not match required pattern.
+SwpDwellTi                  	Name does not match required pattern.
+SwpFrqIdx                   	Name does not match required pattern.
+SwpFrqList                  	Name does not match required pattern.
+SwpGain                     	Name does not match required pattern.
+SwpGenHwTq                  	Name does not match required pattern.
+SwpInstsFrq                 	Name does not match required pattern.
+SwpLstStSinArg              	Name does not match required pattern.
+SwpModEna                   	Name does not match required pattern.
+SwpOffs                     	Name does not match required pattern.
+SwpSinAmp                   	Name does not match required pattern.
+SwpSwtSt                    	Name does not match required pattern.
+SwpTranStrtTi               	Name does not match required pattern.
+SwpTranTi                   	Name does not match required pattern.
+SwpVehSpdChkEna             	Name does not match required pattern.
+SwpVehSpdMax                	Name does not match required pattern.
+(variables: 18, errors: 18)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+SWPHWTQHILIM                     	Name does not match required pattern.
+SWPHWTQLOLIM                     	Name does not match required pattern.
+SWPTIUNITCNVN                    	Name does not match required pattern.
+(variables: 7, errors: 3)
+
+----------------
+CSArguments:	
+----------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+SWPENA                           	Name does not match required pattern.
+(variables: 1, errors: 1)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+39 variables,  23 issues to fix.
+
+
+End of Report

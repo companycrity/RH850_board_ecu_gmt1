@@ -1,0 +1,37 @@
+<#@ AutosarXml processor="ArDirectiveProcessor" requires="arPrefix='ar';arNamespace='http://autosar.org/schema/r4.0'" #>
+<#@ template inherits="AutosarDirectiveProcessor.ArGtcBase" debug="false" #>
+<#@ output extension="" #>
+<#@ include file="Helper.tt" #>
+<# ChangeContext( Xp.ModuleConfAtDefRefTo( "NxtrMfgSrvIf/General" ) ); #>
+/**********************************************************************************************************************
+* Copyright 2015 Nexteer
+* Nexteer Confidential
+*
+* Module File Name  : NxtrMfgSrvIf_Cfg.h
+* Module Description: Nexteer Manufacturing Services Interface
+* Project           : CBD
+* Author            : Jared Julien
+* Generator         : <#= GeneratorName #> <#= GeneratorVersion #>
+* Generation Time   : <#= DateTime.Now.ToString( "dd.MM.yyyy HH:mm:ss" ) #>
+***********************************************************************************************************************
+* Version Control:
+* %version:          1 %
+* %derived_by:       kzdyfh %
+*----------------------------------------------------------------------------------------------------------------------
+* Date      Rev      Author         Change Description                                                           SCR #
+* -------   -------  --------  ---------------------------------------------------------------------------     --------
+* 05/11/16  1        JWJ       Initial Version                                                                 EA4#5674
+* 12/13/16  2        JWJ       Correct QAC warning caused by a missing U in the buffer size                    EA4#
+**********************************************************************************************************************/
+
+/******************************************* Multiple Include Protection *********************************************/
+#ifndef NXTRMFGSRVIF_CFG_H
+#define NXTRMFGSRVIF_CFG_H
+
+/*********************************************** Exported Declarations ***********************************************/
+#define NXTRMFGSRFIFBUFSIZE_CNT_U16  <#= ValueOf( Xp.ValueAtDefRefTo( "BufSize" ) ) #>U
+typedef uint8 Ary1D_u8_CmnMfgSrvIf[NXTRMFGSRFIFBUFSIZE_CNT_U16];
+
+
+/**************************************** End Of Multiple Include Protection *****************************************/
+#endif

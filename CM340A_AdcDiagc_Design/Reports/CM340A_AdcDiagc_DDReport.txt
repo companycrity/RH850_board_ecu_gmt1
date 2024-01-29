@@ -1,0 +1,134 @@
+Verification of CM340A_AdcDiagc_DataDict
+28-Sep-2016 15:13:13
+Tool Release:  2.46.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 2, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+Adc0ScanGroup2Ref0          	Cannot match name to list of known Nexteer signals.
+Adc0ScanGroup2Ref1          	Cannot match name to list of known Nexteer signals.
+Adc0ScanGroup3Ref0          	Cannot match name to list of known Nexteer signals.
+Adc0ScanGroup3Ref1          	Cannot match name to list of known Nexteer signals.
+Adc0SelfDiag0               	Cannot match name to list of known Nexteer signals.
+Adc0SelfDiag2               	Cannot match name to list of known Nexteer signals.
+Adc0SelfDiag4               	Cannot match name to list of known Nexteer signals.
+Adc1ScanGroup2Ref0          	Cannot match name to list of known Nexteer signals.
+Adc1ScanGroup2Ref1          	Cannot match name to list of known Nexteer signals.
+Adc1ScanGroup3Ref0          	Cannot match name to list of known Nexteer signals.
+Adc1ScanGroup3Ref1          	Cannot match name to list of known Nexteer signals.
+(variables: 16, errors: 11)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+Adc0Faild                   	Cannot match name to list of known Nexteer signals.
+Adc1Faild                   	Cannot match name to list of known Nexteer signals.
+AdcDiagcEndPtrOutp          	Name does not match required pattern.
+AdcDiagcEndPtrOutp          	Cannot match name to list of known Nexteer signals.
+AdcDiagcStrtPtrOutp         	Name does not match required pattern.
+AdcDiagcStrtPtrOutp         	Cannot match name to list of known Nexteer signals.
+(variables: 6, errors: 6)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 4, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+AdcDiagcEndPtr              	Name does not match required pattern.
+AdcDiagcSt                  	Name does not match required pattern.
+AdcDiagcStrtPtr             	Name does not match required pattern.
+(variables: 15, errors: 3)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+ADCDIAGACCRCYFLTPRM_CNT_U08 	Found in data dictionary but not in model.
+ADCDIAGCVLTGTHD_VOLT_F32    	Found in data dictionary but not in model.
+ADCDIAGZEROFLTPRM_CNT_U08   	Found in data dictionary but not in model.
+(variables: 20, errors: 3)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 2, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+68 variables,  23 issues to fix.
+
+
+End of Report

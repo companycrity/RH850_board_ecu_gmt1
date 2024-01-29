@@ -1,0 +1,133 @@
+Verification of ES400A_TunSelnMngt_DataDict
+24-Apr-2016 17:22:49
+Tool Release:  2.38.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+[Warning: In workspace, Struct.EngMin has been increased to the EngMin of the Struct data type. Please update your saved files.] 
+[> In <a href="matlab: opentoline('C:\Matlab\Dependencies\Data_Management v2.38.0\+bt\@struct\struct.m',44,1)">struct.struct>struct.validateUserEngMin at 44</a>
+  In <a href="matlab: opentoline('C:\Matlab\Dependencies\Data_Management v2.38.0\+DataDict\@PIM\PIM.m',139,1)">PIM.PIM>PIM.set.EngMin at 139</a>
+  In <a href="matlab: opentoline('C:\Component\ES400A_TunSelnMngt_Design\Design\ES400A_TunSelnMngt_DataDict.m',488,1)">ES400A_TunSelnMngt_DataDict at 488</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2013b\toolbox\matlab\lang\run.m',63,1)">run at 63</a>
+  In C:\Matlab\Dependencies\Tools v1.11.0\Design_Tools\VerifyDD.p>ImportVars at 1798
+  In C:\Matlab\Dependencies\Tools v1.11.0\Design_Tools\VerifyDD.p>VerifyDD at 240] 
+[Warning: In workspace, Struct.EngMax has been increased to the EngMax of the Struct data type. Please update your saved files.] 
+[> In <a href="matlab: opentoline('C:\Matlab\Dependencies\Data_Management v2.38.0\+bt\@struct\struct.m',72,1)">struct.struct>struct.validateUserEngMax at 72</a>
+  In <a href="matlab: opentoline('C:\Matlab\Dependencies\Data_Management v2.38.0\+DataDict\@PIM\PIM.m',149,1)">PIM.PIM>PIM.set.EngMax at 149</a>
+  In <a href="matlab: opentoline('C:\Component\ES400A_TunSelnMngt_Design\Design\ES400A_TunSelnMngt_DataDict.m',489,1)">ES400A_TunSelnMngt_DataDict at 489</a>
+  In <a href="matlab: opentoline('C:\Program Files\MATLAB\R2013b\toolbox\matlab\lang\run.m',63,1)">run at 63</a>
+  In C:\Matlab\Dependencies\Tools v1.11.0\Design_Tools\VerifyDD.p>ImportVars at 1798
+  In C:\Matlab\Dependencies\Tools v1.11.0\Design_Tools\VerifyDD.p>VerifyDD at 240] 
+(errors: 2)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+Missing Model 	Unable to find model for comparison to data dictionary.
+(errors:  1)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 5, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+Calc32BitCrc_u32            	    Crc_u          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 3, errors: 1)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+DesIninIdx                  	Cannot match name to list of known Nexteer signals.
+DesRtIdx                    	Cannot match name to list of known Nexteer signals.
+(variables: 2, errors: 2)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+ActvGroup                   	Cannot match name to list of known Nexteer signals.
+ActvIninIdx                 	Cannot match name to list of known Nexteer signals.
+ActvRtIdx                   	Cannot match name to list of known Nexteer signals.
+CalCopyCmpl                 	Cannot match name to list of known Nexteer signals.
+(variables: 4, errors: 4)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 5, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 3, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+25 variables,  10 issues to fix.
+
+
+End of Report

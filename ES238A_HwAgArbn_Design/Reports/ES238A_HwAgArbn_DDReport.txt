@@ -1,0 +1,125 @@
+Verification of ES238A_HwAgArbn_DataDict
+14-Aug-2015 14:40:28
+Tool Release:  2.16.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF99A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+Unable to find model for comparison to data dictionary.
+(errors:  1)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 1, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<ShoName><TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+------------
+Client:	
+------------
+(variables: 0, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+HwAgA                       	Cannot match name to list of known Nexteer signals.
+HwAgAQlfr                   	Cannot match name to list of known Nexteer signals.
+HwAgARollgCntr              	Cannot match name to list of known Nexteer signals.
+HwAgB                       	Cannot match name to list of known Nexteer signals.
+HwAgB                       	    B              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+HwAgBQlfr                   	Cannot match name to list of known Nexteer signals.
+HwAgBQlfr                   	    B              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+HwAgBRollgCntr              	Cannot match name to list of known Nexteer signals.
+HwAgBRollgCntr              	    B              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 7, errors: 9)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+(variables: 1, errors: 0)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+HwAgArbnHwAgMaxStall             	.PortName:   	.PortName should be same as Calibration Name.
+(variables: 1, errors: 1)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+dHwAgArbnAgBAvl             	    B              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 2, errors: 1)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+HwAgBRollgCntrPrev          	    B              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+HwAgBStallCntrPrev          	    B              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 5, errors: 2)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 1, errors: 0)
+
+----------------
+CSArguments:	
+----------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+19 variables,  14 issues to fix.
+
+
+End of Report

@@ -1,0 +1,375 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Erase Block</title>
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta name="toctype" itemprop="pagetype" content="fcn">
+        <meta name="infotype" itemprop="infotype" content="ref/function" />
+        <meta name="description" itemprop="description" content="" />
+        <link href="./includes/product/css/reset.css" rel="stylesheet" type="text/css">
+        <link href="./includes/product/css/960.css" rel="stylesheet" type="text/css">
+        <link href="./includes/product/css/site5.css" rel="stylesheet" type="text/css">
+        <link href="./includes/product/css/doc_center.css" rel="stylesheet" type="text/css">
+        <link href="./includes/product/css/doc_center_installed.css" rel="stylesheet" type="text/css">
+        <link href="./includes/product/css/doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+
+        <script type="text/javascript" src="./includes/product/scripts/jquery/jquery-latest.js"></script>
+        <script type="text/javascript" src="./includes/shared/scripts/l10n.js"></script>
+        <script type="text/javascript" src="./includes/shared/scripts/docscripts.js"></script>
+        <script type="text/javascript" src="./includes/product/scripts/docscripts.js"></script>
+        <script type="text/javascript" src="./includes/shared/scripts/mw.toc.js"></script>
+        <script type="text/javascript" src="./includes/shared/scripts/mw.imagescaling.js"></script>
+        <script type="text/javascript" src="./includes/shared/scripts/mw.imageanimation.js"></script>
+        <script type="text/javascript" src="./includes/shared/scripts/mw.breadcrumb.js"></script>
+        <script type="text/javascript" src="./includes/shared/scripts/jquery.highlight.js"></script>
+        <script type="text/javascript" src="./includes/shared/scripts/nanoscroller.min.js"></script>
+        <script type="text/javascript" src="./includes/product/scripts/jquery/jquery.tmpl.js"></script>
+        <script type="text/javascript" src="./includes/product/scripts/jquery/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="./includes/product/scripts/jquery/jquery.toggleval.js"></script>
+        <script type="text/javascript" src="./includes/product/scripts/localnav.js"></script>
+        <script type="text/javascript" src="./includes/product/scripts/suggest.js"></script>
+        <script type="text/javascript">
+            var suggestionsObj;
+            $(function() {
+                var searchField = $('#docsearch');
+                suggestionsObj = new Suggestions(getSuggestions, getMore, searchField);
+            });
+        
+            function getSuggestions() {
+               var text = suggestionsObj.searchField.val();
+               document.location='docsuggestion:' + text;
+            }
+
+            function getMore(type) {
+                var text = suggestionsObj.searchField.val();
+                document.location='docsuggestion:' + type + ':' + text;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="site_container site_toc_closed">
+            <div class="toc_pane">
+                <div xmlns:atict="http://www.arbortext.com/namespace/atict">
+                    <div class="toc_container_wrapper" tabindex="0" style="display:block;">
+                        <div class="toc_header" lang="en">
+                            <div class="toc_icon" id="toc.matlab">
+                            <a href="../doccentertoc.html"></a>
+                            </div>
+                            <h3>Contents</h3>
+                        </div><!--close_toc_header-->
+                        <div class="toc_scroll_pane">
+                            <div class="toc_container">
+                            <!--BEGINNING OF TOC DATA-->
+                            <div class="toc_doc_center_home">Nexteer NvM Library</div>
+                                <ul>
+                                    <li id="matlab.index.html.0" class="toc_collapsed">
+                                        <div class="node_element">
+                                            <div class="wrapper img_wrapper"></div>
+                                            <div class="wrapper text_wrapper">By Function</div>
+                                        </div>
+                                        <ul>
+                                            <li id="matlab.examples.index.html">
+                                                <div class="node_element">
+                                                    <div class="wrapper img_wrapper"></div>
+                                                    <div class="wrapper text_wrapper">
+                                                        <a href="./EraseBlock.html" class="corrected_url">Erase Block</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="matlab.examples.index.html">
+                                                <div class="node_element">
+                                                    <div class="wrapper img_wrapper"></div>
+                                                    <div class="wrapper text_wrapper">
+                                                        <a href="./GetDataIndex.html" class="corrected_url">Get Data Index</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="matlab.examples.index.html">
+                                                <div class="node_element">
+                                                    <div class="wrapper img_wrapper"></div>
+                                                    <div class="wrapper text_wrapper">
+                                                        <a href="./GetErrorStatus.html" class="corrected_url">Get Error Status</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="matlab.examples.index.html">
+                                                <div class="node_element">
+                                                    <div class="wrapper img_wrapper"></div>
+                                                    <div class="wrapper text_wrapper">
+                                                        <a href="./InvalidateBlock.html" class="corrected_url">Invalidate Block</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="matlab.examples.index.html">
+                                                <div class="node_element">
+                                                    <div class="wrapper img_wrapper"></div>
+                                                    <div class="wrapper text_wrapper">
+                                                        <a href="./ReadBlock.html" class="corrected_url">Read Block</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="matlab.examples.index.html">
+                                                <div class="node_element">
+                                                    <div class="wrapper img_wrapper"></div>
+                                                    <div class="wrapper text_wrapper">
+                                                        <a href="./RestoreBlockDefaults.html" class="corrected_url">Restore Block Defaults</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="matlab.examples.index.html">
+                                                <div class="node_element">
+                                                    <div class="wrapper img_wrapper"></div>
+                                                    <div class="wrapper text_wrapper">
+                                                        <a href="./SetBlockProtection.html" class="corrected_url">Set Block Protection</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="matlab.examples.index.html">
+                                                <div class="node_element">
+                                                    <div class="wrapper img_wrapper"></div>
+                                                    <div class="wrapper text_wrapper">
+                                                        <a href="./SetDataIndex.html" class="corrected_url">Set Data Index</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="matlab.examples.index.html">
+                                                <div class="node_element">
+                                                    <div class="wrapper img_wrapper"></div>
+                                                    <div class="wrapper text_wrapper">
+                                                        <a href="./SetRamBlockStatus.html" class="corrected_url">Set Ram Block Status</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="matlab.examples.index.html">
+                                                <div class="node_element">
+                                                    <div class="wrapper img_wrapper"></div>
+                                                    <div class="wrapper text_wrapper">
+                                                        <a href="./WriteBlock.html" class="corrected_url">Write Block</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul> <!--END OF TOC DATA-->
+                            </div><!--close_toc_container-->
+                        </div><!--close_toc_scroll_pane-->
+                    </div><!--close_toc_container_wrapper-->
+                </div>
+            </div><!--close_toc_pane-->
+            <div class="page_container">
+                <div class="content_frame">
+                    <div class="content_container" id="content_container">
+                        <section id="doc_center_content">
+                            <div itemprop="content"><h1 class="r2013b" itemprop="title">Erase Block</h1><!-- SYNCHTO: _funcalpha.html -->
+                                <div class="doc_topic_desc">
+                                    <div class="purpose_container">
+                                        <!-- Sub heading below the title of the page -->
+                                        <p itemprop="purpose"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2>Description</h2>
+                            <div itemprop="content">
+                                <p>
+                                    Request to erase the specified NvM block. This function queues the erase request and returns the acceptance result synchronously. The NvM can notify the application by callback when the service is finished. This function performs the same action as NvM_InvalidateNvBlock for FEE hardware.
+                                </p>
+                                <table cellspacing="0" cellpadding="4" border="2" class="body">
+                                    <colgroup>
+                                        <col width="33%">
+                                    </colgroup>
+                                    <thead>
+                                        <th>
+                                            <p>Request Type</p>
+                                        </th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Asynchronous
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="clear"></div>
+                            <div itemprop="content">
+                                <h2>Port Description</h2>
+                                <p>
+                                    The following table describes the ports for this block.
+                                </p>
+                                <table cellspacing="0" cellpadding="4" border="2" class="body">
+                                    <colgroup>
+                                        <col width="10%">
+                                        <col width="10%">
+                                        <col width="80%">
+                                    </colgroup>
+                                    <thead>
+                                        <th>
+                                            <p>Port</p>
+                                        </th>
+                                        <th>
+                                            <p>Type</p>
+                                        </th>
+                                        <th>
+                                            <p>Description</p>
+                                        </th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>CallFunction</p>
+                                            </td>
+                                            <td>
+                                                <p>Input</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    Non-functional port to allow designers to show when the function should be called in their model.
+                                                    <br><em><span style="font-size: x-small">Only available if Cast Function Return to Void = True</span></em>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Return</p>
+                                            </td>
+                                            <td>
+                                                <p>Output</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    Standard return <tt>E_OK</tt> or <tt>E_NOT_OK</tt> for the function call.
+                                                    <br><em><span style="font-size: x-small">Only available if Cast Function Return to Void = False</span></em>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="clear"></div>
+                            <div itemprop="content">
+                                <h2>Mask Description</h2>
+                                <p>
+                                    The following table describes the parameters for this mask.
+                                </p>
+                                <table cellspacing="0" cellpadding="4" border="2" class="body">
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="80%">
+                                    </colgroup>
+                                    <thead>
+                                        <th>
+                                            <p>Parameter</p>
+                                        </th>
+                                        <th>
+                                            <p>Description</p>
+                                        </th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>NvM Block Name</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    The block name defined in the m-file with the NVM class.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Cast Function Return to Void</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <tt>True</tt>: Function will be cast as a 'void' function and the return value is ignored.<br>
+                                                    <tt>False</tt>: Value is returned and used by the calling function.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Data Store for Return</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    Data store name for use in model testing for the result of the function call.<br>
+                                                    <em><span style="font-size: x-small">Only available if Cast Function Return to Void = False</span></em>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="clear"></div>
+                            <div itemprop="content">
+                                <h2>NvM Block Compatibility</h2>
+                                <p>
+                                    The following table describes which NvM block type is compatible with this function.
+                                </p>
+                                <table cellspacing="0" cellpadding="4" border="2" class="body">
+                                    <colgroup>
+                                        <col width="20%">
+                                        <col width="80%">
+                                    </colgroup>
+                                    <thead>
+                                        <th>
+                                            <p>NvM Block Type</p>
+                                        </th>
+                                        <th>
+                                            <p>Compatible</p>
+                                        </th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p>Native</p>
+                                            </td>
+                                            <td>
+                                                <p>Yes</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Redundant</p>
+                                            </td>
+                                            <td>
+                                                <p>Yes</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p>Data Set</p>
+                                            </td>
+                                            <td>
+                                                <p>Yes</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h2>See Also</h2>
+                            <p>
+                                <span itemscope="" itemprop="seealso">
+                                    <a itemprop="url" href="./InvalidateBlock.html">
+                                        <span itemprop="name">
+                                            <tt>Invalidate Block</tt>
+                                        </span>
+                                    </a>
+                                </span>
+                            </p>
+                        </section>
+                        <!--Last updated: Fri Jul 19 05:36:01 EDT 2013-->
+                    </div> <!-- close_content_container -->
+                </div> <!-- close_content_frame -->
+            </div> <!--  close_page_container -->
+            <div class="footer_container">
+                <div class="footer">
+                    <div class="copyright">2015 Nexteer Automotive<br>K. Smith -- 15 May 2015</div>
+                </div>
+            </div>
+        </div> <!--  close_site_container -->
+    </body>
+</html>

@@ -1,0 +1,986 @@
+<RDEF> I Includes
+<R>I C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr.h 101
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr.h C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr_Type.h 40
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr_Type.h C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_Type.h 32
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_Type.h C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte.h 27
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 39
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Platform_Types.h 63
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h 64
+<R>I C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h C:/Component/AR201A_ArCplrSuprt_Impl/tools/contract/Compiler_Cfg.h 56
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte.h C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_UserTypes.h 41
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_UserTypes.h C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h 40
+<R>I C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 23
+<R>I C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h C:/Component/AR999A_ArchGlbPrm_Impl/include/ArchGlbPrm.h 24
+<R>I C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h 25
+<R>I C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h C:/Component/TL103A_CplrSuprt/include/2013.5.5/ansi/math.h 24
+<R>I C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 25
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_UserTypes.h C:/Component/SF019B_PwrLimr_Impl/tools/contract/ElecGlbPrm.h 41
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr.h C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_DataHandleType.h 41
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 76
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 81
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 101
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 166
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr.h C:/Component/SF019B_PwrLimr_Impl/tools/contract/PwrLimr_MemMap.h 377
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/PwrLimr_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/Rte_PwrLimr.h C:/Component/SF019B_PwrLimr_Impl/tools/contract/PwrLimr_MemMap.h 493
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/PwrLimr_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<R>I C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c C:/Component/AR999A_ArchGlbPrm_Impl/include/ArchGlbPrm.h 108
+<R>I C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c C:/Component/SF019B_PwrLimr_Impl/tools/contract/ElecGlbPrm.h 109
+<R>I C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h 110
+<R>I C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h 111
+<R>I C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 24
+<R>I C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h 112
+<R>I C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c C:/Component/AR101A_NxtrIntrpn_Impl/include/NxtrIntrpn.h 113
+<R>I C:/Component/AR101A_NxtrIntrpn_Impl/include/NxtrIntrpn.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 23
+<R>I C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c C:/Component/SF999A_SysGlbPrm_Impl/include/SysGlbPrm.h 114
+<DEFINE> PWRLIMRTOMILLISECFACTOR_ULS_U08 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 123 N DF OM - - - O
+<LIT> 10 U P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 123 49 N DN - F M
+<DEFINE> PWRLIMRTQLIMHILIM_ULS_F32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 124 N DF OM - - - O
+<LIT> 1.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 124 50 N FN - F M
+<DEFINE> PWRLIMRTQLIMLOLIM_ULS_F32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 125 N DF OM - - - O
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 125 50 N FN - F M
+<DEFINE> MAXNRIVTRS_CNT_U08 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 126 N DF OM - - - O
+<LIT> 2 U P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 126 49 N DN - F M
+<DEFINE> PrmPwrLimrMotEnvlpX_s11p4 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 128 N DF OM - - - O
+<DEFINE> PrmPwrLimrMotEnvlpY_u5p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 129 N DF OM - - - O
+<DEFINE> PrmPwrLimrStdOperMotEnvlpX_u11p5 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 130 N DF OM - - - O
+<DEFINE> PrmPwrLimrStdOperMotEnvlpY_u4p12 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 131 N DF OM - - - O
+<DEFINE> PrmPwrLimrVltgDptMotVelOffsX_u5p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 132 N DF OM - - - O
+<DEFINE> PrmPwrLimrVltgDptMotVelOffsY_u11p5 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 133 N DF OM - - - O
+<DEFINE> PwrLimr_START_SEC_CODE C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 739 N DF OM - - - O
+<R>I C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c C:/Component/SF019B_PwrLimr_Impl/tools/contract/PwrLimr_MemMap.h 740
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/PwrLimr_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<EXTD> PwrLimrInit1 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 761
+<DEFINE> PwrLimrInit1 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 761 N DR OF F X (.,.) -
+<DEFINE> PwrLimrInit1 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 761 N DF OF F X (.,.) -
+<RDEF> C Calls
+<R>C PwrLimrInit1 FilLpUpdGain 767
+<RDEF> X Refers-to
+<R>X PwrLimrInit1 FilLpUpdGain 767 R
+<R>C PwrLimrInit1 Rte_Prm_PwrLimr_PwrLimrAssiRednLpFilFrq_Val 767
+<R>X PwrLimrInit1 Rte_Prm_PwrLimr_PwrLimrAssiRednLpFilFrq_Val 767 R
+<R>X PwrLimrInit1 Rte_Inst_PwrLimr 767 R
+<R>C PwrLimrInit1 FilLpUpdGain 768
+<R>X PwrLimrInit1 FilLpUpdGain 768 R
+<R>C PwrLimrInit1 Rte_Prm_PwrLimr_PwrLimrMotVelLpFilFrq_Val 768
+<R>X PwrLimrInit1 Rte_Prm_PwrLimr_PwrLimrMotVelLpFilFrq_Val 768 R
+<R>X PwrLimrInit1 Rte_Inst_PwrLimr 768 R
+<R>C PwrLimrInit1 Rte_Call_PwrLimr_GetRefTmr100MicroSec32bit_Oper 771
+<R>X PwrLimrInit1 Rte_Call_PwrLimr_GetRefTmr100MicroSec32bit_Oper 771 R
+<R>X PwrLimrInit1 Rte_Inst_PwrLimr 771 R
+<CTLG> PwrLimrInit1 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 762 775 775 775 
+<S>
+<S>STFIL  C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c
+<S>STNAM  PwrLimrInit1
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  5
+<S>STAKI  6
+<S>STLIN  12
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  0
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  12
+<S>STAV2  12
+<S>STAV3  12
+<S>STST1  3
+<S>STST2  3
+<S>STST3  3
+<S>STPAR  0
+<S>STCAL  4
+<S>STFN1  28
+<S>STFN2  10
+
+<EXTD> PwrLimrPer1 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 815
+<DEFINE> PwrLimrPer1 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 815 N DR OF F X (.,.) -
+<DEFINE> PwrLimrPer1 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 815 N DF OF F X (.,.) -
+<DEFINE> AltFltActv_Cnt_T_logl C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 822 N DC OV B N uc -
+<DEFINE> AltFltActv_Cnt_T_logl C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 822 N DF OV B N uc -
+<DEFINE> BrdgVltg_Volt_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 823 N DC OV B N fs -
+<DEFINE> BrdgVltg_Volt_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 823 N DF OV B N fs -
+<DEFINE> IvtrLoaMtgtnEna_Cnt_T_logl C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 824 N DC OV B N uc -
+<DEFINE> IvtrLoaMtgtnEna_Cnt_T_logl C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 824 N DF OV B N uc -
+<DEFINE> MotBackEmfConEstimd_VoltPerMotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 825 N DC OV B N fs -
+<DEFINE> MotBackEmfConEstimd_VoltPerMotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 825 N DF OV B N fs -
+<DEFINE> MotTqCmdMrf_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 826 N DC OV B N fs -
+<DEFINE> MotTqCmdMrf_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 826 N DF OV B N fs -
+<DEFINE> MotVelMrf_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 827 N DC OV B N fs -
+<DEFINE> MotVelMrf_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 827 N DF OV B N fs -
+<DEFINE> MotTqCmdPwrLimd_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 830 N DC OV B N fs -
+<DEFINE> MotTqCmdPwrLimd_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 830 N DF OV B N fs -
+<DEFINE> MotEnvlpSpd_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 831 N DC OV B N fs -
+<DEFINE> MotEnvlpSpd_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 831 N DF OV B N fs -
+<DEFINE> MinStdOperLim_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 832 N DC OV B N fs -
+<DEFINE> MinStdOperLim_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 832 N DF OV B N fs -
+<DEFINE> TqEnvlpLim1_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 833 N DC OV B N fs -
+<DEFINE> TqEnvlpLim1_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 833 N DF OV B N fs -
+<DEFINE> TLimMaxCurr_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 835 N DC OV B N fs -
+<DEFINE> TLimMaxCurr_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 835 N DF OV B N fs -
+<DEFINE> OutpVelOffs_MotRadPerSec_T_u11p5 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 836 N DC OV B N us -
+<DEFINE> OutpVelOffs_MotRadPerSec_T_u11p5 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 836 N DF OV B N us -
+<DEFINE> OutpVelOffs_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 837 N DC OV B N fs -
+<DEFINE> OutpVelOffs_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 837 N DF OV B N fs -
+<DEFINE> PwrLimrBrdgVltgAltFltAdj_Volt_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 838 N DC OV B N fs -
+<DEFINE> PwrLimrBrdgVltgAltFltAdj_Volt_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 838 N DF OV B N fs -
+<DEFINE> PwrLimrBrdgVltgAltFltAdjLim_Volt_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 839 N DC OV B N fs -
+<DEFINE> PwrLimrBrdgVltgAltFltAdjLim_Volt_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 839 N DF OV B N fs -
+<DEFINE> BattVltgIntrpInp_Volt_T_u5p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 840 N DC OV B N us -
+<DEFINE> BattVltgIntrpInp_Volt_T_u5p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 840 N DF OV B N us -
+<DEFINE> SpdAdj_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 841 N DC OV B N fs -
+<DEFINE> SpdAdj_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 841 N DF OV B N fs -
+<DEFINE> PwrLimrFildMotVel_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 842 N DC OV B N fs -
+<DEFINE> PwrLimrFildMotVel_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 842 N DF OV B N fs -
+<DEFINE> AbsMotVelMrf_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 843 N DC OV B N fs -
+<DEFINE> AbsMotVelMrf_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 843 N DF OV B N fs -
+<DEFINE> AbsMotVelMrf_MotRadPerSec_T_u11p5 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 844 N DC OV B N us -
+<DEFINE> AbsMotVelMrf_MotRadPerSec_T_u11p5 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 844 N DF OV B N us -
+<DEFINE> MinStdOperLim_MotNwtMtr_T_u4p12 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 845 N DC OV B N us -
+<DEFINE> MinStdOperLim_MotNwtMtr_T_u4p12 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 845 N DF OV B N us -
+<DEFINE> MotTqCmdIvtrLoaSca_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 846 N DC OV B N fs -
+<DEFINE> MotTqCmdIvtrLoaSca_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 846 N DF OV B N fs -
+<DEFINE> SignMotEnvlpSpd_Uls_T_s08 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 847 N DC OV B N nc -
+<DEFINE> SignMotEnvlpSpd_Uls_T_s08 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 847 N DF OV B N nc -
+<DEFINE> AbsMotEnvlpSpd_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 848 N DC OV B N fs -
+<DEFINE> AbsMotEnvlpSpd_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 848 N DF OV B N fs -
+<DEFINE> AbsMotEnvlpSpd_MotRadPerSec_T_u12p4 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 849 N DC OV B N us -
+<DEFINE> AbsMotEnvlpSpd_MotRadPerSec_T_u12p4 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 849 N DF OV B N us -
+<DEFINE> TqLim1_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 850 N DC OV B N fs -
+<DEFINE> TqLim1_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 850 N DF OV B N fs -
+<DEFINE> TqEnvlpLim4_MotNwtMtr_T_u5p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 851 N DC OV B N us -
+<DEFINE> TqEnvlpLim4_MotNwtMtr_T_u5p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 851 N DF OV B N us -
+<DEFINE> TqEnvlpLim4_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 852 N DC OV B N fs -
+<DEFINE> TqEnvlpLim4_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 852 N DF OV B N fs -
+<DEFINE> TqLim4_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 853 N DC OV B N fs -
+<DEFINE> TqLim4_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 853 N DF OV B N fs -
+<DEFINE> Tmp1MotEnvlp_MotRadPerSec_T_s27p4 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 854 N DC OV B N nl -
+<DEFINE> Tmp1MotEnvlp_MotRadPerSec_T_s27p4 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 854 N DF OV B N nl -
+<DEFINE> Tmp2MotEnvlp_MotRadPerSec_T_u21p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 855 N DC OV B N ul -
+<DEFINE> Tmp2MotEnvlp_MotRadPerSec_T_u21p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 855 N DF OV B N ul -
+<DEFINE> DenMotEnvlp_MotRadPerSec_T_s27p4 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 856 N DC OV B N nl -
+<DEFINE> DenMotEnvlp_MotRadPerSec_T_s27p4 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 856 N DF OV B N nl -
+<DEFINE> TmpEnvlpLim1_MotNwtMtr_T_s20p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 857 N DC OV B N nl -
+<DEFINE> TmpEnvlpLim1_MotNwtMtr_T_s20p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 857 N DF OV B N nl -
+<DEFINE> TqEnvlpLim1_MotNwtMtr_T_s20p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 858 N DC OV B N nl -
+<DEFINE> TqEnvlpLim1_MotNwtMtr_T_s20p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 858 N DF OV B N nl -
+<DEFINE> TqEnvlpLim1_MotNwtMtr_T_u5p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 859 N DC OV B N us -
+<DEFINE> TqEnvlpLim1_MotNwtMtr_T_u5p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 859 N DF OV B N us -
+<DEFINE> Tmp1MotTq_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 860 N DC OV B N fs -
+<DEFINE> Tmp1MotTq_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 860 N DF OV B N fs -
+<DEFINE> Tmp2MotTq_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 861 N DC OV B N fs -
+<DEFINE> Tmp2MotTq_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 861 N DF OV B N fs -
+<DEFINE> MRFMotTqCmdTemp_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 862 N DC OV B N fs -
+<DEFINE> MRFMotTqCmdTemp_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 862 N DF OV B N fs -
+<DEFINE> AbsSpdAdj_MotRadPerSec_T_u12p4 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 863 N DC OV B N us -
+<DEFINE> AbsSpdAdj_MotRadPerSec_T_u12p4 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 863 N DF OV B N us -
+<DEFINE> TqEnvlpLowVltgLmt_MotNwtMtr_u5p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 864 N DC OV B N us -
+<DEFINE> TqEnvlpLowVltgLmt_MotNwtMtr_u5p11 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 864 N DF OV B N us -
+<DEFINE> TqEnvlpLowVltgLmt_MotNwtMtr_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 865 N DC OV B N fs -
+<DEFINE> TqEnvlpLowVltgLmt_MotNwtMtr_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 865 N DF OV B N fs -
+<R>C PwrLimrPer1 Rte_Read_PwrLimr_AltFltActv_Logl 869
+<R>X PwrLimrPer1 Rte_Read_PwrLimr_AltFltActv_Logl 869 R
+<R>C PwrLimrPer1 Rte_Read_PwrLimr_BrdgVltg_Val 870
+<R>X PwrLimrPer1 Rte_Read_PwrLimr_BrdgVltg_Val 870 R
+<R>C PwrLimrPer1 Rte_Read_PwrLimr_IvtrLoaMtgtnEna_Logl 871
+<R>X PwrLimrPer1 Rte_Read_PwrLimr_IvtrLoaMtgtnEna_Logl 871 R
+<R>C PwrLimrPer1 Rte_Read_PwrLimr_MotBackEmfConEstimd_Val 872
+<R>X PwrLimrPer1 Rte_Read_PwrLimr_MotBackEmfConEstimd_Val 872 R
+<R>C PwrLimrPer1 Rte_Read_PwrLimr_MotTqCmdMrf_Val 873
+<R>X PwrLimrPer1 Rte_Read_PwrLimr_MotTqCmdMrf_Val 873 R
+<R>C PwrLimrPer1 Rte_Read_PwrLimr_MotVelMrf_Val 874
+<R>X PwrLimrPer1 Rte_Read_PwrLimr_MotVelMrf_Val 874 R
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 877 46 N FN fs B X
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrBackEmfConStdT_Val 877
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrBackEmfConStdT_Val 877 R
+<R>C PwrLimrPer1 FixdToFloat_f32_u16 880
+<R>X PwrLimrPer1 FixdToFloat_f32_u16 880 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 880
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 880 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrBackEmfConStdT_Val 880
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrBackEmfConStdT_Val 880 R
+<LIT> 8 - P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 880 59 N DN ni B X
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 884 39 N FN fs B X
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 888 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrBrdgVltgAltFltAdj_Val 893
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrBrdgVltgAltFltAdj_Val 893 R
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 897 47 N FN fs B X
+<R>C PwrLimrPer1 Lim_f32 902
+<R>X PwrLimrPer1 Lim_f32 902 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrBrdgVltgAdjSlew_Val 902
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrBrdgVltgAdjSlew_Val 902 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 902 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrBrdgVltgAdjSlew_Val 902
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrBrdgVltgAdjSlew_Val 902 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 902 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 904 R
+<R>C PwrLimrPer1 FloatToFixd_u16_f32 906
+<R>X PwrLimrPer1 FloatToFixd_u16_f32 906 R
+<R>C PwrLimrPer1 LnrIntrpn_u16_u16VariXu16VariY 911
+<R>X PwrLimrPer1 LnrIntrpn_u16_u16VariXu16VariY 911 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrVltgDptMotVelOffsX_Ary1D 911
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrVltgDptMotVelOffsX_Ary1D 911 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrVltgDptMotVelOffsY_Ary1D 911
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrVltgDptMotVelOffsY_Ary1D 911 R
+<R>C PwrLimrPer1 FixdToFloat_f32_u16 913
+<R>X PwrLimrPer1 FixdToFloat_f32_u16 913 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 916 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrSpdAdjSlewEna_Logl 919
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrSpdAdjSlewEna_Logl 919 R
+<R>C PwrLimrPer1 Lim_f32 923
+<R>X PwrLimrPer1 Lim_f32 923 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrSpdAdjSlewDec_Val 923
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrSpdAdjSlewDec_Val 923 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 923 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrSpdAdjSlewInc_Val 923
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrSpdAdjSlewInc_Val 923 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 923 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 929 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 932 R
+<R>C PwrLimrPer1 FilLpUpdOutp_f32 935
+<R>X PwrLimrPer1 FilLpUpdOutp_f32 935 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 935 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 936 R
+<R>C PwrLimrPer1 Sign_s08_f32 939
+<R>X PwrLimrPer1 Sign_s08_f32 939 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 940 R
+<R>C PwrLimrPer1 Rte_IrvWrite_PwrLimr_PwrLimrPer1_MotEnvlpSpd 941
+<R>X PwrLimrPer1 Rte_IrvWrite_PwrLimr_PwrLimrPer1_MotEnvlpSpd 941 R
+<R>C PwrLimrPer1 Abslt_f32_f32 943
+<R>X PwrLimrPer1 Abslt_f32_f32 943 R
+<R>C PwrLimrPer1 FloatToFixd_u16_f32 944
+<R>X PwrLimrPer1 FloatToFixd_u16_f32 944 R
+<R>C PwrLimrPer1 LnrIntrpn_u16_u16VariXu16VariY 950
+<R>X PwrLimrPer1 LnrIntrpn_u16_u16VariXu16VariY 950 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrStdOperMotEnvlpX_Ary1D 950
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrStdOperMotEnvlpX_Ary1D 950 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrStdOperMotEnvlpY_Ary1D 950
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrStdOperMotEnvlpY_Ary1D 950 R
+<R>C PwrLimrPer1 FixdToFloat_f32_u16 953
+<R>X PwrLimrPer1 FixdToFloat_f32_u16 953 R
+<R>C PwrLimrPer1 Rte_IrvWrite_PwrLimr_PwrLimrPer1_MinStdOperLim 954
+<R>X PwrLimrPer1 Rte_IrvWrite_PwrLimr_PwrLimrPer1_MinStdOperLim 954 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 955 R
+<LIT> 1 U P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 958 80 N DN ui B X
+<R>X PwrLimrPer1 ELECGLBPRM_IVTRCNT_CNT_U08 958 R
+<LIT> 1.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 960 76 N FN fs B X
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 968 R
+<R>C PwrLimrPer1 Sign_s08_f32 971
+<R>X PwrLimrPer1 Sign_s08_f32 971 R
+<R>C PwrLimrPer1 Abslt_f32_f32 972
+<R>X PwrLimrPer1 Abslt_f32_f32 972 R
+<R>C PwrLimrPer1 FloatToFixd_u16_f32 973
+<R>X PwrLimrPer1 FloatToFixd_u16_f32 973 R
+<R>C PwrLimrPer1 LnrIntrpn_u16_s16VariXu16VariY 979
+<R>X PwrLimrPer1 LnrIntrpn_u16_s16VariXu16VariY 979 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 979
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 979 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 979
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 979 R
+<LIT> 1 - N C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 979 70 N DN ni B X
+<R>C PwrLimrPer1 FixdToFloat_f32_u16 980
+<R>X PwrLimrPer1 FixdToFloat_f32_u16 980 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 984 R
+<R>C PwrLimrPer1 Max_f32 987
+<R>X PwrLimrPer1 Max_f32 987 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 990 R
+<LIT> 2 - P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 992 48 N DN ni B X
+<R>C PwrLimrPer1 Abslt_u16_s16 992
+<R>X PwrLimrPer1 Abslt_u16_s16 992 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 992
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 992 R
+<LIT> 13 - P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 994 90 N DN ni B X
+<R>C PwrLimrPer1 Abslt_u16_s16 994
+<R>X PwrLimrPer1 Abslt_u16_s16 994 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 994
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 994 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 997
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 997 R
+<LIT> 13 - P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 997 139 N DN ni B X
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 998
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 998 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 998
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 998 R
+<LIT> 2 - P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 998 84 N DN ni B X
+<LIT> 13 - P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 998 123 N DN ni B X
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 999
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 999 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 999
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 999 R
+<LIT> 2 - P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 999 82 N DN ni B X
+<LIT> 13 - P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 999 121 N DN ni B X
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 1001
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 1001 R
+<LIT> 13 - P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1001 123 N DN ni B X
+<R>C PwrLimrPer1 FixdToFloat_f32_s32 1002
+<R>X PwrLimrPer1 FixdToFloat_f32_s32 1002 R
+<R>C PwrLimrPer1 LnrIntrpn_u16_s16VariXu16VariY 1011
+<R>X PwrLimrPer1 LnrIntrpn_u16_s16VariXu16VariY 1011 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 1011
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 1011 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 1011
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 1011 R
+<R>C PwrLimrPer1 FixdToFloat_f32_u16 1012
+<R>X PwrLimrPer1 FixdToFloat_f32_u16 1012 R
+<R>C PwrLimrPer1 Min_f32 1017
+<R>X PwrLimrPer1 Min_f32 1017 R
+<R>C PwrLimrPer1 Lim_f32 1022
+<R>X PwrLimrPer1 Lim_f32 1022 R
+<R>C PwrLimrPer1 Min_f32 1031
+<R>X PwrLimrPer1 Min_f32 1031 R
+<R>C PwrLimrPer1 Rte_IrvWrite_PwrLimr_PwrLimrPer1_TqEnvlpLim1 1039
+<R>X PwrLimrPer1 Rte_IrvWrite_PwrLimr_PwrLimrPer1_TqEnvlpLim1 1039 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 1040 R
+<R>X PwrLimrPer1 Rte_Inst_PwrLimr 1042 R
+<R>C PwrLimrPer1 FloatToFixd_u16_f32 1044
+<R>X PwrLimrPer1 FloatToFixd_u16_f32 1044 R
+<R>C PwrLimrPer1 Abslt_f32_f32 1044
+<R>X PwrLimrPer1 Abslt_f32_f32 1044 R
+<R>C PwrLimrPer1 LnrIntrpn_u16_s16VariXu16VariY 1048
+<R>X PwrLimrPer1 LnrIntrpn_u16_s16VariXu16VariY 1048 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 1048
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 1048 R
+<R>C PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 1048
+<R>X PwrLimrPer1 Rte_Prm_PwrLimr_PwrLimrMotEnvlpY_Ary1D 1048 R
+<R>C PwrLimrPer1 FixdToFloat_f32_u16 1049
+<R>X PwrLimrPer1 FixdToFloat_f32_u16 1049 R
+<R>C PwrLimrPer1 Lim_f32 1051
+<R>X PwrLimrPer1 Lim_f32 1051 R
+<R>C PwrLimrPer1 Lim_f32 1052
+<R>X PwrLimrPer1 Lim_f32 1052 R
+<R>C PwrLimrPer1 Rte_Write_PwrLimr_MotTqCmdPwrLimd_Val 1053
+<R>X PwrLimrPer1 Rte_Write_PwrLimr_MotTqCmdPwrLimd_Val 1053 R
+<CTLG> PwrLimrPer1 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 2 4
+<CTLG> 3 5
+<CTLG> 4 5
+<CTLG> 5 6
+<CTLG> 6 7
+<CTLG> 6 8
+<CTLG> 7 9
+<CTLG> 8 9
+<CTLG> 9 10
+<CTLG> 10 11
+<CTLG> 10 12
+<CTLG> 11 13
+<CTLG> 12 13
+<CTLG> 13 14
+<CTLG> 14 15
+<CTLG> 14 16
+<CTLG> 15 17
+<CTLG> 16 17
+<CTLG> 17 18
+<CTLG> 18 19
+<CTLG> 18 23
+<CTLG> 19 20
+<CTLG> 19 21
+<CTLG> 20 22
+<CTLG> 21 22
+<CTLG> 22 24
+<CTLG> 23 24
+<CTLG> 24 25
+<CTLG> 25 27
+<CTLGN> 816 877 877 877 882 891 891 891 895 919 919 919 925 958 958 958 962 992 992 994 994 1005 992 1026 1058 1058 1058 
+<S>
+<S>STFIL  C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c
+<S>STNAM  PwrLimrPer1
+<S>STCYC  7
+<S>STMCC  1 (7:8)
+<S>STMIF  2
+<S>STSUB  69
+<S>STAKI  76
+<S>STLIN  241
+<S>STXLN  100
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  41
+<S>STPTH  48
+<S>STPDN  0.48   
+<S>STPBG  2
+<S>STLOP  1
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  9
+<S>STAV2  10
+<S>STAV3  15
+<S>STST1  127
+<S>STST2  115
+<S>STST3  74
+<S>STPAR  0
+<S>STCAL  34
+<S>STFN1  707
+<S>STFN2  448
+
+<EXTD> PwrLimrPer2 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1106
+<DEFINE> PwrLimrPer2 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1106 N DR OF F X (.,.) -
+<DEFINE> PwrLimrPer2 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1106 N DF OF F X (.,.) -
+<DEFINE> MotTqCmdMrf_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1113 N DC OV B N fs -
+<DEFINE> MotTqCmdMrf_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1113 N DF OV B N fs -
+<DEFINE> TqEnvlpLim1_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1114 N DC OV B N fs -
+<DEFINE> TqEnvlpLim1_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1114 N DF OV B N fs -
+<DEFINE> MinStdOperLim_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1115 N DC OV B N fs -
+<DEFINE> MinStdOperLim_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1115 N DF OV B N fs -
+<DEFINE> MotEnvlpSpd_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1116 N DC OV B N fs -
+<DEFINE> MotEnvlpSpd_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1116 N DF OV B N fs -
+<DEFINE> BrdgVltg_Volt_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1117 N DC OV B N fs -
+<DEFINE> BrdgVltg_Volt_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1117 N DF OV B N fs -
+<DEFINE> LimDif_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1119 N DC OV B N fs -
+<DEFINE> LimDif_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1119 N DF OV B N fs -
+<DEFINE> TqLim_Cnt_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1120 N DC OV B N fs -
+<DEFINE> TqLim_Cnt_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1120 N DF OV B N fs -
+<DEFINE> FildTqLim_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1121 N DC OV B N fs -
+<DEFINE> FildTqLim_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1121 N DF OV B N fs -
+<DEFINE> FildTqDiff_Uls_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1122 N DC OV B N fs -
+<DEFINE> FildTqDiff_Uls_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1122 N DF OV B N fs -
+<DEFINE> BrdgVltgDiff_Uls_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1123 N DC OV B N fs -
+<DEFINE> BrdgVltgDiff_Uls_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1123 N DF OV B N fs -
+<DEFINE> RcvrlTiSpan_Cnt_T_u32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1124 N DC OV B N ul -
+<DEFINE> RcvrlTiSpan_Cnt_T_u32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1124 N DF OV B N ul -
+<LIT> 0 U P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1124 53 N ON ui B O
+<DEFINE> AbsMotEnvlpSpd1_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1125 N DC OV B N fs -
+<DEFINE> AbsMotEnvlpSpd1_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1125 N DF OV B N fs -
+<DEFINE> TmpEnvlpSpd_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1126 N DC OV B N fs -
+<DEFINE> TmpEnvlpSpd_MotRadPerSec_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1126 N DF OV B N fs -
+<DEFINE> SignMotEnvlpSpd1_Uls_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1127 N DC OV B N nc -
+<DEFINE> SignMotEnvlpSpd1_Uls_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1127 N DF OV B N nc -
+<DEFINE> AbsMotTqCmdMrf_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1128 N DC OV B N fs -
+<DEFINE> AbsMotTqCmdMrf_MotNwtMtr_T_f32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1128 N DF OV B N fs -
+<DEFINE> RcvrlTiSpan_MilliSec_T_u32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1129 N DC OV B N ul -
+<DEFINE> RcvrlTiSpan_MilliSec_T_u32 C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1129 N DF OV B N ul -
+<R>C PwrLimrPer2 Rte_Read_PwrLimr_MotTqCmdMrf_Val 1133
+<R>X PwrLimrPer2 Rte_Read_PwrLimr_MotTqCmdMrf_Val 1133 R
+<R>C PwrLimrPer2 Rte_IrvRead_PwrLimr_PwrLimrPer2_TqEnvlpLim1 1134
+<R>X PwrLimrPer2 Rte_IrvRead_PwrLimr_PwrLimrPer2_TqEnvlpLim1 1134 R
+<R>C PwrLimrPer2 Rte_IrvRead_PwrLimr_PwrLimrPer2_MinStdOperLim 1135
+<R>X PwrLimrPer2 Rte_IrvRead_PwrLimr_PwrLimrPer2_MinStdOperLim 1135 R
+<R>C PwrLimrPer2 Rte_IrvRead_PwrLimr_PwrLimrPer2_MotEnvlpSpd 1136
+<R>X PwrLimrPer2 Rte_IrvRead_PwrLimr_PwrLimrPer2_MotEnvlpSpd 1136 R
+<R>C PwrLimrPer2 Rte_Read_PwrLimr_BrdgVltg_Val 1137
+<R>X PwrLimrPer2 Rte_Read_PwrLimr_BrdgVltg_Val 1137 R
+<R>X PwrLimrPer2 Rte_Inst_PwrLimr 1140 R
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1143 41 N FN fs B X
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1143 84 N FN fs B X
+<R>C PwrLimrPer2 Abslt_f32_f32 1145
+<R>X PwrLimrPer2 Abslt_f32_f32 1145 R
+<R>C PwrLimrPer2 FixdToFloat_f32_s16 1146
+<R>X PwrLimrPer2 FixdToFloat_f32_s16 1146 R
+<R>C PwrLimrPer2 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 1146
+<R>X PwrLimrPer2 Rte_Prm_PwrLimr_PwrLimrMotEnvlpX_Ary1D 1146 R
+<LIT> 13 - P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1146 88 N DN ni B X
+<R>C PwrLimrPer2 Sign_s08_f32 1147
+<R>X PwrLimrPer2 Sign_s08_f32 1147 R
+<R>C PwrLimrPer2 Sign_s08_f32 1149
+<R>X PwrLimrPer2 Sign_s08_f32 1149 R
+<R>C PwrLimrPer2 Abslt_f32_f32 1151
+<R>X PwrLimrPer2 Abslt_f32_f32 1151 R
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1152 42 N FN fs B X
+<R>C PwrLimrPer2 Abslt_f32_f32 1154
+<R>X PwrLimrPer2 Abslt_f32_f32 1154 R
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1158 35 N FN fs B X
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1163 31 N FN fs B X
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1168 27 N FN fs B X
+<R>X PwrLimrPer2 Rte_Inst_PwrLimr 1172 R
+<R>C PwrLimrPer2 FilLpUpdOutp_f32 1175
+<R>X PwrLimrPer2 FilLpUpdOutp_f32 1175 R
+<R>X PwrLimrPer2 Rte_Inst_PwrLimr 1175 R
+<R>C PwrLimrPer2 Rte_Prm_PwrLimr_PwrLimrFilAssiRednThd_Val 1178
+<R>X PwrLimrPer2 Rte_Prm_PwrLimr_PwrLimrFilAssiRednThd_Val 1178 R
+<R>C PwrLimrPer2 Rte_Prm_PwrLimr_PwrLimrLoVoltAssiRcvrThd_Val 1179
+<R>X PwrLimrPer2 Rte_Prm_PwrLimr_PwrLimrLoVoltAssiRcvrThd_Val 1179 R
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1182 32 N FN fs B X
+<R>X PwrLimrPer2 Rte_Inst_PwrLimr 1184 R
+<LIT> 0.0 F P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1188 38 N FN fs B X
+<R>C PwrLimrPer2 Rte_Call_PwrLimr_GetTiSpan100MicroSec32bit_Oper 1191
+<R>X PwrLimrPer2 Rte_Call_PwrLimr_GetTiSpan100MicroSec32bit_Oper 1191 R
+<R>X PwrLimrPer2 Rte_Inst_PwrLimr 1191 R
+<R>C PwrLimrPer2 Rte_Call_PwrLimr_GetRefTmr100MicroSec32bit_Oper 1196
+<R>X PwrLimrPer2 Rte_Call_PwrLimr_GetRefTmr100MicroSec32bit_Oper 1196 R
+<R>X PwrLimrPer2 Rte_Inst_PwrLimr 1196 R
+<R>C PwrLimrPer2 Rte_Prm_PwrLimr_PwrLimrLoVoltAssiRcvrTi_Val 1202
+<R>X PwrLimrPer2 Rte_Prm_PwrLimr_PwrLimrLoVoltAssiRcvrTi_Val 1202 R
+<R>X PwrLimrPer2 Rte_Inst_PwrLimr 1204 R
+<R>X PwrLimrPer2 Rte_Inst_PwrLimr 1209 R
+<R>C PwrLimrPer2 Rte_Call_PwrLimr_SetNtcSts_Oper 1211
+<R>X PwrLimrPer2 Rte_Call_PwrLimr_SetNtcSts_Oper 1211 R
+<LIT> 0 U P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1211 52 N ON ui B X
+<LIT> 0 U P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1211 70 N ON ui B X
+<R>C PwrLimrPer2 Rte_Call_PwrLimr_SetNtcSts_Oper 1215
+<R>X PwrLimrPer2 Rte_Call_PwrLimr_SetNtcSts_Oper 1215 R
+<LIT> 0 U P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1215 52 N ON ui B X
+<LIT> 0 U P C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1215 70 N ON ui B X
+<R>C PwrLimrPer2 Lim_f32 1218
+<R>X PwrLimrPer2 Lim_f32 1218 R
+<R>C PwrLimrPer2 Rte_Write_PwrLimr_PwrLimrRednFac_Val 1220
+<R>X PwrLimrPer2 Rte_Write_PwrLimr_PwrLimrRednFac_Val 1220 R
+<CTLG> PwrLimrPer2 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 2 12
+<CTLG> 3 4
+<CTLG> 4 5
+<CTLG> 4 10
+<CTLG> 5 6
+<CTLG> 6 7
+<CTLG> 6 8
+<CTLG> 7 9
+<CTLG> 8 9
+<CTLG> 9 11
+<CTLG> 10 11
+<CTLG> 11 13
+<CTLG> 12 13
+<CTLG> 13 14
+<CTLG> 14 15
+<CTLG> 14 16
+<CTLG> 15 23
+<CTLG> 16 17
+<CTLG> 16 18
+<CTLG> 17 19
+<CTLG> 18 19
+<CTLG> 19 20
+<CTLG> 20 21
+<CTLG> 20 22
+<CTLG> 21 22
+<CTLG> 22 23
+<CTLG> 23 24
+<CTLG> 23 25
+<CTLG> 24 26
+<CTLG> 25 26
+<CTLG> 26 27
+<CTLG> 27 29
+<CTLGN> 1107 1143 1143 1149 1149 1152 1152 1152 1156 1149 1161 1143 1166 1182 1182 1182 1188 1188 1193 1202 1202 1202 1186 1209 1209 1213 1225 1225 1225 
+<S>
+<S>STFIL  C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c
+<S>STNAM  PwrLimrPer2
+<S>STCYC  8
+<S>STMCC  3 (8:11)
+<S>STMIF  3
+<S>STSUB  22
+<S>STAKI  30
+<S>STLIN  117
+<S>STXLN  43
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  16
+<S>STPTH  40
+<S>STPDN  0.93   
+<S>STPBG  2
+<S>STLOP  3
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  7
+<S>STAV2  9
+<S>STAV3  13
+<S>STST1  64
+<S>STST2  51
+<S>STST3  35
+<S>STPAR  0
+<S>STCAL  18
+<S>STFN1  299
+<S>STFN2  165
+
+<DEFINE> PwrLimr_STOP_SEC_CODE C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c 1228 N DF OM - - - O
+<R>I C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c C:/Component/SF019B_PwrLimr_Impl/tools/contract/PwrLimr_MemMap.h 1229
+<R>I C:/Component/SF019B_PwrLimr_Impl/tools/contract/PwrLimr_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_f32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u08_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u16_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u32_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Arctan2_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Blnd_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Cos_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Exp_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilLpUpdGain
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilLpInit
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sqrt_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilHpUpdGain
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilHpInit
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilLpUpdOutp_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilHpUpdOutp_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FixdToFloat_f32_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FixdToFloat_f32_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FixdToFloat_f32_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FixdToFloat_f32_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixdWithRound_s16_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixdWithRound_s32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixdWithRound_u16_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixdWithRound_u32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixd_s16_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixd_s32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixd_u16_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixd_u32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Mod_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c
+<S>STNAM  PwrLimrInit1
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c
+<S>STNAM  PwrLimrPer1
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c
+<S>STNAM  PwrLimrPer2
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sin_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c
+<S>STNAM  C:/Component/SF019B_PwrLimr_Impl/src/PwrLimr.c
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  0
+<S>STECT  2
+<S>STFNC  3
+<S>STFCO  109
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  169
+<S>STOPT  28
+<S>STOPN  202
+<S>STTOT  1848
+<S>STZIP  1384
+<S>STHAL  1682
+<S>STSHN  6041
+<S>STDIF  11.43  
+<S>STEFF  165718
+<S>STVOL  14498
+<S>STDEV  27.62  
+<S>STBUG  3
+<S>STTPP  1248
+<S>STTLN  261
+<S>STM20  660
+<S>STM21  1182
+<S>STM22  156
+<S>STM28  79
+<S>STM33  65
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  3.029  
+<S>STBMS  3.845  
+<S>STBME  4.696  
+<S>STTDO  3.809  
+<S>STTDS  4.005  
+<S>STTDE  4.101  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  1.842  
+

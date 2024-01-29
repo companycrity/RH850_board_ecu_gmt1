@@ -1,0 +1,312 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Requirements Traceability Report for ES250A_BattVltg</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div lang="en" class="book" title="Requirements Traceability Report for ES250A_BattVltg"><div class="titlepage"><div><div><h1 class="title"><a name="d54e1"></a>Requirements Traceability Report for ES250A_BattVltg</h1></div><div><h2 class="subtitle"></h2></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="chapter"><a href="#d54e8">1. Model Information for "ES250A_BattVltg"</a></span></dt><dt><span class="chapter"><a href="#d54e69">2. Traceability Summary for "ES250A_BattVltg"</a></span></dt><dt><span class="chapter"><a href="#5ad0f3f81075d26a5bd41097e20e4514">3. System - BattVltg</a></span></dt><dt><span class="chapter"><a href="#0df46466f3225069ede7627b45c5f548">4. System - BattVltgPer1</a></span></dt><dt><span class="chapter"><a href="#5be3538395fecc3e312f0a6fd55464bb">5. System - BattSwdVltgCorrlnSts = BattVltgFault</a></span></dt><dt><span class="chapter"><a href="#502292e3f069c7f759f2a2f8cf345790">6. System - BattSwdVltgCorrlnSts = BattVltgSwd1Fault</a></span></dt><dt><span class="chapter"><a href="#5218602e4a20f5265316476e8893e115">7. System - BattSwdVltgCorrlnSts = BattVltgSwd2Fault</a></span></dt><dt><span class="chapter"><a href="#9d65f7e5bdc9dab4e1f7de6c47815239">8. System - BattSwdVltgCorrlnSts = No Correlation</a></span></dt><dt><span class="chapter"><a href="#bed071c499d685cf3a5dbd5f6011d19d">9. System - BattSwdVltgCorrlnSts = No Fault</a></span></dt><dt><span class="chapter"><a href="#45ea42e705e62c8ad45844a1dbb842f6">10. System - Default Case</a></span></dt><dt><span class="chapter"><a href="#3f17663f80695001f989dea5b694c5c6">11. System - BattVltg &lt; BattVltgSwdMax</a></span></dt><dt><span class="chapter"><a href="#c3d1d0d36fb791dd259199bd379caa04">12. System - BattVltg &gt;= BattVltgSwdMax</a></span></dt><dt><span class="chapter"><a href="#d7579f419861748e7b3c2e52260cb97c">13. System - BattVltg &lt; BattVltgSwdMax</a></span></dt><dt><span class="chapter"><a href="#3bf01c48be8fc76ea18a94ccf3bc9ba5">14. System - BattVltg &gt;= BattVltgSwdMax</a></span></dt><dt><span class="chapter"><a href="#1435e32f3d62b4be98301d9b90e0a4af">15. System - BattVltg &lt; BattVltgSwdMax</a></span></dt><dt><span class="chapter"><a href="#c8184dd41f02723b60e77d902b467433">16. System - BattVltg &gt;= BattVltgSwdMax</a></span></dt></dl></div><div class="list-of-tables"><p><b>List of Tables</b></p><dl><dt>1.1. <a href="#d54e12">ES250A_BattVltg<span>  Version Information</span>
+    </a></dt><dt>2.1. <a href="#d54e73">Artifacts linked in model</a></dt><dt>3.1. <a href="#d54e153">Objects in ES250A_BattVltg/BattVltg that have Requirements Traceability Links</a></dt><dt>4.1. <a href="#d54e356">Objects in ES250A_BattVltg/BattVltg/BattVltgPer1 that have Requirements Traceability Links</a></dt><dt>5.1. <a href="#d54e419">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgFault Requirements Traceability Data</a></dt><dt>6.1. <a href="#d54e477">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd1Fault Requirements Traceability Data</a></dt><dt>7.1. <a href="#d54e549">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd2Fault Requirements Traceability Data</a></dt><dt>8.1. <a href="#d54e614">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Correlation Requirements Traceability Data</a></dt><dt>9.1. <a href="#d54e672">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Fault Requirements Traceability Data</a></dt><dt>10.1. <a href="#d54e737">ES250A_BattVltg/BattVltg/BattVltgPer1/Default Case Requirements Traceability Data</a></dt><dt>11.1. <a href="#d54e788">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd1Fault/BattVltg &lt; BattVltgSwdMax Requirements Traceability Data</a></dt><dt>12.1. <a href="#d54e839">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd1Fault/BattVltg &gt;= BattVltgSwdMax Requirements Traceability Data</a></dt><dt>13.1. <a href="#d54e890">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd2Fault/BattVltg &lt; BattVltgSwdMax Requirements Traceability Data</a></dt><dt>14.1. <a href="#d54e941">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd2Fault/BattVltg &gt;= BattVltgSwdMax Requirements Traceability Data</a></dt><dt>15.1. <a href="#d54e992">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Fault/BattVltg &lt; BattVltgSwdMax Requirements Traceability Data</a></dt><dt>16.1. <a href="#d54e1043">ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Fault/BattVltg &gt;= BattVltgSwdMax Requirements Traceability Data</a></dt></dl></div><div class="chapter" title="Chapter&nbsp;1.&nbsp;Model Information for &#34;ES250A_BattVltg&#34;"><div class="titlepage"><div><div><h2 class="title"><a name="d54e8"></a>Chapter&nbsp;1.&nbsp;Model Information for "ES250A_BattVltg"</h2></div></div></div><div class="table"><a name="d54e12"></a><p class="title"><b>Table&nbsp;1.1.&nbsp;ES250A_BattVltg<span>  Version Information</span>
+    </b></p><div class="table-contents"><table summary="ES250A_BattVltg  Version Information&#xA;    " width="100%" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; "><colgroup><col width="2880*" align="left"><col width="6720*" align="left"><col width="4320*" align="left"><col width="10080*" align="left"></colgroup><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>ModelVersion</em></span>
+                </td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">1.66</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>ConfigurationManager</em></span>
+                </td><td style="border-bottom: 0.5pt solid ; " align="left">None</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>Created</em></span>
+                </td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">Mon Jan 26 09:50:09 2015</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>Creator</em></span>
+                </td><td style="border-bottom: 0.5pt solid ; " align="left">NZG49T</td></tr><tr><td style="border-right: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>LastModifiedDate</em></span>
+                </td><td style="border-right: 0.5pt solid ; " align="left">Wed Apr 01 17:16:40 2015</td><td style="border-right: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>LastModifiedBy</em></span>
+                </td><td style="" align="left">nzg49t</td></tr></tbody></table></div></div><br class="table-break"></div><div class="chapter" title="Chapter&nbsp;2.&nbsp;Traceability Summary for &#34;ES250A_BattVltg&#34;"><div class="titlepage"><div><div><h2 class="title"><a name="d54e69"></a>Chapter&nbsp;2.&nbsp;Traceability Summary for "ES250A_BattVltg"</h2></div></div></div><a name="d54e73"></a><div class="table"><p class="title"><b>Table&nbsp;2.1.&nbsp;Artifacts linked in model</b></p><div class="table-contents"><table summary="Artifacts linked in model" border="1" cellspacing="0" fastRender="1"><col width="60*"><col width="540*"><col width="240*"><col width="60*"><thead><tr>
+            <th align="left">ID</th>
+            <th align="left">Artifact names stored by RMI</th>
+            <th align="left">Last modified</th>
+            <th align="left"># links</th>
+        </tr></thead><tbody><tr>
+            <td align="left">DOC1</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-M-000089be" target="_top">000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template)</a>
+            </td>
+            <td align="left">23 February 2015 by Samanth Kumaraswamy</td>
+            <td align="left">14</td>
+        </tr><tr>
+            <td align="left">DOC2</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-M-000089be" target="_top">000089be (/E-STEER Core/SubSystem Specifications/Electrical Actuator/Control Module/FDD Module Requirements/EA4/ES250A_BattVltg)</a>
+            </td>
+            <td align="left">23 February 2015 by Samanth Kumaraswamy</td>
+            <td align="left">7</td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;3.&nbsp;System - BattVltg"><div class="titlepage"><div><div><h2 class="title"><a name="5ad0f3f81075d26a5bd41097e20e4514"></a>Chapter&nbsp;3.&nbsp;System - BattVltg</h2></div></div></div><div class="mediaobject"><map name="d54e141"><area coords="144,145,161,153" shape="rect" href="#4663d8d135615deb955cef0c28e43caf"><area coords="144,200,161,208" shape="rect" href="#57642996e96218910f4f40348b8aadca"><area coords="144,255,161,263" shape="rect" href="#d1ff20ab8fd5a4546b06c33c561ad3e7"><area coords="144,310,161,318" shape="rect" href="#bdc451a8a8980576ee2ba91bfb61b81d"><area coords="417,122,673,340" shape="rect" href="#0df46466f3225069ede7627b45c5f548"><area coords="788,227,805,235" shape="rect" href="#0b4fbf72a27f6571d38236a3fcb20655"></map><img src="./ES250A_BattVltg_requirements_html_files/image-004-sl.png" usemap="%0A                #d54e141" ismap="" border="0"></div><a name="d54e153"></a><div class="table"><p class="title"><b>Table&nbsp;3.1.&nbsp;Objects in ES250A_BattVltg/BattVltg that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in ES250A_BattVltg/BattVltg that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="4663d8d135615deb955cef0c28e43caf"></a>BattSwdVltgCorrlnSts</td>
+            <td align="left">
+                <a name="d54e177"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:ES250A_59"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-59-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_59</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="bdc451a8a8980576ee2ba91bfb61b81d"></a>BattVltg</td>
+            <td align="left">
+                <a name="d54e207"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:ES250A_48"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-48-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_48</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="57642996e96218910f4f40348b8aadca"></a>BattVltgSwd1</td>
+            <td align="left">
+                <a name="d54e237"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:ES250A_49"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-49-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_49</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="d1ff20ab8fd5a4546b06c33c561ad3e7"></a>BattVltgSwd2</td>
+            <td align="left">
+                <a name="d54e267"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:ES250A_60"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-60-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_60</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="0b4fbf72a27f6571d38236a3fcb20655"></a>BrdgVltg</td>
+            <td align="left">
+                <a name="d54e297"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:ES250A_51"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-51-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_51</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;4.&nbsp;System - BattVltgPer1"><div class="titlepage"><div><div><h2 class="title"><a name="0df46466f3225069ede7627b45c5f548"></a>Chapter&nbsp;4.&nbsp;System - BattVltgPer1</h2></div></div></div><div class="mediaobject"><map name="d54e329"><area coords="405,220,468,246" shape="rect" href="#5be3538395fecc3e312f0a6fd55464bb"><area coords="402,164,468,192" shape="rect" href="#502292e3f069c7f759f2a2f8cf345790"><area coords="402,108,468,136" shape="rect" href="#5218602e4a20f5265316476e8893e115"><area coords="405,274,470,302" shape="rect" href="#9d65f7e5bdc9dab4e1f7de6c47815239"><area coords="402,54,468,82" shape="rect" href="#bed071c499d685cf3a5dbd5f6011d19d"><area coords="665,187,734,224" shape="rect" href="#927c0ca4192be7306b730b83363f07bc"><area coords="405,329,472,357" shape="rect" href="#45ea42e705e62c8ad45844a1dbb842f6"></map><img src="./ES250A_BattVltg_requirements_html_files/image-006-sl.png" usemap="%0A                #d54e329" ismap="" border="0"></div><a name="d54e356"></a><div class="table"><p class="title"><b>Table&nbsp;4.1.&nbsp;Objects in ES250A_BattVltg/BattVltg/BattVltgPer1 that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in ES250A_BattVltg/BattVltg/BattVltgPer1 that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="927c0ca4192be7306b730b83363f07bc"></a>Bridge Voltage Limiter Upper limit: BRDGVLTGMIN_VOLT_F32 (6 Volt) Lower Limit: BRDGVLTGMAX_VOLT_F32 (26.5 Volt)</td>
+            <td align="left">
+                <a name="d54e380"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:ES250A_77"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-77-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_77</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;5.&nbsp;System - BattSwdVltgCorrlnSts = BattVltgFault"><div class="titlepage"><div><div><h2 class="title"><a name="5be3538395fecc3e312f0a6fd55464bb"></a>Chapter&nbsp;5.&nbsp;System - BattSwdVltgCorrlnSts = BattVltgFault</h2></div></div></div><div class="mediaobject"><map name="d54e412"></map><img src="./ES250A_BattVltg_requirements_html_files/image-008-sl.png" usemap="%0A                #d54e412" ismap="" border="0"></div><a name="d54e419"></a><div class="table"><p class="title"><b>Table&nbsp;5.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgFault Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgFault Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_70"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-70-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_70</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;6.&nbsp;System - BattSwdVltgCorrlnSts = BattVltgSwd1Fault"><div class="titlepage"><div><div><h2 class="title"><a name="502292e3f069c7f759f2a2f8cf345790"></a>Chapter&nbsp;6.&nbsp;System - BattSwdVltgCorrlnSts = BattVltgSwd1Fault</h2></div></div></div><div class="mediaobject"><map name="d54e463"><area coords="528,245,619,275" shape="rect" href="#3f17663f80695001f989dea5b694c5c6"><area coords="528,169,619,198" shape="rect" href="#c3d1d0d36fb791dd259199bd379caa04"></map><img src="./ES250A_BattVltg_requirements_html_files/image-010-sl.png" usemap="%0A                #d54e463" ismap="" border="0"></div><a name="d54e477"></a><div class="table"><p class="title"><b>Table&nbsp;6.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd1Fault Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd1Fault Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_71"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-71-000089be" target="_top">DOORS module 000089be (/E-STEER Core/SubSystem Specifications/Electrical Actuator/Control Module/FDD Module Requirements/EA4/ES250A_BattVltg), object ES250A_71</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">"REQ:ES250A_74"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-74-000089be" target="_top">DOORS module 000089be (/E-STEER Core/SubSystem Specifications/Electrical Actuator/Control Module/FDD Module Requirements/EA4/ES250A_BattVltg), object ES250A_74</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;7.&nbsp;System - BattSwdVltgCorrlnSts = BattVltgSwd2Fault"><div class="titlepage"><div><div><h2 class="title"><a name="5218602e4a20f5265316476e8893e115"></a>Chapter&nbsp;7.&nbsp;System - BattSwdVltgCorrlnSts = BattVltgSwd2Fault</h2></div></div></div><div class="mediaobject"><map name="d54e535"><area coords="542,290,628,318" shape="rect" href="#d7579f419861748e7b3c2e52260cb97c"><area coords="542,217,628,245" shape="rect" href="#3bf01c48be8fc76ea18a94ccf3bc9ba5"></map><img src="./ES250A_BattVltg_requirements_html_files/image-012-sl.png" usemap="%0A                #d54e535" ismap="" border="0"></div><a name="d54e549"></a><div class="table"><p class="title"><b>Table&nbsp;7.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd2Fault Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd2Fault Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_71"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-71-000089be" target="_top">DOORS module 000089be (/E-STEER Core/SubSystem Specifications/Electrical Actuator/Control Module/FDD Module Requirements/EA4/ES250A_BattVltg), object ES250A_71</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">"REQ:ES250A_73"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-73-000089be" target="_top">DOORS module 000089be (/E-STEER Core/SubSystem Specifications/Electrical Actuator/Control Module/FDD Module Requirements/EA4/ES250A_BattVltg), object ES250A_73</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;8.&nbsp;System - BattSwdVltgCorrlnSts = No Correlation"><div class="titlepage"><div><div><h2 class="title"><a name="9d65f7e5bdc9dab4e1f7de6c47815239"></a>Chapter&nbsp;8.&nbsp;System - BattSwdVltgCorrlnSts = No Correlation</h2></div></div></div><div class="mediaobject"><map name="d54e607"></map><img src="./ES250A_BattVltg_requirements_html_files/image-014-sl.png" usemap="%0A                #d54e607" ismap="" border="0"></div><a name="d54e614"></a><div class="table"><p class="title"><b>Table&nbsp;8.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Correlation Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Correlation Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_69"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-69-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_69</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;9.&nbsp;System - BattSwdVltgCorrlnSts = No Fault"><div class="titlepage"><div><div><h2 class="title"><a name="bed071c499d685cf3a5dbd5f6011d19d"></a>Chapter&nbsp;9.&nbsp;System - BattSwdVltgCorrlnSts = No Fault</h2></div></div></div><div class="mediaobject"><map name="d54e658"><area coords="542,224,628,252" shape="rect" href="#1435e32f3d62b4be98301d9b90e0a4af"><area coords="542,151,628,179" shape="rect" href="#c8184dd41f02723b60e77d902b467433"></map><img src="./ES250A_BattVltg_requirements_html_files/image-016-sl.png" usemap="%0A                #d54e658" ismap="" border="0"></div><a name="d54e672"></a><div class="table"><p class="title"><b>Table&nbsp;9.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Fault Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Fault Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_71"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-71-000089be" target="_top">DOORS module 000089be (/E-STEER Core/SubSystem Specifications/Electrical Actuator/Control Module/FDD Module Requirements/EA4/ES250A_BattVltg), object ES250A_71</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">"REQ:ES250A_72"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-72-000089be" target="_top">DOORS module 000089be (/E-STEER Core/SubSystem Specifications/Electrical Actuator/Control Module/FDD Module Requirements/EA4/ES250A_BattVltg), object ES250A_72</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;10.&nbsp;System - Default Case"><div class="titlepage"><div><div><h2 class="title"><a name="45ea42e705e62c8ad45844a1dbb842f6"></a>Chapter&nbsp;10.&nbsp;System - Default Case</h2></div></div></div><div class="mediaobject"><map name="d54e730"></map><img src="./ES250A_BattVltg_requirements_html_files/image-018-sl.png" usemap="%0A                #d54e730" ismap="" border="0"></div><a name="d54e737"></a><div class="table"><p class="title"><b>Table&nbsp;10.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/Default Case Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/Default Case Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_69"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-69-000089be" target="_top">DOORS module 000089be (/E-STEER Core/SubSystem Specifications/Electrical Actuator/Control Module/FDD Module Requirements/EA4/ES250A_BattVltg), object ES250A_69</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;11.&nbsp;System - BattVltg < BattVltgSwdMax"><div class="titlepage"><div><div><h2 class="title"><a name="3f17663f80695001f989dea5b694c5c6"></a>Chapter&nbsp;11.&nbsp;System - BattVltg &lt; BattVltgSwdMax</h2></div></div></div><div class="mediaobject"><map name="d54e781"></map><img src="./ES250A_BattVltg_requirements_html_files/image-020-sl.png" usemap="%0A                #d54e781" ismap="" border="0"></div><a name="d54e788"></a><div class="table"><p class="title"><b>Table&nbsp;11.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd1Fault/BattVltg &lt; BattVltgSwdMax Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd1Fault/BattVltg < BattVltgSwdMax Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_74"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-74-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_74</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;12.&nbsp;System - BattVltg &gt;= BattVltgSwdMax"><div class="titlepage"><div><div><h2 class="title"><a name="c3d1d0d36fb791dd259199bd379caa04"></a>Chapter&nbsp;12.&nbsp;System - BattVltg &gt;= BattVltgSwdMax</h2></div></div></div><div class="mediaobject"><map name="d54e832"></map><img src="./ES250A_BattVltg_requirements_html_files/image-022-sl.png" usemap="%0A                #d54e832" ismap="" border="0"></div><a name="d54e839"></a><div class="table"><p class="title"><b>Table&nbsp;12.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd1Fault/BattVltg &gt;= BattVltgSwdMax Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd1Fault/BattVltg &gt;= BattVltgSwdMax Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_71"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-71-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_71</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;13.&nbsp;System - BattVltg < BattVltgSwdMax"><div class="titlepage"><div><div><h2 class="title"><a name="d7579f419861748e7b3c2e52260cb97c"></a>Chapter&nbsp;13.&nbsp;System - BattVltg &lt; BattVltgSwdMax</h2></div></div></div><div class="mediaobject"><map name="d54e883"></map><img src="./ES250A_BattVltg_requirements_html_files/image-024-sl.png" usemap="%0A                #d54e883" ismap="" border="0"></div><a name="d54e890"></a><div class="table"><p class="title"><b>Table&nbsp;13.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd2Fault/BattVltg &lt; BattVltgSwdMax Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd2Fault/BattVltg < BattVltgSwdMax Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_73"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-73-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_73</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;14.&nbsp;System - BattVltg &gt;= BattVltgSwdMax"><div class="titlepage"><div><div><h2 class="title"><a name="3bf01c48be8fc76ea18a94ccf3bc9ba5"></a>Chapter&nbsp;14.&nbsp;System - BattVltg &gt;= BattVltgSwdMax</h2></div></div></div><div class="mediaobject"><map name="d54e934"></map><img src="./ES250A_BattVltg_requirements_html_files/image-026-sl.png" usemap="%0A                #d54e934" ismap="" border="0"></div><a name="d54e941"></a><div class="table"><p class="title"><b>Table&nbsp;14.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd2Fault/BattVltg &gt;= BattVltgSwdMax Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = BattVltgSwd2Fault/BattVltg &gt;= BattVltgSwdMax Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_71"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-71-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_71</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;15.&nbsp;System - BattVltg < BattVltgSwdMax"><div class="titlepage"><div><div><h2 class="title"><a name="1435e32f3d62b4be98301d9b90e0a4af"></a>Chapter&nbsp;15.&nbsp;System - BattVltg &lt; BattVltgSwdMax</h2></div></div></div><div class="mediaobject"><map name="d54e985"></map><img src="./ES250A_BattVltg_requirements_html_files/image-028-sl.png" usemap="%0A                #d54e985" ismap="" border="0"></div><a name="d54e992"></a><div class="table"><p class="title"><b>Table&nbsp;15.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Fault/BattVltg &lt; BattVltgSwdMax Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Fault/BattVltg < BattVltgSwdMax Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_72"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-72-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_72</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;16.&nbsp;System - BattVltg &gt;= BattVltgSwdMax"><div class="titlepage"><div><div><h2 class="title"><a name="c8184dd41f02723b60e77d902b467433"></a>Chapter&nbsp;16.&nbsp;System - BattVltg &gt;= BattVltgSwdMax</h2></div></div></div><div class="mediaobject"><map name="d54e1036"></map><img src="./ES250A_BattVltg_requirements_html_files/image-030-sl.png" usemap="%0A                #d54e1036" ismap="" border="0"></div><a name="d54e1043"></a><div class="table"><p class="title"><b>Table&nbsp;16.1.&nbsp;ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Fault/BattVltg &gt;= BattVltgSwdMax Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES250A_BattVltg/BattVltg/BattVltgPer1/BattSwdVltgCorrlnSts = No Fault/BattVltg &gt;= BattVltgSwdMax Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:ES250A_71"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-71-000089be" target="_top">DOORS module 000089be (/ESG Group/FDD Module Requirements/ES FDDs/ES-250A Battery and Switched Battery New Template), object ES250A_71</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div></div></body></html>

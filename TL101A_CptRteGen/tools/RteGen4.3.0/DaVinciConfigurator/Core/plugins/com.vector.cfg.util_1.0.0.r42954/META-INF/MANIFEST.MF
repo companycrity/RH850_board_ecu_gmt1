@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Require-Bundle: org.eclipse.core.runtime,com.google.guava;bundle-versi
+ on="13.0.1";visibility:=reexport,com.vector.cfg.util.jna,org.apache.l
+ og4j,com.google.inject;bundle-version="3.0.0";visibility:=reexport,ja
+ vax.inject;bundle-version="1.0.0";visibility:=reexport
+Export-Package: obClasses,com.vector.cfg.util;uses:="com.vector.cfg.ut
+ il.servicecontext",com.vector.cfg.util.annotations.publishedApi,com.v
+ ector.cfg.util.autosar,com.vector.cfg.util.classlinearization,com.vec
+ tor.cfg.util.collections,com.vector.cfg.util.debug,com.vector.cfg.uti
+ l.doublehash,com.vector.cfg.util.eclipseruntime,com.vector.cfg.util.e
+ xceptions,com.vector.cfg.util.executor,com.vector.cfg.util.graph,com.
+ vector.cfg.util.layout,com.vector.cfg.util.lazyaccess,com.vector.cfg.
+ util.log,com.vector.cfg.util.maskpsw,com.vector.cfg.util.math,com.vec
+ tor.cfg.util.memory,com.vector.cfg.util.obfuscate.annotations,com.vec
+ tor.cfg.util.platform,com.vector.cfg.util.query,com.vector.cfg.util.q
+ uery.operation,com.vector.cfg.util.servicecontext;uses:="org.eclipse.
+ core.runtime",com.vector.cfg.util.servicecontext.di,com.vector.cfg.ut
+ il.string,com.vector.cfg.util.supervisor,com.vector.cfg.util.version,
+ com.vector.cfg.util.win,javax.annotation,javax.annotation.concurrent,
+ javax.annotation.meta,org.simpleframework.xml,org.simpleframework.xml
+ .convert,org.simpleframework.xml.core,org.simpleframework.xml.filter,
+ org.simpleframework.xml.strategy,org.simpleframework.xml.stream,org.s
+ impleframework.xml.transform,org.simpleframework.xml.util
+Bundle-Vendor: Vector Informatik GmbH
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: annotations.jar,util.jar,.,libs/simple-xml-2.6.4.jar
+ ,libs/jsr305-2.0.1.jar
+Bundle-Version: 1.0.0.r42954
+Bundle-Name: Utility
+Bundle-ManifestVersion: 2
+Bundle-Activator: com.vector.cfg.util.internal.Activator
+Bundle-SymbolicName: com.vector.cfg.util;singleton:=true
+Eclipse-RegisterBuddy: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+

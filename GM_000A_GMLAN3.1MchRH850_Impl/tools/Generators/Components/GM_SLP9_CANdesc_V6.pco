@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2009 sp1 (http://www.altova.com) by Vector Employee (Vector Informatik GmbH) -->
+<config name="GM_SLP8" default="true" guid="11111111-1111-1111-1111-111111111111" xmlns="http://www.vector-informatik.de/CANGen/ModulePreconfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vector-informatik.de/CANGen/ModulePreconfig
+.\preconfig.xsd">
+	<description>GM SLP8 OEM default pre-configuration file. Version 0.09.00</description>
+	<module name="BaseEnv" version="1.0">
+		<description>Configuration of VCfgNameDecorator</description>
+		<attribute name="GeneratePreconfigVersion" class="OTModuleInstance">
+			<!--This is an internal attribute that allows to generate the version of the preconfiguration files to v_cfg.h.-->
+			<default value="true"/>
+			<configurable value="yes"/>
+		</attribute>
+	</module>
+	<!-- **********************  CANdesc  ***************************** -->
+	<module name="Diag_CanDesc__fullKwp" version="1.0">
+		<autoactivate value="true"/>
+	</module>
+	<module name="CANdescBase" version="1.0">
+		<description>Configuration of CANdescBase module</description>
+		<attribute name="MultiEcuMode" class="OTModuleInstance">
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+	</module>
+	<module name="Diag_CanDesc__core" version="1.0">
+		<description>Configuration of CANdesc module</description>
+		<attribute name="CallCycleMS" class="OTModuleInstance">
+			<!-- Call cycle of the CanDesc Task, in ms -->
+			<default value="10"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="FlashableECU" class="OTModuleInstance">
+			<!--do NOT check for GMLAN, see documentation-->
+			<default value="false"/>
+			<access value="rdonly"/>
+			<configurable value="no"/>
+		</attribute>
+		<attribute name="ForceRcrRpResponse" class="OTModuleInstance">
+			<!-- Enable forced RcrRp API -->
+			<default value="true"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="DanisDrivers" class="OTModuleInstance">
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UUDTConfTimeout" class="OTModuleInstance">
+			<!-- UUDT Data Queue is no required for GM -->
+			<access value="hide"/>
+		</attribute>
+	</module>
+	<!-- ********************  CANdesc Connector  ********************** -->
+	<module name="Diag_CanDesc_ConnectorCAN" version="1.0">
+		<description>Configuration of CANdesc TP Connection</description>
+		<!-- Enable OBD Support-->
+		<attribute name="UseObdIdForEnhanced" class="OTChannel">
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="AddressingType" class="OTModuleInstance">
+			<!-- NormalAddressing: 0
+                  ExtendedAddressing:1
+                  NormalFixedAddressing: 2
+                  Mixed11Addressing: 3
+                  Mixed29Addressing:4
+                  MultipleAddressing: 5   -->
+			<default value="0"/>
+			<access value="none"/>
+			<configurable value="no"/>
+		</attribute>
+		<attribute name="TpIsoStandard" class="OTModuleInstance">
+			<default value="Force_15765_2004"/>
+			<configurable value="yes"/>
+		</attribute>
+	</module>
+	<!-- **********************  TP module  ************************ -->
+	<module name="TpMC" version="1.0">
+		<autoactivate value="true"/>
+		<description>Configuration of TP_Iso15765 module</description>
+		<!-- Enable OBD Support-->
+		<attribute name="TpEnableObdPrecopy" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="TpIsoStandard" class="OTModuleInstance">
+			<default value="ISO 15765-2:2004"/>
+			<access value="rdonly"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="TxTimeoutFC" class="OTModuleInstance">
+			<!-- Value is predefined according to GM user requirements. -->
+			<default value="250"/>
+			<access value="rdonly"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="RxTimeoutCF" class="OTModuleInstance">
+			<!-- Value is predefined according to GM user requirements. -->
+			<default value="250"/>
+			<access value="rdonly"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="TxTransmitCF" class="OTModuleInstance">
+			<!-- Value is predefined according to GM user requirements. -->
+			<default value="0"/>
+			<access value="rdonly"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="RxCANMsgConfTimeout" class="OTModuleInstance">
+			<!-- Value is predefined according to GM user requirements. -->
+			<default value="250"/>
+			<access value="rdonly"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="TxCANMsgConfTimeout" class="OTModuleInstance">
+			<!-- Value is predefined according to GM user requirements. -->
+			<default value="250"/>
+			<access value="rdonly"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="Blocksize" class="OTModuleInstance">
+			<!-- Value is predefined according to GM user requirements. -->
+			<default value="0"/>
+			<access value="rdonly"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="STMin" class="OTModuleInstance">
+			<!-- Value is predefined according to GM user requirements. -->
+			<default value="0"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UseFCSTMin" class="OTModuleInstance">
+			<!-- Value is predefined according to GM user requirements. -->
+			<default value="true"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UseOnlyFirstFC" class="OTModuleInstance">
+			<!--Not relevant for GM.-->
+			<default value="true"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="ExtApiVarBlocksize" class="OTModuleInstance">
+			<!--Not relevant for GM.-->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="ExtApiVarStmin" class="OTModuleInstance">
+			<!--Not relevant for GM.-->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UseGatewayApi" class="OTModuleInstance">
+			<!--Not relevant for GM.-->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UseTxOfFcInISR" class="OTModuleInstance">
+			<!--Not relevant for GM.-->
+			<default value="true"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UseQueueInISR" class="OTModuleInstance">
+			<!--Not relevant for GM.-->
+			<default value="true"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UseFastRam" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UseOverrunIndication" class="OTModuleInstance">
+			<!--Buffer overrun indication required for GM.-->
+			<default value="true"/>
+			<access value="rdonly"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UseFastTxTransmission" class="OTModuleInstance">
+			<!--Not relevant for GM.-->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UseNoStMinAfterFC" class="OTModuleInstance">
+			<!--Not relevant for GM.-->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="UseGuaranteedStMin" class="OTModuleInstance">
+			<!--Not relevant for GM.-->
+			<default value="true"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="TpTxHandleChangeable" class="OTModuleInstance">
+			<!--Not relevant for GM.-->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="TpFcWaitCount" class="OTModuleInstance">
+			<!--Specify the maximum number of Wait Frames (N_WFTmax) to be sent consecutively. -->
+			<!--GM does not use Wait Frames.-->
+			<default value="0"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="TpForceFuncExtendedAddressing" class="OTModuleInstance">
+			<!--Has to be enabled for GM.-->
+			<default value="1"/>
+			<access value="none"/>
+			<configurable value="no"/>
+		</attribute>
+		<attribute name="TpFramePadding" class="OTModuleInstance">
+			<!-- Enable the TP Frame padding according to GMs recommendations in GMW3110..-->
+			<default value="true"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="TpFramePaddingPattern" class="OTModuleInstance">
+			<!-- Set the TP Frame padding according to GMs recommendations in GMW3110..-->
+			<default value="170"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+	</module>
+	<module name="DriverCAN" version="1.0">
+		<description>Configuration of DriverCAN module</description>
+		<attribute name="TransmitQueue" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>		
+	</module>
+	<module name="DriverCAN13" version="2.13">
+		<description>Configuration of DriverCAN module</description>
+		<attribute name="TxObserve" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="PartOffline" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="ConfirmationFlag" class="OTTxMessage">
+			<default value="false"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="HardwareLoopCheck" class="OTModuleInstance">
+			<default value="true"/>
+			<access value="rdwr"/>
+			<configurable value="yes"/>
+		</attribute>
+	</module>
+	<module name="DrvCan__baseRi15" version="1.0">
+		<description>Configuration of DrvCan__baseRi15 module</description>
+		<attribute name="DlcCheck" class="OTModuleInstance">
+			<!-- DLC check against length -->
+			<default value="1"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="DataCopyMechanism" class="OTModuleInstance">
+			<!-- Copy number of needed Bytes. -->
+			<default value="0"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+	</module>
+	<module name="VectorIL" version="1.0">
+		<autoactivate value="true"/>
+		<description>Configuration of Il_Vector module</description>
+		<attribute name="VIlUseRxTimeoutDelay" class="OTModuleInstance">
+			<!-- This feature is not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<!-- The timeout monitoring starts wehen the IL/VN ist started/actvated.-->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="no"/>
+		</attribute>
+		<attribute name="VIlUseStartStopOfCyclicMessages" class="OTModuleInstance">
+			<!-- This feature is disabled and hidden since it is recommended to not use it. -->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="no"/>
+		</attribute>
+		<attribute name="VIlAutosarSpecificationVersion" class="OTModuleInstance">
+			<!-- This feature is not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<default value="0"/>
+			<access value="none"/>
+			<configurable value="no"/>
+		</attribute>
+		<attribute name="VIlUseAutosarSignalAPI" class="OTModuleInstance">
+			<!-- This feature is not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="no"/>
+		</attribute>
+		<attribute name="VIlTxRDS" class="OTTxSignal">
+			<!-- This feature is not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="VIlRxRDS" class="OTRxSignal">
+			<!-- This feature is not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="VIlTxMsgMultiplexApi" class="OTTxMessage">
+			<!-- This feature is not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="VIlRxMsgMultiplexApi" class="OTRxMessage">
+			<!-- This feature is not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="VIlCycleTimeFast" class="OTMessage">
+			<!-- This feature is not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="VIlFastOnStart" class="OTMessage">
+			<!-- This feature is not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="VIlNrOfRepetition" class="OTMessage">
+			<!-- This feature is not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="VIlTxSigType" class="OTTxSignal">
+			<!-- Multiplex Signals are not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="VIlRxSigType" class="OTRxSignal">
+			<!-- Multiplex Signals are not required for GM and therefore hidden in order to minimize the configuration effort of the user.-->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="VIlInactiveValue" class="OTMsgSignal">
+			<!-- Transmission Mode 'IfActive' is not supported by GM. -->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="VIlEnableDlcDependentIndication" class="OTModuleInstance">
+			<!-- Feature not supported by GM. -->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="no"/>
+		</attribute>
+		<attribute name="VIlRxInitDefault" class="OTRxSignal">
+			<!-- Feature need for calibration -->
+			<default value="true"/>
+			<access value="rdonly"/>
+		</attribute>
+		<attribute name="VIlTxInitDefault" class="OTTxSignal">
+			<!-- Feature need for calibration -->
+			<default value="true"/>
+			<access value="rdonly"/>
+		</attribute>
+		<attribute name="VIlRxTimeoutDynamicApi" class="OTRxSignal">
+			<!-- Dynamic Rx Timeouts not used for OEM GM -->
+			<default value="false"/>
+			<access value="none"/>
+		</attribute>
+		<attribute name="VIlUseIlTxRepetitionsAreActive" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="none"/>
+		</attribute>
+		<attribute name="VIlUseIlTxSignalsAreActive" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="none"/>
+		</attribute>
+	</module>
+	<module name="XCP" version="1.0">
+		<attribute name="FreezeMode" class="OTModuleInstance">
+			<!-- Do not support freeze mode -->
+			<default value="false"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+	</module>
+	<module name="Nm_Gmlan_Gm" version="0.1">
+		<autoactivate value="true"/>
+	</module>
+	<module name="DriverCANoe" version="0.1">
+		<autoactivate value="true"/>
+	</module>
+	<module name="DriverMCS12X_MSCAN" version="0.1">
+		<autoactivate value="true"/>
+	</module>
+	<module name="VILSendTypeMgr" version="0.1">
+		<attribute name="VIlSendType" class="OTMsgSignal">
+			<!-- Hide attribute -->
+			<access value="hide"/>
+			<configurable value="yes"/>
+		</attribute>
+	</module>
+	<module name="OHCan" version="1.0">
+		<attribute name="ExtendedID" class="OTMessage">
+			<!-- Hide attribute -->
+			<access value="hide"/>
+		</attribute>
+		<attribute name="IsSigned" class="OTMsgSignal">
+			<!-- Hide attribute -->
+			<access value="hide"/>
+		</attribute>
+		<attribute name="Byteorder" class="OTMsgSignal">
+			<!-- Hide attribute -->
+			<access value="hide"/>
+		</attribute>
+	</module>
+	<!-- **********************  CCL module  ************************ -->
+	<module name="CCL" version="1.0">
+		<description>Configuration of the component CCL</description>
+		<attribute name="AttrCclIsrPrefix" class="OTModuleInstance">
+			<!--The attribute defines the prefix of generated CCL interrupt routines. The atribute is not visible because the prefix is not more necessary.-->
+			<default value="Ccl"/>
+			<access value="none"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="AttrST10IsrNumber" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="AttrST10IsrRegBank" class="OTChannel">
+			<default value=""/>
+			<access value="none"/>
+			<settingkind value="system"/>
+			<configurable value="yes"/>
+		</attribute>
+		<attribute name="AttrWakeUpIntOsekCat2" class="OTModuleInstance">
+			<!---->
+			<default value="0"/>
+			<access value="none"/>
+		</attribute>
+		<attribute name="AttrTrcvWakeUpConcept" class="OTModuleInstance">
+			<!--2008-04-28,  pet: Currenty only one concept is supported, therefore no need to use this attribute.-->
+			<access value="rdonly"/>
+		</attribute>
+		<attribute name="AttrStopTimerByBusOff" class="OTModuleInstance">
+			<default value="false"/>
+			<access value="none"/>
+		</attribute>
+	</module>
+</config>

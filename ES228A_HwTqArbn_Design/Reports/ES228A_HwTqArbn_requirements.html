@@ -1,0 +1,303 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Requirements Traceability Report for ES228A_HwTqArbn</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div lang="en" class="book" title="Requirements Traceability Report for ES228A_HwTqArbn"><div class="titlepage"><div><div><h1 class="title"><a name="d0e1"></a>Requirements Traceability Report for ES228A_HwTqArbn</h1></div><div><h2 class="subtitle"></h2></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="chapter"><a href="#d0e8">1. Model Information for "ES228A_HwTqArbn"</a></span></dt><dt><span class="chapter"><a href="#d0e69">2. Traceability Summary for "ES228A_HwTqArbn"</a></span></dt><dt><span class="chapter"><a href="#b09faeca9165b73fc2e884f0f9de82f6">3. System - HwTqArbnPer1</a></span></dt><dt><span class="chapter"><a href="#d7ad74505ff2fe1a3d351ade072c968f">4. System - Arbitration</a></span></dt><dt><span class="chapter"><a href="#6352de224d3cfe55d17d43f4c50edb78">5. System - Channel Availability</a></span></dt><dt><span class="chapter"><a href="#bfb056b5e9d74d318e434a2f5a8a805a">6. System - Channel Availability</a></span></dt><dt><span class="chapter"><a href="#56e17c719de527f0a8feda4d9daa3449">7. System - Extract Correlation Fault Status Bits</a></span></dt><dt><span class="chapter"><a href="#9521486029991471452a64494a2bc4e1">8. System - CalcChAHwTq</a></span></dt><dt><span class="chapter"><a href="#162ea97dc27870447d6871b090618aa7">9. System - CalcChBHwTq</a></span></dt></dl></div><div class="list-of-tables"><p><b>List of Tables</b></p><dl><dt>1.1. <a href="#d0e12">ES228A_HwTqArbn<span>  Version Information</span>
+    </a></dt><dt>2.1. <a href="#d0e73">Artifacts linked in model</a></dt><dt>3.1. <a href="#d0e152">ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1 Requirements Traceability Data</a></dt><dt>4.1. <a href="#d0e262">ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration Requirements Traceability Data</a></dt><dt>4.2. <a href="#d0e419">Objects in ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration that have Requirements Traceability Links</a></dt><dt>5.1. <a href="#d0e580">Objects in ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Channel Availability that have Requirements Traceability Links</a></dt><dt>6.1. <a href="#d0e958">ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Channel Availability/Channel Availability Requirements Traceability Data</a></dt><dt>7.1. <a href="#d0e1139">ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Channel Availability/Extract Correlation Fault Status Bits Requirements Traceability Data</a></dt><dt>8.1. <a href="#d0e1251">ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration/Chart/CalcChAHwTq Requirements Traceability Data</a></dt><dt>9.1. <a href="#d0e1351">ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration/Chart/CalcChBHwTq Requirements Traceability Data</a></dt></dl></div><div class="chapter" title="Chapter&nbsp;1.&nbsp;Model Information for &#34;ES228A_HwTqArbn&#34;"><div class="titlepage"><div><div><h2 class="title"><a name="d0e8"></a>Chapter&nbsp;1.&nbsp;Model Information for "ES228A_HwTqArbn"</h2></div></div></div><div class="table"><a name="d0e12"></a><p class="title"><b>Table&nbsp;1.1.&nbsp;ES228A_HwTqArbn<span>  Version Information</span>
+    </b></p><div class="table-contents"><table summary="ES228A_HwTqArbn  Version Information&#xA;    " width="100%" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; "><colgroup><col width="2880*" align="left"><col width="6720*" align="left"><col width="4320*" align="left"><col width="10080*" align="left"></colgroup><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>ModelVersion</em></span>
+                </td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">1.78</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>ConfigurationManager</em></span>
+                </td><td style="border-bottom: 0.5pt solid ; " align="left">None</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>Created</em></span>
+                </td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">Tue Feb 10 15:58:47 2015</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>Creator</em></span>
+                </td><td style="border-bottom: 0.5pt solid ; " align="left">nzy7l3</td></tr><tr><td style="border-right: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>LastModifiedDate</em></span>
+                </td><td style="border-right: 0.5pt solid ; " align="left">Mon Apr 20 21:17:53 2015</td><td style="border-right: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>LastModifiedBy</em></span>
+                </td><td style="" align="left">nzy7l3</td></tr></tbody></table></div></div><br class="table-break"></div><div class="chapter" title="Chapter&nbsp;2.&nbsp;Traceability Summary for &#34;ES228A_HwTqArbn&#34;"><div class="titlepage"><div><div><h2 class="title"><a name="d0e69"></a>Chapter&nbsp;2.&nbsp;Traceability Summary for "ES228A_HwTqArbn"</h2></div></div></div><a name="d0e73"></a><div class="table"><p class="title"><b>Table&nbsp;2.1.&nbsp;Artifacts linked in model</b></p><div class="table-contents"><table summary="Artifacts linked in model" border="1" cellspacing="0" fastRender="1"><col width="60*"><col width="540*"><col width="240*"><col width="60*"><thead><tr>
+            <th align="left">ID</th>
+            <th align="left">Artifact names stored by RMI</th>
+            <th align="left">Last modified</th>
+            <th align="left"># links</th>
+        </tr></thead><tbody><tr>
+            <td align="left">DOC1</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-M-0000c476" target="_top">0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn)</a>
+            </td>
+            <td align="left">20 April 2015 by Aparna Amberkar</td>
+            <td align="left">13</td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;3.&nbsp;System - HwTqArbnPer1"><div class="titlepage"><div><div><h2 class="title"><a name="b09faeca9165b73fc2e884f0f9de82f6"></a>Chapter&nbsp;3.&nbsp;System - HwTqArbnPer1</h2></div></div></div><div class="mediaobject"><map name="d0e124"><area coords="571,102,740,315" shape="rect" href="#d7ad74505ff2fe1a3d351ade072c968f"><area coords="127,97,348,348" shape="rect" href="#6352de224d3cfe55d17d43f4c50edb78"></map><img src="./ES228A_HwTqArbn_requirements_html_files/image-004-sl.png" usemap="%0A                #d0e124" ismap="" border="0"></div><a name="d0e152"></a><div class="table"><p class="title"><b>Table&nbsp;3.1.&nbsp;ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1 Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1 Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_85"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-85-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The "Handwheel Torque Arbitration Function" shall determine validity of measured input signals using the value, qualifier and rolling counter inputs in the same execution loop that the function output is calculated in.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>.ReqCat: </td><td>Derived</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-85-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_85</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;4.&nbsp;System - Arbitration"><div class="titlepage"><div><div><h2 class="title"><a name="d7ad74505ff2fe1a3d351ade072c968f"></a>Chapter&nbsp;4.&nbsp;System - Arbitration</h2></div></div></div><div class="mediaobject"><map name="d0e245"><area coords="182,68,357,272" shape="rect" href="#17a6056e746f1b00e07814462605db78"></map><img src="./ES228A_HwTqArbn_requirements_html_files/image-006-sl.png" usemap="%0A                #d0e245" ismap="" border="0"></div><a name="d0e262"></a><div class="table"><p class="title"><b>Table&nbsp;4.1.&nbsp;ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_128"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-128-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function shall compute Hw Trq from available torque sensor signals.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>.Exec Rate: </td><td>2 ms</td></tr><tr><td>.ReqCat: </td><td>Direct</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>02 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr><tr><td>Review Action: </td><td>Remove "" from function name</td></tr><tr><td>Review Date: </td><td>08 April 2015</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-128-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_128</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_98"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-98-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function shall use the last valid value as function output Hw Trq if none of the sensor inputs are available.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>.ReqCat: </td><td>Direct</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>02 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-98-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_98</a>
+            </td>
+        </tr></tbody></table></div></div><a name="d0e419"></a><div class="table"><p class="title"><b>Table&nbsp;4.2.&nbsp;Objects in ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="17a6056e746f1b00e07814462605db78"></a>Chart</td>
+            <td align="left">
+                <a name="d0e443"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_83"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-83-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function shall generate function output Hw Trq by arbitrating between the available Ch A Hw Trq and Ch B Hw Trq signals.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-83-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_83</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;5.&nbsp;System - Channel Availability"><div class="titlepage"><div><div><h2 class="title"><a name="6352de224d3cfe55d17d43f4c50edb78"></a>Chapter&nbsp;5.&nbsp;System - Channel Availability</h2></div></div></div><div class="mediaobject"><map name="d0e520"><area coords="416,172,484,262" shape="rect" href="#bfb056b5e9d74d318e434a2f5a8a805a"><area coords="117,48,194,121" shape="rect" href="#56e17c719de527f0a8feda4d9daa3449"><area coords="110,139,211,218" shape="rect" href="#fd975f9b14e8c047ef6540d8522a296c"><area coords="110,243,211,322" shape="rect" href="#f6b34a4657644dc36f7886c6d9aedde0"><area coords="110,359,211,438" shape="rect" href="#57324679fcfec3fd3fba80e0c0533531"><area coords="110,477,211,557" shape="rect" href="#7c6479043f7c541ad862b6ef22cd66c6"></map><img src="./ES228A_HwTqArbn_requirements_html_files/image-008-sl.png" usemap="%0A                #d0e520" ismap="" border="0"></div><a name="d0e580"></a><div class="table"><p class="title"><b>Table&nbsp;5.1.&nbsp;Objects in ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Channel Availability that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Channel Availability that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="fd975f9b14e8c047ef6540d8522a296c"></a>SigAvlChkRev1</td>
+            <td align="left">
+                <a name="d0e604"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_91"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-91-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function shall determine torque sensor signal availability of the measured value based on an internal validity check of the respective qualifier and rolling counter inputs confirmed for a duration of time defined by a field configurable value.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>.ReqCat: </td><td>Direct</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>02 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr><tr><td>Review Date: </td><td>08 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-91-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_91</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="f6b34a4657644dc36f7886c6d9aedde0"></a>SigAvlChkRev2</td>
+            <td align="left">
+                <a name="d0e687"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_91"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-91-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function shall determine torque sensor signal availability of the measured value based on an internal validity check of the respective qualifier and rolling counter inputs confirmed for a duration of time defined by a field configurable value.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>.ReqCat: </td><td>Direct</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>02 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr><tr><td>Review Date: </td><td>08 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-91-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_91</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="57324679fcfec3fd3fba80e0c0533531"></a>SigAvlChkRev3</td>
+            <td align="left">
+                <a name="d0e770"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_91"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-91-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function shall determine torque sensor signal availability of the measured value based on an internal validity check of the respective qualifier and rolling counter inputs confirmed for a duration of time defined by a field configurable value.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>.ReqCat: </td><td>Direct</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>02 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr><tr><td>Review Date: </td><td>08 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-91-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_91</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="7c6479043f7c541ad862b6ef22cd66c6"></a>SigAvlChkRev4</td>
+            <td align="left">
+                <a name="d0e853"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_91"</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                    <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-91-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                                    </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function shall determine torque sensor signal availability of the measured value based on an internal validity check of the respective qualifier and rolling counter inputs confirmed for a duration of time defined by a field configurable value.</td></tr><tr><td>
+                                    <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>.ReqCat: </td><td>Direct</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>02 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr><tr><td>Review Date: </td><td>08 April 2015</td></tr></table>
+                                    </td></tr></table>
+                                    </td></tr></table>
+                            </td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-91-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_91</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;6.&nbsp;System - Channel Availability"><div class="titlepage"><div><div><h2 class="title"><a name="bfb056b5e9d74d318e434a2f5a8a805a"></a>Chapter&nbsp;6.&nbsp;System - Channel Availability</h2></div></div></div><div class="mediaobject"><map name="d0e938"></map><img src="./ES228A_HwTqArbn_requirements_html_files/image-010-sl.png" usemap="%0A                #d0e938" ismap="" border="0"></div><a name="d0e958"></a><div class="table"><p class="title"><b>Table&nbsp;6.1.&nbsp;ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Channel Availability/Channel Availability Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Channel Availability/Channel Availability Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_129"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-129-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function shall determine torque sensor signal availability of the measured value based on an external signal correlation check of the sensor signals.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>.ReqCat: </td><td>Direct</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>08 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr><tr><td>Review Date: </td><td>08 April 2015</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-129-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_129</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_91"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-91-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function shall determine torque sensor signal availability of the measured value based on an internal validity check of the respective qualifier and rolling counter inputs confirmed for a duration of time defined by a field configurable value.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>.ReqCat: </td><td>Direct</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>02 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr><tr><td>Review Date: </td><td>08 April 2015</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-91-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_91</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;7.&nbsp;System - Extract Correlation Fault Status Bits"><div class="titlepage"><div><div><h2 class="title"><a name="56e17c719de527f0a8feda4d9daa3449"></a>Chapter&nbsp;7.&nbsp;System - Extract Correlation Fault Status Bits</h2></div></div></div><div class="mediaobject"><map name="d0e1122"></map><img src="./ES228A_HwTqArbn_requirements_html_files/image-012-sl.png" usemap="%0A                #d0e1122" ismap="" border="0"></div><a name="d0e1139"></a><div class="table"><p class="title"><b>Table&nbsp;7.1.&nbsp;ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Channel Availability/Extract Correlation Fault Status Bits Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Channel Availability/Extract Correlation Fault Status Bits Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_129"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-129-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function shall determine torque sensor signal availability of the measured value based on an external signal correlation check of the sensor signals.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>.ReqCat: </td><td>Direct</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>08 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr><tr><td>Review Date: </td><td>08 April 2015</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-129-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_129</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;8.&nbsp;System - CalcChAHwTq"><div class="titlepage"><div><div><h2 class="title"><a name="9521486029991471452a64494a2bc4e1"></a>Chapter&nbsp;8.&nbsp;System - CalcChAHwTq</h2></div></div></div><div class="mediaobject"><map name="d0e1236"></map><img src="./ES228A_HwTqArbn_requirements_html_files/image-014-sl.png" usemap="%0A                #d0e1236" ismap="" border="0"></div><a name="d0e1251"></a><div class="table"><p class="title"><b>Table&nbsp;8.1.&nbsp;ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration/Chart/CalcChAHwTq Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration/Chart/CalcChAHwTq Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_16"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-16-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function  shall compute Ch A Hw Trq  from inputs Hw Trq A Value and Hw Trq B Value.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Mark Kushion</td></tr><tr><td>Created On: </td><td>12 February 2014</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-16-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_16</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;9.&nbsp;System - CalcChBHwTq"><div class="titlepage"><div><div><h2 class="title"><a name="162ea97dc27870447d6871b090618aa7"></a>Chapter&nbsp;9.&nbsp;System - CalcChBHwTq</h2></div></div></div><div class="mediaobject"><map name="d0e1340"></map><img src="./ES228A_HwTqArbn_requirements_html_files/image-016-sl.png" usemap="%0A                #d0e1340" ismap="" border="0"></div><a name="d0e1351"></a><div class="table"><p class="title"><b>Table&nbsp;9.1.&nbsp;ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration/Chart/CalcChBHwTq Requirements Traceability Data</b></p><div class="table-contents"><table summary="ES228A_HwTqArbn/HwTrqArbn/HwTqArbnPer1/Arbitration/Chart/CalcChBHwTq Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="780*"><col width="420*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">
+                <table border="0" summary="Simple list" class="simplelist"><tr><td>"REQ:  ES228A_82"</td></tr><tr><td>
+                        <table border="0" summary="Simple list" class="simplelist"><tr><td>
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-82-0000c476" target="_top">------- Details from 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn): -------</a>
+                            </td></tr><tr><td>No Object Heading</td></tr><tr><td>* The Handwheel Torque Arbitration Function  shall compute Ch B Hw Trq  from inputs Hw Trq C Value and Hw Trq D Value.</td></tr><tr><td>
+                                <table border="0" summary="Simple list" class="simplelist"><tr><td>.ASIL: </td><td>D</td></tr><tr><td>Created By: </td><td>Aparna Amberkar</td></tr><tr><td>Created On: </td><td>01 April 2015</td></tr><tr><td>Is Requirement?: </td><td>True</td></tr><tr><td>Last Modified By: </td><td>Aparna Amberkar</td></tr><tr><td>Last Modified On: </td><td>19 April 2015</td></tr></table>
+                            </td></tr></table>
+                    </td></tr></table>
+            </td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;view=00000003&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-82-0000c476" target="_top">DOORS module 0000c476 (/ESG Group/FDD Module Requirements/EA4 Specific/ES228A_HwTqArbn), object ES228A_82</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div></div></body></html>

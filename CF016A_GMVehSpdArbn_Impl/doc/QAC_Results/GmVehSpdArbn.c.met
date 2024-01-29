@@ -1,0 +1,922 @@
+<RDEF> I Includes
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn.h 71
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn.h C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn_Type.h 40
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn_Type.h C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_Type.h 32
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_Type.h C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte.h 27
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 39
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Platform_Types.h 63
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h 64
+<R>I C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h C:/Component/AR201A_ArCplrSuprt_Impl/tools/contract/Compiler_Cfg.h 56
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn.h C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_DataHandleType.h 41
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 60
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 65
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 109
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 151
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn.h C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/GmVehSpdArbn_MemMap.h 243
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/GmVehSpdArbn_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/Rte_GmVehSpdArbn.h C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/GmVehSpdArbn_MemMap.h 337
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/GmVehSpdArbn_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h 78
+<R>I C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h C:/Component/TL103A_CplrSuprt/include/2015.1.5/ansi/math.h 25
+<R>I C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 26
+<DEFINE> VEHSPDMAX_KPH_F32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 88 N DF OM - - - O
+<LIT> 511.0 F P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 88 34 N FN - F M
+<DEFINE> VEHSPDMIN_KPH_F32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 89 N DF OM - - - O
+<LIT> 0.0 F P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 89 34 N FN - F M
+<DEFINE> DIAGCSTRTUPDLY_CNT_U32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 90 N DF OM - - - O
+<LIT> 5000 U P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 90 34 N DN - F M
+<DEFINE> VldSig1_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 93 N DC OV P N uc R
+<DEFINE> VldSig2_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 94 N DC OV P N uc R
+<DEFINE> StuckSig1_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 95 N DC OV P N uc R
+<DEFINE> StuckSig2_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 96 N DC OV P N uc R
+<DEFINE> DetVld C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 93 N DC OF F I (uc,uc,uc,uc,uc) -
+<DEFINE> VldSig1_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 99 N DC OV P N uc R
+<DEFINE> VldSig2_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 100 N DC OV P N uc R
+<DEFINE> VldSig3_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 101 N DC OV P N uc R
+<DEFINE> VldSig4_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 102 N DC OV P N uc R
+<DEFINE> DetInvld C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 99 N DC OF F I (uc,uc,uc,uc,uc) -
+<DEFINE> VldSig_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 104 N DC OV P N uc R
+<DEFINE> VelSig_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 105 N DC OV P N fs R
+<DEFINE> AvgSum_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 106 N DC OV P N pfs R
+<DEFINE> AvgCnt_Cnt_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 107 N DC OV P N pfs R
+<DEFINE> UpdtAvg C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 104 N DC OF F I (.,uc,fs,pfs,pfs) -
+<DEFINE> VldSig_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 109 N DC OV P N uc R
+<DEFINE> VelSig1_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 110 N DC OV P N fs R
+<DEFINE> VelSig2_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 111 N DC OV P N fs R
+<DEFINE> MaxVel_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 112 N DC OV P N pfs R
+<DEFINE> CondMax C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 109 N DC OF F I (.,uc,fs,fs,pfs) -
+<DEFINE> VldSig_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 114 N DC OV P N uc R
+<DEFINE> VelSig1_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 115 N DC OV P N fs R
+<DEFINE> VelSig2_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 116 N DC OV P N fs R
+<DEFINE> MinVel_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 117 N DC OV P N pfs R
+<DEFINE> CondMin C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 114 N DC OF F I (.,uc,fs,fs,pfs) -
+<DEFINE> GmVehSpdArbn_START_SEC_CODE C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 669 N DF OM - - - O
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/GmVehSpdArbn_MemMap.h 670
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/GmVehSpdArbn_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<EXTD> GmVehSpdArbnInit1 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 691
+<DEFINE> GmVehSpdArbnInit1 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 691 N DR OF F X (.,.) -
+<DEFINE> GmVehSpdArbnInit1 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 691 N DF OF F X (.,.) -
+<RDEF> C Calls
+<R>C GmVehSpdArbnInit1 Rte_Call_GmVehSpdArbn_GetRefTmr100MicroSec32bit_Oper 698
+<RDEF> X Refers-to
+<R>X GmVehSpdArbnInit1 Rte_Call_GmVehSpdArbn_GetRefTmr100MicroSec32bit_Oper 698 R
+<R>X GmVehSpdArbnInit1 Rte_Inst_GmVehSpdArbn 698 R
+<CTLG> GmVehSpdArbnInit1 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 692 702 702 702 
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  GmVehSpdArbnInit1
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  9
+<S>STXLN  1
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  0
+<S>STPTH  1
+<S>STPDN  1.00   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  12
+<S>STAV2  12
+<S>STAV3  12
+<S>STST1  1
+<S>STST2  1
+<S>STST3  1
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  10
+<S>STFN2  2
+
+<EXTD> GmVehSpdArbnPer1 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 769
+<DEFINE> GmVehSpdArbnPer1 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 769 N DR OF F X (.,.) -
+<DEFINE> GmVehSpdArbnPer1 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 769 N DF OF F X (.,.) -
+<DEFINE> VehPwrModDftVehSpdEna_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 776 N DC OV B N uc -
+<DEFINE> VehPwrModDftVehSpdEna_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 776 N DF OV B N uc -
+<DEFINE> WhlGndVelLeDrvnBusChassisExp_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 777 N DC OV B N fs -
+<DEFINE> WhlGndVelLeDrvnBusChassisExp_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 777 N DF OV B N fs -
+<DEFINE> WhlGndVelLeDrvnBusHiSpd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 778 N DC OV B N fs -
+<DEFINE> WhlGndVelLeDrvnBusHiSpd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 778 N DF OV B N fs -
+<DEFINE> WhlGndVelLeDrvnStuckBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 779 N DC OV B N uc -
+<DEFINE> WhlGndVelLeDrvnStuckBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 779 N DF OV B N uc -
+<DEFINE> WhlGndVelLeDrvnStuckBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 780 N DC OV B N uc -
+<DEFINE> WhlGndVelLeDrvnStuckBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 780 N DF OV B N uc -
+<DEFINE> WhlGndVelLeDrvnVldBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 781 N DC OV B N uc -
+<DEFINE> WhlGndVelLeDrvnVldBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 781 N DF OV B N uc -
+<DEFINE> WhlGndVelLeDrvnVldBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 782 N DC OV B N uc -
+<DEFINE> WhlGndVelLeDrvnVldBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 782 N DF OV B N uc -
+<DEFINE> WhlGndVelLeNonDrvnBusChassisExp_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 783 N DC OV B N fs -
+<DEFINE> WhlGndVelLeNonDrvnBusChassisExp_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 783 N DF OV B N fs -
+<DEFINE> WhlGndVelLeNonDrvnBusHiSpd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 784 N DC OV B N fs -
+<DEFINE> WhlGndVelLeNonDrvnBusHiSpd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 784 N DF OV B N fs -
+<DEFINE> WhlGndVelLeNonDrvnStuckBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 785 N DC OV B N uc -
+<DEFINE> WhlGndVelLeNonDrvnStuckBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 785 N DF OV B N uc -
+<DEFINE> WhlGndVelLeNonDrvnStuckBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 786 N DC OV B N uc -
+<DEFINE> WhlGndVelLeNonDrvnStuckBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 786 N DF OV B N uc -
+<DEFINE> WhlGndVelLeNonDrvnVldBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 787 N DC OV B N uc -
+<DEFINE> WhlGndVelLeNonDrvnVldBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 787 N DF OV B N uc -
+<DEFINE> WhlGndVelLeNonDrvnVldBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 788 N DC OV B N uc -
+<DEFINE> WhlGndVelLeNonDrvnVldBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 788 N DF OV B N uc -
+<DEFINE> WhlGndVelRiDrvnBusChassisExp_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 789 N DC OV B N fs -
+<DEFINE> WhlGndVelRiDrvnBusChassisExp_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 789 N DF OV B N fs -
+<DEFINE> WhlGndVelRiDrvnBusHiSpd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 790 N DC OV B N fs -
+<DEFINE> WhlGndVelRiDrvnBusHiSpd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 790 N DF OV B N fs -
+<DEFINE> WhlGndVelRiDrvnStuckBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 791 N DC OV B N uc -
+<DEFINE> WhlGndVelRiDrvnStuckBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 791 N DF OV B N uc -
+<DEFINE> WhlGndVelRiDrvnStuckBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 792 N DC OV B N uc -
+<DEFINE> WhlGndVelRiDrvnStuckBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 792 N DF OV B N uc -
+<DEFINE> WhlGndVelRiDrvnVldBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 793 N DC OV B N uc -
+<DEFINE> WhlGndVelRiDrvnVldBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 793 N DF OV B N uc -
+<DEFINE> WhlGndVelRiDrvnVldBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 794 N DC OV B N uc -
+<DEFINE> WhlGndVelRiDrvnVldBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 794 N DF OV B N uc -
+<DEFINE> WhlGndVelRiNonDrvnBusChassisExp_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 795 N DC OV B N fs -
+<DEFINE> WhlGndVelRiNonDrvnBusChassisExp_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 795 N DF OV B N fs -
+<DEFINE> WhlGndVelRiNonDrvnBusHiSpd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 796 N DC OV B N fs -
+<DEFINE> WhlGndVelRiNonDrvnBusHiSpd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 796 N DF OV B N fs -
+<DEFINE> WhlGndVelRiNonDrvnStuckBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 797 N DC OV B N uc -
+<DEFINE> WhlGndVelRiNonDrvnStuckBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 797 N DF OV B N uc -
+<DEFINE> WhlGndVelRiNonDrvnStuckBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 798 N DC OV B N uc -
+<DEFINE> WhlGndVelRiNonDrvnStuckBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 798 N DF OV B N uc -
+<DEFINE> WhlGndVelRiNonDrvnVldBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 799 N DC OV B N uc -
+<DEFINE> WhlGndVelRiNonDrvnVldBusChassisExp_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 799 N DF OV B N uc -
+<DEFINE> WhlGndVelRiNonDrvnVldBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 800 N DC OV B N uc -
+<DEFINE> WhlGndVelRiNonDrvnVldBusHiSpd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 800 N DF OV B N uc -
+<DEFINE> VehSpdArbd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 803 N DC OV B N fs -
+<DEFINE> VehSpdArbd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 803 N DF OV B N fs -
+<DEFINE> VehSpdArbdVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 804 N DC OV B N uc -
+<DEFINE> VehSpdArbdVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 804 N DF OV B N uc -
+<DEFINE> VehSpdMaxSecur_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 805 N DC OV B N fs -
+<DEFINE> VehSpdMaxSecur_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 805 N DF OV B N fs -
+<LIT> 0.0 F P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 805 56 N FN fs B O
+<DEFINE> VehSpdMaxSecurVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 806 N DC OV B N uc -
+<DEFINE> VehSpdMaxSecurVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 806 N DF OV B N uc -
+<DEFINE> VehSpdMinSecur_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 807 N DC OV B N fs -
+<DEFINE> VehSpdMinSecur_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 807 N DF OV B N fs -
+<DEFINE> VehSpdMinSecurVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 808 N DC OV B N uc -
+<DEFINE> VehSpdMinSecurVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 808 N DF OV B N uc -
+<DEFINE> VehSpdSnsrVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 809 N DC OV B N uc -
+<DEFINE> VehSpdSnsrVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 809 N DF OV B N uc -
+<DEFINE> LeDrvnVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 811 N DC OV B N uc -
+<DEFINE> LeDrvnVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 811 N DF OV B N uc -
+<DEFINE> RiDrvnVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 812 N DC OV B N uc -
+<DEFINE> RiDrvnVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 812 N DF OV B N uc -
+<DEFINE> LeNonDrvnVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 813 N DC OV B N uc -
+<DEFINE> LeNonDrvnVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 813 N DF OV B N uc -
+<DEFINE> RiNonDrvnVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 814 N DC OV B N uc -
+<DEFINE> RiNonDrvnVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 814 N DF OV B N uc -
+<DEFINE> TmpMinSpd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 815 N DC OV B N fs -
+<DEFINE> TmpMinSpd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 815 N DF OV B N fs -
+<DEFINE> TmpSpdArbd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 816 N DC OV B N fs -
+<DEFINE> TmpSpdArbd_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 816 N DF OV B N fs -
+<DEFINE> SpdArbdCnt_Cnt_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 817 N DC OV B N fs -
+<DEFINE> SpdArbdCnt_Cnt_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 817 N DF OV B N fs -
+<DEFINE> NTCIdleTiPassd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 818 N DC OV B N uc -
+<DEFINE> NTCIdleTiPassd_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 818 N DF OV B N uc -
+<DEFINE> Span_Cnt_T_u32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 819 N DC OV B N ul -
+<DEFINE> Span_Cnt_T_u32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 819 N DF OV B N ul -
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_VehPwrModDftVehSpdEna_Logl 824
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_VehPwrModDftVehSpdEna_Logl 824 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnBusChassisExp_Val 825
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnBusChassisExp_Val 825 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnBusHiSpd_Val 826
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnBusHiSpd_Val 826 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnStuckBusChassisExp_Logl 827
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnStuckBusChassisExp_Logl 827 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnStuckBusHiSpd_Logl 828
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnStuckBusHiSpd_Logl 828 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnVldBusChassisExp_Logl 829
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnVldBusChassisExp_Logl 829 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnVldBusHiSpd_Logl 830
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeDrvnVldBusHiSpd_Logl 830 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnBusChassisExp_Val 831
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnBusChassisExp_Val 831 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnBusHiSpd_Val 832
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnBusHiSpd_Val 832 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnStuckBusChassisExp_Logl 833
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnStuckBusChassisExp_Logl 833 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnStuckBusHiSpd_Logl 834
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnStuckBusHiSpd_Logl 834 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnVldBusChassisExp_Logl 835
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnVldBusChassisExp_Logl 835 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnVldBusHiSpd_Logl 836
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelLeNonDrvnVldBusHiSpd_Logl 836 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnBusChassisExp_Val 837
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnBusChassisExp_Val 837 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnBusHiSpd_Val 838
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnBusHiSpd_Val 838 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnStuckBusChassisExp_Logl 839
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnStuckBusChassisExp_Logl 839 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnStuckBusHiSpd_Logl 840
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnStuckBusHiSpd_Logl 840 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnVldBusChassisExp_Logl 841
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnVldBusChassisExp_Logl 841 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnVldBusHiSpd_Logl 842
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiDrvnVldBusHiSpd_Logl 842 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnBusChassisExp_Val 843
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnBusChassisExp_Val 843 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnBusHiSpd_Val 844
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnBusHiSpd_Val 844 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnStuckBusChassisExp_Logl 845
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnStuckBusChassisExp_Logl 845 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnStuckBusHiSpd_Logl 846
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnStuckBusHiSpd_Logl 846 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnVldBusChassisExp_Logl 847
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnVldBusChassisExp_Logl 847 R
+<R>C GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnVldBusHiSpd_Logl 848
+<R>X GmVehSpdArbnPer1 Rte_Read_GmVehSpdArbn_WhlGndVelRiNonDrvnVldBusHiSpd_Logl 848 R
+<R>C GmVehSpdArbnPer1 DetVld 856
+<R>X GmVehSpdArbnPer1 Rte_Inst_GmVehSpdArbn 857 R
+<R>C GmVehSpdArbnPer1 DetVld 865
+<R>X GmVehSpdArbnPer1 Rte_Inst_GmVehSpdArbn 866 R
+<R>C GmVehSpdArbnPer1 DetVld 874
+<R>X GmVehSpdArbnPer1 Rte_Inst_GmVehSpdArbn 875 R
+<R>C GmVehSpdArbnPer1 DetVld 883
+<R>X GmVehSpdArbnPer1 Rte_Inst_GmVehSpdArbn 884 R
+<R>C GmVehSpdArbnPer1 DetInvld 888
+<R>C GmVehSpdArbnPer1 CondMax 903
+<R>C GmVehSpdArbnPer1 CondMax 904
+<R>C GmVehSpdArbnPer1 CondMax 905
+<R>C GmVehSpdArbnPer1 CondMax 906
+<LIT> 0.0 F P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 915 36 N FN fs B X
+<R>C GmVehSpdArbnPer1 CondMin 925
+<R>C GmVehSpdArbnPer1 CondMin 926
+<LIT> 0.0 F P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 935 28 N FN fs B X
+<LIT> 0.0 F P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 936 28 N FN fs B X
+<R>C GmVehSpdArbnPer1 UpdtAvg 938
+<R>C GmVehSpdArbnPer1 UpdtAvg 939
+<R>C GmVehSpdArbnPer1 UpdtAvg 940
+<R>C GmVehSpdArbnPer1 UpdtAvg 941
+<LIT> 0.0 F P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 944 31 N FN fs B X
+<R>C GmVehSpdArbnPer1 Rte_Call_GmVehSpdArbn_GetTiSpan100MicroSec32bit_Oper 955
+<R>X GmVehSpdArbnPer1 Rte_Call_GmVehSpdArbn_GetTiSpan100MicroSec32bit_Oper 955 R
+<R>X GmVehSpdArbnPer1 Rte_Inst_GmVehSpdArbn 955 R
+<R>C GmVehSpdArbnPer1 DetInvld 964
+<R>C GmVehSpdArbnPer1 Rte_Call_GmVehSpdArbn_SetNtcSts_Oper 973
+<R>X GmVehSpdArbnPer1 Rte_Call_GmVehSpdArbn_SetNtcSts_Oper 973 R
+<LIT> 0 U P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 973 56 N ON ui B X
+<LIT> 0 U P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 973 74 N ON ui B X
+<R>C GmVehSpdArbnPer1 Rte_Call_GmVehSpdArbn_SetNtcSts_Oper 991
+<R>X GmVehSpdArbnPer1 Rte_Call_GmVehSpdArbn_SetNtcSts_Oper 991 R
+<LIT> 0 U P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 991 56 N ON ui B X
+<LIT> 0 U P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 991 74 N ON ui B X
+<R>C GmVehSpdArbnPer1 Rte_Call_GmVehSpdArbn_SetNtcSts_Oper 1006
+<R>X GmVehSpdArbnPer1 Rte_Call_GmVehSpdArbn_SetNtcSts_Oper 1006 R
+<LIT> 0 U P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1006 56 N ON ui B X
+<LIT> 0 U P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1006 74 N ON ui B X
+<R>C GmVehSpdArbnPer1 Lim_f32 1017
+<R>X GmVehSpdArbnPer1 Lim_f32 1017 R
+<R>C GmVehSpdArbnPer1 Lim_f32 1018
+<R>X GmVehSpdArbnPer1 Lim_f32 1018 R
+<R>C GmVehSpdArbnPer1 Lim_f32 1019
+<R>X GmVehSpdArbnPer1 Lim_f32 1019 R
+<R>C GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdArbdVld_Logl 1023
+<R>X GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdArbdVld_Logl 1023 R
+<R>C GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdArbd_Val 1024
+<R>X GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdArbd_Val 1024 R
+<R>C GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdMaxSecurVld_Logl 1025
+<R>X GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdMaxSecurVld_Logl 1025 R
+<R>C GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdMaxSecur_Val 1026
+<R>X GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdMaxSecur_Val 1026 R
+<R>C GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdMinSecurVld_Logl 1027
+<R>X GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdMinSecurVld_Logl 1027 R
+<R>C GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdMinSecur_Val 1028
+<R>X GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdMinSecur_Val 1028 R
+<R>C GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdSnsrVld_Logl 1029
+<R>X GmVehSpdArbnPer1 Rte_Write_GmVehSpdArbn_VehSpdSnsrVld_Logl 1029 R
+<CTLG> GmVehSpdArbnPer1 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 2 4
+<CTLG> 3 5
+<CTLG> 4 5
+<CTLG> 5 6
+<CTLG> 5 7
+<CTLG> 6 8
+<CTLG> 7 8
+<CTLG> 8 9
+<CTLG> 9 10
+<CTLG> 9 11
+<CTLG> 10 12
+<CTLG> 11 12
+<CTLG> 12 13
+<CTLG> 13 14
+<CTLG> 13 15
+<CTLG> 14 15
+<CTLG> 15 16
+<CTLG> 15 20
+<CTLG> 16 17
+<CTLG> 17 18
+<CTLG> 17 19
+<CTLG> 18 19
+<CTLG> 19 30
+<CTLG> 20 21
+<CTLG> 20 25
+<CTLG> 21 22
+<CTLG> 22 23
+<CTLG> 22 24
+<CTLG> 23 24
+<CTLG> 24 29
+<CTLG> 25 26
+<CTLG> 26 27
+<CTLG> 26 28
+<CTLG> 27 28
+<CTLG> 28 29
+<CTLG> 29 30
+<CTLG> 30 31
+<CTLG> 31 33
+<CTLGN> 770 888 888 888 895 912 912 917 944 944 944 948 956 956 956 964 971 971 971 964 982 989 989 989 982 1004 1004 1004 998 982 1034 1034 1034 
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  GmVehSpdArbnPer1
+<S>STCYC  10
+<S>STMCC  1 (10:11)
+<S>STMIF  3
+<S>STSUB  55
+<S>STAKI  65
+<S>STLIN  263
+<S>STXLN  105
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  41
+<S>STPTH  96
+<S>STPDN  0.91   
+<S>STPBG  2
+<S>STLOP  1
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  7
+<S>STAV2  8
+<S>STAV3  12
+<S>STST1  141
+<S>STST2  128
+<S>STST3  87
+<S>STPAR  0
+<S>STCAL  40
+<S>STFN1  689
+<S>STFN2  416
+
+<DEFINE> GmVehSpdArbn_STOP_SEC_CODE C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1037 N DF OM - - - O
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/GmVehSpdArbn_MemMap.h 1038
+<R>I C:/Component/CF016A_GMVehSpdArbn_Impl/tools/contract/GmVehSpdArbn_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<DEFINE> VldSig1_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1052 N DC OV B N uc R
+<DEFINE> VldSig2_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1053 N DC OV B N uc R
+<DEFINE> StuckSig1_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1054 N DC OV B N uc R
+<DEFINE> StuckSig2_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1055 N DC OV B N uc R
+<DEFINE> DetVld C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1052 N DR OF F I (uc,uc,uc,uc,uc) -
+<DEFINE> DetVld C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1052 N DF OF F I (uc,uc,uc,uc,uc) -
+<DEFINE> OverallVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1057 N DC OV B N uc -
+<DEFINE> OverallVld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1057 N DF OV B N uc -
+<CTLG> DetVld 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 4
+<CTLG> 3 4
+<CTLG> 4 6
+<CTLGN> 1056 1062 1062 1066 1071 1071 
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  DetVld
+<S>STCYC  2
+<S>STMCC  3 (2:5)
+<S>STMIF  1
+<S>STSUB  0
+<S>STAKI  2
+<S>STLIN  15
+<S>STXLN  8
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  2
+<S>STPDN  0.25   
+<S>STPBG  0
+<S>STLOP  3
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  10
+<S>STAV3  13
+<S>STST1  7
+<S>STST2  5
+<S>STST3  4
+<S>STPAR  4
+<S>STCAL  0
+<S>STFN1  35
+<S>STFN2  17
+
+<DEFINE> VldSig1_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1081 N DC OV B N uc R
+<DEFINE> VldSig2_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1082 N DC OV B N uc R
+<DEFINE> VldSig3_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1083 N DC OV B N uc R
+<DEFINE> VldSig4_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1084 N DC OV B N uc R
+<DEFINE> DetInvld C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1081 N DR OF F I (uc,uc,uc,uc,uc) -
+<DEFINE> DetInvld C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1081 N DF OF F I (uc,uc,uc,uc,uc) -
+<DEFINE> OverallInvld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1086 N DC OV B N uc -
+<DEFINE> OverallInvld_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1086 N DF OV B N uc -
+<CTLG> DetInvld 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 4
+<CTLG> 3 4
+<CTLG> 4 6
+<CTLGN> 1085 1091 1091 1095 1100 1100 
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  DetInvld
+<S>STCYC  2
+<S>STMCC  3 (2:5)
+<S>STMIF  1
+<S>STSUB  0
+<S>STAKI  2
+<S>STLIN  15
+<S>STXLN  8
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  2
+<S>STPDN  0.25   
+<S>STPBG  0
+<S>STLOP  3
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  10
+<S>STAV3  13
+<S>STST1  7
+<S>STST2  5
+<S>STST3  4
+<S>STPAR  4
+<S>STCAL  0
+<S>STFN1  35
+<S>STFN2  17
+
+<DEFINE> VldSig_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1112 N DC OV B N uc R
+<DEFINE> VelSig_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1113 N DC OV B N fs R
+<DEFINE> AvgSum_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1114 N DC OV B N pfs R
+<DEFINE> AvgCnt_Cnt_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1115 N DC OV B N pfs R
+<DEFINE> UpdtAvg C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1112 N DR OF F I (.,uc,fs,pfs,pfs) -
+<DEFINE> UpdtAvg C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1112 N DF OF F I (.,uc,fs,pfs,pfs) -
+<LIT> 1.0 F P C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1120 30 N FN fs B X
+<CTLG> UpdtAvg 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 3
+<CTLG> 3 5
+<CTLGN> 1116 1117 1117 1122 1122 
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  UpdtAvg
+<S>STCYC  2
+<S>STMCC  0 (2:2)
+<S>STMIF  1
+<S>STSUB  0
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  0
+<S>STPTH  2
+<S>STPDN  0.67   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  5
+<S>STAV2  6
+<S>STAV3  6
+<S>STST1  4
+<S>STST2  3
+<S>STST3  3
+<S>STPAR  4
+<S>STCAL  0
+<S>STFN1  14
+<S>STFN2  6
+
+<DEFINE> VldSig_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1132 N DC OV B N uc R
+<DEFINE> VelSig1_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1133 N DC OV B N fs R
+<DEFINE> VelSig2_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1134 N DC OV B N fs R
+<DEFINE> MaxVel_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1135 N DC OV B N pfs R
+<DEFINE> CondMax C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1132 N DR OF F I (.,uc,fs,fs,pfs) -
+<DEFINE> CondMax C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1132 N DF OF F I (.,uc,fs,fs,pfs) -
+<R>C CondMax Max_f32 1139
+<R>X CondMax Max_f32 1139 R
+<R>C CondMax Max_f32 1139
+<R>X CondMax Max_f32 1139 R
+<CTLG> CondMax 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 3
+<CTLG> 3 5
+<CTLGN> 1136 1137 1137 1141 1141 
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  CondMax
+<S>STCYC  2
+<S>STMCC  0 (2:2)
+<S>STMIF  1
+<S>STSUB  2
+<S>STAKI  4
+<S>STLIN  4
+<S>STXLN  2
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  0
+<S>STPTH  2
+<S>STPDN  1.00   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  8
+<S>STAV2  13
+<S>STAV3  13
+<S>STST1  3
+<S>STST2  2
+<S>STST3  2
+<S>STPAR  4
+<S>STCAL  1
+<S>STFN1  18
+<S>STFN2  8
+
+<DEFINE> VldSig_Cnt_T_logl C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1151 N DC OV B N uc R
+<DEFINE> VelSig1_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1152 N DC OV B N fs R
+<DEFINE> VelSig2_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1153 N DC OV B N fs R
+<DEFINE> MinVel_Kph_T_f32 C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1154 N DC OV B N pfs R
+<DEFINE> CondMin C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1151 N DR OF F I (.,uc,fs,fs,pfs) -
+<DEFINE> CondMin C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c 1151 N DF OF F I (.,uc,fs,fs,pfs) -
+<R>C CondMin Min_f32 1158
+<R>X CondMin Min_f32 1158 R
+<R>C CondMin Min_f32 1158
+<R>X CondMin Min_f32 1158 R
+<CTLG> CondMin 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 3
+<CTLG> 3 5
+<CTLGN> 1155 1156 1156 1160 1160 
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  CondMin
+<S>STCYC  2
+<S>STMCC  0 (2:2)
+<S>STMIF  1
+<S>STSUB  2
+<S>STAKI  4
+<S>STLIN  4
+<S>STXLN  2
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  0
+<S>STPTH  2
+<S>STPDN  1.00   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  8
+<S>STAV2  13
+<S>STAV3  13
+<S>STST1  3
+<S>STST2  2
+<S>STST3  2
+<S>STPAR  4
+<S>STCAL  1
+<S>STFN1  18
+<S>STFN2  8
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_f32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u08_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u16_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u32_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Arctan2_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Blnd_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  CondMax
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  CondMin
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Cos_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  DetInvld
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  DetVld
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Exp_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  GmVehSpdArbnInit1
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  UpdtAvg
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  GmVehSpdArbnPer1
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Mod_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  SinCos_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sin_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sqrt_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNAM  C:/Component/CF016A_GMVehSpdArbn_Impl/src/GmVehSpdArbn.c
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  5
+<S>STECT  1
+<S>STFNC  7
+<S>STFCO  61
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  126
+<S>STOPT  24
+<S>STOPN  141
+<S>STTOT  1648
+<S>STZIP  938
+<S>STHAL  1117
+<S>STSHN  3908
+<S>STDIF  13.55  
+<S>STEFF  164478
+<S>STVOL  12140
+<S>STDEV  27.41  
+<S>STBUG  3
+<S>STTPP  1174
+<S>STTLN  267
+<S>STM20  626
+<S>STM21  1018
+<S>STM22  137
+<S>STM28  125
+<S>STM33  105
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  2.840  
+<S>STBMS  3.590  
+<S>STBME  4.364  
+<S>STTDO  3.717  
+<S>STTDS  3.911  
+<S>STTDE  4.006  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  2.067  
+

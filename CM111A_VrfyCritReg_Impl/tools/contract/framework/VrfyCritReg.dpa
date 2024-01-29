@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProjectAssistant Version="5.6.16 SP1">
+    <General>
+        <Name>VrfyCritRegCfg</Name>
+        <Version>1.0</Version>
+        <Author>nzt9hv</Author>
+    </General>
+    <Environment>
+        <Platform>Canoeemu</Platform>
+        <Derivative></Derivative>
+        <Compiler></Compiler>
+        <SipIds>
+            <SipId>CBD1400351_D00</SipId>
+        </SipIds>
+        <TargetType>(undefined)</TargetType>
+    </Environment>
+    <Folders>
+        <ECUC>./Config/ECUC</ECUC>
+        <GenData>../generate</GenData>
+        <GenDataVip>../generate</GenDataVip>
+        <Source>../generate</Source>
+        <ServiceComponents>../generate/ServiceComponents</ServiceComponents>
+        <Logs>../generate</Logs>
+        <SIP>.\..\..\..\..\TL101A_CptRteGen\tools\RteGen4.3.0</SIP>
+        <StartMenu></StartMenu>
+        <ApplicationComponents>../generate/ApplicationComponents</ApplicationComponents>
+        <BswInternalBehaviour>./Config/InternalBehavior</BswInternalBehaviour>
+        <McData>./Config/McData</McData>
+    </Folders>
+    <Tools>
+        <DEV>.\..\..\..\..\TL102A_Davinci\tools\Developer\Bin\DaVinciDEV.exe</DEV>
+    </Tools>
+    <Input>
+        <PackageImportMode>ImportFromFile</PackageImportMode>
+    </Input>
+    <References>
+        <DVWorkspace>..\autosar\VrfyCritReg.dcf</DVWorkspace>
+    </References>
+    <PostBuildLoadable RTEDataFreezeChecksum="" CurrentConfigurationPhase="PRE_COMPILE"/>
+    <ToolSettings>
+        <Generators>
+            <Settings Name="com.vector.cfg.gui.core.generators.ExtGenSteps">
+                <Settings Name="VrfyCritReg">
+                    <Setting Value="$(ProcessingEcuCFile) $(GenDataFolder) VrfyCritReg" Name="GenerationParameters"/>
+                    <Setting Value="" Name="ValidationParameters"/>
+                    <Setting Value="false" Name="SupportsStandAloneValidation"/>
+                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="" Name="RequiredAsVersion"/>
+                    <Setting Value="false" Name="TransformationRequired"/>
+                    <Setting Value="" Name="TransformationXsltFile"/>
+                    <Setting Value="" Name="TransformationOutput"/>
+                    <Setting Value="Parallel" Name="ExecutionType"/>
+                    <Setting Value="false" Name="SpecificAsVersionRequired"/>
+                    <Setting Value="$(DpaProjectFolder)\..\..\..\generate" Name="WorkingDir"/>
+                    <Setting Value="CDD_VrfyCritReg_Generate.bat" Name="CommandLine"/>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.CustomWorkflowStepOrder">
+                <Setting Value="Contract Generation" Name="Order"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.CustomWorkflowSteps">
+                <Settings Name="Contract Generation">
+                    <Setting Value="true" Name="Active"/>
+                    <Setting Value="Rte: -m CDD_VrfyCritReg -g c -g i -o c=$(GenDataFolder)/RteGen/ -o i=$(DpaProjectFolder)\..\..\..\src" Name="Parameters"/>
+                    <Setting Value="Internal" Name="Type"/>
+                    <Setting Value="" Name="Comment"/>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.GeneratedModules"/>
+            <Settings Name="com.vector.cfg.gui.core.generators.GeneratorsWithoutModuleDef">
+                <Setting Value="false" Name="/MICROSAR/Rte"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.core.generators.ExtGenStepOrder">
+                <Setting Value="INTERNAL_GENERATION|VrfyCritReg" Name="Order"/>
+            </Settings>
+        </Generators>
+        <Misc>
+            <Settings Name="com.vector.cfg.modulesearchpath">
+                <Settings Name="SearchPath">
+                    <Setting Value="$(DpaProjectFolder)\Config\SuprtBswmds" Name="SearchPath0"/>
+                    <Setting Value="$(DpaProjectFolder)\..\..\..\autosar" Name="SearchPath1"/>
+                </Settings>
+            </Settings>
+            <Settings Name="com.vector.cfg.persistency.internal.folder">
+                <Settings Name="TargetFolderManager"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gui.pse.pages.generators">
+                <Settings Name="BuildVipProject"/>
+            </Settings>
+            <Settings Name="com.vector.cfg.gen.core.gencore.internal.aov.AutomaticOnDemandValidationConfigurationService">
+                <Setting Value="rO0ABXNyAGpjb20udmVjdG9yLmNmZy5nZW4uY29yZS5nZW5jb3JlLmludGVybmFsLmFvdi5BdXRv&#xA;bWF0aWNPbkRlbWFuZFZhbGlkYXRpb25Db25maWd1cmF0aW9uU2VydmljZSRQZXJzaXN0ZWREYXRh&#xA;pcjrmQ6cuakCAAJaAAlhY3RpdmF0ZWRMABJkZWFjdGl2YXRlZE1vZHVsZXN0ABZMamF2YS91dGls&#xA;L0NvbGxlY3Rpb247eHABc3IANmNvbS5nb29nbGUuY29tbW9uLmNvbGxlY3QuSW1tdXRhYmxlTGlz&#xA;dCRTZXJpYWxpemVkRm9ybQAAAAAAAAAAAgABWwAIZWxlbWVudHN0ABNbTGphdmEvbGFuZy9PYmpl&#xA;Y3Q7eHB1cgATW0xqYXZhLmxhbmcuT2JqZWN0O5DOWJ8QcylsAgAAeHAAAAAA" Name="Data"/>
+            </Settings>
+        </Misc>
+    </ToolSettings>
+</ProjectAssistant>

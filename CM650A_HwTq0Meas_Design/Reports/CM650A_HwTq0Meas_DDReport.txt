@@ -1,0 +1,133 @@
+Verification of CM650A_HwTq0Meas_DataDict
+24-Mar-2016 15:51:00
+Tool Release:  2.34.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 3, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+HwTq0MeasHwTq0AutTrim       	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwTq0MeasHwTq0ClrTrim       	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwTq0MeasHwTq0ReadTrim      	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwTq0MeasHwTq0TrimPrfmdSts  	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwTq0MeasHwTq0WrTrim        	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwTq0MeasTrigStrt           	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+(variables: 6, errors: 6)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+IoHwAb_SetFctPrphlHwTq0     	    Ab_            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 8, errors: 1)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+HwTq0Phy                    	Cannot match name to list of known Nexteer signals.
+HwTq0Phy                    	.ReadIn:	Field is empty.
+(variables: 8, errors: 2)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+RackLimrCcwEotSig0          	Cannot match name to list of known Nexteer signals.
+RackLimrCwEotSig0           	Cannot match name to list of known Nexteer signals.
+RackLimrEotSig0Avl          	Cannot match name to list of known Nexteer signals.
+RegOutRSENT0NRC             	Cannot match name to list of known Nexteer signals.
+RegOutRSENT0SPCT            	Cannot match name to list of known Nexteer signals.
+(variables: 8, errors: 5)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 2, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 1, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+HwTq0MeasPrevHwTq0          	Name does not match required pattern.
+HwTq0MeasPrevRollgCntr      	Name does not match required pattern.
+(variables: 14, errors: 2)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+FLTINJ_HWTQ0MEAS_HWTQ0           	Name does not match required pattern as it is a special case.
+FLTINJ_HWTQ0MEAS_TESTOK0         	Name does not match required pattern as it is a special case.
+(variables: 14, errors: 2)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 2, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+NTCNR_0X1E0         	Found in model but not in data dictionary.
+NTCNR_0X073         	Found in model but not in data dictionary.
+(variables: 2, errors: 2)
+
+------
+OTHER:
+------
+Data Store
+Memory4:HwTq0MeasPrevHwTq0	'Data Store Memory Block'	'StateMustResolveToSignalObject' property must be enabled.
+(variables: 0, errors: 1)
+ 
+************************
+Grand Totals:
+69 variables,  21 issues to fix.
+
+
+End of Report

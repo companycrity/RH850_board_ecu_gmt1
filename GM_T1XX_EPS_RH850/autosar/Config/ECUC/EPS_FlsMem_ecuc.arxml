@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="B7EDD042-4044-414C-9970-1C2313A88AC7">
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="b776385d-36bf-4f24-979f-2330e727cc57">
+          <SHORT-NAME>FlsMem</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/Nexteer/FlsMem</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="d0eca885-19e5-4c18-8d94-c715d0f8143d">
+              <SHORT-NAME>Application</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/StartAddress</DEFINITION-REF>
+                  <VALUE>98816</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/Length</DEFINITION-REF>
+                  <VALUE>654320</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/PredefinedCrcAddress</DEFINITION-REF>
+                  <VALUE>753136</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="4a9238ce-2098-4419-9e3f-8e5bacc37d12">
+              <SHORT-NAME>Bootloader</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/StartAddress</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/Length</DEFINITION-REF>
+                  <VALUE>98288</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/PredefinedCrcAddress</DEFINITION-REF>
+                  <VALUE>98288</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="51a8b417-48d5-4950-bd76-e7b064d228db">
+              <SHORT-NAME>CalRegn01</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/StartAddress</DEFINITION-REF>
+                  <VALUE>786464</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/Length</DEFINITION-REF>
+                  <VALUE>130512</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/PredefinedCrcAddress</DEFINITION-REF>
+                  <VALUE>916976</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="b2a33782-372c-4553-8702-aa7a0e42cd48">
+              <SHORT-NAME>CalRegn02</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/StartAddress</DEFINITION-REF>
+                  <VALUE>753696</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/Length</DEFINITION-REF>
+                  <VALUE>32208</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/PredefinedCrcAddress</DEFINITION-REF>
+                  <VALUE>785904</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="fbc3824d-aa45-4393-a68f-d7642b2d927c">
+              <SHORT-NAME>CalRegn03</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/StartAddress</DEFINITION-REF>
+                  <VALUE>917536</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/Length</DEFINITION-REF>
+                  <VALUE>130512</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/FlsMem/FlashCRCRegnConfig/PredefinedCrcAddress</DEFINITION-REF>
+                  <VALUE>1048048</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

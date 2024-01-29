@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.vector.cfg.core"
+      label="DaVinci Configurator Core Feature"
+      version="1.0.0.r42954"
+      provider-name="Vector Informatik GmbH">
+
+   <description>
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright>
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license>
+      [Enter License Description here.]
+   </license>
+
+   <includes
+         id="org.eclipse.rcp"
+         version="4.3.0.v20130605-2000"/>
+
+   <includes
+         id="com.vector.cfg.core.model"
+         version="1.0.0.r42954"/>
+
+   <requires>
+      <import plugin="org.eclipse.core.runtime" version="3.2.0" match="compatible"/>
+      <import plugin="org.eclipse.core.resources" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.core.variables" version="3.2.0" match="compatible"/>
+      <import plugin="org.eclipse.core.runtime" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.core.filesystem" version="1.2.0" match="compatible"/>
+      <import plugin="org.eclipse.core.expressions" version="3.4.0" match="compatible"/>
+      <import plugin="org.eclipse.text" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.swt" version="3.6.0" match="compatible"/>
+      <import plugin="org.eclipse.jface" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.ui" version="3.6.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.forms" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.help" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.core.runtime" version="3.6.0" match="compatible"/>
+      <import plugin="org.eclipse.core.expressions" version="3.4.200" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.osgi" version="3.2.0" match="compatible"/>
+      <import plugin="org.eclipse.jface" version="3.6.0" match="compatible"/>
+      <import plugin="org.eclipse.help" version="3.2.0" match="compatible"/>
+      <import plugin="org.eclipse.ui" version="3.5.0" match="compatible"/>
+      <import plugin="com.vector.cfg.model" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.vector.cfg.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.vector.cfg.model.query" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.commands" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.equinox.common" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.forms" version="3.3.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.views" version="3.2.0" match="compatible"/>
+      <import plugin="org.eclipse.ui" version="3.3.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.workbench" version="3.5.0" match="compatible"/>
+      <import plugin="aquintos.mdf" version="3.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.jface" version="3.2.0" match="compatible"/>
+      <import plugin="org.eclipse.swt" version="3.2.0" match="compatible"/>
+      <import plugin="com.ibm.icu"/>
+      <import plugin="com.vector.cfg.util.jna"/>
+      <import plugin="com.google.guava"/>
+      <import plugin="com.vector.cfg.core.operation" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="com.vector.cfg.gui.core.error"/>
+      <import plugin="com.vector.cfg.persistency"/>
+      <import plugin="com.vector.cfg.workflow.sysdesc.sync"/>
+      <import plugin="com.vector.cfg.automation"/>
+      <import plugin="com.vector.cfg.util.text"/>
+      <import plugin="org.junit"/>
+      <import plugin="gnu.trove"/>
+      <import plugin="com.vector.cfg.model.services"/>
+      <import plugin="com.vector.cfg.model.swcTemplates"/>
+      <import plugin="org.eclipse.ui.views" version="3.4.0" match="compatible"/>
+      <import plugin="org.eclipse.emf.edit" version="2.8.0" match="compatible"/>
+      <import plugin="org.eclipse.emf.common.ui" version="2.7.0" match="compatible"/>
+      <import plugin="org.eclipse.emf.common" version="2.8.0" match="compatible"/>
+      <import plugin="org.eclipse.emf.ecore" version="2.8.0" match="compatible"/>
+      <import plugin="org.eclipse.draw2d" version="3.7.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.workbench" version="3.2.0" match="compatible"/>
+      <import plugin="org.apache.log4j"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.compare.core"
+         download-size="0"
+         install-size="0"
+         version="3.5.300.v20130514-1224"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.debug.core"
+         download-size="0"
+         install-size="0"
+         version="3.8.0.v20130514-0954"
+         unpack="false"/>
+
+   <plugin
+         id="org.hamcrest.core"
+         download-size="0"
+         install-size="0"
+         version="1.3.0.v201303031735"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.project"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.text"
+         download-size="0"
+         install-size="0"
+         version="3.5.300.v20130515-1451"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.business"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.consistency"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.gen.core.gencore"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.gen.core.moduleInterface"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.gen.core.utils"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.edit.ui"
+         download-size="0"
+         install-size="0"
+         version="2.9.0.v20130610-0406"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.common.ui"
+         download-size="0"
+         install-size="0"
+         version="2.8.0.v20130610-0406"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.edit"
+         download-size="0"
+         install-size="0"
+         version="2.9.0.v20130610-0406"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.common"
+         download-size="0"
+         install-size="0"
+         version="2.9.0.v20130528-0742"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecore"
+         download-size="0"
+         install-size="0"
+         version="2.9.0.v20130528-0742"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecore.change"
+         download-size="0"
+         install-size="0"
+         version="2.9.0.v20130528-0742"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.app.workspace"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.project.win32.win32.x86"
+         os="win32"
+         ws="win32"
+         arch="x86"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         fragment="true"/>
+
+   <plugin
+         id="com.vector.cfg.project.win32.win32.x86_64"
+         os="win32"
+         ws="win32"
+         arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         fragment="true"/>
+
+   <plugin
+         id="com.vector.cfg.util.win32.win32.x86"
+         os="win32"
+         ws="win32"
+         arch="x86"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.util.win32.win32.x86_64"
+         os="win32"
+         ws="win32"
+         arch="x86_64"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.util.classloading"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.util"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"/>
+
+   <plugin
+         id="com.vector.cfg.gen.core.contributions"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.util.activity"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+   <plugin
+         id="org.apache.commons.codec"
+         download-size="0"
+         install-size="0"
+         version="1.4.0.v201209201156"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.emf.ecore.xmi"
+         download-size="0"
+         install-size="0"
+         version="2.9.0.v20130528-0742"
+         unpack="false"/>
+
+   <plugin
+         id="com.vector.cfg.project.activity"
+         download-size="0"
+         install-size="0"
+         version="1.0.0.r42954"
+         unpack="false"/>
+
+</feature>

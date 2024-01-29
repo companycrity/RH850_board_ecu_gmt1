@@ -1,0 +1,258 @@
+Verification of ES101A_DiagcMgr_DataDict
+21-Jun-2016 18:57:16
+Tool Release:  2.38.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+
+DiagcDataRec1 = 
+
+  <a href="matlab:helpPopup Simulink.Bus" style="font-weight:bold">Bus</a> with properties:
+
+    Description: ''
+      DataScope: 'Auto'
+     HeaderFile: 'Rte_Type.h'
+      Alignment: -1
+       Elements: [2x1 Simulink.BusElement]
+
+
+DiagcDataRec1 = 
+
+  <a href="matlab:helpPopup Simulink.Bus" style="font-weight:bold">Bus</a> with properties:
+
+    Description: ''
+      DataScope: 'Auto'
+     HeaderFile: 'Rte_Type.h'
+      Alignment: -1
+       Elements: [2x1 Simulink.BusElement]
+
+
+DiagcDataRec1 = 
+
+  <a href="matlab:helpPopup Simulink.Bus" style="font-weight:bold">Bus</a> with properties:
+
+    Description: ''
+      DataScope: 'Auto'
+     HeaderFile: 'Rte_Type.h'
+      Alignment: -1
+       Elements: [2x1 Simulink.BusElement]
+
+
+DiagcDataRec1 = 
+
+  <a href="matlab:helpPopup Simulink.Bus" style="font-weight:bold">Bus</a> with properties:
+
+    Description: ''
+      DataScope: 'Auto'
+     HeaderFile: 'Rte_Type.h'
+      Alignment: -1
+       Elements: [2x1 Simulink.BusElement]
+
+
+DiagcDataRec1 = 
+
+  <a href="matlab:helpPopup Simulink.Bus" style="font-weight:bold">Bus</a> with properties:
+
+    Description: ''
+      DataScope: 'Auto'
+     HeaderFile: 'Rte_Type.h'
+      Alignment: -1
+       Elements: [2x1 Simulink.BusElement]
+
+
+DiagcDataRec1 = 
+
+  <a href="matlab:helpPopup Simulink.Bus" style="font-weight:bold">Bus</a> with properties:
+
+    Description: ''
+      DataScope: 'Auto'
+     HeaderFile: 'Rte_Type.h'
+      Alignment: -1
+       Elements: [2x1 Simulink.BusElement]
+
+
+DiagcDataRec1 = 
+
+  <a href="matlab:helpPopup Simulink.Bus" style="font-weight:bold">Bus</a> with properties:
+
+    Description: ''
+      DataScope: 'Auto'
+     HeaderFile: 'Rte_Type.h'
+      Alignment: -1
+       Elements: [2x1 Simulink.BusElement]
+
+
+DiagcDataRec1 = 
+
+  <a href="matlab:helpPopup Simulink.Bus" style="font-weight:bold">Bus</a> with properties:
+
+    Description: ''
+      DataScope: 'Auto'
+     HeaderFile: 'Rte_Type.h'
+      Alignment: -1
+       Elements: [2x1 Simulink.BusElement]
+
+
+DiagcDataRec1 = 
+
+  <a href="matlab:helpPopup Simulink.Bus" style="font-weight:bold">Bus</a> with properties:
+
+    Description: ''
+      DataScope: 'Auto'
+     HeaderFile: 'Rte_Type.h'
+      Alignment: -1
+       Elements: [2x1 Simulink.BusElement]
+
+
+DiagcDataRec1 = 
+
+  <a href="matlab:helpPopup Simulink.Bus" style="font-weight:bold">Bus</a> with properties:
+
+    Description: ''
+      DataScope: 'Auto'
+     HeaderFile: 'Rte_Type.h'
+      Alignment: -1
+       Elements: [2x1 Simulink.BusElement]
+
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+DiagcMgrIninCore            	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+DiagcMgrPwrDwn              	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+GetNtcActvCore
+             	Found in model but not in data dictionary.
+GetNtcQlfrStsCore
+          	Found in model but not in data dictionary.
+(variables: 14, errors: 4)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+Dem_ClearDTC                	    Dem_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Dem_ClearDTC                	    Clear          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Dem_GetDTCOfEvent           	    Dem_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Dem_GetDTCOfEvent           	    Event          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Dem_SetEventStatus          	    Dem_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Dem_SetEventStatus          	    Event          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Dem_SetEventStatus          	    Status         Unknown Keyword used.Only Nexteer approved Keywords should be used.
+DiagcMgrNtcFltAry_SetRamBlockStatus	.Client:	Name should not contain FDDs <ShoName>
+FltInj_logl                 	    Inj_logl       Unknown Keyword used.Only Nexteer approved Keywords should be used.
+GetNtcInfoApplX             	.CallLocation:	Field should contain only valid Periodic & Server Runnable names.	DiagcMgrPwrDown is not allowed.
+(variables: 8, errors: 10)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+IgnCntr                     	Cannot match name to list of known Nexteer signals.
+MfgDiagcInhb                	Cannot match name to list of known Nexteer signals.
+RegInBRAMDAT1               	Cannot match name to list of known Nexteer signals.
+(variables: 10, errors: 3)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+ClrDiagcFlgProxy            	Cannot match name to list of known Nexteer signals.
+DiagcStsDftHwAg             	Cannot match name to list of known Nexteer signals.
+DiagcStsDftVehSpd           	Cannot match name to list of known Nexteer signals.
+NtcInfo_ArgOut              	Found in model but not in data dictionary.
+DiagcData_ArgOut            	Found in model but not in data dictionary.
+ProxySetNtcData_ArgOut      	Found in model but not in data dictionary.
+NtcInfoDebCntr_ArgOut       	Found in model but not in data dictionary.
+(variables: 12, errors: 7)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 1, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+DiagcMgrNtcFltAry           	Name does not match required pattern.
+SnpshtDataAry               	.EngMin:    	Value is unusually low.
+SnpshtDataAry               	.EngMax:    	Value is unusually high.
+(variables: 2, errors: 3)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+DemDtcEveIdMap              	Found in model but not in data dictionary.
+(variables: 4, errors: 1)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+DEM_CLEAR_PENDING                	DocUnits doesnot match with the units mentioned in the Constant Name.
+DEM_DTC_GROUP_ALL_DTCS           	Name does not match required pattern.
+E_NOT_OK                         	Name does not match required pattern.
+E_OK                             	Name does not match required pattern.
+FLTINJ_DIAGCMGR_DIAGCSTSIVTR1INACTV	Name does not match required pattern as it is a special case.
+FLTINJ_DIAGCMGR_DIAGCSTSIVTR2INACTV	Name does not match required pattern as it is a special case.
+(variables: 47, errors: 6)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+ELECGLBPRM_IVTRCNT_CNT_U08       	Name does not match required pattern.
+(variables: 1, errors: 1)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+102 variables,  35 issues to fix.
+
+
+End of Report

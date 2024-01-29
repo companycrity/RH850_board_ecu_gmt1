@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES>
+          <SHORT-NAME>NxtrMfgSrv</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/Nexteer/NxtrMfgSrv</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <CONTAINERS>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvSessionDflt</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Session - 0x10</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/SubFunction</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED0Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>6</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65232</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED0Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>6</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65232</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED1Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>6</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65233</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED1Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>6</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65233</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED2Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>20</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65234</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED2Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>20</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65234</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED3Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>2</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65235</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED3Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>2</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65235</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED4Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>6</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65236</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED4Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>6</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65236</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED5Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>9</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65237</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED5Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>9</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65237</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED6Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>1</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65238</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED6Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>1</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65238</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED7Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>4</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65239</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED7Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>4</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65239</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED8Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>20</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65240</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED8Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>20</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65240</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED9Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>17</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65241</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFED9Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>17</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65241</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEDARd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>9</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65242</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEDAWr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>9</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65242</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEDBRd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>16</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65243</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEDBWr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>16</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65243</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEDCRd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>822</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65244</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEDCWr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>822</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65244</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEE4Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>2</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65252</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEE4Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>2</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65252</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEE0Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>10</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65248</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEE0Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>10</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65248</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEE1Rd</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Read - 0x22</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>10</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65249</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvFEE1Wr</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>Write - 0x2E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>10</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceId</DEFINITION-REF>
+                      <VALUE>65249</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>true</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+              <ECUC-CONTAINER-VALUE>
+                <SHORT-NAME>SrvTesterPresent_Send</SHORT-NAME>
+                <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService</DEFINITION-REF>
+                <PARAMETER-VALUES>
+                  <ECUC-TEXTUAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ServiceType</DEFINITION-REF>
+                    <VALUE>TesterPresent - 0x3E</VALUE>
+                  </ECUC-TEXTUAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/RequestLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                  <ECUC-NUMERICAL-PARAM-VALUE>
+                    <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/ResponseLength</DEFINITION-REF>
+                    <VALUE>0</VALUE>
+                  </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/SubFunction</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                </PARAMETER-VALUES>
+                <SUB-CONTAINERS>
+                  <ECUC-CONTAINER-VALUE>
+                    <SHORT-NAME>AccessControls</SHORT-NAME>
+                    <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls</DEFINITION-REF>
+                    <PARAMETER-VALUES>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/NexteerSession</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                      <ECUC-NUMERICAL-PARAM-VALUE>
+                        <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/NxtrMfgSrv/ProgramSpecificService/AccessControls/SecurityAccess</DEFINITION-REF>
+                        <VALUE>false</VALUE>
+                      </ECUC-NUMERICAL-PARAM-VALUE>
+                    </PARAMETER-VALUES>
+                  </ECUC-CONTAINER-VALUE>
+                </SUB-CONTAINERS>
+              </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

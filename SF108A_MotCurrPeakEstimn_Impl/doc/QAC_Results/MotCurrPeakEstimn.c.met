@@ -1,0 +1,554 @@
+<RDEF> I Includes
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn.h 42
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn.h C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn_Type.h 40
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn_Type.h C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_Type.h 32
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_Type.h C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte.h 27
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 39
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Platform_Types.h 63
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h 64
+<R>I C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h C:/Component/AR201A_ArCplrSuprt_Impl/tools/contract/Compiler_Cfg.h 56
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte.h C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_UserTypes.h 41
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_UserTypes.h C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h 40
+<R>I C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 23
+<R>I C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h C:/Component/AR999A_ArchGlbPrm_Impl/include/ArchGlbPrm.h 24
+<R>I C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h 25
+<R>I C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h C:/Component/TL103A_CplrSuprt/include/2015.1.5/ansi/math.h 25
+<R>I C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 26
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn.h C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_DataHandleType.h 41
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 60
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 65
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 84
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 102
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn.h C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/MotCurrPeakEstimn_MemMap.h 191
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/MotCurrPeakEstimn_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/Rte_MotCurrPeakEstimn.h C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/MotCurrPeakEstimn_MemMap.h 274
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/MotCurrPeakEstimn_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h 48
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c C:/Component/AR999A_ArchGlbPrm_Impl/include/ArchGlbPrm.h 49
+<DEFINE> MOTCURRPEAKMAX_AMPRSQD_F32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 54 N DF OM - - - O
+<LIT> 62500.0 F P C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 54 46 N FN - F M
+<DEFINE> MOTCURRPEAKMIN_AMPRSQD_F32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 55 N DF OM - - - O
+<LIT> 0.0 F P C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 55 46 N FN - F M
+<DEFINE> MotCurrPeakEstimn_START_SEC_CODE C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 85 N DF OM - - - O
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/MotCurrPeakEstimn_MemMap.h 86
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/MotCurrPeakEstimn_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<EXTD> MotCurrPeakEstimnInit1 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 98
+<DEFINE> MotCurrPeakEstimnInit1 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 98 N DR OF F X (.,.) -
+<DEFINE> MotCurrPeakEstimnInit1 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 98 N DF OF F X (.,.) -
+<RDEF> C Calls
+<R>C MotCurrPeakEstimnInit1 FilLpInit 105
+<RDEF> X Refers-to
+<R>X MotCurrPeakEstimnInit1 FilLpInit 105 R
+<R>C MotCurrPeakEstimnInit1 Rte_Prm_MotCurrPeakEstimn_MotCurrPeakEstimnCurrPeakEstimdFilFrq_Val 105
+<R>X MotCurrPeakEstimnInit1 Rte_Prm_MotCurrPeakEstimn_MotCurrPeakEstimnCurrPeakEstimdFilFrq_Val 105 R
+<R>X MotCurrPeakEstimnInit1 Rte_Inst_MotCurrPeakEstimn 105 R
+<LIT> 0.0 F P C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 105 20 N FN fs B X
+<R>C MotCurrPeakEstimnInit1 FilLpInit 106
+<R>X MotCurrPeakEstimnInit1 FilLpInit 106 R
+<R>C MotCurrPeakEstimnInit1 Rte_Prm_MotCurrPeakEstimn_MotCurrPeakEstimnCurrFilFrq_Val 106
+<R>X MotCurrPeakEstimnInit1 Rte_Prm_MotCurrPeakEstimn_MotCurrPeakEstimnCurrFilFrq_Val 106 R
+<R>X MotCurrPeakEstimnInit1 Rte_Inst_MotCurrPeakEstimn 106 R
+<LIT> 0.0 F P C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 106 20 N FN fs B X
+<R>C MotCurrPeakEstimnInit1 FilLpInit 107
+<R>X MotCurrPeakEstimnInit1 FilLpInit 107 R
+<R>C MotCurrPeakEstimnInit1 Rte_Prm_MotCurrPeakEstimn_MotCurrPeakEstimnCurrFilFrq_Val 107
+<R>X MotCurrPeakEstimnInit1 Rte_Prm_MotCurrPeakEstimn_MotCurrPeakEstimnCurrFilFrq_Val 107 R
+<R>X MotCurrPeakEstimnInit1 Rte_Inst_MotCurrPeakEstimn 107 R
+<LIT> 0.0 F P C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 107 20 N FN fs B X
+<CTLG> MotCurrPeakEstimnInit1 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 99 112 112 112 
+<S>
+<S>STFIL  C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c
+<S>STNAM  MotCurrPeakEstimnInit1
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  6
+<S>STAKI  7
+<S>STLIN  12
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  0
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  15
+<S>STAV2  15
+<S>STAV3  15
+<S>STST1  3
+<S>STST2  3
+<S>STST3  3
+<S>STPAR  0
+<S>STCAL  3
+<S>STFN1  32
+<S>STFN2  15
+
+<EXTD> MotCurrPeakEstimnPer1 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 149
+<DEFINE> MotCurrPeakEstimnPer1 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 149 N DR OF F X (.,.) -
+<DEFINE> MotCurrPeakEstimnPer1 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 149 N DF OF F X (.,.) -
+<DEFINE> MotCurrDax_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 155 N DC OV B N fs -
+<DEFINE> MotCurrDax_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 155 N DF OV B N fs -
+<DEFINE> MotCurrDaxCmd_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 156 N DC OV B N fs -
+<DEFINE> MotCurrDaxCmd_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 156 N DF OV B N fs -
+<DEFINE> MotCurrQax_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 157 N DC OV B N fs -
+<DEFINE> MotCurrQax_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 157 N DF OV B N fs -
+<DEFINE> MotCurrQaxCmd_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 158 N DC OV B N fs -
+<DEFINE> MotCurrQaxCmd_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 158 N DF OV B N fs -
+<DEFINE> MotCurrDaxestimn_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 159 N DC OV B N fs -
+<DEFINE> MotCurrDaxestimn_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 159 N DF OV B N fs -
+<DEFINE> MotCurrQaxestimn_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 160 N DC OV B N fs -
+<DEFINE> MotCurrQaxestimn_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 160 N DF OV B N fs -
+<DEFINE> MotCurrDaxFi_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 161 N DC OV B N fs -
+<DEFINE> MotCurrDaxFi_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 161 N DF OV B N fs -
+<DEFINE> MotCurrQaxFi_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 162 N DC OV B N fs -
+<DEFINE> MotCurrQaxFi_Ampr_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 162 N DF OV B N fs -
+<DEFINE> MotCurrPeakEstimd_AmprSqd_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 163 N DC OV B N fs -
+<DEFINE> MotCurrPeakEstimd_AmprSqd_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 163 N DF OV B N fs -
+<DEFINE> CurrMeasLoaMtgtnEna_Cnt_T_lgc C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 164 N DC OV B N uc -
+<DEFINE> CurrMeasLoaMtgtnEna_Cnt_T_lgc C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 164 N DF OV B N uc -
+<R>C MotCurrPeakEstimnPer1 Rte_Read_MotCurrPeakEstimn_MotCurrDax_Val 167
+<R>X MotCurrPeakEstimnPer1 Rte_Read_MotCurrPeakEstimn_MotCurrDax_Val 167 R
+<R>C MotCurrPeakEstimnPer1 Rte_Read_MotCurrPeakEstimn_MotCurrDaxCmd_Val 168
+<R>X MotCurrPeakEstimnPer1 Rte_Read_MotCurrPeakEstimn_MotCurrDaxCmd_Val 168 R
+<R>C MotCurrPeakEstimnPer1 Rte_Read_MotCurrPeakEstimn_CurrMeasLoaMtgtnEna_Logl 169
+<R>X MotCurrPeakEstimnPer1 Rte_Read_MotCurrPeakEstimn_CurrMeasLoaMtgtnEna_Logl 169 R
+<R>C MotCurrPeakEstimnPer1 Rte_Read_MotCurrPeakEstimn_MotCurrQax_Val 170
+<R>X MotCurrPeakEstimnPer1 Rte_Read_MotCurrPeakEstimn_MotCurrQax_Val 170 R
+<R>C MotCurrPeakEstimnPer1 Rte_Read_MotCurrPeakEstimn_MotCurrQaxCmd_Val 171
+<R>X MotCurrPeakEstimnPer1 Rte_Read_MotCurrPeakEstimn_MotCurrQaxCmd_Val 171 R
+<R>C MotCurrPeakEstimnPer1 FilLpUpdOutp_f32 186
+<R>X MotCurrPeakEstimnPer1 FilLpUpdOutp_f32 186 R
+<R>X MotCurrPeakEstimnPer1 Rte_Inst_MotCurrPeakEstimn 186 R
+<R>C MotCurrPeakEstimnPer1 FilLpUpdOutp_f32 187
+<R>X MotCurrPeakEstimnPer1 FilLpUpdOutp_f32 187 R
+<R>X MotCurrPeakEstimnPer1 Rte_Inst_MotCurrPeakEstimn 187 R
+<R>X MotCurrPeakEstimnPer1 Rte_Inst_MotCurrPeakEstimn 189 R
+<R>X MotCurrPeakEstimnPer1 Rte_Inst_MotCurrPeakEstimn 190 R
+<R>C MotCurrPeakEstimnPer1 Lim_f32 197
+<R>X MotCurrPeakEstimnPer1 Lim_f32 197 R
+<R>C MotCurrPeakEstimnPer1 Rte_IrvWrite_MotCurrPeakEstimn_MotCurrPeakEstimnPer1_MotCurrEstimd 199
+<R>X MotCurrPeakEstimnPer1 Rte_IrvWrite_MotCurrPeakEstimn_MotCurrPeakEstimnPer1_MotCurrEstimd 199 R
+<R>C MotCurrPeakEstimnPer1 Rte_Write_MotCurrPeakEstimn_MotCurrPeakEstimd_Val 200
+<R>X MotCurrPeakEstimnPer1 Rte_Write_MotCurrPeakEstimn_MotCurrPeakEstimd_Val 200 R
+<CTLG> MotCurrPeakEstimnPer1 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 2 4
+<CTLG> 3 5
+<CTLG> 4 5
+<CTLG> 5 6
+<CTLG> 6 8
+<CTLGN> 150 175 175 175 180 205 205 205 
+<S>
+<S>STFIL  C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c
+<S>STNAM  MotCurrPeakEstimnPer1
+<S>STCYC  2
+<S>STMCC  0 (2:2)
+<S>STMIF  1
+<S>STSUB  10
+<S>STAKI  12
+<S>STLIN  54
+<S>STXLN  20
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  10
+<S>STPTH  2
+<S>STPDN  0.10   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  7
+<S>STAV2  8
+<S>STAV3  12
+<S>STST1  30
+<S>STST2  28
+<S>STST3  18
+<S>STPAR  0
+<S>STCAL  9
+<S>STFN1  142
+<S>STFN2  86
+
+<EXTD> MotCurrPeakEstimnPer2 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 232
+<DEFINE> MotCurrPeakEstimnPer2 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 232 N DR OF F X (.,.) -
+<DEFINE> MotCurrPeakEstimnPer2 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 232 N DF OF F X (.,.) -
+<DEFINE> MotCurrPeakEstimdFild_AmprSqd_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 238 N DC OV B N fs -
+<DEFINE> MotCurrPeakEstimdFild_AmprSqd_T_f32 C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 238 N DF OV B N fs -
+<R>C MotCurrPeakEstimnPer2 FilLpUpdOutp_f32 241
+<R>X MotCurrPeakEstimnPer2 FilLpUpdOutp_f32 241 R
+<R>C MotCurrPeakEstimnPer2 Rte_IrvRead_MotCurrPeakEstimn_MotCurrPeakEstimnPer2_MotCurrEstimd 241
+<R>X MotCurrPeakEstimnPer2 Rte_IrvRead_MotCurrPeakEstimn_MotCurrPeakEstimnPer2_MotCurrEstimd 241 R
+<R>X MotCurrPeakEstimnPer2 Rte_Inst_MotCurrPeakEstimn 241 R
+<R>C MotCurrPeakEstimnPer2 Lim_f32 245
+<R>X MotCurrPeakEstimnPer2 Lim_f32 245 R
+<R>C MotCurrPeakEstimnPer2 Rte_Write_MotCurrPeakEstimn_MotCurrPeakEstimdFild_Val 248
+<R>X MotCurrPeakEstimnPer2 Rte_Write_MotCurrPeakEstimn_MotCurrPeakEstimdFild_Val 248 R
+<CTLG> MotCurrPeakEstimnPer2 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 233 253 253 253 
+<S>
+<S>STFIL  C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c
+<S>STNAM  MotCurrPeakEstimnPer2
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  4
+<S>STAKI  5
+<S>STLIN  19
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  10
+<S>STAV2  10
+<S>STAV3  14
+<S>STST1  4
+<S>STST2  4
+<S>STST3  3
+<S>STPAR  0
+<S>STCAL  4
+<S>STFN1  27
+<S>STFN2  15
+
+<DEFINE> MotCurrPeakEstimn_STOP_SEC_CODE C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c 256 N DF OM - - - O
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/MotCurrPeakEstimn_MemMap.h 257
+<R>I C:/Component/SF108A_MotCurrPeakEstimn_Impl/tools/contract/MotCurrPeakEstimn_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_f32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u08_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u16_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u32_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Arctan2_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Blnd_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Cos_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Exp_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sqrt_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilLpUpdGain
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilHpUpdGain
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilLpInit
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilHpInit
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilLpUpdOutp_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR104A_NxtrFil_Impl/include/NxtrFil.h
+<S>STNAM  FilHpUpdOutp_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Mod_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c
+<S>STNAM  MotCurrPeakEstimnInit1
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c
+<S>STNAM  MotCurrPeakEstimnPer1
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c
+<S>STNAM  MotCurrPeakEstimnPer2
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  SinCos_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sin_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c
+<S>STNAM  C:/Component/SF108A_MotCurrPeakEstimn_Impl/src/MotCurrPeakEstimn.c
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  0
+<S>STECT  1
+<S>STFNC  3
+<S>STFCO  33
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  45
+<S>STOPT  17
+<S>STOPN  48
+<S>STTOT  408
+<S>STZIP  309
+<S>STHAL  338
+<S>STSHN  1116
+<S>STDIF  9.41   
+<S>STEFF  23126
+<S>STVOL  2457
+<S>STDEV  3.85   
+<S>STBUG  1
+<S>STTPP  277
+<S>STTLN  50
+<S>STM20  126
+<S>STM21  279
+<S>STM22  34
+<S>STM28  56
+<S>STM33  44
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  0.623  
+<S>STBMS  0.712  
+<S>STBME  0.771  
+<S>STTDO  2.089  
+<S>STTDS  2.220  
+<S>STTDE  2.301  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  3.451  
+

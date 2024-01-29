@@ -1,0 +1,55 @@
+<#@ AutosarXml processor="ArDirectiveProcessor" requires="arPrefix='ar';arNamespace='http://autosar.org/4.0.3'" #>
+<#@ template inherits="AutosarDirectiveProcessor.ArGtcBase" debug="true" #>
+<#@ output extension="" #>
+<#@ include file="Helper.tt" #>
+/**********************************************************************************************************************
+* Copyright 2015 Nexteer
+* Nexteer Confidential
+*
+* Module File Name:   HwAg0Meas_Cfg.h
+* Module Description: Configuration Header file for HwAg0Meas
+* Project           : CBD
+* Author            : Selva Sengottaiyan
+* Generator         : <#= GeneratorName #> <#= GeneratorVersion #>
+* Generation Time   : <#= DateTime.Now.ToString( "dd.MM.yyyy HH:mm:ss" ) #>
+***********************************************************************************************************************
+* Version Control:
+* %version:          1 %
+* %derived_by:       nzt9hv %
+*---------------------------------------------------------------------------------------------------------------------
+* Date      Rev     Author  Change Description                                                              SCR #
+* --------  ------- ------- ---------------------------------------------------------------------------     ----------
+* 09/09/15  1       Selva     Initial version of the HwAg0Meas header template                                EA4#1529
+**********************************************************************************************************************/
+
+/******************************************* Multiple Include Protection *********************************************/
+#ifndef HWAG0MEAS_CFG_H	/* Multiple include preventer */
+#define HWAG0MEAS_CFG_H
+
+/************************************************ Include Statements *************************************************/
+#include "Std_Types.h"
+#include "Rte_HwAg0Meas.h"
+/******************************************** File Level Rule Deviations *********************************************/
+
+/****************************************************** Macros *******************************************************/
+<# ChangeContext( Xp.ModuleConfAtDefRefTo( "HwAg0Meas" ) ); #>
+
+<# string Param_HwAg0MfgFlt = ValueOf( Xp.ValueAtDefRefTo( "HwAg0MeasGeneral/NTC_HwAg0MfgFlt" ) ); #>
+<# string Param_HwAg0Snsr0PrtclFlt = ValueOf( Xp.ValueAtDefRefTo( "HwAg0MeasGeneral/NTC_HwAg0Snsr0PrtclFlt" ) ); #>
+<# string Param_HwAg0Snsr1PrtclFlt = ValueOf( Xp.ValueAtDefRefTo( "HwAg0MeasGeneral/NTC_HwAg0Snsr1PrtclFlt" ) ); #>
+<# string Param_HwAg0IfFlt = ValueOf( Xp.ValueAtDefRefTo( "HwAg0MeasGeneral/NTC_HwAg0IfFlt" ) ); #>
+
+
+
+
+#define HWAG0MFGNTCNR_ULS_U16                   <#=Param_HwAg0MfgFlt#>
+#define HWAG0SNSR0PRTCLNTCNR_ULS_U16 			<#=Param_HwAg0Snsr0PrtclFlt#>
+#define HWAG0SNSR1PRTCLNTCNR_ULS_U16	     	<#=Param_HwAg0Snsr1PrtclFlt#>
+#define HWAG0IFNTCNR_ULS_U16                    <#=Param_HwAg0IfFlt#>
+
+
+/*********************************************** Exported Declarations ***********************************************/
+
+/**************************************** End Of Multiple Include Protection *****************************************/
+#endif /* HWAG0MEAS_CFG_H */
+

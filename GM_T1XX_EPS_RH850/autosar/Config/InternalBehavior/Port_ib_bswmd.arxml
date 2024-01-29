@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="ab613780-eefb-4139-a64b-ff50f29fb579">
+      <SHORT-NAME>Renesas</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="23b136f6-e745-43b9-85b4-c04bd587dd3e">
+          <SHORT-NAME>Port_ib_bswmd</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE UUID="5d58a2c1-6c2e-48dc-845a-ad84407c1d71">
+              <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+              <ELEMENTS>
+                <BSW-MODULE-DESCRIPTION UUID="80a37ab3-0d2b-4c92-819e-521471c470e4">
+                  <SHORT-NAME>Port</SHORT-NAME>
+                  <INTERNAL-BEHAVIORS>
+                    <BSW-INTERNAL-BEHAVIOR UUID="4386ff85-341b-4ebf-bab6-edf6add26f0d">
+                      <SHORT-NAME>PortBehavior</SHORT-NAME>
+                      <EXCLUSIVE-AREAS>
+                        <EXCLUSIVE-AREA UUID="7ea90ed9-97b9-4968-a40b-fd5501bbbfc9">
+                          <SHORT-NAME>PORT_SET_PIN_MODE_PROTECTION</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="9be7fd04-8d34-4da6-8179-3d67ec4fa625">
+                          <SHORT-NAME>PORT_SET_PIN_DIR_PROTECTION</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="addc3694-c9ee-4530-9689-21c75e2f9da8">
+                          <SHORT-NAME>PORT_SET_TO_DIO_ALT_PROTECTION</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="4ae3fa67-d7c4-4b9e-bbbb-2ce55bd5deb0">
+                          <SHORT-NAME>PORT_INIT_CONFIG_PROTECTION</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="32b4bfd0-23e4-410d-980c-ca87392684ff">
+                          <SHORT-NAME>PORT_REFRESHPORT_INTERNAL_PROTECTION</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="e4bf2088-93fc-40bc-a375-709d11b8aa7f">
+                          <SHORT-NAME>PORT_SET_PIN_DEFAULT_MODE_PROTECTION</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                        <EXCLUSIVE-AREA UUID="d9c4911a-6b38-4e68-b00b-f3a9271aaaf3">
+                          <SHORT-NAME>PORT_SET_PIN_DEFAULT_DIR_PROTECTION</SHORT-NAME>
+                        </EXCLUSIVE-AREA>
+                      </EXCLUSIVE-AREAS>
+                    </BSW-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </BSW-MODULE-DESCRIPTION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?><html><head><style type="text/css">
+			html, body {
+			font-family: Verdana, Helvetica, sans-serif;
+			font-size: 9pt;
+			margin: 10px;
+			}
+
+			div.title {
+			background: #B70032;
+			color: white;
+			font-size: 16pt;
+			text-align: center;
+			padding: 20px 10px 20px 10px;
+			}
+
+			h1 {
+			background: #DEDEDE;
+			font-weight: bold;
+			font-size: 12pt;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			padding: 4px;
+			border-bottom-style: solid;
+			border-bottom-width: thin;
+			}
+
+			h2 {
+			font-weight: bold;
+			font-size: 11pt;
+			margin-top: 20px;
+			margin-bottom: 10px;
+			padding: 2px;
+			border-bottom-style: solid;
+			border-bottom-width: 2px;
+			border-bottom-color: #B70032;
+			}
+
+			h3 {
+			font-weight: normal;
+			font-size: 9pt;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			padding: 2px;
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			border-bottom-color: #B70032;
+			}
+
+			table {
+			width:100%;
+			}
+
+			td,th {
+			font-size: 9pt;
+			}
+
+			td.verdict {
+			width: 10em;
+			font-weight: bold;
+			text-align: center;
+			padding: 6px;
+			}
+
+			td.passed {
+			background: #00FF00;
+			}
+
+			td.failed {
+			background: #FF0000;
+			}
+
+			th {
+			width: 20%;
+			text-align: right;
+			color: #B70032;
+			padding-right: 1em;
+			padding-top: 2px;
+			padding-bottom: 2px;
+			}
+
+
+		</style><title>Delivery Test Report CBD1400351</title></head><body><div class="title">
+          Delivery Test Report CBD1400351</div><p>
+          The content of this delivery and the tested configuration is described in
+          <a href="DeliveryDescription_CBD1400351.html">DeliveryDescription_CBD1400351.html</a></p><h1>Delivery Information</h1><h2>License Information</h2><table><tr><th>License Information:</th><td>Nexteer Automotive Corporation
+Package: GM Global A / Flexray - ECU Product "Steering Systems"
+Micro: R7F701311
+Compiler: GreenHills 2015.1.7</td></tr><tr><th>License Number:</th><td>CBD1400351</td></tr><tr><th>OEM:</th><td>Gm</td></tr><tr><th>SLP:</th><td>GM Global A / Flexray</td></tr><tr><th>Controller:</th><td>Rh850</td></tr><tr><th>CanCell:</th><td>X</td></tr><tr><th>Compiler:</th><td>GreenHills</td></tr></table><h2>Delivery Information</h2><table><tr><th>Delivery Number:</th><td>04</td></tr><tr><th>SIP Version:</th><td>16.00.00</td></tr><tr><th>Delivery ID:</th><td>16.00.00.01.40.03.51.04.00.00</td></tr><tr><th>Release Type:</th><td>Production (QM serial production release)</td></tr><tr><th>Delivery Type:</th><td>Initial delivery (based on explicit purchase order)</td></tr><tr><th>Delivery Reason:</th><td>5015517+5017331</td></tr></table><h1>Test Verdict</h1><table><tr><td>Test Verdict</td><td class="verdict passed">Passed</td></tr><tr><td>Test Report Date</td><td>2016-09-16</td></tr></table><h1>Test Activities</h1><p>According to Vector’s embedded software development and delivery process, the test activities are assigned to the development phases of the software. The most important development phases for a delivery like this are the Component Test and the Delivery Test.</p><h2>Component Tests</h2><p>Each component listed in the section "Detailed Version Information" within the delivery description has been tested during the component development phase before component release independently of this specific delivery. The test activities on component level include:</p><ul><li>Code inspection and inspection of all work products, e.g. technical references</li><li>Static and dynamic tests according to the component-specific test specification and test plan</li><li>MISRA analysis and justification of deviations</li><li>Code coverage analysis (target: high code coverage of dynamic tests, additional inspection of uncovered code areas)</li></ul><h2>Delivery Tests</h2><p>Testing the ordered program ("SLP") on the real hardware with the target compiler and the requested configuration is performed for each delivery ("SIP") in order to detect any delivery specific issues. The test activities on delivery level include:</p><ul><li>Compile and link test on the real hardware with customer-specific compiler-, assembler- and linker-options (as specified in the questionnaire)</li><li>Dynamic tests according to the program related delivery test suite</li><li>Dynamic tests according to the ordered configuration or use-case (depending on the questionnaire or SLP defaults)</li><li>Optional: manual tests to cover special use-cases</li></ul><p>
+          The results of the delivery specific tests are documented on a summary level within this report. The result of the component specific test is not documented here as it is a prerequisite that the component has passed its release test before being delivered to customers.
+          Vector does not distribute all the detailed test results to you. If you are interested in a review of the detailed delivery test results and those of the component specific tests, please contact Vector for more information.
+        </p><h1>Delivery Tests Results</h1><h2>Use Case Tgf</h2><table><tr><td>Request Version Info APIs<br />Request Version Info APIs from AUTOSAR Modules</td><td class="verdict passed">Passed</td></tr><tr><td>Signal Transmission without Signal Update Bit, CAN, COM transmission mode DIRECT<br /></td><td class="verdict passed">Passed</td></tr><tr><td>Signal Transmission without Signal Update Bit, CAN, COM transmission mode PERIODIC<br /></td><td class="verdict passed">Passed</td></tr><tr><td>Signal Group Transmission for Bus system CAN, COM transmission mode PERIODIC, No Update Bit Configured<br /></td><td class="verdict passed">Passed</td></tr><tr><td>Tx Confirmation with RTE for Bus system CAN<br /></td><td class="verdict passed">Passed</td></tr><tr><td>Signal Reception for Bus system CAN<br /></td><td class="verdict passed">Passed</td></tr><tr><td>Signal Group Reception for Bus system CAN<br /></td><td class="verdict passed">Passed</td></tr><tr><td>Rx Indication with RTE for Bus system CAN<br /></td><td class="verdict passed">Passed</td></tr><tr><td>Rx Signal Initial Value for Bus system CAN<br /></td><td class="verdict passed">Passed</td></tr><tr><td>Tx Signal Initial Value for Bus system CAN<br /></td><td class="verdict passed">Passed</td></tr><tr><td>Unused tx pdu Areas Initialization for Bus system CAN<br /></td><td class="verdict passed">Passed</td></tr><tr><td>Standard NvM tests<br />Verify standard NvM module functionality.</td><td class="verdict passed">Passed</td></tr><tr><td>NvM_GetDataIndex<br />Verify that the active dataset of a Dataset NVRAM block can be determined.</td><td class="verdict passed">Passed</td></tr></table></body></html>

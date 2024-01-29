@@ -1,0 +1,61 @@
+<#@ AutosarXml processor="ArDirectiveProcessor" requires="arPrefix='ar';arNamespace='http://autosar.org/4.0.3'" #>
+<#@ template inherits="AutosarDirectiveProcessor.ArGtcBase" debug="true" #>
+<#@ output extension="" #>
+<#@ include file="Helper.tt" #>/**********************************************************************************************************************
+* Copyright 2015 Nexteer
+* Nexteer Confidential
+*
+* Module File Name:   CDD_SyncCrc_Cfg_private.h
+* Module Description: Private configuration header file for CM800A Synchronous CRC component.
+* Project           : CBD
+* Author            : Kevin Smith
+***********************************************************************************************************************
+* Version Control:
+* %version:          2 %
+* %derived_by:       cz7lt6 %
+*---------------------------------------------------------------------------------------------------------------------
+* Date      Rev     Author  Change Description                                                              SCR #
+* --------  ------- ------- ---------------------------------------------------------------------------     ----------
+* 10/07/15  1       KJS     Initial version of the private header template                                  EA4#1844
+* 01/12/16  2       KJS     Updates for FDD Rev1 and support for CRC reservation                            EA4#5405
+**********************************************************************************************************************/
+
+/******************************************* Multiple Include Protection *********************************************/
+#ifndef CDD_SYNCCRC_CFG_PRIVATE_H
+#define CDD_SYNCCRC_CFG_PRIVATE_H
+
+/************************************************ Include Statements *************************************************/
+#include "Std_Types.h"
+
+/******************************************** File Level Rule Deviations *********************************************/
+
+/**************************************************** Type defs ******************************************************/
+
+/************************************************ Embedded Constants *************************************************/
+<# /*-------------------------------------------------------------------------------------------------------------*/ #>
+<#
+    ChangeContext( Xp.ModuleConfAtDefRefTo( "CDD_SyncCrc" ) );
+    if ( ValueOf( Xp.ValueAtDefRefTo( "AvailableCRCHardwareUnits" ) ) <= 4 )
+    {
+#>
+#define NROFCRCHWUNIT_CNT_U08       4U
+#define NROFACTVCRCHWUNIT_CNT_U08   <#= ValueOf( Xp.ValueAtDefRefTo( "AvailableCRCHardwareUnits" ) ) #>U
+#define ARWRPRENAD_CNT_U08          <#= ValueOf( Xp.ValueAtDefRefTo( "AutosarWrapperEnable" ) ) #>
+#define CRCOSREF_CNT_U08            <#= LastValueSegmentOf( Xp.ValueRefAtDefRefTo( "CrcOsApplicationReference" )) #>
+<#
+    }
+    else
+    {
+#>
+#error "Configuration error with the number of available CRC hardware units, value is greater than 4."
+<#
+    }
+#>
+<# /*-------------------------------------------------------------------------------------------------------------*/ #>
+
+/****************************************************** Macros *******************************************************/
+
+/*********************************************** Exported Declarations ***********************************************/
+
+/**************************************** End Of Multiple Include Protection *****************************************/
+#endif /* CDD_SYNCCRC_CFG_PRIVATE_H */

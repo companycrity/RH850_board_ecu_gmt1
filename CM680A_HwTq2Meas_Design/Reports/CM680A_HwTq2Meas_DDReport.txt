@@ -1,0 +1,132 @@
+Verification of CM680A_HwTq2Meas_DataDict
+18-Mar-2016 14:33:01
+Tool Release:  2.35.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 3, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+HwTq2MeasHwTq2AutTrim       	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwTq2MeasHwTq2ClrTrim       	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwTq2MeasHwTq2ReadTrim      	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwTq2MeasHwTq2TrimPrfmdSts  	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwTq2MeasHwTq2WrTrim        	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwTq2MeasTrigStrt           	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+(variables: 6, errors: 6)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+IoHwAb_SetFctPrphlHwTq2     	    Ab_            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 7, errors: 1)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+HwTq2Phy                    	Cannot match name to list of known Nexteer signals.
+HwTq2Phy                    	.ReadIn:	Field is empty.
+(variables: 8, errors: 2)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+GearIdn1                    	Cannot match name to list of known Nexteer signals.
+GearIdn1Vld                 	Cannot match name to list of known Nexteer signals.
+RegOutRSENT3CSC             	Cannot match name to list of known Nexteer signals.
+RegOutRSENT3NRC             	Cannot match name to list of known Nexteer signals.
+RegOutRSENT3SPCT            	Cannot match name to list of known Nexteer signals.
+(variables: 8, errors: 5)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 2, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 1, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+HwTq2MeasPrevHwTq2          	Name does not match required pattern.
+HwTq2MeasPrevRollgCntr      	Name does not match required pattern.
+(variables: 6, errors: 2)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+FLTINJ_HWTQ2MEAS_HWTQ2           	Name does not match required pattern as it is a special case.
+(variables: 9, errors: 1)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+HWTQ2MEAS_HWTQ2MFGNTCNR_ULS_U16  	.Header:	Field is empty.
+HWTQ2MEAS_HWTQ2PRTCLNTCNR_ULS_U16	.Header:	Field is empty.
+(variables: 2, errors: 2)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+NTCNR_0X1E2         	Found in model but not in data dictionary.
+NTCNR_0X077         	Found in model but not in data dictionary.
+(variables: 2, errors: 2)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+55 variables,  21 issues to fix.
+
+
+End of Report

@@ -1,0 +1,161 @@
+Verification of CM300A_Adc0CfgAndUse_DataDict
+07-Sep-2016 15:46:06
+Tool Release:  2.43.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+AdcStrtOfCnvnMotCtrlPeak    	Cannot match name to list of known Nexteer signals.
+AdcStrtOfCnvnMotCtrlPeak    	.ReadIn:	Field should contain only valid Periodic & Server Runnable names.	Adc0CfgAndUse is not allowed.
+AdcStrtOfCnvnMotCtrlVly     	Cannot match name to list of known Nexteer signals.
+AdcStrtOfCnvnMotCtrlVly     	.ReadIn:	Field should contain only valid Periodic & Server Runnable names.	Adc0CfgAndUse is not allowed.
+MotCtrlAdcDiagcEndPtrOutp   	Cannot match name to list of known Nexteer signals.
+MotCtrlAdcDiagcStrtPtrOutp  	Cannot match name to list of known Nexteer signals.
+RegInpADCD0SGSR1            	Cannot match name to list of known Nexteer signals.
+RegInpADCD0SGSR1            	    G              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 5, errors: 8)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+DmaAdc0ResTrig              	Cannot match name to list of known Nexteer signals.
+DmaAdc0ResTrig              	.WrittenIn:	Field should contain only valid Periodic & Server Runnable names.	Adc0CfgAndUse is not allowed.
+RegOutpADCD0SGSTCR0         	    G              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpADCD0SGVCEP1         	    G              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpADCD0SGVCEP1         	    V              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpADCD0SGVCSP1         	    G              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutpADCD0SGVCSP1         	    V              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 4, errors: 7)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+ADC0CFGANDUSE_ADCD0VCR21_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR22_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR23_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCSCAGFAC_VOLTPERCNT_F32	Name does not match required pattern.
+ADC0CFGANDUSE_DIAGCSCANGROUPMAX_CNT_U08	Name does not match required pattern.
+ADC0CFGANDUSE_DIAGCSCANGROUPMIN_CNT_U08	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR21_CNT_U32	Found in data dictionary but not in model.
+ADC0CFGANDUSE_ADCD0VCR22_CNT_U32	Found in data dictionary but not in model.
+ADC0CFGANDUSE_ADCD0VCR23_CNT_U32	Found in data dictionary but not in model.
+ADC0CFGANDUSE_ADCSCAGFAC_VOLTPERCNT_F32	Found in data dictionary but not in model.
+(variables: 10, errors: 10)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+ADC0CFGANDUSE_ADCD0SGVCEP2_CNT_U08	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0SGVCEP3_CNT_U08	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0SGVCSP2_CNT_U08	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0SGVCSP3_CNT_U08	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR00_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR01_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR02_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR03_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR04_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR05_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR06_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR07_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR08_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR09_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR10_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR11_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR12_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR13_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR14_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR15_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR16_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR17_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR18_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR19_CNT_U32 	Name does not match required pattern.
+ADC0CFGANDUSE_ADCD0VCR20_CNT_U32 	Name does not match required pattern.
+(variables: 25, errors: 25)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+49 variables,  50 issues to fix.
+
+
+End of Report

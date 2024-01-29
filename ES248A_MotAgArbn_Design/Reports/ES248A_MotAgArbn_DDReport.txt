@@ -1,0 +1,123 @@
+Verification of ES248A_MotAgArbn_DataDict
+21-Apr-2016 10:32:46
+Tool Release:  2.38.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+MotCtrlMotAgAMecl           	Cannot match name to list of known Nexteer signals.
+MotCtrlMotAgAMeclQlfr       	Cannot match name to list of known Nexteer signals.
+MotCtrlMotAgAMeclRollgCntr  	Cannot match name to list of known Nexteer signals.
+MotCtrlMotAgBMecl           	Cannot match name to list of known Nexteer signals.
+MotCtrlMotAgBMeclQlfr       	Cannot match name to list of known Nexteer signals.
+MotCtrlMotAgBMeclRollgCntr  	Cannot match name to list of known Nexteer signals.
+MotCtrlMotAgMeclCorrlnSt    	Cannot match name to list of known Nexteer signals.
+(variables: 7, errors: 7)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+MotCtrlMotAgMecl
+           	Found in model but not in data dictionary.
+(variables: 1, errors: 1)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 5, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 1, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+Unit Delay:                 	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+(variables: 0, errors: 3)
+ 
+************************
+Grand Totals:
+17 variables,  11 issues to fix.
+
+
+End of Report

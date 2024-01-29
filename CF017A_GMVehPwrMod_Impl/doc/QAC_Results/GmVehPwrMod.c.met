@@ -1,0 +1,788 @@
+<RDEF> I Includes
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod.h 47
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod.h C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod_Type.h 40
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod_Type.h C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_Type.h 32
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_Type.h C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte.h 27
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte.h C:/component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 39
+<R>I C:/component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Platform_Types.h 63
+<R>I C:/component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h 64
+<R>I C:/component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h C:/component/AR201A_ArCplrSuprt_Impl/tools/contract/Compiler_Cfg.h 56
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod.h C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_DataHandleType.h 41
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod.h C:/component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 61
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod.h C:/component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 66
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod.h C:/component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 93
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod.h C:/component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 123
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod.h C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/GmVehPwrMod_MemMap.h 225
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/GmVehPwrMod_MemMap.h C:/component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/Rte_GmVehPwrMod.h C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/GmVehPwrMod_MemMap.h 295
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/GmVehPwrMod_MemMap.h C:/component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h 53
+<R>I C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h C:/component/TL103A_CplrSuprt/include/2015.1.5/ansi/math.h 26
+<R>I C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h C:/component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 27
+<DEFINE> CNTTOSEC_ULS_U32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 61 N DF OM - - - O
+<LIT> 10000 UL P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 61 42 N DN - F M
+<DEFINE> LOOKUPTBLSIZE_CNT_U16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 63 N DF OM - - - O
+<LIT> 512 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 63 42 N DN - F M
+<DEFINE> MINRAMPRATE_ULSPERSEC_F32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 65 N DF OM - - - O
+<LIT> 0.0 F P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 65 42 N FN - F M
+<DEFINE> MAXRAMPRATE_ULSPERSEC_F32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 66 N DF OM - - - O
+<LIT> 500.0 F P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 66 42 N FN - F M
+<DEFINE> MINMOTTQCMDSCA_ULS_F32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 68 N DF OM - - - O
+<LIT> 0.0 F P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 68 42 N FN - F M
+<DEFINE> MAXMOTTQCMDSCA_ULS_F32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 69 N DF OM - - - O
+<LIT> 1.0 F P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 69 42 N FN - F M
+<DEFINE> KEEPASSIIDX_CNT_U16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 71 N DF OM - - - O
+<LIT> 1 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 71 41 N DN - F M
+<DEFINE> BUSOFFHISPDIDX_CNT_U16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 72 N DF OM - - - O
+<LIT> 2 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 72 41 N DN - F M
+<DEFINE> SYSPWRMODMSGINVLDIDX_CNT_U16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 73 N DF OM - - - O
+<LIT> 4 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 73 41 N DN - F M
+<DEFINE> VEHSPDSNSRVLDIDX_CNT_U16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 74 N DF OM - - - O
+<LIT> 8 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 74 41 N DN - F M
+<DEFINE> PRPNSYSACTVMSGINVLDIDX_CNT_U16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 75 N DF OM - - - O
+<LIT> 16 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 75 41 N DN - F M
+<DEFINE> ASSIKEEPMINIDX_CNT_U16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 76 N DF OM - - - O
+<LIT> 32 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 76 41 N DN - F M
+<DEFINE> ENGRUNACTVIDX_CNT_U16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 77 N DF OM - - - O
+<LIT> 64 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 77 41 N DN - F M
+<DEFINE> SYSPWRMODRUNIDX_CNT_U16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 78 N DF OM - - - O
+<LIT> 128 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 78 41 N DN - F M
+<DEFINE> GPIOMCUENAIDX_CNT_U16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 79 N DF OM - - - O
+<LIT> 256 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 79 41 N DN - F M
+<DEFINE> AssiEna_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 82 N DC OV P N uc R
+<DEFINE> GetMotTqCmdSca C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 82 N DC OF F I (fs,uc) -
+<DEFINE> GetGpioMcuEna_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 84 N DC OV P N uc R
+<DEFINE> SysPwrModRun_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 85 N DC OV P N uc R
+<DEFINE> EngRunActv_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 86 N DC OV P N uc R
+<DEFINE> VehSpdAssiKeepMin_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 87 N DC OV P N uc R
+<DEFINE> PrpnSysActvMsgInvld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 88 N DC OV P N uc R
+<DEFINE> VehSpdSnsrVld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 89 N DC OV P N uc R
+<DEFINE> SysPwrModMsgInvld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 90 N DC OV P N uc R
+<DEFINE> BusOffHiSpd_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 91 N DC OV P N uc R
+<DEFINE> HwTq_HwNwtMtr_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 92 N DC OV P N fs R
+<DEFINE> GetTblIdx C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 84 N DC OF F I (us,uc,uc,uc,uc,uc,uc,uc,uc,fs) -
+<DEFINE> HwTq_HwNwtMtr_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 94 N DC OV P N fs R
+<DEFINE> TblIdxNr_Cnt_T_u16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 95 N DC OV P N pus R
+<DEFINE> KeepAssiHwTqTmr C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 94 N DC OF F I (.,fs,pus) -
+<DEFINE> GmVehPwrMod_START_SEC_CODE C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 129 N DF OM - - - O
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/GmVehPwrMod_MemMap.h 130
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/GmVehPwrMod_MemMap.h C:/component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<EXTD> GmVehPwrModInit1 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 142
+<DEFINE> GmVehPwrModInit1 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 142 N DR OF F X (.,.) -
+<DEFINE> GmVehPwrModInit1 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 142 N DF OF F X (.,.) -
+<CTLG> GmVehPwrModInit1 1
+<CTLG> 1 3
+<CTLGN> 143 152 152 
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  GmVehPwrModInit1
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  0
+<S>STAKI  1
+<S>STLIN  8
+<S>STXLN  0
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  0
+<S>STPTH  1
+<S>STPDN  0.00   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  0
+<S>STAV2  0
+<S>STAV3  0
+<S>STST1  0
+<S>STST2  0
+<S>STST3  0
+<S>STPAR  0
+<S>STCAL  0
+<S>STFN1  2
+<S>STFN2  0
+
+<EXTD> GmVehPwrModPer1 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 204
+<DEFINE> GmVehPwrModPer1 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 204 N DR OF F X (.,.) -
+<DEFINE> GmVehPwrModPer1 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 204 N DF OF F X (.,.) -
+<DEFINE> GetGpioMcuEna_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 211 N DC OV B N uc -
+<DEFINE> GetGpioMcuEna_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 211 N DF OV B N uc -
+<DEFINE> SysPwrModRun_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 212 N DC OV B N uc -
+<DEFINE> SysPwrModRun_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 212 N DF OV B N uc -
+<DEFINE> EngRunActv_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 213 N DC OV B N uc -
+<DEFINE> EngRunActv_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 213 N DF OV B N uc -
+<DEFINE> VehSpdArbd_Kph_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 214 N DC OV B N fs -
+<DEFINE> VehSpdArbd_Kph_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 214 N DF OV B N fs -
+<DEFINE> PrpnSysActvMsgInvld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 215 N DC OV B N uc -
+<DEFINE> PrpnSysActvMsgInvld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 215 N DF OV B N uc -
+<DEFINE> VehSpdSnsrVld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 216 N DC OV B N uc -
+<DEFINE> VehSpdSnsrVld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 216 N DF OV B N uc -
+<DEFINE> SysPwrModMsgInvld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 217 N DC OV B N uc -
+<DEFINE> SysPwrModMsgInvld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 217 N DF OV B N uc -
+<DEFINE> BusOffHiSpd_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 218 N DC OV B N uc -
+<DEFINE> BusOffHiSpd_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 218 N DF OV B N uc -
+<DEFINE> HwTq_HwNwtMtr_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 219 N DC OV B N fs -
+<DEFINE> HwTq_HwNwtMtr_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 219 N DF OV B N fs -
+<DEFINE> SysStEnaReqOvrd_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 220 N DC OV B N uc -
+<DEFINE> SysStEnaReqOvrd_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 220 N DF OV B N uc -
+<DEFINE> SysStReqEna_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 223 N DC OV B N uc -
+<DEFINE> SysStReqEna_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 223 N DF OV B N uc -
+<DEFINE> PwrSplyEnaReq_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 224 N DC OV B N uc -
+<DEFINE> PwrSplyEnaReq_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 224 N DF OV B N uc -
+<DEFINE> VehPwrModDftVehSpdEna_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 225 N DC OV B N uc -
+<DEFINE> VehPwrModDftVehSpdEna_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 225 N DF OV B N uc -
+<DEFINE> SysOperMotTqCmdSca_Uls_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 226 N DC OV B N fs -
+<DEFINE> SysOperMotTqCmdSca_Uls_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 226 N DF OV B N fs -
+<DEFINE> SysOperRampRate_UlsPerSec_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 227 N DC OV B N fs -
+<DEFINE> SysOperRampRate_UlsPerSec_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 227 N DF OV B N fs -
+<DEFINE> SysStFltOutpReqDi_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 229 N DC OV B N uc -
+<DEFINE> SysStFltOutpReqDi_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 229 N DF OV B N uc -
+<DEFINE> VarEff_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 230 N DC OV B N uc -
+<DEFINE> VarEff_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 230 N DF OV B N uc -
+<DEFINE> VehSpdAssiOnMin_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 231 N DC OV B N uc -
+<DEFINE> VehSpdAssiOnMin_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 231 N DF OV B N uc -
+<DEFINE> VehSpdAssiKeepMin_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 232 N DC OV B N uc -
+<DEFINE> VehSpdAssiKeepMin_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 232 N DF OV B N uc -
+<DEFINE> TblIdxNr_Cnt_T_u16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 233 N DC OV B N us -
+<DEFINE> TblIdxNr_Cnt_T_u16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 233 N DF OV B N us -
+<DEFINE> GMVEHPWRMODSYSSTREQENA_CNT_LOGL C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 236 N DC OV B N [512,=uc] -
+<DEFINE> GMVEHPWRMODSYSSTREQENA_CNT_LOGL C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 236 N DF OV B N [512,=uc] -
+<DEFINE> GMVEHPWRMODVAREFF_CNT_LOGL C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 269 N DC OV B N [512,=uc] -
+<DEFINE> GMVEHPWRMODVAREFF_CNT_LOGL C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 269 N DF OV B N [512,=uc] -
+<RDEF> C Calls
+<R>C GmVehPwrModPer1 Rte_Read_GmVehPwrMod_SysPwrModRun_Logl 310
+<RDEF> X Refers-to
+<R>X GmVehPwrModPer1 Rte_Read_GmVehPwrMod_SysPwrModRun_Logl 310 R
+<R>C GmVehPwrModPer1 Rte_Read_GmVehPwrMod_EngRunActv_Logl 311
+<R>X GmVehPwrModPer1 Rte_Read_GmVehPwrMod_EngRunActv_Logl 311 R
+<R>C GmVehPwrModPer1 Rte_Read_GmVehPwrMod_VehSpdArbd_Val 312
+<R>X GmVehPwrModPer1 Rte_Read_GmVehPwrMod_VehSpdArbd_Val 312 R
+<R>C GmVehPwrModPer1 Rte_Read_GmVehPwrMod_PrpnSysActvMsgInvld_Logl 313
+<R>X GmVehPwrModPer1 Rte_Read_GmVehPwrMod_PrpnSysActvMsgInvld_Logl 313 R
+<R>C GmVehPwrModPer1 Rte_Read_GmVehPwrMod_VehSpdSnsrVld_Logl 314
+<R>X GmVehPwrModPer1 Rte_Read_GmVehPwrMod_VehSpdSnsrVld_Logl 314 R
+<R>C GmVehPwrModPer1 Rte_Read_GmVehPwrMod_SysPwrModMsgInvld_Logl 315
+<R>X GmVehPwrModPer1 Rte_Read_GmVehPwrMod_SysPwrModMsgInvld_Logl 315 R
+<R>C GmVehPwrModPer1 Rte_Read_GmVehPwrMod_BusOffHiSpd_Logl 316
+<R>X GmVehPwrModPer1 Rte_Read_GmVehPwrMod_BusOffHiSpd_Logl 316 R
+<R>C GmVehPwrModPer1 Rte_Read_GmVehPwrMod_HwTq_Val 317
+<R>X GmVehPwrModPer1 Rte_Read_GmVehPwrMod_HwTq_Val 317 R
+<R>C GmVehPwrModPer1 Rte_Read_GmVehPwrMod_SysStEnaReqOvrd_Logl 318
+<R>X GmVehPwrModPer1 Rte_Read_GmVehPwrMod_SysStEnaReqOvrd_Logl 318 R
+<R>C GmVehPwrModPer1 Rte_Call_GmVehPwrMod_GetGpioMcuEna_Oper 319
+<R>X GmVehPwrModPer1 Rte_Call_GmVehPwrMod_GetGpioMcuEna_Oper 319 R
+<R>C GmVehPwrModPer1 Rte_Read_GmVehPwrMod_SysStFltOutpReqDi_Logl 320
+<R>X GmVehPwrModPer1 Rte_Read_GmVehPwrMod_SysStFltOutpReqDi_Logl 320 R
+<R>C GmVehPwrModPer1 Rte_Prm_GmVehPwrMod_GmVehPwrModVehSpdAssiOnMin_Val 323
+<R>X GmVehPwrModPer1 Rte_Prm_GmVehPwrMod_GmVehPwrModVehSpdAssiOnMin_Val 323 R
+<R>X GmVehPwrModPer1 Rte_Inst_GmVehPwrMod 332 R
+<R>C GmVehPwrModPer1 Rte_Prm_GmVehPwrMod_GmVehPwrModVehSpdMinKeepAssi_Val 335
+<R>X GmVehPwrModPer1 Rte_Prm_GmVehPwrMod_GmVehPwrModVehSpdMinKeepAssi_Val 335 R
+<R>X GmVehPwrModPer1 Rte_Inst_GmVehPwrMod 344 R
+<R>X GmVehPwrModPer1 Rte_Inst_GmVehPwrMod 355 R
+<R>C GmVehPwrModPer1 GetTblIdx 393
+<R>C GmVehPwrModPer1 GetMotTqCmdSca 418
+<R>X GmVehPwrModPer1 Rte_Inst_GmVehPwrMod 433 R
+<R>C GmVehPwrModPer1 Rte_Prm_GmVehPwrMod_GmVehPwrModOperRampRate_Val 436
+<R>X GmVehPwrModPer1 Rte_Prm_GmVehPwrMod_GmVehPwrModOperRampRate_Val 436 R
+<R>C GmVehPwrModPer1 Lim_f32 440
+<R>X GmVehPwrModPer1 Lim_f32 440 R
+<R>C GmVehPwrModPer1 Lim_f32 441
+<R>X GmVehPwrModPer1 Lim_f32 441 R
+<R>C GmVehPwrModPer1 Rte_Write_GmVehPwrMod_SysStReqEna_Logl 444
+<R>X GmVehPwrModPer1 Rte_Write_GmVehPwrMod_SysStReqEna_Logl 444 R
+<R>C GmVehPwrModPer1 Rte_Write_GmVehPwrMod_PwrSplyEnaReq_Logl 445
+<R>X GmVehPwrModPer1 Rte_Write_GmVehPwrMod_PwrSplyEnaReq_Logl 445 R
+<R>C GmVehPwrModPer1 Rte_Write_GmVehPwrMod_VehPwrModDftVehSpdEna_Logl 446
+<R>X GmVehPwrModPer1 Rte_Write_GmVehPwrMod_VehPwrModDftVehSpdEna_Logl 446 R
+<R>C GmVehPwrModPer1 Rte_Write_GmVehPwrMod_SysOperMotTqCmdSca_Val 447
+<R>X GmVehPwrModPer1 Rte_Write_GmVehPwrMod_SysOperMotTqCmdSca_Val 447 R
+<R>C GmVehPwrModPer1 Rte_Write_GmVehPwrMod_SysOperRampRate_Val 448
+<R>X GmVehPwrModPer1 Rte_Write_GmVehPwrMod_SysOperRampRate_Val 448 R
+<CTLG> GmVehPwrModPer1 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 2 4
+<CTLG> 3 5
+<CTLG> 4 5
+<CTLG> 5 6
+<CTLG> 6 7
+<CTLG> 6 8
+<CTLG> 7 9
+<CTLG> 8 9
+<CTLG> 9 10
+<CTLG> 10 11
+<CTLG> 10 12
+<CTLG> 11 22
+<CTLG> 12 13
+<CTLG> 12 20
+<CTLG> 13 14
+<CTLG> 13 15
+<CTLG> 14 19
+<CTLG> 15 16
+<CTLG> 15 17
+<CTLG> 16 18
+<CTLG> 17 18
+<CTLG> 18 19
+<CTLG> 19 21
+<CTLG> 20 21
+<CTLG> 21 22
+<CTLG> 22 23
+<CTLG> 22 24
+<CTLG> 23 25
+<CTLG> 24 25
+<CTLG> 25 26
+<CTLG> 26 27
+<CTLG> 26 28
+<CTLG> 27 29
+<CTLG> 28 29
+<CTLG> 29 30
+<CTLG> 30 32
+<CTLGN> 205 323 323 323 327 335 335 335 339 349 349 349 355 364 364 375 375 380 370 355 388 355 405 405 409 421 421 421 425 452 452 452 
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  GmVehPwrModPer1
+<S>STCYC  9
+<S>STMCC  16 (9:25)
+<S>STMIF  4
+<S>STSUB  23
+<S>STAKI  32
+<S>STLIN  246
+<S>STXLN  140
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  22
+<S>STPTH  80
+<S>STPDN  0.57   
+<S>STPBG  2
+<S>STLOP  16
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  32
+<S>STAV2  38
+<S>STAV3  56
+<S>STST1  84
+<S>STST2  70
+<S>STST3  48
+<S>STPAR  0
+<S>STCAL  22
+<S>STFN1  1463
+<S>STFN2  1260
+
+<DEFINE> GmVehPwrMod_STOP_SEC_CODE C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 455 N DF OM - - - O
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/GmVehPwrMod_MemMap.h 456
+<R>I C:/component/CF017A_GMVehPwrMod_Impl/tools/contract/GmVehPwrMod_MemMap.h C:/component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<DEFINE> AssiEna_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 470 N DC OV B N uc R
+<DEFINE> GetMotTqCmdSca C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 470 N DR OF F I (fs,uc) -
+<DEFINE> GetMotTqCmdSca C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 470 N DF OF F I (fs,uc) -
+<DEFINE> MotTqCmdSca_Uls_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 472 N DC OV B N fs -
+<DEFINE> MotTqCmdSca_Uls_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 472 N DF OV B N fs -
+<LIT> 1.0 F P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 476 33 N FN fs B X
+<LIT> 0.0 F P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 480 33 N FN fs B X
+<CTLG> GetMotTqCmdSca 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 4
+<CTLG> 3 4
+<CTLG> 4 6
+<CTLGN> 471 474 474 478 483 483 
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  GetMotTqCmdSca
+<S>STCYC  2
+<S>STMCC  0 (2:2)
+<S>STMIF  1
+<S>STSUB  0
+<S>STAKI  2
+<S>STLIN  12
+<S>STXLN  5
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  2
+<S>STPDN  0.40   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  4
+<S>STAV2  6
+<S>STAV3  8
+<S>STST1  7
+<S>STST2  5
+<S>STST3  4
+<S>STPAR  1
+<S>STCAL  0
+<S>STFN1  21
+<S>STFN2  11
+
+<DEFINE> GetGpioMcuEna_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 501 N DC OV B N uc R
+<DEFINE> SysPwrModRun_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 502 N DC OV B N uc R
+<DEFINE> EngRunActv_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 503 N DC OV B N uc R
+<DEFINE> VehSpdAssiKeepMin_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 504 N DC OV B N uc R
+<DEFINE> PrpnSysActvMsgInvld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 505 N DC OV B N uc R
+<DEFINE> VehSpdSnsrVld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 506 N DC OV B N uc R
+<DEFINE> SysPwrModMsgInvld_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 507 N DC OV B N uc R
+<DEFINE> BusOffHiSpd_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 508 N DC OV B N uc R
+<DEFINE> HwTq_HwNwtMtr_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 509 N DC OV B N fs R
+<DEFINE> GetTblIdx C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 501 N DR OF F I (us,uc,uc,uc,uc,uc,uc,uc,uc,fs) -
+<DEFINE> GetTblIdx C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 501 N DF OF F I (us,uc,uc,uc,uc,uc,uc,uc,uc,fs) -
+<DEFINE> TblIdxNr_Cnt_T_u16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 511 N DC OV B N us -
+<DEFINE> TblIdxNr_Cnt_T_u16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 511 N DF OV B N us -
+<LIT> 0 U P C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 511 50 N ON ui B O
+<R>C GetTblIdx KeepAssiHwTqTmr 554
+<CTLG> GetTblIdx 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 3
+<CTLG> 3 4
+<CTLG> 3 5
+<CTLG> 4 5
+<CTLG> 5 6
+<CTLG> 5 7
+<CTLG> 6 7
+<CTLG> 7 8
+<CTLG> 7 9
+<CTLG> 8 9
+<CTLG> 9 10
+<CTLG> 9 11
+<CTLG> 10 11
+<CTLG> 11 12
+<CTLG> 11 13
+<CTLG> 12 13
+<CTLG> 13 14
+<CTLG> 13 15
+<CTLG> 14 15
+<CTLG> 15 16
+<CTLG> 15 17
+<CTLG> 16 17
+<CTLG> 17 18
+<CTLG> 18 20
+<CTLGN> 510 513 513 518 518 523 523 528 528 533 533 538 538 543 543 548 548 557 557 557 
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  GetTblIdx
+<S>STCYC  9
+<S>STMCC  0 (9:9)
+<S>STMIF  1
+<S>STSUB  1
+<S>STAKI  10
+<S>STLIN  47
+<S>STXLN  19
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  256
+<S>STPDN  13.47  
+<S>STPBG  2
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  4
+<S>STAV2  6
+<S>STAV3  6
+<S>STST1  27
+<S>STST2  19
+<S>STST3  18
+<S>STPAR  9
+<S>STCAL  1
+<S>STFN1  78
+<S>STFN2  41
+
+<DEFINE> HwTq_HwNwtMtr_T_f32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 567 N DC OV B N fs R
+<DEFINE> TblIdxNr_Cnt_T_u16 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 568 N DC OV B N pus R
+<DEFINE> KeepAssiHwTqTmr C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 567 N DR OF F I (.,fs,pus) -
+<DEFINE> KeepAssiHwTqTmr C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 567 N DF OF F I (.,fs,pus) -
+<DEFINE> HwTqKeepAssi_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 570 N DC OV B N uc -
+<DEFINE> HwTqKeepAssi_Cnt_T_logl C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 570 N DF OV B N uc -
+<DEFINE> Span_Cnt_T_u32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 571 N DC OV B N ul -
+<DEFINE> Span_Cnt_T_u32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 571 N DF OV B N ul -
+<DEFINE> Span_Sec_T_u32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 572 N DC OV B N ul -
+<DEFINE> Span_Sec_T_u32 C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c 572 N DF OV B N ul -
+<R>C KeepAssiHwTqTmr Abslt_f32_f32 574
+<R>X KeepAssiHwTqTmr Abslt_f32_f32 574 R
+<R>C KeepAssiHwTqTmr Rte_Prm_GmVehPwrMod_GmVehPwrModHwTqMinKeepAssi_Val 574
+<R>X KeepAssiHwTqTmr Rte_Prm_GmVehPwrMod_GmVehPwrModHwTqMinKeepAssi_Val 574 R
+<R>X KeepAssiHwTqTmr Rte_Inst_GmVehPwrMod 574 R
+<R>C KeepAssiHwTqTmr Rte_Call_GmVehPwrMod_GetRefTmr100MicroSec32bit_Oper 577
+<R>X KeepAssiHwTqTmr Rte_Call_GmVehPwrMod_GetRefTmr100MicroSec32bit_Oper 577 R
+<R>X KeepAssiHwTqTmr Rte_Inst_GmVehPwrMod 577 R
+<R>X KeepAssiHwTqTmr Rte_Inst_GmVehPwrMod 578 R
+<R>C KeepAssiHwTqTmr Abslt_f32_f32 581
+<R>X KeepAssiHwTqTmr Abslt_f32_f32 581 R
+<R>C KeepAssiHwTqTmr Rte_Prm_GmVehPwrMod_GmVehPwrModHwTqMinKeepAssi_Val 581
+<R>X KeepAssiHwTqTmr Rte_Prm_GmVehPwrMod_GmVehPwrModHwTqMinKeepAssi_Val 581 R
+<R>C KeepAssiHwTqTmr Rte_Call_GmVehPwrMod_GetTiSpan100MicroSec32bit_Oper 584
+<R>X KeepAssiHwTqTmr Rte_Call_GmVehPwrMod_GetTiSpan100MicroSec32bit_Oper 584 R
+<R>X KeepAssiHwTqTmr Rte_Inst_GmVehPwrMod 584 R
+<R>C KeepAssiHwTqTmr Rte_Prm_GmVehPwrMod_GmVehPwrModHwTqMinKeepTmr_Val 587
+<R>X KeepAssiHwTqTmr Rte_Prm_GmVehPwrMod_GmVehPwrModHwTqMinKeepTmr_Val 587 R
+<R>X KeepAssiHwTqTmr Rte_Inst_GmVehPwrMod 599 R
+<R>X KeepAssiHwTqTmr Rte_Inst_GmVehPwrMod 603 R
+<CTLG> KeepAssiHwTqTmr 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 11
+<CTLG> 3 4
+<CTLG> 3 9
+<CTLG> 4 5
+<CTLG> 5 6
+<CTLG> 5 7
+<CTLG> 6 8
+<CTLG> 7 8
+<CTLG> 8 10
+<CTLG> 9 10
+<CTLG> 10 11
+<CTLG> 11 12
+<CTLG> 12 13
+<CTLG> 12 14
+<CTLG> 13 14
+<CTLG> 14 16
+<CTLGN> 569 574 574 581 587 587 587 591 581 596 581 605 605 605 609 609 
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  KeepAssiHwTqTmr
+<S>STCYC  5
+<S>STMCC  1 (5:6)
+<S>STMIF  3
+<S>STSUB  7
+<S>STAKI  12
+<S>STLIN  39
+<S>STXLN  17
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  3
+<S>STPTH  8
+<S>STPDN  0.47   
+<S>STPBG  1
+<S>STLOP  1
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  6
+<S>STAV2  8
+<S>STAV3  10
+<S>STST1  24
+<S>STST2  18
+<S>STST3  15
+<S>STPAR  2
+<S>STCAL  5
+<S>STFN1  112
+<S>STFN2  48
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_f32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u08_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u16_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u32_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Arctan2_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Blnd_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Cos_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Exp_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  GetMotTqCmdSca
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  KeepAssiHwTqTmr
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  GetTblIdx
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  GmVehPwrModInit1
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  GmVehPwrModPer1
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Mod_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  SinCos_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  SinLookup
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sin_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sqrt_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNAM  C:/component/CF017A_GMVehPwrMod_Impl/src/GmVehPwrMod.c
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  3
+<S>STECT  1
+<S>STFNC  5
+<S>STFCO  34
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  93
+<S>STOPT  29
+<S>STOPN  111
+<S>STTOT  3308
+<S>STZIP  773
+<S>STHAL  895
+<S>STSHN  3145
+<S>STDIF  37.79  
+<S>STEFF  891135
+<S>STVOL  23584
+<S>STDEV  148.52 
+<S>STBUG  9
+<S>STTPP  622
+<S>STTLN  301
+<S>STM20  1474
+<S>STM21  1830
+<S>STM22  94
+<S>STM28  79
+<S>STM33  62
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  1.458  
+<S>STBMS  1.763  
+<S>STBME  2.036  
+<S>STTDO  2.885  
+<S>STTDS  3.049  
+<S>STTDE  3.139  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  0.894  
+

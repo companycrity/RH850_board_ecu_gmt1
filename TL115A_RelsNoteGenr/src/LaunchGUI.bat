@@ -1,0 +1,1 @@
+start ..\..\TL112A_Python\tools\pythonw.exe App.py

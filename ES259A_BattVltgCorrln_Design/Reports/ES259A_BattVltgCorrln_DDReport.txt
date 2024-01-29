@@ -1,0 +1,128 @@
+Verification of ES259A_BattVltgCorrln_DataDict
+10-May-2016 10:45:15
+Tool Release:  2.38.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 1, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 2, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+BattVltgAdcFaild            	Cannot match name to list of known Nexteer signals.
+BattVltgSwd1AdcFaild        	Cannot match name to list of known Nexteer signals.
+BattVltgSwd2AdcFaild        	Cannot match name to list of known Nexteer signals.
+InhbBattVltgDiagc           	Cannot match name to list of known Nexteer signals.
+(variables: 11, errors: 4)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+BattVltgCorrlnIdptSig       	Name does not match required pattern.
+DftBrdgVltgActv             	Cannot match name to list of known Nexteer signals.
+(variables: 4, errors: 2)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+BattVltgCorrlnNtc0x03C0x0440x04CFailStep	    0x             Unknown Keyword used.Only Nexteer approved Keywords should be used.
+BattVltgCorrlnNtc0x03C0x0440x04CFailStep	    0440x          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+BattVltgCorrlnNtc0x03C0x0440x04CPassStep	    0x             Unknown Keyword used.Only Nexteer approved Keywords should be used.
+BattVltgCorrlnNtc0x03C0x0440x04CPassStep	    0440x          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 18, errors: 4)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 9, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 1, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+BattVltgMeasdCorrlnFlt	Found in data dictionary but not in model.
+ExtdVltgRngLoVltg   	Found in data dictionary but not in model.
+Ivtr1PwrDiscnctFailrDurgRun	Found in data dictionary but not in model.
+Ivtr2PwrDiscnctFailrDurgRun	Found in data dictionary but not in model.
+OutdOperVltgRngOverVltg	Found in data dictionary but not in model.
+OutdOperVltgRngUnderVltg	Found in data dictionary but not in model.
+SysVltgCorrlnFlt    	Found in data dictionary but not in model.
+(variables: 14, errors: 7)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+61 variables,  17 issues to fix.
+
+
+End of Report

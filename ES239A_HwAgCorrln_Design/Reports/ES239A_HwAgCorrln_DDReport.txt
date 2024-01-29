@@ -1,0 +1,127 @@
+Verification of ES239A_HwAgCorrln_DataDict
+14-Apr-2016 10:53:17
+Tool Release:  2.34.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 1, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 3, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+HwAgA                       	Cannot match name to list of known Nexteer signals.
+HwAgAQlfr                   	Cannot match name to list of known Nexteer signals.
+HwAgARollgCntr              	Cannot match name to list of known Nexteer signals.
+HwAgB                       	Cannot match name to list of known Nexteer signals.
+HwAgBQlfr                   	Cannot match name to list of known Nexteer signals.
+HwAgBRollgCntr              	Cannot match name to list of known Nexteer signals.
+(variables: 6, errors: 6)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+HwAgCorrlnSt                	Name does not match required pattern.
+(variables: 2, errors: 1)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+HwAgCorrlnHwAgAbsltDif           	.PortName:   	.PortName should be same as Calibration Name.
+HwAgCorrlnHwAgMaxStall           	.PortName:   	.PortName should be same as Calibration Name.
+HwAgCorrlnNtc0x092FailStep       	.PortName:   	.PortName should be same as Calibration Name.
+HwAgCorrlnNtc0x092PassStep       	.PortName:   	.PortName should be same as Calibration Name.
+(variables: 4, errors: 4)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 2, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 4, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+FLTINJ_HWAGCORRLN_HWAGIDPTSIG    	Name does not match required pattern as it is a special case.
+(variables: 5, errors: 1)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+Data Store
+dHwAgCorrlnAgAAvl:dHwAgCorrlnAgAAvl	'Data Store Memory Block'	'StateMustResolveToSignalObject' property must be enabled.
+Data Store
+dHwAgCorrlnAgBAvl:dHwAgCorrlnAgBAvl	'Data Store Memory Block'	'StateMustResolveToSignalObject' property must be enabled.
+(variables: 0, errors: 2)
+ 
+************************
+Grand Totals:
+28 variables,  14 issues to fix.
+
+
+End of Report

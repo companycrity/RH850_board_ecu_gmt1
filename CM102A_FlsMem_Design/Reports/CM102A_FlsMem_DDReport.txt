@@ -1,0 +1,122 @@
+Verification of CM102A_FlsMem_DataDict
+31-Aug-2016 16:25:18
+Tool Release:  2.41.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+Missing Model 	Unable to find model for comparison to data dictionary.
+(errors:  1)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+CodFlsSngBitEcc             	.Runnnable:	Name must end with 'Init' or 'Per1', 'Per2', etc.
+FlsMemInit2                 	.Runnnable:	TimeStep should be a either 'ISR' or 'MotorControl' or 'MotorControlx2' when Context is 'NonRte'.
+(variables: 4, errors: 2)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 5, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+RegInpINTIFPINT0            	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpINTIFPINT0            	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegInpINTIFPINT0            	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 1, errors: 3)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+CodFlsCrcChkCmpl            	Cannot match name to list of known Nexteer signals.
+RegOutINTIFPINTCLR0         	Cannot match name to list of known Nexteer signals.
+RegOutINTIFPINTCLR0         	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutINTIFPINTCLR0         	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+RegOutINTIFPINTCLR0         	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 2, errors: 5)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 6, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 1, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 1, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+21 variables,  11 issues to fix.
+
+
+End of Report

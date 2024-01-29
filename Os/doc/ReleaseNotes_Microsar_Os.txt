@@ -1,0 +1,133 @@
+******************************************************************************
+Readme.txt          MICROSAR OS RH850 SC3                           2016-07-12
+******************************************************************************
+
+This file describes hints to the installation and last changes on the products.
+
+Contents
+========
+1. Versions
+2. Examples
+3. Supported C-compilers
+4. Documentation
+5. History of changes
+6. Limitations
+
+
+1. Versions
+===========
+   MICROSAR OS RH850 SC3: v1.06.08
+
+
+2. Examples
+===========
+MICROSAR OS RH850 is delivered without application example programs.
+
+
+3. Supported C-compilers
+========================
+Green Hills MULTI IDE v6.1.4 2013.x.x with register mode 22, 26 and 32
+Green Hills MULTI IDE v6.1.6 2014.x.x with register mode 22, 26 and 32
+Green Hills MULTI IDE v6.1.6 2015.x.x with register mode 22, 26 and 32
+
+
+4. Documentation
+================
+The installation contains all documentation in electronically readable format (PDF-files):
+TechnicalReference_Microsar_Os.pdf:      General part of the MICROSAR OS user manual
+TechnicalReference_MICROSAROS_RH850.pdf: RH850 specific part of the MICROSAR OS user manual
+
+
+5. History of changes
+=====================
+
+v1.00.00 beta
+=============
+- initial version
+
+v1.01.00 beta
+=============
+- added support for D1L, E1L and F1M
+
+v1.02.00 beta
+=============
+- added support for F1H and P1M
+
+v1.03.00 beta
+=============
+- added support for D1M and E1M
+
+v1.04.00 beta
+=============
+- support Interrupt API for RTE
+- support optimized API calls
+- support Timing Hooks
+
+v1.05.00 beta
+=============
+- support FE level interrupt handling
+- update to core code version 9.01.04
+
+v1.06.00
+=============
+- final release
+
+v1.06.01
+=============
+- support RH850 F1K
+
+v1.06.02
+=============
+- Fixed ESCAN00087330
+
+v1.06.03
+=============
+- QM Release
+
+v1.06.04
+=============
+- QM Release
+
+v1.06.05
+=============
+- Safety Release
+
+v1.06.06
+=============
+- Safety Release
+
+v1.06.07
+=============
+- added derivatives 1528, 1529, 1530 and 1531 for F1H
+
+v1.06.08
+=============
+- Fixed ESCAN00090068
+- Safety Release
+
+6. Limitations
+===============
+- Caution about compiler option -reserve_r2:
+   Register r2 is not used by the OS, i.e. the OS does not use r2 as data or address register.
+   However register r2 is always stored to stack and restored from stack by the OS when the context is switched.
+   Therefore register r2 cannot be used like global variable to share data among tasks, ISRs or functions.
+   
+- Caution about compiler option -registermode=22 and -registermode=26:
+   Registers r15...r24 are not used by the OS, i.e. the OS does not use r15...r24 as data or address registers.
+   However registers r15...r24 are always stored to stack and restored from stack by the OS when the context is switched.
+   Therefore registers r15...r24 cannot be used like global variable to share data among tasks, ISRs or functions.
+   
+- If RH850 D1M/D1L is used then write access to INTC1 must be enabled in IPG and write access to INTC2 must be enabled
+  in PBG before StartOS is called.
+
+
+****************************************************************
+
+                    Vector Informatik GmbH
+                     Ingersheimer Str. 24
+                      D-70499 Stuttgart
+                    Tel. +49 711 80670-0
+                    Fax  +49 711 80670-399
+                   osek-support@vector.com
+
+****************************************************************

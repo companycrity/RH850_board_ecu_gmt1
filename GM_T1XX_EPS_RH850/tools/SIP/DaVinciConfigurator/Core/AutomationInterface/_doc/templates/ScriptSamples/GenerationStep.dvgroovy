@@ -1,0 +1,55 @@
+/* 
+ * Task: GenStepTask
+ * Type: DV_GENERATION_STEP
+ * -------------------------------------------------------------------------------------------------------
+ * Executes the script task code as generation step and report a validation result
+ * -------------------------------------------------------------------------------------------------------
+ */
+scriptTask("GenStepTask", DV_GENERATION_STEP){
+	taskDescription "GenerationStep task"
+    
+    code{ phase, genType, resultSink ->
+    
+        if(phase.calculation){
+            // Execute code before / after calculation
+
+            transaction {
+               // Modify the Model in the calculation phase
+            }
+        }
+    
+       if(phase.validation){
+            // Execute code before / after validation
+             
+            // Report a validation result 
+            validation{
+                resultCreation{
+                    // The ValidationResultId group multiple results
+                    def valId = createValidationResultIdForScriptTask(
+                            /* ID */ 1234,
+                            /* Description */ "Summary of the ValidationResultId",
+                            /* Severity */ EValidationSeverityType.ERROR
+                            )
+
+                    // Create a new resultBuilder
+                    def builder = newResultBuilder(valId, "Description of the Result")
+
+                    // You can add multiple elements are error objects to mark them
+                    builder.addErrorObject(sipDefRef.EcucGeneral.bswmdModelRead().single)
+                    // Add more calls when needed
+
+                    // Create the result from the builder
+                    def valResult = builder.buildResult()
+
+                    // Report the result
+                    resultSink.reportValidationResult(valResult)
+                }
+            }
+        }
+        
+        if(phase.generation){
+            // Execute code before / after generation
+        }
+    }
+}
+

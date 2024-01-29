@@ -1,0 +1,1162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file was saved with a tool from Vector Informatik GmbH
+-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>MICROSAR_SWCS_DEV</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>IoHwAb_swc</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>ComponentTypes</SHORT-NAME>
+              <ELEMENTS>
+                <ECU-ABSTRACTION-SW-COMPONENT-TYPE UUID="e5ec1119-c87b-435a-8959-c52360390a4d">
+                  <SHORT-NAME>IoHwAb</SHORT-NAME>
+                  <ADMIN-DATA>
+                    <SDGS>
+                      <SDG GID="edve:BSWM">
+                        <SD>IoHwAbstraction</SD>
+                        <SD>IoHwAbstraction</SD>
+                      </SDG>
+                    </SDGS>
+                  </ADMIN-DATA>
+                  <PORTS>
+                    <P-PORT-PROTOTYPE UUID="7ec6d24d-a09c-48c2-bc45-6f84d7a060ca">
+                      <SHORT-NAME>GetGpioMcuEna</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="991f91fe-d02d-468d-b0cc-cb10f507f2bc">
+                      <SHORT-NAME>GetGpioMotDrvr0Diag</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="5f160e23-3caa-4318-97ad-c5f742a09f92">
+                      <SHORT-NAME>GetGpioMotDrvr1Diag</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="68a76235-003a-4b64-a5d8-d5790d3a9ba6">
+                      <SHORT-NAME>GetGpioPwrOutpEnaFb</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="68140de2-edc2-4055-b2a1-f1a8acc8bdb4">
+                      <SHORT-NAME>SetFctGpioPhaALowrCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="93e99610-1004-4737-98c9-8711218715f2">
+                      <SHORT-NAME>SetFctGpioPhaAUpprCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="1cc1395b-9220-47c2-9649-21c191404d3f">
+                      <SHORT-NAME>SetFctGpioPhaBLowrCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="cadbd49e-aa99-4869-a5fe-82991dbb8f4a">
+                      <SHORT-NAME>SetFctGpioPhaBUpprCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="0bd73f0e-48b7-480f-b6ee-c7ad45b0cbe7">
+                      <SHORT-NAME>SetFctGpioPhaCLowrCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="21cd2cce-721b-4297-8ca3-e7c2c41de3a1">
+                      <SHORT-NAME>SetFctGpioPhaCUpprCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="e1726f2b-76ae-4f16-9283-8c37317ce376">
+                      <SHORT-NAME>SetFctPeriphPhaALowrCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="eeb5fd2f-2825-43b7-9917-0684a83e85a1">
+                      <SHORT-NAME>SetFctPeriphPhaAUpprCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="d4e7b9b8-4c4b-4505-95ff-00cd195cee88">
+                      <SHORT-NAME>SetFctPeriphPhaBLowrCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="6a96ec75-ac92-4a5f-a5b5-7be2b832515a">
+                      <SHORT-NAME>SetFctPeriphPhaBUpprCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="2c5799e1-d8b4-4920-99a2-db93d2c3cc41">
+                      <SHORT-NAME>SetFctPeriphPhaCLowrCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="e4c0bbcf-72c0-4ca6-930c-0aa5f6df55fa">
+                      <SHORT-NAME>SetFctPeriphPhaCUpprCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="b6a11423-25eb-4381-9a09-fe32eb92eb7a">
+                      <SHORT-NAME>SetFctPrphlHwAg0</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="23703fa3-fe5e-40de-a854-e0d28da85741">
+                      <SHORT-NAME>SetFctPrphlHwAg1</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="ae3dfae4-74c3-49d4-a2c1-05f17b22427f">
+                      <SHORT-NAME>SetFctPrphlHwTq0</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="b30eb880-060e-4a97-9a6a-fa69db78724b">
+                      <SHORT-NAME>SetFctPrphlHwTq1</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="e6d64532-8021-4bc9-92de-244731992e48">
+                      <SHORT-NAME>SetFctPrphlHwTq2</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="25411d3e-994a-4676-83d4-d2fa55fc15a8">
+                      <SHORT-NAME>SetFctPrphlHwTq3</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="5ad1c679-a974-40b1-9321-aeb6cdefd192">
+                      <SHORT-NAME>SetGpioGateDrv0Rst</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="a675061b-86d3-4d1b-869f-b8c97c0e7f29">
+                      <SHORT-NAME>SetGpioGateDrv1Rst</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="ab58e561-4a30-4665-9f78-7a236b77f513">
+                      <SHORT-NAME>SetGpioPhaALowrCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="32f9b240-11f6-4fb2-a2e6-c434104cb0dc">
+                      <SHORT-NAME>SetGpioPhaAUpprCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="22b239f6-3632-48a1-a4a6-e03cff3ba65f">
+                      <SHORT-NAME>SetGpioPhaBLowrCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="1c3bec95-a8aa-4001-a606-bc7593bf8589">
+                      <SHORT-NAME>SetGpioPhaBUpprCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="508b5d38-df8f-40db-a9fc-31d7d7faee8e">
+                      <SHORT-NAME>SetGpioPhaCLowrCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="450f4131-8bed-4b79-bdb1-b2c48e05ef1a">
+                      <SHORT-NAME>SetGpioPhaCUpprCmd</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="1ca07852-bc0c-40eb-bede-519fe8acb3f4">
+                      <SHORT-NAME>SetGpioPwrTurnOffCtrl</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="992f8fe8-cfd0-4ec0-9dc5-aa8508920a1a">
+                      <SHORT-NAME>SetGpioSysFlt2A</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="7c626dad-e370-4927-8093-202d208dea96">
+                      <SHORT-NAME>SetGpioSysFlt2B</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                    <P-PORT-PROTOTYPE UUID="c9f9aa26-444a-4aa2-8bda-d10b96435a6f">
+                      <SHORT-NAME>SetGpioTmplMonrWdg</SHORT-NAME>
+                      <PROVIDED-COM-SPECS>
+                        <SERVER-COM-SPEC>
+                          <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</OPERATION-REF>
+                          <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                        </SERVER-COM-SPEC>
+                      </PROVIDED-COM-SPECS>
+                      <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1</PROVIDED-INTERFACE-TREF>
+                    </P-PORT-PROTOTYPE>
+                  </PORTS>
+                  <INTERNAL-BEHAVIORS>
+                    <SWC-INTERNAL-BEHAVIOR UUID="bc92e689-0a1e-4f65-b231-923a6987b80c">
+                      <SHORT-NAME>IoHwAbInternalBehavior</SHORT-NAME>
+                      <EVENTS>
+                        <OPERATION-INVOKED-EVENT UUID="34e7a80c-6456-41a6-ba79-f2375a2f0a34">
+                          <SHORT-NAME>OpEventIoHwAb_GetGpioMcuEna_Oper_Oper_GetGpioMcuEna</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_GetGpioMcuEna_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/GetGpioMcuEna</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="d88bd15a-248a-464e-aec3-bf6d2108a93c">
+                          <SHORT-NAME>OpEventIoHwAb_GetGpioMotDrvr0Diag_Oper_Oper_GetGpioMotDrvr0Diag</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_GetGpioMotDrvr0Diag_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/GetGpioMotDrvr0Diag</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="25a7929d-26d5-44d5-8a3b-f49bad3fa8b1">
+                          <SHORT-NAME>OpEventIoHwAb_GetGpioMotDrvr1Diag_Oper_Oper_GetGpioMotDrvr1Diag</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_GetGpioMotDrvr1Diag_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/GetGpioMotDrvr1Diag</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="06b14a7d-7f1f-435b-a9da-27acf564e116">
+                          <SHORT-NAME>OpEventIoHwAb_GetGpioPwrOutpEnaFb_Oper_Oper_GetGpioPwrOutpEnaFb</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_GetGpioPwrOutpEnaFb_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/GetGpioPwrOutpEnaFb</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/GetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <TIMING-EVENT UUID="c78a1a81-d069-4ba5-8110-6f1e6228b6cb">
+                          <SHORT-NAME>Timer_IoHwAb_Per1</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_Per1</START-ON-EVENT-REF>
+                          <PERIOD>0.1</PERIOD>
+                        </TIMING-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="c40604ac-54dd-411e-97f4-0076c71f6549">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctGpioPhaALowrCmd_Oper_Oper_SetFctGpioPhaALowrCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctGpioPhaALowrCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaALowrCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="feac1807-61c0-43c1-818f-e7e6e2908952">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctGpioPhaAUpprCmd_Oper_Oper_SetFctGpioPhaAUpprCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctGpioPhaAUpprCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaAUpprCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="3b89a4d7-fa59-485d-a792-aadd78aeae9f">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctGpioPhaBLowrCmd_Oper_Oper_SetFctGpioPhaBLowrCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctGpioPhaBLowrCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaBLowrCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="7044888e-9f89-46ef-a5f1-c7fd10f8a87b">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctGpioPhaBUpprCmd_Oper_Oper_SetFctGpioPhaBUpprCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctGpioPhaBUpprCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaBUpprCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="8617d6c2-5e38-4346-b08a-359b1b03de90">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctGpioPhaCLowrCmd_Oper_Oper_SetFctGpioPhaCLowrCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctGpioPhaCLowrCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaCLowrCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="50b59f74-0304-44a9-ad3e-f8df0a848b64">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctGpioPhaCUpprCmd_Oper_Oper_SetFctGpioPhaCUpprCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctGpioPhaCUpprCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaCUpprCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="ccbc064b-6b78-41b5-848c-d2b65fe3ec0e">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPeriphPhaALowrCmd_Oper_Oper_SetFctPeriphPhaALowrCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPeriphPhaALowrCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaALowrCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="b90d78c5-a006-4bd3-8389-0b5a44d8a859">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPeriphPhaAUpprCmd_Oper_Oper_SetFctPeriphPhaAUpprCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPeriphPhaAUpprCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaAUpprCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="9d9e8209-8b76-49f3-9ed4-0464e4854002">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPeriphPhaBLowrCmd_Oper_Oper_SetFctPeriphPhaBLowrCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPeriphPhaBLowrCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaBLowrCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="6e1f505f-9c68-4e73-9545-0931d5280cd2">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPeriphPhaBUpprCmd_Oper_Oper_SetFctPeriphPhaBUpprCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPeriphPhaBUpprCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaBUpprCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="ebb058c9-0920-4ceb-bf75-842fb3fba3c5">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPeriphPhaCLowrCmd_Oper_Oper_SetFctPeriphPhaCLowrCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPeriphPhaCLowrCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaCLowrCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="afc74619-e299-4005-a32b-c8df9826c0ba">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPeriphPhaCUpprCmd_Oper_Oper_SetFctPeriphPhaCUpprCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPeriphPhaCUpprCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaCUpprCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="71de47fb-0a86-4f22-b65c-4332ae68556b">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPrphlHwAg0_Oper_Oper_SetFctPrphlHwAg0</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPrphlHwAg0_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwAg0</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="504df5e2-2d86-46c5-ac16-95007d61e445">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPrphlHwAg1_Oper_Oper_SetFctPrphlHwAg1</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPrphlHwAg1_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwAg1</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="edb96e2b-3dad-4f43-b64b-059c698bb583">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPrphlHwTq0_Oper_Oper_SetFctPrphlHwTq0</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPrphlHwTq0_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwTq0</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="49c38fb1-1656-47b6-8e47-011f791a93ea">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPrphlHwTq1_Oper_Oper_SetFctPrphlHwTq1</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPrphlHwTq1_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwTq1</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="d7c81bda-f5b4-4824-8371-089fb0a1307a">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPrphlHwTq2_Oper_Oper_SetFctPrphlHwTq2</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPrphlHwTq2_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwTq2</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="8a5d1c18-3ca2-41fe-b78d-6acd8c3305a0">
+                          <SHORT-NAME>OpEventIoHwAb_SetFctPrphlHwTq3_Oper_Oper_SetFctPrphlHwTq3</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetFctPrphlHwTq3_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwTq3</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetFctPeriph_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="9dd71169-b0c7-48b0-ad59-842162535a18">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioGateDrv0Rst_Oper_Oper_SetGpioGateDrv0Rst</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioGateDrv0Rst_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioGateDrv0Rst</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="5f9067b6-5594-454c-993c-1442b220ccb4">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioGateDrv1Rst_Oper_Oper_SetGpioGateDrv1Rst</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioGateDrv1Rst_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioGateDrv1Rst</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="9ef9f945-45bc-4ed3-8848-bb4595e84907">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioPhaALowrCmd_Oper_Oper_SetGpioPhaALowrCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioPhaALowrCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaALowrCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="6936018c-3cae-4559-993a-88f168ab305a">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioPhaAUpprCmd_Oper_Oper_SetGpioPhaAUpprCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioPhaAUpprCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaAUpprCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="5532f857-e286-45a8-a20d-3a5a708fef0a">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioPhaBLowrCmd_Oper_Oper_SetGpioPhaBLowrCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioPhaBLowrCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaBLowrCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="20cff4a0-9e96-497b-a87c-2a8543d6e8ae">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioPhaBUpprCmd_Oper_Oper_SetGpioPhaBUpprCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioPhaBUpprCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaBUpprCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="60d6452a-fa0e-4e7f-9f59-c36c6831f56a">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioPhaCLowrCmd_Oper_Oper_SetGpioPhaCLowrCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioPhaCLowrCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaCLowrCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="3de1ba36-1874-4d12-bd1c-57e0f3a0d28c">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioPhaCUpprCmd_Oper_Oper_SetGpioPhaCUpprCmd</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioPhaCUpprCmd_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaCUpprCmd</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="0e7efb31-6773-4c49-8ca1-19e41133e30c">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioPwrTurnOffCtrl_Oper_Oper_SetGpioPwrTurnOffCtrl</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioPwrTurnOffCtrl_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPwrTurnOffCtrl</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="ed983d8e-a9ff-4670-9391-e28b5a9cfe51">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioSysFlt2A_Oper_Oper_SetGpioSysFlt2A</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioSysFlt2A_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioSysFlt2A</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="09e40a81-b34f-4b0f-8be3-b27b225d9072">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioSysFlt2B_Oper_Oper_SetGpioSysFlt2B</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioSysFlt2B_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioSysFlt2B</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                        <OPERATION-INVOKED-EVENT UUID="7e28a893-c454-489c-ae6a-5a7a2df0b10a">
+                          <SHORT-NAME>OpEventIoHwAb_SetGpioTmplMonrWdg_Oper_Oper_SetGpioTmplMonrWdg</SHORT-NAME>
+                          <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior/IoHwAb_SetGpioTmplMonrWdg_Oper</START-ON-EVENT-REF>
+                          <OPERATION-IREF>
+                            <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioTmplMonrWdg</CONTEXT-P-PORT-REF>
+                            <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MICROSAR_SWCS_DEV/IoHwAb_swc/Interfaces/SetGpio_PortIf1/Oper</TARGET-PROVIDED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </OPERATION-INVOKED-EVENT>
+                      </EVENTS>
+                      <PORT-API-OPTIONS>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/GetGpioMcuEna</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/GetGpioMotDrvr0Diag</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/GetGpioMotDrvr1Diag</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/GetGpioPwrOutpEnaFb</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaALowrCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaAUpprCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaBLowrCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaBUpprCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaCLowrCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctGpioPhaCUpprCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaALowrCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaAUpprCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaBLowrCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaBUpprCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaCLowrCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPeriphPhaCUpprCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwAg0</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwAg1</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwTq0</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwTq1</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwTq2</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetFctPrphlHwTq3</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioGateDrv0Rst</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioGateDrv1Rst</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaALowrCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaAUpprCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaBLowrCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaBUpprCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaCLowrCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPhaCUpprCmd</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioPwrTurnOffCtrl</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioSysFlt2A</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioSysFlt2B</PORT-REF>
+                        </PORT-API-OPTION>
+                        <PORT-API-OPTION>
+                          <ENABLE-TAKE-ADDRESS>true</ENABLE-TAKE-ADDRESS>
+                          <INDIRECT-API>false</INDIRECT-API>
+                          <PORT-REF DEST="P-PORT-PROTOTYPE">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/SetGpioTmplMonrWdg</PORT-REF>
+                        </PORT-API-OPTION>
+                      </PORT-API-OPTIONS>
+                      <RUNNABLES>
+                        <RUNNABLE-ENTITY UUID="c08483a6-2623-4ecc-a016-838dbda6f973">
+                          <SHORT-NAME>IoHwAb_GetGpioMcuEna_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'GetGpioMcuEna'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_GetGpioMcuEna_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="ca04800c-aaa3-45ae-8b62-13e9a76318fc">
+                          <SHORT-NAME>IoHwAb_GetGpioMotDrvr0Diag_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'GetGpioMotDrvr0Diag'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_GetGpioMotDrvr0Diag_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="6ba56afc-e318-4dd5-9463-6eecaf4dcc81">
+                          <SHORT-NAME>IoHwAb_GetGpioMotDrvr1Diag_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'GetGpioMotDrvr1Diag'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_GetGpioMotDrvr1Diag_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="7c144a5a-8ed0-4ce5-8e57-a1bc4ea4d942">
+                          <SHORT-NAME>IoHwAb_GetGpioPwrOutpEnaFb_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'GetGpioPwrOutpEnaFb'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_GetGpioPwrOutpEnaFb_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="576ebedc-d3c3-464a-b1d0-2bc9295c7867">
+                          <SHORT-NAME>IoHwAb_Per1</SHORT-NAME>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_Per1</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="a6da4cf4-a2f5-4fd6-9f7e-003273dacfed">
+                          <SHORT-NAME>IoHwAb_SetFctGpioPhaALowrCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctGpioPhaALowrCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctGpioPhaALowrCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="94ffb04e-eb27-4c9f-9966-3bce917ce5af">
+                          <SHORT-NAME>IoHwAb_SetFctGpioPhaAUpprCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctGpioPhaAUpprCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctGpioPhaAUpprCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="b8d0b84e-3b0b-4e49-9c83-20d0ae528d91">
+                          <SHORT-NAME>IoHwAb_SetFctGpioPhaBLowrCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctGpioPhaBLowrCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctGpioPhaBLowrCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="936a8700-b1c7-4a13-93a6-41976b49c404">
+                          <SHORT-NAME>IoHwAb_SetFctGpioPhaBUpprCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctGpioPhaBUpprCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctGpioPhaBUpprCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="696b993d-806f-4a76-bf88-2aef041da001">
+                          <SHORT-NAME>IoHwAb_SetFctGpioPhaCLowrCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctGpioPhaCLowrCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctGpioPhaCLowrCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="3697c7ce-b751-4d97-a550-f28d1d9a4ff4">
+                          <SHORT-NAME>IoHwAb_SetFctGpioPhaCUpprCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctGpioPhaCUpprCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctGpioPhaCUpprCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="6ce7c25a-d61a-49bf-8d66-8026c2c56669">
+                          <SHORT-NAME>IoHwAb_SetFctPeriphPhaALowrCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPeriphPhaALowrCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPeriphPhaALowrCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="be98f805-a535-477a-85a8-de1ff98eabc8">
+                          <SHORT-NAME>IoHwAb_SetFctPeriphPhaAUpprCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPeriphPhaAUpprCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPeriphPhaAUpprCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="c10f8b41-3f79-4b56-9780-5fb74934801a">
+                          <SHORT-NAME>IoHwAb_SetFctPeriphPhaBLowrCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPeriphPhaBLowrCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPeriphPhaBLowrCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="966f80fd-f23b-4aff-a3e5-2ffd24c69f14">
+                          <SHORT-NAME>IoHwAb_SetFctPeriphPhaBUpprCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPeriphPhaBUpprCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPeriphPhaBUpprCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="117baa52-16c0-4c05-8902-746b579b7245">
+                          <SHORT-NAME>IoHwAb_SetFctPeriphPhaCLowrCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPeriphPhaCLowrCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPeriphPhaCLowrCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="e005010b-3f1c-40c9-a40c-0ed4a514f070">
+                          <SHORT-NAME>IoHwAb_SetFctPeriphPhaCUpprCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPeriphPhaCUpprCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPeriphPhaCUpprCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="d89d49ff-002a-4575-b62f-4cbcf17f0470">
+                          <SHORT-NAME>IoHwAb_SetFctPrphlHwAg0_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPrphlHwAg0'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPrphlHwAg0_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="67addbe4-6551-4877-bddc-4ca7afca9513">
+                          <SHORT-NAME>IoHwAb_SetFctPrphlHwAg1_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPrphlHwAg1'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPrphlHwAg1_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="3a3e05b0-b967-45c5-97a2-1420ec769d15">
+                          <SHORT-NAME>IoHwAb_SetFctPrphlHwTq0_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPrphlHwTq0'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPrphlHwTq0_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="fb4849f8-b6bb-47e3-b738-694d073e2e48">
+                          <SHORT-NAME>IoHwAb_SetFctPrphlHwTq1_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPrphlHwTq1'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPrphlHwTq1_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="58562d3e-5d36-4b8e-a277-572a2941644e">
+                          <SHORT-NAME>IoHwAb_SetFctPrphlHwTq2_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPrphlHwTq2'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPrphlHwTq2_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="c5adae0f-717a-48c0-9f8c-8774bb2884e2">
+                          <SHORT-NAME>IoHwAb_SetFctPrphlHwTq3_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetFctPrphlHwTq3'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetFctPrphlHwTq3_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="f12e22ab-beea-4165-95fa-3de3c3c0f266">
+                          <SHORT-NAME>IoHwAb_SetGpioGateDrv0Rst_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioGateDrv0Rst'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioGateDrv0Rst_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="06fabf23-0e24-4a8d-8e77-0fbd753a9652">
+                          <SHORT-NAME>IoHwAb_SetGpioGateDrv1Rst_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioGateDrv1Rst'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioGateDrv1Rst_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="1131e8df-56f1-4c00-80b1-fdd9adb212bf">
+                          <SHORT-NAME>IoHwAb_SetGpioPhaALowrCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioPhaALowrCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioPhaALowrCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="d31b19e8-9bb5-4802-bc4a-94ab9ac40fd9">
+                          <SHORT-NAME>IoHwAb_SetGpioPhaAUpprCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioPhaAUpprCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioPhaAUpprCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="e49beb84-2d4d-48c9-98b2-842be1f409d5">
+                          <SHORT-NAME>IoHwAb_SetGpioPhaBLowrCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioPhaBLowrCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioPhaBLowrCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="7b97b35e-0758-499e-b48f-1f83bf61c8e6">
+                          <SHORT-NAME>IoHwAb_SetGpioPhaBUpprCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioPhaBUpprCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioPhaBUpprCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="26217dc1-da32-496e-a5f0-15d14bdf3cb0">
+                          <SHORT-NAME>IoHwAb_SetGpioPhaCLowrCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioPhaCLowrCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioPhaCLowrCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="018c835d-a8d2-41cb-a39d-ab75423e1858">
+                          <SHORT-NAME>IoHwAb_SetGpioPhaCUpprCmd_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioPhaCUpprCmd'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioPhaCUpprCmd_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="a212309e-4d5d-467b-be42-5a3be3e81398">
+                          <SHORT-NAME>IoHwAb_SetGpioPwrTurnOffCtrl_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioPwrTurnOffCtrl'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioPwrTurnOffCtrl_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="52cf4ce9-4d09-453f-9494-c65159969cf5">
+                          <SHORT-NAME>IoHwAb_SetGpioSysFlt2A_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioSysFlt2A'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioSysFlt2A_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="a1fd2ceb-de3e-4c99-a5c4-198323b70e00">
+                          <SHORT-NAME>IoHwAb_SetGpioSysFlt2B_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioSysFlt2B'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioSysFlt2B_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                        <RUNNABLE-ENTITY UUID="2f7d5b0d-eab5-4cf1-a428-efc194c01eb3">
+                          <SHORT-NAME>IoHwAb_SetGpioTmplMonrWdg_Oper</SHORT-NAME>
+                          <DESC>
+                            <L-2 L="FOR-ALL">Runnable Entity for calling the Operation 'Oper' of the Client/Server Port Prototype 'SetGpioTmplMonrWdg'.</L-2>
+                          </DESC>
+                          <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                          <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                          <SYMBOL>IoHwAb_SetGpioTmplMonrWdg_Oper</SYMBOL>
+                        </RUNNABLE-ENTITY>
+                      </RUNNABLES>
+                      <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                    </SWC-INTERNAL-BEHAVIOR>
+                  </INTERNAL-BEHAVIORS>
+                </ECU-ABSTRACTION-SW-COMPONENT-TYPE>
+                <SWC-IMPLEMENTATION UUID="0a6f1353-63e9-468b-a403-74647e0524d0">
+                  <SHORT-NAME>IoHwAbImplementation</SHORT-NAME>
+                  <CODE-DESCRIPTORS>
+                    <CODE>
+                      <SHORT-NAME>Default</SHORT-NAME>
+                      <ARTIFACT-DESCRIPTORS>
+                        <AUTOSAR-ENGINEERING-OBJECT>
+                          <SHORT-LABEL>Default</SHORT-LABEL>
+                          <CATEGORY>SWSRC</CATEGORY>
+                        </AUTOSAR-ENGINEERING-OBJECT>
+                      </ARTIFACT-DESCRIPTORS>
+                    </CODE>
+                  </CODE-DESCRIPTORS>
+                  <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/MICROSAR_SWCS_DEV/IoHwAb_swc/ComponentTypes/IoHwAb/IoHwAbInternalBehavior</BEHAVIOR-REF>
+                </SWC-IMPLEMENTATION>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

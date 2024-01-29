@@ -1,0 +1,133 @@
+Verification of ES320A_MotDrvDiagc_DataDict
+08-Apr-2016 14:07:57
+Tool Release:  2.36.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 1, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+PhaOnTiSumA                 	Cannot match name to list of known Nexteer signals.
+PhaOnTiSumB                 	Cannot match name to list of known Nexteer signals.
+PhaOnTiSumC                 	Cannot match name to list of known Nexteer signals.
+(variables: 12, errors: 3)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+MotDrvErrA                  	Cannot match name to list of known Nexteer signals.
+MotDrvErrB                  	Cannot match name to list of known Nexteer signals.
+MotDrvErrC                  	Cannot match name to list of known Nexteer signals.
+MotDrvErrD                  	Cannot match name to list of known Nexteer signals.
+MotDrvErrE                  	Cannot match name to list of known Nexteer signals.
+MotDrvErrF                  	Cannot match name to list of known Nexteer signals.
+(variables: 6, errors: 6)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 3, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+MotDrvDiagcPhaAFilLp        	Name does not match required pattern.
+MotDrvDiagcPhaBFilLp        	Name does not match required pattern.
+MotDrvDiagcPhaCFilLp        	Name does not match required pattern.
+MotDrvDiagcPhaDFilLp        	Name does not match required pattern.
+MotDrvDiagcPhaEFilLp        	Name does not match required pattern.
+MotDrvDiagcPhaFFilLp        	Name does not match required pattern.
+MotDrvDiagcPhaOnTiSumAPrev  	Name does not match required pattern.
+MotDrvDiagcPhaOnTiSumBPrev  	Name does not match required pattern.
+MotDrvDiagcPhaOnTiSumCPrev  	Name does not match required pattern.
+(variables: 10, errors: 9)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 2, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+MotDrvDiagcPhaABCFlt        	Name does not match required pattern.
+MotDrvDiagcPhaDEFFlt        	Name does not match required pattern.
+NTCNR_0X054         	Found in model but not in data dictionary.
+NTCNR_0X064         	Found in model but not in data dictionary.
+(variables: 2, errors: 4)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+39 variables,  22 issues to fix.
+
+
+End of Report

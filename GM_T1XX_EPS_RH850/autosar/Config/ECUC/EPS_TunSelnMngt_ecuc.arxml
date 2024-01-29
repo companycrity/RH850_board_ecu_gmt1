@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="B7EDD042-4044-414C-9970-1C2313A88AC7">
+      <SHORT-NAME>ActiveEcuC</SHORT-NAME>
+      <ELEMENTS>
+        <ECUC-MODULE-CONFIGURATION-VALUES UUID="0fbe65df-bef0-425f-aa62-6b25dc0fb1bb">
+          <SHORT-NAME>TunSelnMngt</SHORT-NAME>
+          <DEFINITION-REF DEST="ECUC-MODULE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt</DEFINITION-REF>
+          <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+          <CONTAINERS>
+            <ECUC-CONTAINER-VALUE UUID="fb03ad19-9609-4135-93cb-34b81caab158">
+              <SHORT-NAME>CalRegn01</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="e58ce53e-4681-4d60-b076-ca40cb8d0136">
+                  <SHORT-NAME>CalRegn01Rt00</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d5e4cf91-a790-4aab-9f5e-af0ff92297e8">
+                  <SHORT-NAME>CalRegn01Inin00</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d6370c9f-652a-44fa-a5a3-61128729776e">
+                  <SHORT-NAME>CalRegn01Inin00GroupB</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d4629e44-a3ea-4ed2-adcd-9ebeb05bbae5">
+                  <SHORT-NAME>CalRegn01Cmn</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="4bfd5b99-12e2-46f8-9264-a514096c6a1e">
+                  <SHORT-NAME>CalRegn01CmnGroupB</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="beed4274-d8f5-4ec4-9576-b08399c8c5f3">
+                  <SHORT-NAME>CalRegn01CmnGroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="4393aec1-25eb-43c9-8035-5f6d5f4a6eaf">
+                  <SHORT-NAME>CalRegn01Inin00GroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="e7119f4a-8565-4299-b424-37b3b3f99208">
+                  <SHORT-NAME>CalRegn01Rt01</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Rt00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="90d59ded-14b2-4372-a355-f1f9883c007f">
+                  <SHORT-NAME>CalRegn01Rt02</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Rt00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d8656db0-7f12-4848-97f9-07d06d147b0c">
+                  <SHORT-NAME>CalRegn01Rt03</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Rt00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a159d4c3-6de6-4341-93f6-9303b96a7e37">
+                  <SHORT-NAME>CalRegn01Rt04</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Rt00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="d52567d5-e379-442c-bf2c-019108b71392">
+              <SHORT-NAME>CalRegn02</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="42b334bd-d1df-4bfe-af00-f7a5e31209fb">
+                  <SHORT-NAME>CalRegn02Cmn</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="058aab03-f6d1-4221-9448-341a0d12aef5">
+                  <SHORT-NAME>CalRegn02CmnGroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="2278e23d-0dd4-46a1-835d-6071362442f8">
+                  <SHORT-NAME>CalRegn02Inin00</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="dc21fed8-2995-4c19-a4bc-32203a7c7d97">
+                  <SHORT-NAME>CalRegn02CmnGroupA</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="84be2066-0c93-4b4d-9b71-7f7c990c2c59">
+                  <SHORT-NAME>CalRegn02CmnGroupB</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="e9db9a09-748f-4dd2-8d5a-7ca51bbd8ec6">
+                  <SHORT-NAME>CalRegn02Inin00GroupA</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="89ffef3d-ba89-4a01-bec0-a824421e759f">
+                  <SHORT-NAME>CalRegn02Inin00GroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="48e89768-1e1f-4b2c-b84a-158eb92fe66b">
+                  <SHORT-NAME>CalRegn02Rt00GroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="648e257e-a042-42bb-82cb-e6b03c1f1831">
+                  <SHORT-NAME>CalRegn02Rt01GroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt00GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="7ae94822-36ff-437e-ab78-aeb7628927ec">
+                  <SHORT-NAME>CalRegn02Rt02GroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt00GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="257a8430-8b26-4664-9faf-f74bda3cb8ed">
+                  <SHORT-NAME>CalRegn02Rt03GroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt00GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="b297a0bc-5a3a-4d05-94ae-2bbebe15f84c">
+                  <SHORT-NAME>CalRegn02Rt04GroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt00GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="e4516a85-41a3-4be0-8b72-f0471e716484">
+              <SHORT-NAME>CalRegn03</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="09f37941-acb7-408b-b67f-38730a57f2a6">
+                  <SHORT-NAME>CalRegn03Rt00GroupA</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="32cd01a7-5297-461d-b83b-1ef1c4230091">
+                  <SHORT-NAME>CalRegn03Rt00GroupB</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="b5050ae9-f05e-4c68-8482-6dae39643432">
+                  <SHORT-NAME>CalRegn03Inin00</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="0e3845a4-2b2b-4420-83fa-3c7d2bd53ac0">
+                  <SHORT-NAME>CalRegn03Inin00GroupA</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="5fd51028-b6d4-40ec-85cf-afee326b38c8">
+                  <SHORT-NAME>CalRegn03CmnGroupA</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="eab11ce3-79b8-4f59-ac18-56f5821a405c">
+                  <SHORT-NAME>CalRegn03Cmn</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="9e6104e7-0efb-4b8c-8ba3-e6887a6639dc">
+                  <SHORT-NAME>CalRegn03Inin00GroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="6dedb981-e115-4f31-b394-5fa6e2e3a668">
+                  <SHORT-NAME>CalRegn03CmnGroupB</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="d9fa63bc-5030-4145-9e86-1eb5c34e5764">
+                  <SHORT-NAME>CalRegn03Inin00GroupB</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/InitializationComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="23c5cb23-aff6-4e90-8198-5a5fba594549">
+                  <SHORT-NAME>CalRegn03Rt01GroupA</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="c66246de-7daa-421c-a276-a6cb83f7c5eb">
+                  <SHORT-NAME>CalRegn03Rt01GroupB</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="9d7b963c-1cc9-4452-96ea-3221ac0e6c5e">
+                  <SHORT-NAME>CalRegn03Rt02GroupA</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="25134216-7637-4a72-a182-91cdb2fe95bf">
+                  <SHORT-NAME>CalRegn03Rt02GroupB</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="252c8b2e-2442-4199-bba6-8408d93c59d7">
+                  <SHORT-NAME>CalRegn03Rt03GroupA</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="1797034e-ec04-4a8b-86b7-71f839311ac3">
+                  <SHORT-NAME>CalRegn03Rt03GroupB</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="865553c5-a06a-499d-bc21-359cc332abd4">
+                  <SHORT-NAME>CalRegn03Rt04GroupA</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="a8572794-e793-4308-95b8-4f176f8109bf">
+                  <SHORT-NAME>CalRegn03Rt04GroupB</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="f9ce8332-3b2c-4664-8ddc-361881db43ee">
+                  <SHORT-NAME>CalRegn03CmnGroupC</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/CommonComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="fdb20290-9ab9-4d6b-85d7-07304d7ad4c0">
+                  <SHORT-NAME>CalRegn03Rt00</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="3fb7a2d3-4290-42d4-9889-ef6e7b664f8c">
+                  <SHORT-NAME>CalRegn03Rt01</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="68ccd7ef-85c3-4e18-b2dd-9413f006d90a">
+                  <SHORT-NAME>CalRegn03Rt02</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="7561846c-8d37-4cbb-888a-2c693649ff86">
+                  <SHORT-NAME>CalRegn03Rt03</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="483a351e-ce4c-4c84-a23f-1c57655ae202">
+                  <SHORT-NAME>CalRegn03Rt04</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/ComponentPartOfIntegration</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalRegions/RuntimeComponent/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="06ddcfc9-be71-4d1e-b18b-dd7e94714705">
+              <SHORT-NAME>CalibrationConfiguration</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration</DEFINITION-REF>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="872a3d07-8d55-4f23-9da6-647d704b06d7">
+                  <SHORT-NAME>RtIdx00</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeIndex</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Rt00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt00GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="036e79e5-0c6c-49f5-ae6b-2ed7b6e3c0a6">
+                  <SHORT-NAME>IninIdx00</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationIndex</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Inin00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Inin00GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Inin00GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Inin00GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Inin00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Inin00GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Inin00GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Inin00</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Inin00GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/InitializationCalibrationConfiguration/InitializationComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Inin00GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="13b5375d-da92-4fad-bdd4-c22cbeb1d6d1">
+                  <SHORT-NAME>RtIdx01</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeIndex</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Rt01</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt01GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt01</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt01GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt01GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="5702a50b-8652-42f9-9fd6-55f761cf2384">
+                  <SHORT-NAME>RtIdx02</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeIndex</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Rt02</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt02GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt02</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt02GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt02GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="75d0e3a9-faaa-4ebb-aa15-78781032dfc1">
+                  <SHORT-NAME>RtIdx03</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeIndex</DEFINITION-REF>
+                      <VALUE>3</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Rt03</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt03GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt03</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt03GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt03GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE UUID="028ebce1-6531-4047-bcc5-03c4caaaaf18">
+                  <SHORT-NAME>RtIdx04</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeIndex</DEFINITION-REF>
+                      <VALUE>4</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                  <REFERENCE-VALUES>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Rt04</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt04GroupC</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt04</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt04GroupA</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                    <ECUC-REFERENCE-VALUE>
+                      <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/CalibrationConfiguration/RuntimeSelectableCalibrationConfiguration/RuntimeComponentReference</DEFINITION-REF>
+                      <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt04GroupB</VALUE-REF>
+                    </ECUC-REFERENCE-VALUE>
+                  </REFERENCE-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="f7a188fd-c2cd-4756-bceb-44e5fb5fb7b1">
+              <SHORT-NAME>GroupA</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/GroupIndex</DEFINITION-REF>
+                  <VALUE>0</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <REFERENCE-VALUES>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupA</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt01GroupA</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt02GroupA</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt03GroupA</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt04GroupA</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/CommonComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03CmnGroupA</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/CommonComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02CmnGroupA</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/InitializationComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Inin00GroupA</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/InitializationComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Inin00GroupA</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+              </REFERENCE-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="34f70189-5edd-4173-9731-ac2f8972bc63">
+              <SHORT-NAME>GroupB</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/GroupIndex</DEFINITION-REF>
+                  <VALUE>1</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <REFERENCE-VALUES>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/InitializationComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Inin00GroupB</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt00GroupB</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/InitializationComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Inin00GroupB</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt01GroupB</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt02GroupB</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt03GroupB</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Rt04GroupB</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/CommonComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03CmnGroupB</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/CommonComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01CmnGroupB</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/CommonComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02CmnGroupB</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+              </REFERENCE-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="ad8c22c1-ce9d-442a-93a0-38733293e3a9">
+              <SHORT-NAME>GroupC</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/GroupIndex</DEFINITION-REF>
+                  <VALUE>2</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <REFERENCE-VALUES>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/CommonComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03CmnGroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/InitializationComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn03/CalRegn03Inin00GroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt00GroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/CommonComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01CmnGroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/InitializationComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn01/CalRegn01Inin00GroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt01GroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt02GroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt03GroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/RuntimeComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Rt04GroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/CommonComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02CmnGroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+                <ECUC-REFERENCE-VALUE>
+                  <DEFINITION-REF DEST="ECUC-SYMBOLIC-NAME-REFERENCE-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/OnlineCalibrationGroup/InitializationComponentReference</DEFINITION-REF>
+                  <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ActiveEcuC/TunSelnMngt/CalRegn02/CalRegn02Inin00GroupC</VALUE-REF>
+                </ECUC-REFERENCE-VALUE>
+              </REFERENCE-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="d70a3ace-a5e5-45a3-b50b-19ea9b31dcea">
+              <SHORT-NAME>TunSelnMngtCommon</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/TunSelnMngtCommon</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-NUMERICAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/TunSelnMngtCommon/OnlineCalibrationRamSize</DEFINITION-REF>
+                  <VALUE>5000</VALUE>
+                </ECUC-NUMERICAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+            </ECUC-CONTAINER-VALUE>
+            <ECUC-CONTAINER-VALUE UUID="e41f7e13-0e39-4b40-a3cd-3276692408ed">
+              <SHORT-NAME>XcpWriteAccess</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/XcpWriteAccess</DEFINITION-REF>
+              <PARAMETER-VALUES>
+                <ECUC-TEXTUAL-PARAM-VALUE>
+                  <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/XcpWriteAccess/EnableDevelopmentMode</DEFINITION-REF>
+                  <VALUE>STD_OFF</VALUE>
+                </ECUC-TEXTUAL-PARAM-VALUE>
+              </PARAMETER-VALUES>
+              <SUB-CONTAINERS>
+                <ECUC-CONTAINER-VALUE UUID="2086a75c-df97-49a1-9f73-c7b0fcdadf23">
+                  <SHORT-NAME>XcpWriteAccessRegions</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/XcpWriteAccess/XcpWriteAccessRegions</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/XcpWriteAccess/XcpWriteAccessRegions/StartingAddress</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/XcpWriteAccess/XcpWriteAccessRegions/EndingAddress</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/XcpWriteAccess/XcpWriteAccessRegions/UseSymbolName</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/XcpWriteAccess/XcpWriteAccessRegions/ProductionModeOnly</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/XcpWriteAccess/XcpWriteAccessRegions/StartingAddressSymbol</DEFINITION-REF>
+                      <VALUE>osGlobalShared_StartAddr</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/Nexteer/EcucDefs_TunSelnMngt/TunSelnMngt/XcpWriteAccess/XcpWriteAccessRegions/EndingAddressSymbol</DEFINITION-REF>
+                      <VALUE>osGlobalShared_EndAddr + 4</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </SUB-CONTAINERS>
+            </ECUC-CONTAINER-VALUE>
+          </CONTAINERS>
+        </ECUC-MODULE-CONFIGURATION-VALUES>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

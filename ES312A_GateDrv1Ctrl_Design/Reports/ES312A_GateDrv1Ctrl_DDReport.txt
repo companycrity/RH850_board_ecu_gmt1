@@ -1,0 +1,263 @@
+Verification of ES312A_GateDrv1Ctrl_DataDict
+17-Jan-2017 12:57:50
+Tool Release:  2.51.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+[Warning: IpSignal.ReadIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: IpSignal.ReadIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: IpSignal.ReadIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: IpSignal.ReadIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: IpSignal.ReadIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: IpSignal.ReadIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: OpSignal.WrittenIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: OpSignal.WrittenIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: OpSignal.WrittenIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: OpSignal.WrittenIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: OpSignal.WrittenIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: OpSignal.WrittenIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: OpSignal.WrittenIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: OpSignal.WrittenIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+[Warning: OpSignal.WrittenIn property should be a group of Runnables. Ex:
+{'MotVelPer1','MotVelPer2'}.] 
+(errors: 15)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 3, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+Call_Spi_AsyncTransmit      	Name does not match required pattern.
+Call_Spi_AsyncTransmit      	    Call_          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Call_Spi_AsyncTransmit      	    Spi_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Call_Spi_AsyncTransmit      	    Transmit       Unknown Keyword used.Only Nexteer approved Keywords should be used.
+IoHwAb_GetGpioMotDrvr1Diag  	    Ab_            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+IoHwAb_SetGpioGateDrv1Rst   	    Ab_            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+IoHwAb_SetGpioSysFlt2B      	    Ab_            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_ReadIB                  	    Spi_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_ReadIB                  	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_WriteIB                 	    Spi_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_WriteIB                 	    Write          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_WriteIB                 	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 7, errors: 12)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+PhaALowrCmd                 	Cannot match name to list of known Nexteer signals.
+PhaALowrCmd                 	.ReadIn:	Field is empty.
+PhaAUpprCmd                 	Cannot match name to list of known Nexteer signals.
+PhaAUpprCmd                 	.ReadIn:	Field is empty.
+PhaBLowrCmd                 	Cannot match name to list of known Nexteer signals.
+PhaBLowrCmd                 	.ReadIn:	Field is empty.
+PhaBUpprCmd                 	Cannot match name to list of known Nexteer signals.
+PhaBUpprCmd                 	.ReadIn:	Field is empty.
+PhaCLowrCmd                 	Cannot match name to list of known Nexteer signals.
+PhaCLowrCmd                 	.ReadIn:	Field is empty.
+PhaCUpprCmd                 	Cannot match name to list of known Nexteer signals.
+PhaCUpprCmd                 	.ReadIn:	Field is empty.
+(variables: 9, errors: 12)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+GateDrv1RstPhy              	Cannot match name to list of known Nexteer signals.
+MotDrvr1IninTestCmpl        	Cannot match name to list of known Nexteer signals.
+PhaDFb                      	Cannot match name to list of known Nexteer signals.
+PhaDFb                      	.WrittenIn:	Field is empty.
+PhaDLowrGatePhy             	Cannot match name to list of known Nexteer signals.
+PhaDLowrGatePhy             	.WrittenIn:	Field is empty.
+PhaDUpprGatePhy             	Cannot match name to list of known Nexteer signals.
+PhaDUpprGatePhy             	.WrittenIn:	Field is empty.
+PhaEFb                      	Cannot match name to list of known Nexteer signals.
+PhaEFb                      	.WrittenIn:	Field is empty.
+PhaELowrGatePhy             	Cannot match name to list of known Nexteer signals.
+PhaELowrGatePhy             	.WrittenIn:	Field is empty.
+PhaEUpprGatePhy             	Cannot match name to list of known Nexteer signals.
+PhaEUpprGatePhy             	.WrittenIn:	Field is empty.
+PhaFFb                      	Cannot match name to list of known Nexteer signals.
+PhaFFb                      	.WrittenIn:	Field is empty.
+PhaFLowrGatePhy             	Cannot match name to list of known Nexteer signals.
+PhaFLowrGatePhy             	.WrittenIn:	Field is empty.
+PhaFUpprGatePhy             	Cannot match name to list of known Nexteer signals.
+PhaFUpprGatePhy             	.WrittenIn:	Field is empty.
+(variables: 11, errors: 20)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 2, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 10, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 7, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 15, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+SpiConf_SpiChannel_GateDrv1Cfg0Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Cfg0Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Cfg1Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Cfg1Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Cfg2Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Cfg2Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Cfg3Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Cfg3Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Cfg4Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Cfg4Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Cfg5Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Cfg5Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Cfg6Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Cfg6Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Cfg7Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Cfg7Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1CtrlCh	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1CtrlCh	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Diag0Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Diag0Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Diag1Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Diag1Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Diag2Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Diag2Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Mask0Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Mask0Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Mask1Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Mask1Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1Mask2Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1Mask2Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1VrfyCmd0Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1VrfyCmd0Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1VrfyCmd1Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1VrfyCmd1Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1VrfyRes0Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1VrfyRes0Ch	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1VrfyRes1Ch	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_GateDrv1VrfyRes1Ch	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Cfg0Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Cfg0Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Cfg1Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Cfg1Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Cfg2Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Cfg2Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Cfg3Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Cfg3Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Cfg4Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Cfg4Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Cfg5Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Cfg5Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Cfg6Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Cfg6Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Cfg7Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Cfg7Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1CtrlSeq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1CtrlSeq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Diag0Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Diag0Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Diag1Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Diag1Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Diag2Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Diag2Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Mask0Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Mask0Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Mask1Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Mask1Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1Mask2Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1Mask2Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1VrfyCmd0Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1VrfyCmd0Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1VrfyCmd1Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1VrfyCmd1Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1VrfyRes0Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1VrfyRes0Seq	Name does not match required pattern.
+SpiConf_SpiSequence_GateDrv1VrfyRes1Seq	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_GateDrv1VrfyRes1Seq	Name does not match required pattern.
+SpiConf_SpiChannel_GateDrv1VrfyCmd1Ch	Found in data dictionary but not in model.
+SpiConf_SpiSequence_GateDrv1VrfyCmd1Seq	Found in data dictionary but not in model.
+(variables: 79, errors: 78)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 4, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+148 variables,  137 issues to fix.
+
+
+End of Report

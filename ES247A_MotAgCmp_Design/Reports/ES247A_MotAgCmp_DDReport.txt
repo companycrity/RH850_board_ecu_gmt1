@@ -1,0 +1,129 @@
+Verification of ES247A_MotAgCmp_DataDict
+10-Nov-2016 09:28:02
+Tool Release:  2.47.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 3, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+MotAgCmpBackEmfRead         	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+MotAgCmpBackEmfWr           	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+(variables: 2, errors: 2)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+MotAgCmpMotAgBackEmf_SetRamBlockStatus	.Client:	Name should not contain FDDs <ShoName>
+(variables: 1, errors: 1)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+MotAgCumvAlgndMrfRev        	Cannot match name to list of known Nexteer signals.
+MotAgCumvInid               	Cannot match name to list of known Nexteer signals.
+(variables: 4, errors: 2)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+MotAgCumvAlgndVld           	Cannot match name to list of known Nexteer signals.
+MotCtrlMotAgCumvInid        	Cannot match name to list of known Nexteer signals.
+(variables: 6, errors: 2)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 2, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+MotAgCmpMotAgBackEmf        	Name does not match required pattern.
+(variables: 1, errors: 1)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+MotAgCmpMotCtrlMotAgCumvAlgndMrfRevPrev	Name does not match required pattern.
+MotAgCmpMotCtrlMotAgMeclPrev	Name does not match required pattern.
+(variables: 4, errors: 2)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 6, errors: 0)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+SIMULATION ONLY:
+Unit Delay:	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+SIMULATION ONLY:
+Delay:     	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+SIMULATION ONLY:
+Delay1:    	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+SIMULATION ONLY:
+Unit Delay:	'Unit Delay Block'	'StateMustResolveToSignalObject' property must be enabled.
+(variables: 0, errors: 4)
+ 
+************************
+Grand Totals:
+30 variables,  14 issues to fix.
+
+
+End of Report

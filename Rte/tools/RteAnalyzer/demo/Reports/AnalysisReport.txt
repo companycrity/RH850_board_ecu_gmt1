@@ -1,0 +1,321 @@
+/*********************************************************************************************************************
+ *  !! B E T A   V E R S I O N !!
+ *
+ *  These programs are fully operative programs.
+ *  However, they are not thoroughly tested yet (beta-version).
+ *  With regard to the fact that the programs are a beta-version only,
+ *  Vector Informatik's liability shall be expressly excluded in cases of ordinary negligence,
+ *  to the extent admissible by law or statute.
+ ********************************************************************************************************************/
+MICROSAR RTE Analyzer Report
+Analyzer Version: 0.7.0 (Beta)
+Analysis Time: 15:54:33 2016-07-16
+User Name: visso
+Computer Name: VISSO6378NBH
+
+Analyzed Files:
+
+GenData/RteAnalyzer/Rte.c
+GenData/RteAnalyzer/Rte_OsApplASILCore0.c
+GenData/RteAnalyzer/Rte_OsApplQMCore0.c
+GenData/RteAnalyzer/Rte_OsApplQMCore1.c
+GenData/RteAnalyzer/TSC_ctASILSwc0.c
+GenData/RteAnalyzer/TSC_ctASILSwc1.c
+GenData/RteAnalyzer/TSC_ctQMSwc0.c
+GenData/RteAnalyzer/TSC_ctQMSwc1.c
+GenData/RteAnalyzer/TSC_ctQMSwc2.c
+GenData/RteAnalyzer/TestControl.c
+GenData/RteAnalyzer/ctASILSwc0.c
+GenData/RteAnalyzer/ctASILSwc1.c
+GenData/RteAnalyzer/ctQMSwc0.c
+GenData/RteAnalyzer/ctQMSwc1.c
+GenData/RteAnalyzer/ctQMSwc2.c
+
+Configuration:
+
+MaxAtomicMemoryAccess: 2
+BswOsApplication: OsApplQMCore0
+OsApplications:
+
+  OsApplASILCore0
+	CoreId: 0
+	IsTrusted: 0
+	SafetyLevel: ASIL_B
+	Tasks:
+	 ASILTaskCore0
+		 Priority: 4
+		 Preemption: 0
+  OsApplQMCore0
+	CoreId: 0
+	IsTrusted: 0
+	SafetyLevel: QM
+	Tasks:
+	 HighPrioQMTaskCore0
+		 Priority: 100
+		 Preemption: 0
+	 PreemptiveQMTaskCore0
+		 Priority: 2
+		 Preemption: 1
+  OsApplQMCore1
+	CoreId: 1
+	IsTrusted: 0
+	SafetyLevel: QM
+	Tasks:
+	 QMTaskCore1
+		 Priority: 4
+		 Preemption: 0
+
+Findings:
+------------------------------------------------------------
+
+Found 4 findings of category: 11002 Function may be called recursively
+Function TSC_ctQMSwc0_Rte_Call_csRecursion_Operation may be called recursively
+D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\RteAnalyzer\Source\TSC_ctQMSwc0.c 102
+
+Function TSC_ctQMSwc1_Rte_Call_csRecursion_1_Operation may be called recursively
+D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\RteAnalyzer\Source\TSC_ctQMSwc1.c 50
+
+Function csRecursion_1_Operation may be called recursively
+D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\RteAnalyzer\Source\ctQMSwc0.c 267
+
+Function csRecursion_Operation may be called recursively
+D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\RteAnalyzer\Source\ctQMSwc1.c 256
+
+Found 1 findings of category: 11003 Uncalled function
+Detected function that could not be analyzed because it was never called: csUnreachable_Operation
+
+Found 1 findings of category: 12002 Potential out of bounds write
+Detected potential out of memory memcpy
+in function Rte_Send_ctQMSwc0_srQueuedWritesOutOfBounds_Element in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore0.c 311
+    Rte_MemCpy((void *)&((uint8 *)pRomI->Rte_BasePtr)[writeCtr * pRomI->Rte_BytesPerElement], pData, pRomI->Rte_BytesPerElement);
+
+
+Found 1 findings of category: 13000 Unexpected lock sequence
+unexpected lock sequence: calling ResumeAllInterrupts but last lock was SuspendOSInterrupts
+in function Rte_Receive_ctQMSwc1_srQueuedLockSequenceError_Element in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore0.c 256
+    ResumeAllInterrupts(); /* PRQA S 3109 */ /* MD_MSR_14.3 */
+
+
+Found 2 findings of category: 13009 Accesses can interrupt each other
+Accesses to Rte_Irv_QMSwc0_IrvWithoutProtection
+ in function Rte_InitMemory_OsApplQMCore0 in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore0.c 202
+  Rte_Irv_QMSwc0_IrvWithoutProtection = 0U;
+
+ in function Rte_IrvRead_ctQMSwc0_RunnableCyclicQMSwc0_IrvWithoutProtection in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore0.c 280
+  irvValue = Rte_Irv_QMSwc0_IrvWithoutProtection;
+
+ in function TSC_ctQMSwc0_Rte_IrvWrite_RunnableCylic2QMSwc0_IrvWithoutProtection in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\RteAnalyzer\Source\TSC_ctQMSwc0.c 87
+  Rte_IrvWrite_RunnableCylic2QMSwc0_IrvWithoutProtection( data);
+
+ can interrupt each other
+
+Accesses to Rte_QMSwc1_srMissingNOCACHE_Element
+ in function Rte_InitMemory_OsApplQMCore0 in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore0.c 199
+  Rte_QMSwc1_srMissingNOCACHE_Element = 0U;
+
+ in function Rte_Read_ctQMSwc2_srMissingNOCACHE_Element in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore1.c 154
+  *(data) = Rte_QMSwc1_srMissingNOCACHE_Element;
+
+ in function Rte_Write_ctQMSwc1_srMissingNOCACHE_Element in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore0.c 231
+  Rte_QMSwc1_srMissingNOCACHE_Element = *(&data);
+
+ can interrupt each other
+
+Found 1 findings of category: 13013 Different spinlocks used
+Different spinlocks used to protect a variable that is accessed from multiple cores in function Rte_InitMemory_OsApplQMCore0 in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore0.c 199
+  Rte_QMSwc1_srMissingNOCACHE_Element = 0U;
+
+ in function Rte_Read_ctQMSwc2_srMissingNOCACHE_Element in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore1.c 154
+  *(data) = Rte_QMSwc1_srMissingNOCACHE_Element;
+
+ in function Rte_Write_ctQMSwc1_srMissingNOCACHE_Element in file D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore0.c 231
+  Rte_QMSwc1_srMissingNOCACHE_Element = *(&data);
+
+
+Found 1 findings of category: 14000 Unmatched memory section
+D:\Rte\Rte_Analyzer\trunk\Application\demo\GenData\Rte_OsApplQMCore0.c 118: Starting and stopping different memory sections VAR_INIT_UNSECIFIED
+ vs VAR_INIT_UNSPECIFIED
+
+
+Found 1 findings of category: 14002 Variable not mapped to NOCACHE memory section
+Variable Rte_QMSwc1_srMissingNOCACHE_Element is not mapped to a NOCACHE memory section
+It is accessed in:
+ QMTaskCore1func
+ HighPrioQMTaskCore0func
+
+Found 1 findings of category: 15000 Call with non typesafe parameters
+Call from RunnableCyclicASILSwc1 to Rte_Read_srNotTypesafe_Element passes non typesafe parameters. Assure that caller and callee expect the same buffer size.
+For parameter 0, a buffer with at least 20 elements of the pointer element type needs to be provided (for void pointers the number of elements is the number of bytes).
+
+Found 2 findings of category: 15001 API for Safe component must not be called from wrong context
+API Rte_Read_ctASILSwc1_srNotTypesafe_Element is supposed to be used from a safe component. The interrupt locks are optimized for the calling runnables. Calling the API from a different context might cause data consistency problems.
+The API can only be used in context:
+ ASILTaskCore0
+
+API Rte_Write_ctASILSwc0_srNotTypesafe_Element is supposed to be used from a safe component. The interrupt locks are optimized for the calling runnables. Calling the API from a different context might cause data consistency problems.
+The API can only be used in context:
+ ASILTaskCore0
+
+
+Configuration Feedback (Full configuration feedback switch not set – limited to ASIL components):
+------------------------------------------------------------
+
+
+1 Non-Queued connections found
+
+ctASILSwc0 Rte_Write_srNotTypesafe_Element    =>    ctASILSwc1 Rte_Read_srNotTypesafe_Element
+
+0 Queued connections found
+
+
+1 Inter-Runnable connections found
+
+ctASILSwc1 Rte_IrvWrite_RunnableCyclicASILSwc1_IrvAtomic    =>    ctASILSwc1 Rte_IrvRead_RunnableCyclicASILSwc1_IrvAtomic
+
+0 External connections found
+
+
+0 Switch-Mode connections found
+
+
+0 Exclusive areas found
+
+
+2 Initial values of APIs found
+
+ctASILSwc1 Rte_IrvRead_RunnableCyclicASILSwc1_IrvAtomic 
+Initial value : "0"
+ctASILSwc1 Rte_Read_srNotTypesafe_Element 
+Initial value : "{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}"
+
+0 Blocking APIs found
+
+
+2 Executable Entities found
+
+RunnableCyclicASILSwc0 runs in ASILTaskCore0
+RunnableCyclicASILSwc1 runs in ASILTaskCore0
+
+0 APIs with special return values found
+
+
+0 APIs with queues found
+
+
+0 APIs with E2E transformers found
+
+
+0 Reentrant Executable Entities found
+
+
+0 APIs using data conversion found
+
+
+0 APIs that may use NVM found
+
+
+
+Template Variants:
+------------------------------------------------------------
+145 Supported Templates found
+ 59 Not Supported Templates found
+
+Not Supported Template 0958021056072de3e4d4d49ef4367a2a is used in API Rte_ComSendSignalProxyPeriodic
+Not Supported Template 15e0b7c5d844d4703c6301388b035335 is used in API Rte_Start
+Not Supported Template 1e3a48a3fad4c249eed41134c9482002 is used in API SchM_Deinit
+Not Supported Template 2e8d00e5326d3e0b007c9acd8897753f is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template 326e2be98b64ec7946a03f98d25bff47 is used in API Rte_Send_ctQMSwc0_srQueuedWritesOutOfBounds_Element
+Not Supported Template 326e2be98b64ec7946a03f98d25bff47 is used in API Rte_Write_ctASILSwc0_srNotTypesafe_Element
+Not Supported Template 326e2be98b64ec7946a03f98d25bff47 is used in API Rte_Write_ctQMSwc1_srMissingNOCACHE_Element
+Not Supported Template 3671f4d8952a942bb3870e78325a7026 is used in API Rte_Write_ctASILSwc0_srNotTypesafe_Element
+Not Supported Template 3671f4d8952a942bb3870e78325a7026 is used in API Rte_Write_ctQMSwc1_srMissingNOCACHE_Element
+Not Supported Template 38de5d14c380421760752a5496a70742 is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template 3e22bb7bb350b5343a89f0bd43d0670f is used in API TASK(ASILTaskCore0)
+Not Supported Template 3e22bb7bb350b5343a89f0bd43d0670f is used in API TASK(HighPrioQMTaskCore0)
+Not Supported Template 3e22bb7bb350b5343a89f0bd43d0670f is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template 3e22bb7bb350b5343a89f0bd43d0670f is used in API TASK(QMTaskCore1)
+Not Supported Template 3eb83d99a608167aeec9f59fa2e355ae is used in API SchM_Init
+Not Supported Template 40f9350209bb482d1de2ca5563089ac1 is used in API Rte_Start
+Not Supported Template 48f9d8cfc124692fc91b5d7b8e04cd3c is used in API SchM_Init
+Not Supported Template 552cfd8a06b8873cf4f067be90442226 is used in API SchM_Deinit
+Not Supported Template 56ee463a073e8fc6f7c9f43a32b743ae is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template 5980f2fc1ea54ca72a0e0a605087c0fe is used in API Rte_InitMemory
+Not Supported Template 5b1aeaa3d001b1f6355837c28333b9c9 is used in API Rte_Stop
+Not Supported Template 5b42245765314d8d1ec21e8e91852f1a is used in API SchM_Init
+Not Supported Template 5f6d51ca4532106ce905dec8d4e6c58b is used in API Rte_Start
+Not Supported Template 60c0697f5164774435dad2e38c826bcf is used in API Rte_Send_ctQMSwc0_srQueuedWritesOutOfBounds_Element
+Not Supported Template 60c0697f5164774435dad2e38c826bcf is used in API Rte_Write_ctASILSwc0_srNotTypesafe_Element
+Not Supported Template 60c0697f5164774435dad2e38c826bcf is used in API Rte_Write_ctQMSwc1_srMissingNOCACHE_Element
+Not Supported Template 6142d4f4f1682f142cb0b440d68f94d8 is used in API Rte_MemCpy32
+Not Supported Template 66ae027299abf631617fd6693f707534 is used in API Rte_IrvRead_ctQMSwc0_RunnableCyclicQMSwc0_IrvWithoutProtection
+Not Supported Template 6a06a6f9a4fa09b0fdf699ad52424c62 is used in API SchM_Init
+Not Supported Template 700693f604f36669caa55f7d8c634697 is used in API Rte_Start
+Not Supported Template 756029a2eeb83dff8020d2323c3382e2 is used in API SchM_Init
+Not Supported Template 77cacf9ab801de8a238d09b8bc1293ff is used in API Rte_Read_ctQMSwc2_srMissingNOCACHE_Element
+Not Supported Template 77cacf9ab801de8a238d09b8bc1293ff is used in API Rte_Write_ctQMSwc1_srMissingNOCACHE_Element
+Not Supported Template 817214debbb2357ea4a416d191b87366 is used in API Rte_Read_ctASILSwc1_srNotTypesafe_Element
+Not Supported Template 817214debbb2357ea4a416d191b87366 is used in API Rte_Read_ctQMSwc2_srMissingNOCACHE_Element
+Not Supported Template 817214debbb2357ea4a416d191b87366 is used in API Rte_Receive_ctQMSwc1_srQueuedLockSequenceError_Element
+Not Supported Template 817214debbb2357ea4a416d191b87366 is used in API Rte_Send_ctQMSwc0_srQueuedWritesOutOfBounds_Element
+Not Supported Template 817214debbb2357ea4a416d191b87366 is used in API Rte_Write_ctASILSwc0_srNotTypesafe_Element
+Not Supported Template 817214debbb2357ea4a416d191b87366 is used in API Rte_Write_ctQMSwc1_srMissingNOCACHE_Element
+Not Supported Template 817214debbb2357ea4a416d191b87366 is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template 81df3c2162522ede40e7dc8329bdb7f8 is used in API Rte_Stop
+Not Supported Template 825393a5316af6c89d5efec15cb061a2 is used in API Rte_InitMemory
+Not Supported Template 88e393d8fd624b48fdc3700c2b7bdb30 is used in API Rte_IrvRead_ctQMSwc0_RunnableCyclicQMSwc0_IrvWithoutProtection
+Not Supported Template 8920d5f0eb8111cf9b5ace4d76c25497 is used in API Rte_Read_ctASILSwc1_srNotTypesafe_Element
+Not Supported Template 8920d5f0eb8111cf9b5ace4d76c25497 is used in API Rte_Read_ctQMSwc2_srMissingNOCACHE_Element
+Not Supported Template 8920d5f0eb8111cf9b5ace4d76c25497 is used in API Rte_Receive_ctQMSwc1_srQueuedLockSequenceError_Element
+Not Supported Template 8920d5f0eb8111cf9b5ace4d76c25497 is used in API Rte_Send_ctQMSwc0_srQueuedWritesOutOfBounds_Element
+Not Supported Template 8920d5f0eb8111cf9b5ace4d76c25497 is used in API Rte_Write_ctASILSwc0_srNotTypesafe_Element
+Not Supported Template 8920d5f0eb8111cf9b5ace4d76c25497 is used in API Rte_Write_ctQMSwc1_srMissingNOCACHE_Element
+Not Supported Template 8920d5f0eb8111cf9b5ace4d76c25497 is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template 8c0519b3748da8c319423ffb8a67ea5d is used in API Rte_Start
+Not Supported Template 8de1b9b972dd8e77a56815929d1d2d5f is used in API SchM_Init
+Not Supported Template 8eb4cf1b591f59d776bf2a20009bce41 is used in API Rte_Read_ctASILSwc1_srNotTypesafe_Element
+Not Supported Template 8eb4cf1b591f59d776bf2a20009bce41 is used in API Rte_Read_ctQMSwc2_srMissingNOCACHE_Element
+Not Supported Template 8eb4cf1b591f59d776bf2a20009bce41 is used in API Rte_Receive_ctQMSwc1_srQueuedLockSequenceError_Element
+Not Supported Template 8ee08228ce896fb0829bc654116fd060 is used in API Rte_Stop
+Not Supported Template 98e7b4447106ad418a91856293b760c8 is used in API Rte_Stop
+Not Supported Template 9b382ca9aa53644cc14b6f78ab813b1a is used in API Rte_Start
+Not Supported Template 9b8472de13e742f0dc6cbf52558d8f3d is used in API TASK(ASILTaskCore0)
+Not Supported Template 9b8472de13e742f0dc6cbf52558d8f3d is used in API TASK(HighPrioQMTaskCore0)
+Not Supported Template 9b8472de13e742f0dc6cbf52558d8f3d is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template 9b8472de13e742f0dc6cbf52558d8f3d is used in API TASK(QMTaskCore1)
+Not Supported Template a8716d71d1d6ce908ccbc594fb43479e is used in API Rte_Start
+Not Supported Template abb6d77b47853fbe86c717b71b98993a is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template ac00811743298134936d5ee97dc8a73c is used in API Rte_Send_ctQMSwc0_srQueuedWritesOutOfBounds_Element
+Not Supported Template b500f96c8fdd827bcdf274573874593d is used in API Rte_Start
+Not Supported Template be44f84f672454a3f9fa59622c26d674 is used in API Rte_Start
+Not Supported Template bf1361cb302fff33e4c1c91ccdf22990 is used in API TASK(ASILTaskCore0)
+Not Supported Template bf1361cb302fff33e4c1c91ccdf22990 is used in API TASK(HighPrioQMTaskCore0)
+Not Supported Template bf1361cb302fff33e4c1c91ccdf22990 is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template bf1361cb302fff33e4c1c91ccdf22990 is used in API TASK(QMTaskCore1)
+Not Supported Template c21fe0006e012e755a4fa8ffafc0d120 is used in API Rte_Send_ctQMSwc0_srQueuedWritesOutOfBounds_Element
+Not Supported Template c21fe0006e012e755a4fa8ffafc0d120 is used in API Rte_Write_ctASILSwc0_srNotTypesafe_Element
+Not Supported Template c21fe0006e012e755a4fa8ffafc0d120 is used in API Rte_Write_ctQMSwc1_srMissingNOCACHE_Element
+Not Supported Template c29788814dd66cf386f782717b5960f9 is used in API SchM_Init
+Not Supported Template c3f0a6119e3f3a26433c945ad9943ea2 is used in API Rte_InitMemory
+Not Supported Template c46ea634f4a0c3f0f75ffa4eb9755336 is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template c5da7bec56496182abc39d96c2ef059c is used in API Rte_Read_ctASILSwc1_srNotTypesafe_Element
+Not Supported Template c5da7bec56496182abc39d96c2ef059c is used in API Rte_Read_ctQMSwc2_srMissingNOCACHE_Element
+Not Supported Template c5da7bec56496182abc39d96c2ef059c is used in API Rte_Receive_ctQMSwc1_srQueuedLockSequenceError_Element
+Not Supported Template c5da7bec56496182abc39d96c2ef059c is used in API Rte_Send_ctQMSwc0_srQueuedWritesOutOfBounds_Element
+Not Supported Template c5da7bec56496182abc39d96c2ef059c is used in API Rte_Write_ctASILSwc0_srNotTypesafe_Element
+Not Supported Template c5da7bec56496182abc39d96c2ef059c is used in API Rte_Write_ctQMSwc1_srMissingNOCACHE_Element
+Not Supported Template c5da7bec56496182abc39d96c2ef059c is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template c8db4efded3df22c05798dbfbb05be6e is used in API Rte_Read_ctQMSwc2_srMissingNOCACHE_Element
+Not Supported Template c8db4efded3df22c05798dbfbb05be6e is used in API Rte_Write_ctQMSwc1_srMissingNOCACHE_Element
+Not Supported Template cc62e2403cb04cd82646206d3346e064 is used in API Rte_InitMemory
+Not Supported Template d25958ae192888bc7b164177697b4f00 is used in API Rte_Start
+Not Supported Template d2ea0f807ef4c5093d7d9597627a01aa is used in API TASK(PreemptiveQMTaskCore0)
+Not Supported Template e013d2ed355faca5424e9ac84be5724c is used in API Rte_InitMemory_OsApplQMCore1
+Not Supported Template e6f463d206a20ce2281025c01783fbac is used in API SchM_Deinit
+Not Supported Template edc80feee590985f9602de583657d0be is used in API SchM_Deinit
+Not Supported Template ee4d26a291e7db4ead15e79a8b1c9642 is used in API Rte_Start
+Not Supported Template eeb111a96e8afa21f33bb0175474e949 is used in API SchM_Deinit
+Not Supported Template f64e79b56b76c4dddba4032849fc5fb6 is used in API TASK(ASILTaskCore0)
+Not Supported Template f64e79b56b76c4dddba4032849fc5fb6 is used in API TASK(HighPrioQMTaskCore0)
+Not Supported Template f64e79b56b76c4dddba4032849fc5fb6 is used in API TASK(QMTaskCore1)
+Not Supported Template f826d3f49d50417a9513556fd2028d68 is used in API SchM_Init
+Not Supported Template fe5a1e10581255afb8cc707b5cbcd894 is used in API Rte_QInitCore0

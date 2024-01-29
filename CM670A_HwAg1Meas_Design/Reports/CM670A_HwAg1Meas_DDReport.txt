@@ -1,0 +1,141 @@
+Verification of CM670A_HwAg1Meas_DataDict
+10-Jun-2016 12:13:14
+Tool Release:  2.40.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 6, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+HwAg1MeasHwAg1AutTrim       	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwAg1MeasHwAg1AutTrim       	.Description: 	Field is empty.
+HwAg1MeasHwAg1AutTrim       	.Description: 	Field is empty.
+HwAg1MeasHwAg1ClrTrim       	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwAg1MeasHwAg1ClrTrim       	.Description: 	Field is empty.
+HwAg1MeasHwAg1ClrTrim       	.Description: 	Field is empty.
+HwAg1MeasHwAg1ReadTrim      	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwAg1MeasHwAg1ReadTrim      	.Description: 	Field is empty.
+HwAg1MeasHwAg1ReadTrim      	.Description: 	Field is empty.
+HwAg1MeasHwAg1TrimPrfmdSts  	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwAg1MeasHwAg1TrimPrfmdSts  	.Description: 	Field is empty.
+HwAg1MeasHwAg1TrimPrfmdSts  	.Description: 	Field is empty.
+HwAg1MeasHwAg1WrTrim        	.SrvRunnnable:	Name should not contain FDDs <ShoName>
+HwAg1MeasHwAg1WrTrim        	.Description: 	Field is empty.
+HwAg1MeasHwAg1WrTrim        	.Description: 	Field is empty.
+(variables: 5, errors: 15)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+IoHwAb_SetFctPrphlHwAg1     	.Description: 	Field is empty.
+IoHwAb_SetFctPrphlHwAg1     	    Ab_            Unknown Keyword used.Only Nexteer approved Keywords should be used.
+SetNtcSts                   	.Description: 	Field is empty.
+(variables: 6, errors: 3)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+HwAg1Phy                    	Cannot match name to list of known Nexteer signals.
+HwAg1Phy                    	.Description: 	Field is empty.
+HwAg1Phy                    	.ReadIn:	Field is empty.
+HwAg1Polarity               	.Description: 	Field is empty.
+RegInpRSENT2CS              	.Description: 	Field is empty.
+RegInpRSENT2FND             	.Description: 	Field is empty.
+RegInpRSENT2FRS             	.Description: 	Field is empty.
+RegInpRSENT2FRXD            	.Description: 	Field is empty.
+RegInpRSENT2NRS             	.Description: 	Field is empty.
+(variables: 7, errors: 9)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+RegOutRSENT2NRC             	Cannot match name to list of known Nexteer signals.
+RegOutRSENT2SPCT            	Cannot match name to list of known Nexteer signals.
+(variables: 5, errors: 2)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 4, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 10, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 1, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 8, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+(variables: 20, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+ELECGLBPRM_DEGPERREV_DEGPERREV_F32	.DocUnits:	Not on approved list.
+(variables: 14, errors: 1)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 6, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 4, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+97 variables,  30 issues to fix.
+
+
+End of Report

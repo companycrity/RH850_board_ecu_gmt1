@@ -1,0 +1,118 @@
+Verification of ES228A_HwTqArbn_DataDict
+18-May-2015 11:25:04
+Tool Release:  2.9.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF99A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+Component block name does not correlate to model file name.
+(errors:  1)
+
+--------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init
+--------------------------------------------------
+(variables: 1, errors: 0)
+
+-------------------------------------
+SrvRunnable:	<ShoName><TriggerName>
+-------------------------------------
+(variables: 0, errors: 0)
+
+------------
+Client:	
+------------
+(variables: 0, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+HwTqA                       	Cannot match name to list of known Nexteer signals.
+HwTqA                       	.LongName:	Violates AUTOSAR Std.  Suggested fix: 'Handwheel Torque Sensor a Value'.
+HwTqAQlfr                   	Cannot match name to list of known Nexteer signals.
+HwTqAQlfr                   	.LongName:	Violates AUTOSAR Std.  Suggested fix: 'Handwheel Torque Sensor a Qualifier'.
+HwTqARollgCntr              	Cannot match name to list of known Nexteer signals.
+HwTqARollgCntr              	.LongName:	Violates AUTOSAR Std.  Suggested fix: 'Handwheel Torque Sensor a Rolling Counter'.
+HwTqB                       	Cannot match name to list of known Nexteer signals.
+HwTqBQlfr                   	Cannot match name to list of known Nexteer signals.
+HwTqBRollgCntr              	Cannot match name to list of known Nexteer signals.
+HwTqC                       	Cannot match name to list of known Nexteer signals.
+HwTqCQlfr                   	Cannot match name to list of known Nexteer signals.
+HwTqCRollgCntr              	Cannot match name to list of known Nexteer signals.
+HwTqD                       	Cannot match name to list of known Nexteer signals.
+HwTqDQlfr                   	Cannot match name to list of known Nexteer signals.
+HwTqDRollgCntr              	Cannot match name to list of known Nexteer signals.
+(variables: 13, errors: 15)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+HwTqChA                     	.LongName:	Violates AUTOSAR Std.  Suggested fix: 'Handwheel Torque Channel a Value'.
+(variables: 3, errors: 1)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+HwTqArbnMaxStallTqA              	.LongName:	Violates AUTOSAR Std.  Suggested fix: 'Handwheel Torque Arbitration Signal a Stall Counter Maximum Threshold'.
+(variables: 4, errors: 1)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<ShoName><Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+dHwTqArbnChAAvl             	.LongName:	Violates AUTOSAR Std.  Suggested fix: 'Handwheel Torque Channel a Available'.
+(variables: 2, errors: 1)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<ShoName><Identity>Prev
+-----------------------------------------------
+HwTqArbnTqARollgCntrPrev    	.LongName:	Violates AUTOSAR Std.  Suggested fix: 'Handwheel Torque a Rolling Counter Previous'.
+HwTqArbnTqAStallCntrPrev    	.LongName:	Violates AUTOSAR Std.  Suggested fix: 'Handwheel Torque a Stall Counter Previous'.
+(variables: 8, errors: 2)
+
+------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: <IDENTITY>_<UNITS>_<DATATYPE>
+------------------------------------------------------------------
+(variables: 3, errors: 0)
+
+----------------
+CSArguments:	
+----------------
+(variables: 0, errors: 0)
+
+--------------
+ConfigConst:	
+--------------
+(variables: 0, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+35 variables,  21 issues to fix.
+
+
+End of Report

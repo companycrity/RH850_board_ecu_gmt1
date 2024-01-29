@@ -1,0 +1,1228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file was saved with a tool from Vector Informatik GmbH
+-->
+<AUTOSAR xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd" xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ComponentType</SHORT-NAME>
+      <ELEMENTS>
+        <SERVICE-SW-COMPONENT-TYPE UUID="0877D2E0-425D-4F6F-885F-8F3261FEA866">
+          <SHORT-NAME>WdgM</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="1AEAF2C8-39EF-4F7B-A290-B878F9510BEB">
+              <SHORT-NAME>GlobalPort</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Global Mode </L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_GlobalMode/GetGlobalStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_GlobalMode/GetMode</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_GlobalMode/PerformReset</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_GlobalMode</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="607B4D33-E40F-4266-B1A9-F3EFA5E22146">
+              <SHORT-NAME>SE000_SE_10msBsw_Appl10</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_10msBsw_Appl10 with ID 0</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_IndividualMode</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="5A5E28CC-3B66-4A6D-B3C7-F5E734A0B4CD">
+              <SHORT-NAME>SE000_SE_10msBsw_Appl10_CP000_ChkPt_10msBsw_Appl10_Strt</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_10msBsw_Appl10 with ID 0
+              and Checkpoint ChkPt_10msBsw_Appl10_Strt with ID 0.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="639CF794-4752-429D-AC89-F75A75288489">
+              <SHORT-NAME>SE000_SE_10msBsw_Appl10_CP001_ChkPt_10msBsw_Appl10_End</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_10msBsw_Appl10 with ID 0
+              and Checkpoint ChkPt_10msBsw_Appl10_End with ID 1.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="2606B63F-5439-4E2C-965F-FB122F76DD8D">
+              <SHORT-NAME>SE001_SE_2ms_Appl10</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_2ms_Appl10 with ID 1</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_IndividualMode</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="8EC52BAC-76EE-4165-AA98-91616E377AE0">
+              <SHORT-NAME>SE001_SE_2ms_Appl10_CP000_ChkPt_2ms_Appl10_Strt</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_2ms_Appl10 with ID 1
+              and Checkpoint ChkPt_2ms_Appl10_Strt with ID 0.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="0F9D3E9C-C8BD-48B5-A9FC-E91A6D7C0477">
+              <SHORT-NAME>SE001_SE_2ms_Appl10_CP001_ChkPt_2ms_Appl10_End</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_2ms_Appl10 with ID 1
+              and Checkpoint ChkPt_2ms_Appl10_End with ID 1.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="C4A01E77-340C-476C-B039-0C1B16F929F5">
+              <SHORT-NAME>SE002_SE_2ms_Appl6</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_2ms_Appl6 with ID 2</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_IndividualMode</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="35C5F627-3114-4B73-BDCF-82BE349620D0">
+              <SHORT-NAME>SE002_SE_2ms_Appl6_CP000_ChkPt_2ms_Appl6_Strt</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_2ms_Appl6 with ID 2
+              and Checkpoint ChkPt_2ms_Appl6_Strt with ID 0.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="1E3FF90E-D5B7-4A54-941E-3959760FDD2F">
+              <SHORT-NAME>SE002_SE_2ms_Appl6_CP001_ChkPt_2ms_Appl6_End</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_2ms_Appl6 with ID 2
+              and Checkpoint ChkPt_2ms_Appl6_End with ID 1.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="FB52E211-826A-43A3-9851-67E06ECE1582">
+              <SHORT-NAME>SE003_SE_100ms_Appl10</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_100ms_Appl10 with ID 3</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_IndividualMode</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="86C52F15-701E-49F9-B392-43262D259638">
+              <SHORT-NAME>SE003_SE_100ms_Appl10_CP000_ChkPt_100ms_Appl10_Strt</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_100ms_Appl10 with ID 3
+              and Checkpoint ChkPt_100ms_Appl10_Strt with ID 0.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="977697B5-113C-4877-8DF4-0E77895EB9C0">
+              <SHORT-NAME>SE003_SE_100ms_Appl10_CP001_ChkPt_100ms_Appl10_End</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_100ms_Appl10 with ID 3
+              and Checkpoint ChkPt_100ms_Appl10_End with ID 1.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="2ABB32FA-8731-4953-81D5-E652C63A2886">
+              <SHORT-NAME>SE004_SE_10ms_Appl6</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_10ms_Appl6 with ID 4</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_IndividualMode</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="0D232E18-2387-49FC-85FF-A176C41236E8">
+              <SHORT-NAME>SE004_SE_10ms_Appl6_CP000_ChkPt_10ms_Appl6_Strt</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_10ms_Appl6 with ID 4
+              and Checkpoint ChkPt_10ms_Appl6_Strt with ID 0.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="12BDAC67-C8A8-4A66-89C8-A54A4FA8E389">
+              <SHORT-NAME>SE004_SE_10ms_Appl6_CP001_ChkPt_10ms_Appl6_End</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_10ms_Appl6 with ID 4
+              and Checkpoint ChkPt_10ms_Appl6_End with ID 1.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="3B16491B-42FC-4DC1-95D8-E82FF7B1B62E">
+              <SHORT-NAME>SE005_SE_4ms_Appl10</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_4ms_Appl10 with ID 5</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_IndividualMode</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="9546E3DD-D9F9-47C1-A63A-BD08E96DF78F">
+              <SHORT-NAME>SE005_SE_4ms_Appl10_CP000_ChkPt_4ms_Appl10_Strt</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_4ms_Appl10 with ID 5
+              and Checkpoint ChkPt_4ms_Appl10_Strt with ID 0.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="0A24A052-9BC4-4D21-A0F1-64FE51DB29C0">
+              <SHORT-NAME>SE005_SE_4ms_Appl10_CP001_ChkPt_4ms_Appl10_End</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_4ms_Appl10 with ID 5
+              and Checkpoint ChkPt_4ms_Appl10_End with ID 1.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="5D5D2382-4EF3-4549-B7AF-9F4054C4C2BA">
+              <SHORT-NAME>SE006_SE_10ms_Appl10</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_10ms_Appl10 with ID 6</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_IndividualMode</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="EA1F6BF7-5208-44FD-8BD3-0B4D6133CEA1">
+              <SHORT-NAME>SE006_SE_10ms_Appl10_CP000_ChkPt_10ms_Appl10_Strt</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_10ms_Appl10 with ID 6
+              and Checkpoint ChkPt_10ms_Appl10_Strt with ID 0.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="6650ABE7-B14A-4E4D-88D3-0F0A3D1BC106">
+              <SHORT-NAME>SE006_SE_10ms_Appl10_CP001_ChkPt_10ms_Appl10_End</SHORT-NAME>
+              <DESC>
+                <L-2 L="FOR-ALL">P-Port Prototype for Supervised Entity SE_10ms_Appl10 with ID 6
+              and Checkpoint ChkPt_10ms_Appl10_End with ID 1.</L-2>
+              </DESC>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/PortInterface/WdgM_AliveSupervision</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="4CD22B58-3D63-4130-832B-36D1374256A2">
+              <SHORT-NAME>WdgM_InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <OPERATION-INVOKED-EVENT UUID="B3E20A20-C404-42BE-B680-E182073A3442">
+                  <SHORT-NAME>V_WDGM_SE000_SE_10msBsw_Appl10_ASE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/ActivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE000_SE_10msBsw_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="371EC012-1D1F-4D58-9071-B353FD3F18FB">
+                  <SHORT-NAME>V_WDGM_SE001_SE_2ms_Appl10_ASE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/ActivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE001_SE_2ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="DE13B38F-3342-41C3-9729-859E13C09658">
+                  <SHORT-NAME>V_WDGM_SE002_SE_2ms_Appl6_ASE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/ActivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE002_SE_2ms_Appl6</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="01986FB2-64DD-4796-9F5F-70A783AF11A0">
+                  <SHORT-NAME>V_WDGM_SE003_SE_100ms_Appl10_ASE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/ActivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE003_SE_100ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="1B2CCB1B-52A2-4B3C-AD97-8DDAC4F5EE2F">
+                  <SHORT-NAME>V_WDGM_SE004_SE_10ms_Appl6_ASE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/ActivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE004_SE_10ms_Appl6</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="708F4478-30BA-4D20-A048-0BB77888E8EE">
+                  <SHORT-NAME>V_WDGM_SE005_SE_4ms_Appl10_ASE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/ActivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE005_SE_4ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="D2F2343C-17B0-40C8-A213-4B9A2AAE4DA8">
+                  <SHORT-NAME>V_WDGM_SE006_SE_10ms_Appl10_ASE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/ActivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE006_SE_10ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/ActivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="9791FBFE-DD3E-49D9-A5E9-1FED704C56A1">
+                  <SHORT-NAME>V_WDGM_SE000_SE_10msBsw_Appl10_CP000_ChkPt_10msBsw_Appl10_Strt_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE000_SE_10msBsw_Appl10_CP000_ChkPt_10msBsw_Appl10_Strt</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="E793A1B7-B7F2-46D9-BBC8-99C94A9E90FF">
+                  <SHORT-NAME>V_WDGM_SE000_SE_10msBsw_Appl10_CP001_ChkPt_10msBsw_Appl10_End_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE000_SE_10msBsw_Appl10_CP001_ChkPt_10msBsw_Appl10_End</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="356F2262-5D36-4D94-87D7-4905B70C430A">
+                  <SHORT-NAME>V_WDGM_SE001_SE_2ms_Appl10_CP000_ChkPt_2ms_Appl10_Strt_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE001_SE_2ms_Appl10_CP000_ChkPt_2ms_Appl10_Strt</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="365759C1-B859-499B-9F73-18A59EAF245E">
+                  <SHORT-NAME>V_WDGM_SE001_SE_2ms_Appl10_CP001_ChkPt_2ms_Appl10_End_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE001_SE_2ms_Appl10_CP001_ChkPt_2ms_Appl10_End</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="0A569788-7DF4-4A47-A914-4E69BB68A5F4">
+                  <SHORT-NAME>V_WDGM_SE002_SE_2ms_Appl6_CP000_ChkPt_2ms_Appl6_Strt_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE002_SE_2ms_Appl6_CP000_ChkPt_2ms_Appl6_Strt</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="FA1597A5-F546-431D-86FD-590CC2902E49">
+                  <SHORT-NAME>V_WDGM_SE002_SE_2ms_Appl6_CP001_ChkPt_2ms_Appl6_End_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE002_SE_2ms_Appl6_CP001_ChkPt_2ms_Appl6_End</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="06BD1F39-8120-40E8-90DF-AD1B43B88082">
+                  <SHORT-NAME>V_WDGM_SE003_SE_100ms_Appl10_CP000_ChkPt_100ms_Appl10_Strt_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE003_SE_100ms_Appl10_CP000_ChkPt_100ms_Appl10_Strt</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="E01FC5B4-E7B9-4843-B5C0-AEBF3227F25C">
+                  <SHORT-NAME>V_WDGM_SE003_SE_100ms_Appl10_CP001_ChkPt_100ms_Appl10_End_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE003_SE_100ms_Appl10_CP001_ChkPt_100ms_Appl10_End</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="0D6443DD-E5F1-431A-B0D5-4DC1695F489B">
+                  <SHORT-NAME>V_WDGM_SE004_SE_10ms_Appl6_CP000_ChkPt_10ms_Appl6_Strt_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE004_SE_10ms_Appl6_CP000_ChkPt_10ms_Appl6_Strt</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="B5A06FB9-28A2-44B5-AA05-EE7EB574FEE5">
+                  <SHORT-NAME>V_WDGM_SE004_SE_10ms_Appl6_CP001_ChkPt_10ms_Appl6_End_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE004_SE_10ms_Appl6_CP001_ChkPt_10ms_Appl6_End</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="FF670AE9-D29C-4126-B992-9195FD88CD32">
+                  <SHORT-NAME>V_WDGM_SE005_SE_4ms_Appl10_CP000_ChkPt_4ms_Appl10_Strt_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE005_SE_4ms_Appl10_CP000_ChkPt_4ms_Appl10_Strt</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="C4FE6538-F3FD-4F09-8BCE-F37B6B84F8C3">
+                  <SHORT-NAME>V_WDGM_SE005_SE_4ms_Appl10_CP001_ChkPt_4ms_Appl10_End_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE005_SE_4ms_Appl10_CP001_ChkPt_4ms_Appl10_End</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="675968F7-7DA2-4104-998F-FDAA09F56B6A">
+                  <SHORT-NAME>V_WDGM_SE006_SE_10ms_Appl10_CP000_ChkPt_10ms_Appl10_Strt_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE006_SE_10ms_Appl10_CP000_ChkPt_10ms_Appl10_Strt</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="DE471D42-4D24-4BB7-B897-F54A5D91EA15">
+                  <SHORT-NAME>V_WDGM_SE006_SE_10ms_Appl10_CP001_ChkPt_10ms_Appl10_End_CPR</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/CheckpointReached</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE006_SE_10ms_Appl10_CP001_ChkPt_10ms_Appl10_End</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_AliveSupervision/CheckpointReached</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="8109C832-F028-4685-861C-84F31D7A60F0">
+                  <SHORT-NAME>V_WDGM_SE000_SE_10msBsw_Appl10_DSE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/DeactivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE000_SE_10msBsw_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="622FB8E9-04C9-4929-9FC9-299CBD664F11">
+                  <SHORT-NAME>V_WDGM_SE001_SE_2ms_Appl10_DSE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/DeactivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE001_SE_2ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="BB969F5C-D949-4495-B650-5E7E228F3C86">
+                  <SHORT-NAME>V_WDGM_SE002_SE_2ms_Appl6_DSE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/DeactivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE002_SE_2ms_Appl6</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="CB2DDED4-2C18-47FA-8FF2-9FF1B9937BDE">
+                  <SHORT-NAME>V_WDGM_SE003_SE_100ms_Appl10_DSE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/DeactivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE003_SE_100ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="2BB9EAC2-528C-440D-8B7E-C2D305EE1338">
+                  <SHORT-NAME>V_WDGM_SE004_SE_10ms_Appl6_DSE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/DeactivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE004_SE_10ms_Appl6</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="0AAE71D3-1F11-43E9-AFCD-0D9DF0E90405">
+                  <SHORT-NAME>V_WDGM_SE005_SE_4ms_Appl10_DSE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/DeactivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE005_SE_4ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="5E66B43A-90AD-4999-8DBC-C55B8254E37D">
+                  <SHORT-NAME>V_WDGM_SE006_SE_10ms_Appl10_DSE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/DeactivateSupervisionEntity</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE006_SE_10ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/DeactivateSupervisionEntity</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="3701C161-732A-4C8A-B1C2-FB614CB620A4">
+                  <SHORT-NAME>V_WDGM_GGS</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/GetGlobalStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/GlobalPort</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_GlobalMode/GetGlobalStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="F9C7D558-7B11-41D7-BF7D-B8C1863AF8F8">
+                  <SHORT-NAME>V_WDGM_SE000_SE_10msBsw_Appl10_GLS</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/GetLocalStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE000_SE_10msBsw_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="F1A02F16-5307-4128-AD33-26276C685422">
+                  <SHORT-NAME>V_WDGM_SE001_SE_2ms_Appl10_GLS</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/GetLocalStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE001_SE_2ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="382183FD-E449-4CA2-BB27-78E37976D44B">
+                  <SHORT-NAME>V_WDGM_SE002_SE_2ms_Appl6_GLS</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/GetLocalStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE002_SE_2ms_Appl6</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="49EC7654-57A7-4F42-9ECE-2C19CF552630">
+                  <SHORT-NAME>V_WDGM_SE003_SE_100ms_Appl10_GLS</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/GetLocalStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE003_SE_100ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="55905DDF-1DC1-488B-82C2-9ACBCEB9AE4F">
+                  <SHORT-NAME>V_WDGM_SE004_SE_10ms_Appl6_GLS</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/GetLocalStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE004_SE_10ms_Appl6</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="9105FBC3-68D7-4070-9D3F-128109B276D0">
+                  <SHORT-NAME>V_WDGM_SE005_SE_4ms_Appl10_GLS</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/GetLocalStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE005_SE_4ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="EACDB3AE-C6CD-4563-862A-6AD4F8A19870">
+                  <SHORT-NAME>V_WDGM_SE006_SE_10ms_Appl10_GLS</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/GetLocalStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE006_SE_10ms_Appl10</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_IndividualMode/GetLocalStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="ACC531A0-26D6-4C8A-8A82-46DA59B1D9D2">
+                  <SHORT-NAME>V_WDGM_GMO</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/GetMode</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/GlobalPort</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_GlobalMode/GetMode</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="678F5617-84D5-40AC-8444-F64E50D4916A">
+                  <SHORT-NAME>V_WDGM_PRE</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/PerformReset</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/GlobalPort</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/PortInterface/WdgM_GlobalMode/PerformReset</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <TIMING-EVENT UUID="049A0446-1810-4F53-9B7D-116A20AF47CB">
+                  <SHORT-NAME>V_WDGM_MAI</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ComponentType/WdgM/WdgM_InternalBehavior/WdgM_MainFunction</START-ON-EVENT-REF>
+                  <PERIOD>0.004</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <PORT-API-OPTIONS>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE000_SE_10msBsw_Appl10_0</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE000_SE_10msBsw_Appl10</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE000_SE_10msBsw_Appl10_CP000_ChkPt_10msBsw_Appl10_Strt_0</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE000_SE_10msBsw_Appl10_CP000_ChkPt_10msBsw_Appl10_Strt_1</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE000_SE_10msBsw_Appl10_CP000_ChkPt_10msBsw_Appl10_Strt</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE000_SE_10msBsw_Appl10_CP001_ChkPt_10msBsw_Appl10_End_0</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE000_SE_10msBsw_Appl10_CP001_ChkPt_10msBsw_Appl10_End_1</SHORT-LABEL>
+                          <VALUE>1</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE000_SE_10msBsw_Appl10_CP001_ChkPt_10msBsw_Appl10_End</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE001_SE_2ms_Appl10_0</SHORT-LABEL>
+                          <VALUE>1</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE001_SE_2ms_Appl10</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE001_SE_2ms_Appl10_CP000_ChkPt_2ms_Appl10_Strt_0</SHORT-LABEL>
+                          <VALUE>1</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE001_SE_2ms_Appl10_CP000_ChkPt_2ms_Appl10_Strt_1</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE001_SE_2ms_Appl10_CP000_ChkPt_2ms_Appl10_Strt</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE001_SE_2ms_Appl10_CP001_ChkPt_2ms_Appl10_End_0</SHORT-LABEL>
+                          <VALUE>1</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE001_SE_2ms_Appl10_CP001_ChkPt_2ms_Appl10_End_1</SHORT-LABEL>
+                          <VALUE>1</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE001_SE_2ms_Appl10_CP001_ChkPt_2ms_Appl10_End</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE002_SE_2ms_Appl6_0</SHORT-LABEL>
+                          <VALUE>2</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE002_SE_2ms_Appl6</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE002_SE_2ms_Appl6_CP000_ChkPt_2ms_Appl6_Strt_0</SHORT-LABEL>
+                          <VALUE>2</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE002_SE_2ms_Appl6_CP000_ChkPt_2ms_Appl6_Strt_1</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE002_SE_2ms_Appl6_CP000_ChkPt_2ms_Appl6_Strt</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE002_SE_2ms_Appl6_CP001_ChkPt_2ms_Appl6_End_0</SHORT-LABEL>
+                          <VALUE>2</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE002_SE_2ms_Appl6_CP001_ChkPt_2ms_Appl6_End_1</SHORT-LABEL>
+                          <VALUE>1</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE002_SE_2ms_Appl6_CP001_ChkPt_2ms_Appl6_End</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE003_SE_100ms_Appl10_0</SHORT-LABEL>
+                          <VALUE>3</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE003_SE_100ms_Appl10</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE003_SE_100ms_Appl10_CP000_ChkPt_100ms_Appl10_Strt_0</SHORT-LABEL>
+                          <VALUE>3</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE003_SE_100ms_Appl10_CP000_ChkPt_100ms_Appl10_Strt_1</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE003_SE_100ms_Appl10_CP000_ChkPt_100ms_Appl10_Strt</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE003_SE_100ms_Appl10_CP001_ChkPt_100ms_Appl10_End_0</SHORT-LABEL>
+                          <VALUE>3</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE003_SE_100ms_Appl10_CP001_ChkPt_100ms_Appl10_End_1</SHORT-LABEL>
+                          <VALUE>1</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE003_SE_100ms_Appl10_CP001_ChkPt_100ms_Appl10_End</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE004_SE_10ms_Appl6_0</SHORT-LABEL>
+                          <VALUE>4</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE004_SE_10ms_Appl6</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE004_SE_10ms_Appl6_CP000_ChkPt_10ms_Appl6_Strt_0</SHORT-LABEL>
+                          <VALUE>4</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE004_SE_10ms_Appl6_CP000_ChkPt_10ms_Appl6_Strt_1</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE004_SE_10ms_Appl6_CP000_ChkPt_10ms_Appl6_Strt</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE004_SE_10ms_Appl6_CP001_ChkPt_10ms_Appl6_End_0</SHORT-LABEL>
+                          <VALUE>4</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE004_SE_10ms_Appl6_CP001_ChkPt_10ms_Appl6_End_1</SHORT-LABEL>
+                          <VALUE>1</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE004_SE_10ms_Appl6_CP001_ChkPt_10ms_Appl6_End</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE005_SE_4ms_Appl10_0</SHORT-LABEL>
+                          <VALUE>5</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE005_SE_4ms_Appl10</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE005_SE_4ms_Appl10_CP000_ChkPt_4ms_Appl10_Strt_0</SHORT-LABEL>
+                          <VALUE>5</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE005_SE_4ms_Appl10_CP000_ChkPt_4ms_Appl10_Strt_1</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE005_SE_4ms_Appl10_CP000_ChkPt_4ms_Appl10_Strt</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE005_SE_4ms_Appl10_CP001_ChkPt_4ms_Appl10_End_0</SHORT-LABEL>
+                          <VALUE>5</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE005_SE_4ms_Appl10_CP001_ChkPt_4ms_Appl10_End_1</SHORT-LABEL>
+                          <VALUE>1</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE005_SE_4ms_Appl10_CP001_ChkPt_4ms_Appl10_End</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE006_SE_10ms_Appl10_0</SHORT-LABEL>
+                          <VALUE>6</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE006_SE_10ms_Appl10</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE006_SE_10ms_Appl10_CP000_ChkPt_10ms_Appl10_Strt_0</SHORT-LABEL>
+                          <VALUE>6</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE006_SE_10ms_Appl10_CP000_ChkPt_10ms_Appl10_Strt_1</SHORT-LABEL>
+                          <VALUE>0</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE006_SE_10ms_Appl10_CP000_ChkPt_10ms_Appl10_Strt</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-ARG-VALUES>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE006_SE_10ms_Appl10_CP001_ChkPt_10ms_Appl10_End_0</SHORT-LABEL>
+                          <VALUE>6</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_SupervisedEntityIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                    <PORT-DEFINED-ARGUMENT-VALUE>
+                      <VALUE>
+                        <NUMERICAL-VALUE-SPECIFICATION>
+                          <SHORT-LABEL>SE006_SE_10ms_Appl10_CP001_ChkPt_10ms_Appl10_End_1</SHORT-LABEL>
+                          <VALUE>1</VALUE>
+                        </NUMERICAL-VALUE-SPECIFICATION>
+                      </VALUE>
+                      <VALUE-TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataType/WdgM_CheckpointIdType</VALUE-TYPE-TREF>
+                    </PORT-DEFINED-ARGUMENT-VALUE>
+                  </PORT-ARG-VALUES>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/ComponentType/WdgM/SE006_SE_10ms_Appl10_CP001_ChkPt_10ms_Appl10_End</PORT-REF>
+                </PORT-API-OPTION>
+              </PORT-API-OPTIONS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="34DB7DF4-4E88-4B7A-85DB-5894ED91875A">
+                  <SHORT-NAME>ActivateSupervisionEntity</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>WdgM_ActivateSupervisionEntity</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="7824DFF4-71D5-43CE-91EF-7FF71C4C09C9">
+                  <SHORT-NAME>CheckpointReached</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>WdgM_CheckpointReached</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0962E602-2FD5-42B2-B830-539AE3DCAB77">
+                  <SHORT-NAME>DeactivateSupervisionEntity</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>WdgM_DeactivateSupervisionEntity</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="D64E0BBD-94B7-466A-A16C-1EF967BC3C5C">
+                  <SHORT-NAME>GetGlobalStatus</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>WdgM_GetGlobalStatus</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="8B64F315-079B-472D-9476-92A52C775C00">
+                  <SHORT-NAME>GetLocalStatus</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>WdgM_GetLocalStatus</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="644AB5A3-5E43-4853-B0FE-BAE1DA52EB9A">
+                  <SHORT-NAME>GetMode</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>WdgM_GetMode</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="C78EDC5D-52FA-419D-9791-D1FEBB67F0C2">
+                  <SHORT-NAME>PerformReset</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>WdgM_PerformReset</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="2484088A-1DF6-44F2-9C03-DB6F1FE65C9B">
+                  <SHORT-NAME>WdgM_MainFunction</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>WdgM_MainFunction</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </SERVICE-SW-COMPONENT-TYPE>
+        <SWC-IMPLEMENTATION UUID="C412C98B-BBF6-4A84-984E-39EE5C002A12">
+          <SHORT-NAME>WdgM_Implementation</SHORT-NAME>
+          <CODE-DESCRIPTORS>
+            <CODE>
+              <SHORT-NAME>Default</SHORT-NAME>
+              <ARTIFACT-DESCRIPTORS>
+                <AUTOSAR-ENGINEERING-OBJECT>
+                  <SHORT-LABEL>Default</SHORT-LABEL>
+                  <CATEGORY>SWSRC</CATEGORY>
+                </AUTOSAR-ENGINEERING-OBJECT>
+              </ARTIFACT-DESCRIPTORS>
+            </CODE>
+          </CODE-DESCRIPTORS>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/ComponentType/WdgM/WdgM_InternalBehavior</BEHAVIOR-REF>
+        </SWC-IMPLEMENTATION>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,1465 @@
+<RDEF> I Includes
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h 62
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc_Type.h 40
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc_Type.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_Type.h 32
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_Type.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte.h 27
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 39
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Platform_Types.h 63
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h 64
+<R>I C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h C:/Component/AR201A_ArCplrSuprt_Impl/tools/contract/Compiler_Cfg.h 56
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_UserTypes.h 41
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_UserTypes.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 39
+<DEFINE> STHLTHSIGSTC_CFG_H C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 23 I DF OM - - - O
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 26
+<DEFINE> STHLTHSIGSTC_H C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 21 I DF OM - - - O
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 24
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/osek.h 25
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/os.h 26
+<DEFINE> GetDataOper C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 34 I DC OT F N p(uc,.) -
+<DEFINE> GetStHlthDataOper C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 38 I DC MB F N p(uc,.) -
+<DEFINE> SamplePerSec C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 39 I DC MB F N us -
+<DEFINE> TaskRef C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 40 I DC MB F N uc -
+<DEFINE> RamStorgOffs C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 41 I DC MB F N uc -
+<DEFINE> NvmStorgOffs C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 43 I DC MB F N uc -
+<DEFINE> StHlthSigStcPrmRec1 C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 45 I DC OT F N {s} -
+<DEFINE> CrcStrtAdr C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 49 I DC MB F N p=ul -
+<DEFINE> StHlthSigStcCrcAdrRec1 C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 50 I DC OT F N {s} -
+<DEFINE> SigPrm C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 55 I DC MB F N p={sStHlthSigStcPrmRec1} -
+<DEFINE> CrcAdr C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 56 I DC MB F N p={sStHlthSigStcCrcAdrRec1} -
+<DEFINE> StHlthSigStcCfgRec1 C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 58 I DC OT F N {s} -
+<DEFINE> SIGCNT_ULS_U08 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 31 I DF OM - - - O
+<LIT> 22 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 31 34 I DN - F M
+<DEFINE> TOTBUFSIZERAM_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 33 I DF OM - - - O
+<LIT> 66 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 33 34 I DN - F M
+<DEFINE> TOTBUFSIZENVM_CNT_U16 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 35 I DF OM - - - O
+<LIT> 177 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 35 34 I DN - F M
+<DEFINE> MOTISRREF_CNT_U16 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 37 I DF OM - - - O
+<DEFINE> STHLTHOSAPPL_CNT_U16 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 39 I DF OM - - - O
+<DEFINE> NROFCRCAREA_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 41 I DF OM - - - O
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 41 30 I DN - F M
+<DEFINE> Ary1D_u8_StHlthSigStc1 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 44 I DC OT F N [66,uc] -
+<DEFINE> Ary1D_u32_StHlthSigStc1 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 45 I DC OT F N [22,ul] -
+<DEFINE> Ary1D_f32_StHlthSigStc1 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 46 I DC OT F N [22,fs] -
+<EXTN> StHlthSigStcCfgRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 48
+<DEFINE> StHlthSigStcCfgRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 48 I DC OV F X ={sStHlthSigStcCfgRec1} S
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_DataHandleType.h 41
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 60
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 65
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 99
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 133
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h 233
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h 415
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 76
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/osek.h 77
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/os.h 78
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/nontrustfct.h 79
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h 80
+<R>I C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h C:/Component/TL103A_CplrSuprt/include/2015.1.5/ansi/math.h 25
+<R>I C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 26
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Crc.h 81
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h 82
+<R>I C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 24
+<DEFINE> TarSel C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 88 N DC MB F N uc -
+<DEFINE> NtClrDataSampleRec C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 89 N DC OT F N {s} -
+<DEFINE> TaskId C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 93 N DC MB F N uc -
+<DEFINE> NtUpdDataSampleRec C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 94 N DC OT F N {s} -
+<DEFINE> NvmSampleCnt C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 97 N DC MB F N ul -
+<DEFINE> NvmPtr C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 98 N DC MB F N puc -
+<DEFINE> NvmAvrgVal C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 99 N DC MB F N us -
+<DEFINE> NvmMaxVal C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 100 N DC MB F N uc -
+<DEFINE> NvmMinVal C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 101 N DC MB F N uc -
+<DEFINE> NtUpdNvmPimRec C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 103 N DC OT F N {s} -
+<DEFINE> PimStHlthSigStcRamBuf_u8 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 109 N DF OM - - - O
+<DEFINE> PimStHlthSigStcIgnCycSampleCntrAry_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 110 N DF OM - - - O
+<DEFINE> PimStHlthSigStcSigAvrgBufAry_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 111 N DF OM - - - O
+<DEFINE> RAMRAWPOSN_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 114 N DF OM - - - O
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 114 31 N ON - F M
+<DEFINE> RAMMAXPOSN_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 115 N DF OM - - - O
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 115 31 N DN - F M
+<DEFINE> RAMMINPOSN_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 116 N DF OM - - - O
+<LIT> 2 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 116 31 N DN - F M
+<DEFINE> NVMMAXPOSN_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 119 N DF OM - - - O
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 119 36 N ON - F M
+<DEFINE> NVMMINPOSN_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 120 N DF OM - - - O
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 120 36 N DN - F M
+<DEFINE> NVMAVRGPOSN_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 121 N DF OM - - - O
+<LIT> 2 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 121 36 N DN - F M
+<DEFINE> NVMSAMPLECNTRPOSN_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 122 N DF OM - - - O
+<LIT> 4 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 122 37 N DN - F M
+<DEFINE> STHLTHMAXVAL_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 124 N DF OM - - - O
+<LIT> 100 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 124 32 N DN - F M
+<DEFINE> STHLTHMINVAL_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 125 N DF OM - - - O
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 125 31 N ON - F M
+<DEFINE> WORDSIZE_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 126 N DF OM - - - O
+<LIT> 4 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 126 31 N DN - F M
+<DEFINE> BITSPERBYTE_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 127 N DF OM - - - O
+<LIT> 8 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 127 31 N DN - F M
+<DEFINE> LOWRMASKVAL_CNT_U32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 128 N DF OM - - - O
+<LIT> 0x000000FF U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 128 30 N HN - F M
+<DEFINE> UPPRMASKVAL_CNT_U16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 130 N DF OM - - - O
+<LIT> 0xFF00 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 130 30 N HN - F M
+<DEFINE> LOWRMASKVAL_CNT_U16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 131 N DF OM - - - O
+<LIT> 0x00FF U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 131 30 N HN - F M
+<DEFINE> STHLTHMAXVAL_CNT_F32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 133 N DF OM - - - O
+<LIT> 100.0 F P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 133 32 N FN - F M
+<DEFINE> STHLTHMINVAL_CNT_F32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 134 N DF OM - - - O
+<LIT> 0.0 F P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 134 32 N FN - F M
+<DEFINE> IGNCYCSAMPLECNTRARYMAXLIM_CNT_U32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 136 N DF OM - - - O
+<LIT> 4294967295 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 136 44 N DN - F M
+<DEFINE> IGNCYCSAMPLECNTRARYMINLIM_CNT_U32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 137 N DF OM - - - O
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 137 44 N ON - F M
+<DEFINE> CRCBUFSIZE_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 139 N DF OM - - - O
+<DEFINE> TarSel_Uls_T_logl C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 143 N DC OV P N uc R
+<DEFINE> StHlthSigStc_ClrDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 143 N DC OF F I (.,uc) -
+<DEFINE> SigId_Uls_T_enum C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 144 N DC OV P N uc R
+<DEFINE> TarAdr C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 144 N DC OV P N puc R
+<DEFINE> StHlthSigStc_GetSigStHlthData C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 144 N DC OF F I (.,uc,puc) -
+<DEFINE> TaskRef_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 145 N DC OV P N uc R
+<DEFINE> StHlthSigStc_UpdDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 145 N DC OF F I (.,uc) -
+<DEFINE> NvmPim_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 146 N DC OV P N puc R
+<DEFINE> NvmMaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 147 N DC OV P N uc R
+<DEFINE> NvmMinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 148 N DC OV P N uc R
+<DEFINE> NvmAvrgVal_Uls_T_u7p9 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 149 N DC OV P N us R
+<DEFINE> NvmSampleCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 150 N DC OV P N ul R
+<DEFINE> StHlthSigStc_UpdNvmPim C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 146 N DC OF F I (.,puc,uc,uc,us,ul) -
+<DEFINE> StHlthSigStc_START_SEC_CODE C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 229 N DF OM - - - O
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h 230
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<EXTD> ClrSigStcHlthData_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 261
+<DEFINE> ClrTar_Arg C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 261 N DC OV B N uc R
+<DEFINE> ClrSigStcHlthData_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 261 N DR OF F X (.,uc) -
+<DEFINE> ClrSigStcHlthData_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 261 N DF OF F X (.,uc) -
+<DEFINE> Prm_T_rec C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 269 N DC OV B N {sNtClrDataSampleRec} -
+<DEFINE> Prm_T_rec C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 269 N DF OV B N {sNtClrDataSampleRec} -
+<RDEF> C Calls
+<R>C ClrSigStcHlthData_Oper GetApplicationID 272
+<RDEF> X Refers-to
+<R>X ClrSigStcHlthData_Oper GetApplicationID 272 R
+<R>C ClrSigStcHlthData_Oper StHlthSigStc_ClrDataSample 275
+<R>C ClrSigStcHlthData_Oper CallNonTrustedFunction 281
+<R>X ClrSigStcHlthData_Oper CallNonTrustedFunction 281 R
+<CTLG> ClrSigStcHlthData_Oper 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 4
+<CTLG> 3 4
+<CTLG> 4 6
+<CTLGN> 262 272 272 277 288 288 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  ClrSigStcHlthData_Oper
+<S>STCYC  2
+<S>STMCC  0 (2:2)
+<S>STMIF  1
+<S>STSUB  3
+<S>STAKI  5
+<S>STLIN  25
+<S>STXLN  5
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  2
+<S>STPDN  0.40   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  7
+<S>STAV2  9
+<S>STAV3  12
+<S>STST1  7
+<S>STST2  5
+<S>STST3  4
+<S>STPAR  1
+<S>STCAL  3
+<S>STFN1  34
+<S>STFN2  15
+
+<EXTD> GetSigStcHlthData_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 322
+<DEFINE> SigId_Arg C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 322 N DC OV B N uc R
+<DEFINE> BufPtr_Arg C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 322 N DC OV B N pul R
+<DEFINE> GetSigStcHlthData_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 322 N DR OF F X (uc,uc,pul) -
+<DEFINE> GetSigStcHlthData_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 322 N DF OF F X (uc,uc,pul) -
+<DEFINE> TmpBuffer_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 329 N DC OV B N puc -
+<DEFINE> TmpBuffer_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 329 N DF OV B N puc -
+<DEFINE> RetVal_T_StdType C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 330 N DC OV B N uc -
+<DEFINE> RetVal_T_StdType C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 330 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 338 64 N ON ui B X
+<R>X GetSigStcHlthData_Oper Rte_Inst_StHlthSigStc 338 R
+<R>C GetSigStcHlthData_Oper StHlthSigStc_GetSigStHlthData 341
+<CTLG> GetSigStcHlthData_Oper 1
+<CTLG> 1 2
+<CTLG> 1 7
+<CTLG> 2 3
+<CTLG> 3 4
+<CTLG> 3 5
+<CTLG> 4 6
+<CTLG> 5 6
+<CTLG> 6 8
+<CTLG> 7 8
+<CTLG> 8 10
+<CTLGN> 323 334 338 338 338 343 334 349 354 354 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  GetSigStcHlthData_Oper
+<S>STCYC  3
+<S>STMCC  1 (3:4)
+<S>STMIF  2
+<S>STSUB  1
+<S>STAKI  4
+<S>STLIN  35
+<S>STXLN  11
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  2
+<S>STPTH  3
+<S>STPDN  0.27   
+<S>STPBG  0
+<S>STLOP  1
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  6
+<S>STAV2  8
+<S>STAV3  10
+<S>STST1  14
+<S>STST2  10
+<S>STST3  8
+<S>STPAR  2
+<S>STCAL  1
+<S>STFN1  56
+<S>STFN2  29
+
+<EXTD> StHlthSigStcInit1 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 381
+<DEFINE> StHlthSigStcInit1 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 381 N DR OF F X (.,.) -
+<DEFINE> StHlthSigStcInit1 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 381 N DF OF F X (.,.) -
+<DEFINE> NvmBlkPim_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 388 N DC OV B N puc -
+<DEFINE> NvmBlkPim_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 388 N DF OV B N puc -
+<DEFINE> NvmPimCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 389 N DC OV B N ul -
+<DEFINE> NvmPimCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 389 N DF OV B N ul -
+<DEFINE> CrcData_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 390 N DC OV B N ul -
+<DEFINE> CrcData_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 390 N DF OV B N ul -
+<DEFINE> SigCnt_Uls_T_u16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 391 N DC OV B N us -
+<DEFINE> SigCnt_Uls_T_u16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 391 N DF OV B N us -
+<DEFINE> StrtAdr_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 392 N DC OV B N uc -
+<DEFINE> StrtAdr_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 392 N DF OV B N uc -
+<DEFINE> CrcBuf_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 393 N DC OV B N [4,uc] -
+<DEFINE> CrcBuf_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 393 N DF OV B N [4,uc] -
+<DEFINE> CrcInnrLoopCnt_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 394 N DC OV B N uc -
+<DEFINE> CrcInnrLoopCnt_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 394 N DF OV B N uc -
+<DEFINE> CrcOutrLoopCnt_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 395 N DC OV B N uc -
+<DEFINE> CrcOutrLoopCnt_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 395 N DF OV B N uc -
+<DEFINE> CalcCrc_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 396 N DC OV B N uc -
+<DEFINE> CalcCrc_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 396 N DF OV B N uc -
+<DEFINE> NvMBlkStatus_Cnt_T_u8 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 397 N DC OV B N uc -
+<DEFINE> NvMBlkStatus_Cnt_T_u8 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 397 N DF OV B N uc -
+<R>X StHlthSigStcInit1 Rte_Inst_StHlthSigStc 400 R
+<R>C StHlthSigStcInit1 Rte_Call_StHlthSigStc_SigStcHistDataAry_GetErrorStatus 403
+<R>X StHlthSigStcInit1 Rte_Call_StHlthSigStc_SigStcHistDataAry_GetErrorStatus 403 R
+<R>X StHlthSigStcInit1 Rte_Inst_StHlthSigStc 407 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 413 36 N ON ui B X
+<R>X StHlthSigStcInit1 StHlthSigStcCfgRecInst 416 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 418 40 N ON ui B X
+<R>C StHlthSigStcInit1 Crc_CalculateCRC8 426
+<R>X StHlthSigStcInit1 Crc_CalculateCRC8 426 R
+<LIT> 0 - P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 426 61 N ON ni B X
+<LIT> 0xFF U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 426 85 N HN ui B X
+<R>X StHlthSigStcInit1 Rte_Inst_StHlthSigStc 430 R
+<R>X StHlthSigStcInit1 Rte_Inst_StHlthSigStc 433 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 437 53 N ON ui B X
+<R>X StHlthSigStcInit1 Rte_Inst_StHlthSigStc 439 R
+<R>X StHlthSigStcInit1 Rte_Inst_StHlthSigStc 448 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 452 29 N ON ui B X
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 454 43 N DN ui B X
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 456 68 N ON ui B X
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 465 28 N ON ui B X
+<R>X StHlthSigStcInit1 StHlthSigStcCfgRecInst 467 R
+<R>X StHlthSigStcInit1 Rte_Inst_StHlthSigStc 469 R
+<CTLG> StHlthSigStcInit1 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 2 4
+<CTLG> 3 4
+<CTLG> 4 5
+<CTLG> 5 6
+<CTLG> 5 13
+<CTLG> 6 7
+<CTLG> 7 8
+<CTLG> 8 9
+<CTLG> 8 11
+<CTLG> 9 10
+<CTLG> 10 8
+<CTLG> 11 12
+<CTLG> 12 5
+<CTLG> 13 14
+<CTLG> 14 15
+<CTLG> 14 18
+<CTLG> 15 16
+<CTLG> 15 17
+<CTLG> 16 17
+<CTLG> 17 18
+<CTLG> 18 19
+<CTLG> 18 25
+<CTLG> 19 20
+<CTLG> 20 21
+<CTLG> 21 22
+<CTLG> 21 24
+<CTLG> 22 23
+<CTLG> 23 21
+<CTLG> 24 25
+<CTLG> 25 26
+<CTLG> 26 27
+<CTLG> 26 29
+<CTLG> 27 28
+<CTLG> 28 26
+<CTLG> 29 31
+<CTLGN> 382 405 405 405 413 413 418 418 418 418 418 413 413 433 433 437 437 433 448 454 454 454 454 454 448 465 465 465 465 478 478 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthSigStcInit1
+<S>STCYC  9
+<S>STMCC  0 (9:9)
+<S>STMIF  2
+<S>STSUB  2
+<S>STAKI  11
+<S>STLIN  95
+<S>STXLN  21
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  10
+<S>STPTH  108
+<S>STPDN  5.14   
+<S>STPBG  2
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  8
+<S>STAV2  10
+<S>STAV3  16
+<S>STST1  38
+<S>STST2  30
+<S>STST3  20
+<S>STPAR  0
+<S>STCAL  2
+<S>STFN1  206
+<S>STFN2  119
+
+<EXTD> StHlthStcPwrDwn_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 509
+<DEFINE> StHlthStcPwrDwn_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 509 N DR OF F X (.,.) -
+<DEFINE> StHlthStcPwrDwn_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 509 N DF OF F X (.,.) -
+<DEFINE> UpdNvm_str C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 516 N DC OV B N {sNtUpdNvmPimRec} -
+<DEFINE> UpdNvm_str C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 516 N DF OV B N {sNtUpdNvmPimRec} -
+<DEFINE> RamAvrgVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 517 N DC OV B N fs -
+<DEFINE> RamAvrgVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 517 N DF OV B N fs -
+<DEFINE> NvmAvrgVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 518 N DC OV B N fs -
+<DEFINE> NvmAvrgVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 518 N DF OV B N fs -
+<DEFINE> TmpDif_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 519 N DC OV B N fs -
+<DEFINE> TmpDif_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 519 N DF OV B N fs -
+<DEFINE> NvmAvrgVal_Uls_T_u7p9 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 520 N DC OV B N us -
+<DEFINE> NvmAvrgVal_Uls_T_u7p9 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 520 N DF OV B N us -
+<DEFINE> NvmPim_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 521 N DC OV B N puc -
+<DEFINE> NvmPim_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 521 N DF OV B N puc -
+<DEFINE> NvMSampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 522 N DC OV B N puc -
+<DEFINE> NvMSampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 522 N DF OV B N puc -
+<DEFINE> SampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 523 N DC OV B N puc -
+<DEFINE> SampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 523 N DF OV B N puc -
+<DEFINE> SampleCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 524 N DC OV B N ul -
+<DEFINE> SampleCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 524 N DF OV B N ul -
+<DEFINE> NvmSampleCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 525 N DC OV B N ul -
+<DEFINE> NvmSampleCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 525 N DF OV B N ul -
+<DEFINE> SigCnt_Uls_T_u16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 526 N DC OV B N us -
+<DEFINE> SigCnt_Uls_T_u16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 526 N DF OV B N us -
+<DEFINE> NvmOffs_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 527 N DC OV B N uc -
+<DEFINE> NvmOffs_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 527 N DF OV B N uc -
+<DEFINE> StrtAdr_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 528 N DC OV B N uc -
+<DEFINE> StrtAdr_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 528 N DF OV B N uc -
+<DEFINE> NvmWrRqrdUls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 529 N DC OV B N uc -
+<DEFINE> NvmWrRqrdUls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 529 N DF OV B N uc -
+<DEFINE> NvmMaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 530 N DC OV B N uc -
+<DEFINE> NvmMaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 530 N DF OV B N uc -
+<DEFINE> NvmMinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 531 N DC OV B N uc -
+<DEFINE> NvmMinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 531 N DF OV B N uc -
+<DEFINE> RamMaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 532 N DC OV B N uc -
+<DEFINE> RamMaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 532 N DF OV B N uc -
+<DEFINE> RamMinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 533 N DC OV B N uc -
+<DEFINE> RamMinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 533 N DF OV B N uc -
+<DEFINE> SampleCntSize_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 534 N DC OV B N uc -
+<DEFINE> SampleCntSize_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 534 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 536 26 N ON ui B X
+<R>X StHlthStcPwrDwn_Oper Rte_Inst_StHlthSigStc 537 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 545 28 N ON ui B X
+<R>X StHlthStcPwrDwn_Oper StHlthSigStcCfgRecInst 547 R
+<R>X StHlthStcPwrDwn_Oper StHlthSigStcCfgRecInst 549 R
+<R>X StHlthStcPwrDwn_Oper Rte_Inst_StHlthSigStc 551 R
+<R>X StHlthStcPwrDwn_Oper StHlthSigStcCfgRecInst 553 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 555 35 N ON ui B X
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 561 34 N DN ui B X
+<R>X StHlthStcPwrDwn_Oper Rte_Inst_StHlthSigStc 563 R
+<R>X StHlthStcPwrDwn_Oper Rte_Inst_StHlthSigStc 564 R
+<R>X StHlthStcPwrDwn_Oper Rte_Inst_StHlthSigStc 565 R
+<R>X StHlthStcPwrDwn_Oper Rte_Inst_StHlthSigStc 567 R
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 573 247 N DN ui B X
+<R>C StHlthStcPwrDwn_Oper FixdToFloat_f32_u16 575
+<R>X StHlthStcPwrDwn_Oper FixdToFloat_f32_u16 575 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 588 51 N ON ui B X
+<R>C StHlthStcPwrDwn_Oper Max_u08 591
+<R>X StHlthStcPwrDwn_Oper Max_u08 591 R
+<R>C StHlthStcPwrDwn_Oper Min_u08 593
+<R>X StHlthStcPwrDwn_Oper Min_u08 593 R
+<R>C StHlthStcPwrDwn_Oper FloatToFixd_u16_f32 609
+<R>X StHlthStcPwrDwn_Oper FloatToFixd_u16_f32 609 R
+<R>C StHlthStcPwrDwn_Oper Lim_f32 609
+<R>X StHlthStcPwrDwn_Oper Lim_f32 609 R
+<R>C StHlthStcPwrDwn_Oper FloatToFixd_u16_f32 615
+<R>X StHlthStcPwrDwn_Oper FloatToFixd_u16_f32 615 R
+<R>C StHlthStcPwrDwn_Oper CallNonTrustedFunction 630
+<R>X StHlthStcPwrDwn_Oper CallNonTrustedFunction 630 R
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 636 30 N DN ui B X
+<R>C StHlthStcPwrDwn_Oper Rte_Call_StHlthSigStc_SigStcHistDataAry_SetRamBlockStatus 638
+<R>X StHlthStcPwrDwn_Oper Rte_Call_StHlthSigStc_SigStcHistDataAry_SetRamBlockStatus 638 R
+<CTLG> StHlthStcPwrDwn_Oper 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 3 4
+<CTLG> 3 21
+<CTLG> 4 5
+<CTLG> 5 6
+<CTLG> 5 19
+<CTLG> 6 7
+<CTLG> 7 8
+<CTLG> 7 17
+<CTLG> 8 9
+<CTLG> 9 10
+<CTLG> 10 11
+<CTLG> 11 9
+<CTLG> 11 12
+<CTLG> 12 13
+<CTLG> 13 14
+<CTLG> 13 15
+<CTLG> 14 16
+<CTLG> 15 16
+<CTLG> 16 18
+<CTLG> 17 18
+<CTLG> 18 19
+<CTLG> 19 20
+<CTLG> 20 3
+<CTLG> 21 22
+<CTLG> 21 23
+<CTLG> 22 23
+<CTLG> 23 25
+<CTLGN> 510 545 545 545 555 555 567 567 582 582 582 582 598 598 598 603 567 611 555 545 545 636 636 651 651 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthStcPwrDwn_Oper
+<S>STCYC  7
+<S>STMCC  0 (7:7)
+<S>STMIF  4
+<S>STSUB  8
+<S>STAKI  15
+<S>STLIN  140
+<S>STXLN  49
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  19
+<S>STPTH  14
+<S>STPDN  0.29   
+<S>STPBG  1
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  8
+<S>STAV2  9
+<S>STAV3  12
+<S>STST1  73
+<S>STST2  65
+<S>STST3  46
+<S>STPAR  0
+<S>STCAL  7
+<S>STFN1  353
+<S>STFN2  235
+
+<EXTD> UpdStHlthStcData_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 706
+<DEFINE> TaskId_Arg C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 706 N DC OV B N uc R
+<DEFINE> UpdStHlthStcData_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 706 N DR OF F X (.,uc) -
+<DEFINE> UpdStHlthStcData_Oper C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 706 N DF OF F X (.,uc) -
+<DEFINE> Prm_T_str C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 717 N DC OV B N {sNtUpdDataSampleRec} -
+<DEFINE> Prm_T_str C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 717 N DF OV B N {sNtUpdDataSampleRec} -
+<R>C UpdStHlthStcData_Oper GetApplicationID 719
+<R>X UpdStHlthStcData_Oper GetApplicationID 719 R
+<R>C UpdStHlthStcData_Oper StHlthSigStc_UpdDataSample 721
+<R>C UpdStHlthStcData_Oper CallNonTrustedFunction 726
+<R>X UpdStHlthStcData_Oper CallNonTrustedFunction 726 R
+<CTLG> UpdStHlthStcData_Oper 1
+<CTLG> 1 2
+<CTLG> 1 3
+<CTLG> 2 4
+<CTLG> 3 4
+<CTLG> 4 6
+<CTLGN> 707 719 719 723 735 735 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  UpdStHlthStcData_Oper
+<S>STCYC  2
+<S>STMCC  0 (2:2)
+<S>STMIF  1
+<S>STSUB  3
+<S>STAKI  5
+<S>STLIN  27
+<S>STXLN  5
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  2
+<S>STPDN  0.40   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  7
+<S>STAV2  9
+<S>STAV3  12
+<S>STST1  7
+<S>STST2  5
+<S>STST3  4
+<S>STPAR  1
+<S>STCAL  3
+<S>STFN1  34
+<S>STFN2  15
+
+<DEFINE> StHlthSigStc_STOP_SEC_CODE C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 738 N DF OM - - - O
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h 739
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<DEFINE> TarSel_Uls_T_logl C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 753 N DC OV B N uc R
+<DEFINE> StHlthSigStc_ClrDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 753 N DR OF F I (.,uc) -
+<DEFINE> StHlthSigStc_ClrDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 753 N DF OF F I (.,uc) -
+<DEFINE> NvmBlkPim_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 757 N DC OV B N puc -
+<DEFINE> NvmBlkPim_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 757 N DF OV B N puc -
+<DEFINE> SigCnt_Uls_T_u16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 758 N DC OV B N us -
+<DEFINE> SigCnt_Uls_T_u16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 758 N DF OV B N us -
+<DEFINE> NvmPimCnt_Uls_T_u16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 759 N DC OV B N us -
+<DEFINE> NvmPimCnt_Uls_T_u16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 759 N DF OV B N us -
+<DEFINE> StrtAdr_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 760 N DC OV B N uc -
+<DEFINE> StrtAdr_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 760 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 764 30 N ON ui B X
+<R>X StHlthSigStc_ClrDataSample StHlthSigStcCfgRecInst 767 R
+<R>X StHlthSigStc_ClrDataSample Rte_Inst_StHlthSigStc 768 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 768 68 N ON ui B X
+<R>X StHlthSigStc_ClrDataSample Rte_Inst_StHlthSigStc 769 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 769 77 N ON ui B X
+<R>X StHlthSigStc_ClrDataSample Rte_Inst_StHlthSigStc 770 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 770 77 N ON ui B X
+<R>X StHlthSigStc_ClrDataSample Rte_Inst_StHlthSigStc 771 R
+<R>X StHlthSigStc_ClrDataSample Rte_Inst_StHlthSigStc 772 R
+<LIT> 0.0 F P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 772 62 N FN fs B X
+<R>X StHlthSigStc_ClrDataSample Rte_Inst_StHlthSigStc 776 R
+<R>X StHlthSigStc_ClrDataSample Rte_Inst_StHlthSigStc 777 R
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 779 43 N DN ui B X
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 781 68 N ON ui B X
+<R>C StHlthSigStc_ClrDataSample Rte_Call_StHlthSigStc_SigStcHistDataAry_SetRamBlockStatus 784
+<R>X StHlthSigStc_ClrDataSample Rte_Call_StHlthSigStc_SigStcHistDataAry_SetRamBlockStatus 784 R
+<CTLG> StHlthSigStc_ClrDataSample 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 2 4
+<CTLG> 3 2
+<CTLG> 4 5
+<CTLG> 4 11
+<CTLG> 5 6
+<CTLG> 6 7
+<CTLG> 7 8
+<CTLG> 7 10
+<CTLG> 8 9
+<CTLG> 9 7
+<CTLG> 10 11
+<CTLG> 11 13
+<CTLGN> 754 764 764 764 774 779 779 779 779 779 774 788 788 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthSigStc_ClrDataSample
+<S>STCYC  4
+<S>STMCC  0 (4:4)
+<S>STMIF  2
+<S>STSUB  1
+<S>STAKI  5
+<S>STLIN  33
+<S>STXLN  15
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  4
+<S>STPTH  6
+<S>STPDN  0.40   
+<S>STPBG  1
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  7
+<S>STAV2  8
+<S>STAV3  10
+<S>STST1  22
+<S>STST2  19
+<S>STST3  15
+<S>STPAR  1
+<S>STCAL  1
+<S>STFN1  98
+<S>STFN2  62
+
+<DEFINE> SigId_Uls_T_enum C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 798 N DC OV B N uc R
+<DEFINE> TarAdr C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 798 N DC OV B N puc R
+<DEFINE> StHlthSigStc_GetSigStHlthData C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 798 N DR OF F I (.,uc,puc) -
+<DEFINE> StHlthSigStc_GetSigStHlthData C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 798 N DF OF F I (.,uc,puc) -
+<DEFINE> NvmBlkPim_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 800 N DC OV B N puc -
+<DEFINE> NvmBlkPim_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 800 N DF OV B N puc -
+<DEFINE> NvMSampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 801 N DC OV B N puc -
+<DEFINE> NvMSampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 801 N DF OV B N puc -
+<DEFINE> SampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 802 N DC OV B N puc -
+<DEFINE> SampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 802 N DF OV B N puc -
+<DEFINE> IgnCycSampleCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 803 N DC OV B N ul -
+<DEFINE> IgnCycSampleCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 803 N DF OV B N ul -
+<DEFINE> NvmSampleCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 804 N DC OV B N ul -
+<DEFINE> NvmSampleCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 804 N DF OV B N ul -
+<DEFINE> RamAvrgVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 805 N DC OV B N fs -
+<DEFINE> RamAvrgVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 805 N DF OV B N fs -
+<DEFINE> TmpDif_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 806 N DC OV B N fs -
+<DEFINE> TmpDif_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 806 N DF OV B N fs -
+<DEFINE> NvmAvrgVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 807 N DC OV B N fs -
+<DEFINE> NvmAvrgVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 807 N DF OV B N fs -
+<DEFINE> NvmAvrgVal_Uls_T_u7p9 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 808 N DC OV B N us -
+<DEFINE> NvmAvrgVal_Uls_T_u7p9 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 808 N DF OV B N us -
+<DEFINE> NvmOffs_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 809 N DC OV B N uc -
+<DEFINE> NvmOffs_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 809 N DF OV B N uc -
+<DEFINE> StrtAdr_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 810 N DC OV B N uc -
+<DEFINE> StrtAdr_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 810 N DF OV B N uc -
+<DEFINE> NvmMaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 811 N DC OV B N uc -
+<DEFINE> NvmMaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 811 N DF OV B N uc -
+<DEFINE> NvmMinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 812 N DC OV B N uc -
+<DEFINE> NvmMinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 812 N DF OV B N uc -
+<DEFINE> NvmAvrgVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 813 N DC OV B N uc -
+<DEFINE> NvmAvrgVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 813 N DF OV B N uc -
+<DEFINE> RamMaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 814 N DC OV B N uc -
+<DEFINE> RamMaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 814 N DF OV B N uc -
+<DEFINE> RamMinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 815 N DC OV B N uc -
+<DEFINE> RamMinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 815 N DF OV B N uc -
+<DEFINE> RamRawVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 816 N DC OV B N uc -
+<DEFINE> RamRawVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 816 N DF OV B N uc -
+<DEFINE> SampleCntSize_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 817 N DC OV B N uc -
+<DEFINE> SampleCntSize_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 817 N DF OV B N uc -
+<R>C StHlthSigStc_GetSigStHlthData Rte_Enter_StHlthSigStc_StHlthSigStc_ExclusiveArea 820
+<R>X StHlthSigStc_GetSigStHlthData Rte_Enter_StHlthSigStc_StHlthSigStc_ExclusiveArea 820 R
+<R>X StHlthSigStc_GetSigStHlthData StHlthSigStcCfgRecInst 822 R
+<R>X StHlthSigStc_GetSigStHlthData StHlthSigStcCfgRecInst 823 R
+<R>X StHlthSigStc_GetSigStHlthData Rte_Inst_StHlthSigStc 824 R
+<R>X StHlthSigStc_GetSigStHlthData Rte_Inst_StHlthSigStc 827 R
+<R>X StHlthSigStc_GetSigStHlthData Rte_Inst_StHlthSigStc 828 R
+<R>X StHlthSigStc_GetSigStHlthData Rte_Inst_StHlthSigStc 829 R
+<R>X StHlthSigStc_GetSigStHlthData Rte_Inst_StHlthSigStc 830 R
+<R>X StHlthSigStc_GetSigStHlthData Rte_Inst_StHlthSigStc 833 R
+<R>X StHlthSigStc_GetSigStHlthData StHlthSigStcCfgRecInst 835 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 837 38 N ON ui B X
+<R>X StHlthSigStc_GetSigStHlthData Rte_Inst_StHlthSigStc 837 R
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 847 236 N DN ui B X
+<R>C StHlthSigStc_GetSigStHlthData FixdToFloat_f32_u16 849
+<R>X StHlthSigStc_GetSigStHlthData FixdToFloat_f32_u16 849 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 861 43 N ON ui B X
+<R>C StHlthSigStc_GetSigStHlthData Max_u08 864
+<R>X StHlthSigStc_GetSigStHlthData Max_u08 864 R
+<R>C StHlthSigStc_GetSigStHlthData Min_u08 866
+<R>X StHlthSigStc_GetSigStHlthData Min_u08 866 R
+<R>C StHlthSigStc_GetSigStHlthData FloatToFixd_u16_f32 883
+<R>X StHlthSigStc_GetSigStHlthData FloatToFixd_u16_f32 883 R
+<R>C StHlthSigStc_GetSigStHlthData Lim_f32 883
+<R>X StHlthSigStc_GetSigStHlthData Lim_f32 883 R
+<R>C StHlthSigStc_GetSigStHlthData FloatToFixd_u16_f32 890
+<R>X StHlthSigStc_GetSigStHlthData FloatToFixd_u16_f32 890 R
+<R>C StHlthSigStc_GetSigStHlthData FloatToFixd_u16_f32 906
+<R>X StHlthSigStc_GetSigStHlthData FloatToFixd_u16_f32 906 R
+<R>C StHlthSigStc_GetSigStHlthData Rte_Exit_StHlthSigStc_StHlthSigStc_ExclusiveArea 930
+<R>X StHlthSigStc_GetSigStHlthData Rte_Exit_StHlthSigStc_StHlthSigStc_ExclusiveArea 930 R
+<CTLG> StHlthSigStc_GetSigStHlthData 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 2 12
+<CTLG> 3 4
+<CTLG> 4 5
+<CTLG> 5 6
+<CTLG> 6 4
+<CTLG> 6 7
+<CTLG> 7 8
+<CTLG> 8 9
+<CTLG> 8 10
+<CTLG> 9 11
+<CTLG> 10 11
+<CTLG> 11 13
+<CTLG> 12 13
+<CTLG> 13 14
+<CTLG> 14 16
+<CTLGN> 799 837 837 855 855 855 855 871 871 871 876 837 886 932 932 932 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthSigStc_GetSigStHlthData
+<S>STCYC  4
+<S>STMCC  1 (4:5)
+<S>STMIF  2
+<S>STSUB  9
+<S>STAKI  13
+<S>STLIN  132
+<S>STXLN  65
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  18
+<S>STPTH  5
+<S>STPDN  0.08   
+<S>STPBG  1
+<S>STLOP  1
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  85
+<S>STST2  80
+<S>STST3  62
+<S>STPAR  2
+<S>STCAL  7
+<S>STFN1  379
+<S>STFN2  246
+
+<DEFINE> NvmPim_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 945 N DC OV B N puc R
+<DEFINE> NvmMaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 946 N DC OV B N uc R
+<DEFINE> NvmMinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 947 N DC OV B N uc R
+<DEFINE> NvmAvrgVal_Uls_T_u7p9 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 948 N DC OV B N us R
+<DEFINE> NvmSampleCnt_Uls_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 949 N DC OV B N ul R
+<DEFINE> StHlthSigStc_UpdNvmPim C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 945 N DR OF F I (.,puc,uc,uc,us,ul) -
+<DEFINE> StHlthSigStc_UpdNvmPim C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 945 N DF OF F I (.,puc,uc,uc,us,ul) -
+<DEFINE> NvMSampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 953 N DC OV B N puc -
+<DEFINE> NvMSampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 953 N DF OV B N puc -
+<DEFINE> SampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 954 N DC OV B N puc -
+<DEFINE> SampleCnt_Ptr_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 954 N DF OV B N puc -
+<DEFINE> SampleCntSize_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 955 N DC OV B N uc -
+<DEFINE> SampleCntSize_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 955 N DF OV B N uc -
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 961 42 N DN ui B X
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 972 39 N ON ui B X
+<CTLG> StHlthSigStc_UpdNvmPim 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 3 4
+<CTLG> 4 2
+<CTLG> 4 5
+<CTLG> 5 7
+<CTLGN> 950 966 966 966 966 976 976 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthSigStc_UpdNvmPim
+<S>STCYC  2
+<S>STMCC  0 (2:2)
+<S>STMIF  1
+<S>STSUB  0
+<S>STAKI  2
+<S>STLIN  25
+<S>STXLN  13
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  3
+<S>STPTH  2
+<S>STPDN  0.15   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  8
+<S>STAV2  8
+<S>STAV3  10
+<S>STST1  16
+<S>STST2  15
+<S>STST3  12
+<S>STPAR  5
+<S>STCAL  0
+<S>STFN1  81
+<S>STFN2  47
+
+<DEFINE> TaskRef_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 985 N DC OV B N uc R
+<DEFINE> StHlthSigStc_UpdDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 985 N DR OF F I (.,uc) -
+<DEFINE> StHlthSigStc_UpdDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 985 N DF OF F I (.,uc) -
+<DEFINE> RawVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 987 N DC OV B N fs -
+<DEFINE> RawVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 987 N DF OV B N fs -
+<DEFINE> AvrgVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 988 N DC OV B N fs -
+<DEFINE> AvrgVal_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 988 N DF OV B N fs -
+<DEFINE> TmpDif_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 989 N DC OV B N fs -
+<DEFINE> TmpDif_Uls_T_f32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 989 N DF OV B N fs -
+<DEFINE> SigCnt_Uls_T_u16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 990 N DC OV B N us -
+<DEFINE> SigCnt_Uls_T_u16 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 990 N DF OV B N us -
+<DEFINE> StrtAdr_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 991 N DC OV B N uc -
+<DEFINE> StrtAdr_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 991 N DF OV B N uc -
+<DEFINE> MaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 992 N DC OV B N uc -
+<DEFINE> MaxVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 992 N DF OV B N uc -
+<DEFINE> RawVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 993 N DC OV B N uc -
+<DEFINE> RawVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 993 N DF OV B N uc -
+<DEFINE> MinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 994 N DC OV B N uc -
+<DEFINE> MinVal_Uls_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 994 N DF OV B N uc -
+<R>C StHlthSigStc_UpdDataSample Rte_Enter_StHlthSigStc_StHlthSigStc_ExclusiveArea 996
+<R>X StHlthSigStc_UpdDataSample Rte_Enter_StHlthSigStc_StHlthSigStc_ExclusiveArea 996 R
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 999 28 N ON ui B X
+<R>X StHlthSigStc_UpdDataSample StHlthSigStcCfgRecInst 1002 R
+<R>X StHlthSigStc_UpdDataSample StHlthSigStcCfgRecInst 1008 R
+<R>X StHlthSigStc_UpdDataSample StHlthSigStcCfgRecInst 1010 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1011 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1012 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1013 R
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1016 112 N DN ui B X
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1016 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1018 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1018 R
+<R>C StHlthSigStc_UpdDataSample Max_u08 1021
+<R>X StHlthSigStc_UpdDataSample Max_u08 1021 R
+<R>C StHlthSigStc_UpdDataSample Min_u08 1023
+<R>X StHlthSigStc_UpdDataSample Min_u08 1023 R
+<R>C StHlthSigStc_UpdDataSample FixdToFloat_f32_u16 1026
+<R>X StHlthSigStc_UpdDataSample FixdToFloat_f32_u16 1026 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1031 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1036 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1040 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1041 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1042 R
+<R>C StHlthSigStc_UpdDataSample Lim_f32 1043
+<R>X StHlthSigStc_UpdDataSample Lim_f32 1043 R
+<R>X StHlthSigStc_UpdDataSample Rte_Inst_StHlthSigStc 1043 R
+<R>C StHlthSigStc_UpdDataSample Rte_Exit_StHlthSigStc_StHlthSigStc_ExclusiveArea 1050
+<R>X StHlthSigStc_UpdDataSample Rte_Exit_StHlthSigStc_StHlthSigStc_ExclusiveArea 1050 R
+<CTLG> StHlthSigStc_UpdDataSample 1
+<CTLG> 1 2
+<CTLG> 2 3
+<CTLG> 3 4
+<CTLG> 3 15
+<CTLG> 4 5
+<CTLG> 4 13
+<CTLG> 5 6
+<CTLG> 6 7
+<CTLG> 6 8
+<CTLG> 7 8
+<CTLG> 8 9
+<CTLG> 9 10
+<CTLG> 9 11
+<CTLG> 10 12
+<CTLG> 11 12
+<CTLG> 12 13
+<CTLG> 13 14
+<CTLG> 14 3
+<CTLG> 15 16
+<CTLG> 16 18
+<CTLGN> 986 999 999 999 1002 1016 1016 1016 1028 1028 1028 1033 1002 999 999 1052 1052 1052 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthSigStc_UpdDataSample
+<S>STCYC  5
+<S>STMCC  0 (5:5)
+<S>STMIF  3
+<S>STSUB  7
+<S>STAKI  12
+<S>STLIN  65
+<S>STXLN  24
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  8
+<S>STPTH  6
+<S>STPDN  0.25   
+<S>STPBG  1
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  8
+<S>STAV2  9
+<S>STAV3  13
+<S>STST1  36
+<S>STST2  31
+<S>STST3  23
+<S>STPAR  1
+<S>STCAL  6
+<S>STFN1  180
+<S>STFN2  120
+
+<EXTD> NONTRUSTED_NtWrapS_StHlthSigStc_ClrDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1061
+<DEFINE> FunctionIndex C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1061 N DC OV B N us R
+<DEFINE> FunctionParams C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1061 N DC OV B N p. R
+<DEFINE> NONTRUSTED_NtWrapS_StHlthSigStc_ClrDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1061 N DR OF F X (.,us,p.) -
+<DEFINE> NONTRUSTED_NtWrapS_StHlthSigStc_ClrDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1061 N DF OF F X (.,us,p.) -
+<DEFINE> TarSel_Cnt_T_logl C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1063 N DC OV B N uc -
+<DEFINE> TarSel_Cnt_T_logl C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1063 N DF OV B N uc -
+<R>C NONTRUSTED_NtWrapS_StHlthSigStc_ClrDataSample StHlthSigStc_ClrDataSample 1067
+<CTLG> NONTRUSTED_NtWrapS_StHlthSigStc_ClrDataSample 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 1062 1068 1068 1068 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  NONTRUSTED_NtWrapS_StHlthSigStc_ClrDataSample
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  2
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  1
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.50   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  9
+<S>STAV2  9
+<S>STAV3  13
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  2
+<S>STCAL  1
+<S>STFN1  17
+<S>STFN2  10
+
+<EXTD> NONTRUSTED_NtWrapS_StHlthSigStc_UpdNvmPim C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1077
+<DEFINE> FunctionIndex C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1077 N DC OV B N us R
+<DEFINE> FunctionParams C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1077 N DC OV B N p. R
+<DEFINE> NONTRUSTED_NtWrapS_StHlthSigStc_UpdNvmPim C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1077 N DR OF F X (.,us,p.) -
+<DEFINE> NONTRUSTED_NtWrapS_StHlthSigStc_UpdNvmPim C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1077 N DF OF F X (.,us,p.) -
+<DEFINE> NvmSampleCnt_Cnt_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1079 N DC OV B N ul -
+<DEFINE> NvmSampleCnt_Cnt_T_u32 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1079 N DF OV B N ul -
+<DEFINE> NvmBasPtr C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1080 N DC OV B N puc -
+<DEFINE> NvmBasPtr C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1080 N DF OV B N puc -
+<DEFINE> NvmMaxVal_Cnt_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1081 N DC OV B N uc -
+<DEFINE> NvmMaxVal_Cnt_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1081 N DF OV B N uc -
+<DEFINE> NvmMinVal_Cnt_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1082 N DC OV B N uc -
+<DEFINE> NvmMinVal_Cnt_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1082 N DF OV B N uc -
+<DEFINE> NvmAvrgVal_Cnt_T_u7p9 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1083 N DC OV B N us -
+<DEFINE> NvmAvrgVal_Cnt_T_u7p9 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1083 N DF OV B N us -
+<R>C NONTRUSTED_NtWrapS_StHlthSigStc_UpdNvmPim StHlthSigStc_UpdNvmPim 1091
+<CTLG> NONTRUSTED_NtWrapS_StHlthSigStc_UpdNvmPim 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 1078 1092 1092 1092 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  NONTRUSTED_NtWrapS_StHlthSigStc_UpdNvmPim
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  13
+<S>STXLN  6
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  1
+<S>STLCT  5
+<S>STPTH  1
+<S>STPDN  0.17   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  10
+<S>STAV2  10
+<S>STAV3  19
+<S>STST1  11
+<S>STST2  11
+<S>STST3  6
+<S>STPAR  2
+<S>STCAL  1
+<S>STFN1  70
+<S>STFN2  47
+
+<EXTD> NONTRUSTED_NtWrapS_StHlthSigStc_UpdDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1101
+<DEFINE> FunctionIndex C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1101 N DC OV B N us R
+<DEFINE> FunctionParams C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1101 N DC OV B N p. R
+<DEFINE> NONTRUSTED_NtWrapS_StHlthSigStc_UpdDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1101 N DR OF F X (.,us,p.) -
+<DEFINE> NONTRUSTED_NtWrapS_StHlthSigStc_UpdDataSample C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1101 N DF OF F X (.,us,p.) -
+<DEFINE> TaskId_Cnt_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1103 N DC OV B N uc -
+<DEFINE> TaskId_Cnt_T_u08 C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c 1103 N DF OV B N uc -
+<R>C NONTRUSTED_NtWrapS_StHlthSigStc_UpdDataSample StHlthSigStc_UpdDataSample 1107
+<CTLG> NONTRUSTED_NtWrapS_StHlthSigStc_UpdDataSample 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 1102 1108 1108 1108 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  NONTRUSTED_NtWrapS_StHlthSigStc_UpdDataSample
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  2
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  1
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.50   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  0
+<S>STAV1  10
+<S>STAV2  10
+<S>STAV3  15
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  2
+<S>STCAL  1
+<S>STFN1  19
+<S>STFN2  11
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_f32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u08_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u16_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Abslt_u32_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Arctan2_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Blnd_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthSigStc_ClrDataSample
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  ClrSigStcHlthData_Oper
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Cos_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Exp_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FixdToFloat_f32_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FixdToFloat_f32_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FixdToFloat_f32_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FixdToFloat_f32_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixdWithRound_s16_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixdWithRound_s32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixdWithRound_u16_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixdWithRound_u32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixd_s16_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixd_s32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixd_u16_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR103A_NxtrFixdPt_Impl/include/NxtrFixdPt.h
+<S>STNAM  FloatToFixd_u32_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthSigStc_GetSigStHlthData
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  GetSigStcHlthData_Oper
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Lim_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Max_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Min_u32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Mod_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  NONTRUSTED_NtWrapS_StHlthSigStc_ClrDataSample
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthSigStc_UpdDataSample
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  NONTRUSTED_NtWrapS_StHlthSigStc_UpdDataSample
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthSigStc_UpdNvmPim
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  NONTRUSTED_NtWrapS_StHlthSigStc_UpdNvmPim
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s08
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s16
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sign_s08_s32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  SinCos_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sin_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/AR100A_NxtrMath_Impl/include/NxtrMath.h
+<S>STNAM  Sqrt_f32
+<S>STRET  0
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthSigStcInit1
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  StHlthStcPwrDwn_Oper
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  UpdStHlthStcData_Oper
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNAM  C:/Component/ES106A_StHlthSigStc_Impl/src/StHlthSigStc.c
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  4
+<S>STECT  2
+<S>STFNC  12
+<S>STFCO  33
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  166
+<S>STOPT  42
+<S>STOPN  215
+<S>STTOT  2984
+<S>STZIP  1574
+<S>STHAL  1892
+<S>STSHN  6975
+<S>STDIF  19.24  
+<S>STEFF  459513
+<S>STVOL  23889
+<S>STDEV  76.59  
+<S>STBUG  6
+<S>STTPP  1121
+<S>STTLN  424
+<S>STM20  1137
+<S>STM21  1840
+<S>STM22  258
+<S>STM28  206
+<S>STM33  175
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  2.706  
+<S>STBMS  3.409  
+<S>STBME  4.129  
+<S>STTDO  3.649  
+<S>STTDS  3.840  
+<S>STTDE  3.936  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  1.292  
+

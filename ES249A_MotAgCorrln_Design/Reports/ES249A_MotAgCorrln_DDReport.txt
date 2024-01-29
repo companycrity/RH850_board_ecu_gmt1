@@ -1,0 +1,131 @@
+Verification of ES249A_MotAgCorrln_DataDict
+14-Apr-2016 10:21:28
+Tool Release:  2.34.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+(variables: 3, errors: 0)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+MotAgAMecl                  	Cannot match name to list of known Nexteer signals.
+MotAgAMeclQlfr              	Cannot match name to list of known Nexteer signals.
+MotAgAMeclRollgCntr         	Cannot match name to list of known Nexteer signals.
+MotAgBMecl                  	Cannot match name to list of known Nexteer signals.
+MotAgBMeclQlfr              	Cannot match name to list of known Nexteer signals.
+MotAgBMeclRollgCntr         	Cannot match name to list of known Nexteer signals.
+MotAgCMecl                  	Cannot match name to list of known Nexteer signals.
+MotAgCMeclQlfr              	Cannot match name to list of known Nexteer signals.
+MotAgCMeclRollgCntr         	Cannot match name to list of known Nexteer signals.
+(variables: 9, errors: 9)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+MotAgABErrTerm              	Cannot match name to list of known Nexteer signals.
+MotAgACErrTerm              	Cannot match name to list of known Nexteer signals.
+MotAgBCErrTerm              	Cannot match name to list of known Nexteer signals.
+(variables: 5, errors: 3)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 1, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 3, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+MotAgCorrlnErrThd           	Name does not match required pattern.
+MotAgCorrlnMotAgARollgCntPrev	Name does not match required pattern.
+MotAgCorrlnMotAgAStallCntPrev	Name does not match required pattern.
+MotAgCorrlnMotAgBRollgCntPrev	Name does not match required pattern.
+MotAgCorrlnMotAgBStallCntPrev	Name does not match required pattern.
+MotAgCorrlnMotAgCRollgCntPrev	Name does not match required pattern.
+MotAgCorrlnMotAgCStallCntPrev	Name does not match required pattern.
+(variables: 7, errors: 7)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+FLTINJ_MOTAGCORRLN_MOTAGIDPTSIG  	Name does not match required pattern as it is a special case.
+(variables: 9, errors: 1)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 3, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+43 variables,  20 issues to fix.
+
+
+End of Report

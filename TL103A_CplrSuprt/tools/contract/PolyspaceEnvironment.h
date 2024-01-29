@@ -1,0 +1,2 @@
+/* __EDG__ define appears to be used for polyspace compiler and causes conflict with the green hills compiler files for RH850 P1M, so this header is used in the polyspace environment to undefine this */
+#undef __EDG__

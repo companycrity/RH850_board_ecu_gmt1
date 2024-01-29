@@ -1,0 +1,660 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Requirements Traceability Report for SF101A_MotQuadDetn</title><meta name="generator" content="DocBook XSL Stylesheets V1.75.2"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div lang="en" class="book" title="Requirements Traceability Report for SF101A_MotQuadDetn"><div class="titlepage"><div><div><h1 class="title"><a name="d0e1"></a>Requirements Traceability Report for SF101A_MotQuadDetn</h1></div><div><h2 class="subtitle"></h2></div></div><hr></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="chapter"><a href="#d0e9">1. Model Information for "SF101A_MotQuadDetn"</a></span></dt><dt><span class="chapter"><a href="#d0e72">2. Traceability Summary for "SF101A_MotQuadDetn"</a></span></dt><dt><span class="chapter"><a href="#8c241de395ce979b7d7397335bec239b">3. System - MotQuadDetn</a></span></dt><dt><span class="chapter"><a href="#ee3a24f9f426e6003e1016dd7b09e3c3">4. System - MotQuadDetnInit1</a></span></dt><dt><span class="chapter"><a href="#3d70124561a0fe5966abee4ae466e771">5. System - Determine_Motor_Direction</a></span></dt><dt><span class="chapter"><a href="#8d5db75b36490346c692db5f85941d9c">6. System - Determine_Motor_Quadrant</a></span></dt><dt><span class="chapter"><a href="#e8d2721ec8e8a2bb237933c386d8b8f6">7. System - Determine_TqCmd_Sign</a></span></dt><dt><span class="chapter"><a href="#b6df0b6458300d1474e6e04b642880f1">8. System - Quads 1/3 No change in direction</a></span></dt><dt><span class="chapter"><a href="#db78ce273dbc34ae383bb7dc0c045ab1">9. System - Quads 2/4 Change in direction</a></span></dt><dt><span class="chapter"><a href="#b980d72c8c4ff471d1a17beb1f7aa04a">10. System - Determine Motor Torque Command Sign</a></span></dt><dt><span class="chapter"><a href="#d222369721b23410e096251e3eeae375">11. System - Determine Motor Torque Command Sign1</a></span></dt></dl></div><div class="list-of-tables"><p><b>List of Tables</b></p><dl><dt>1.1. <a href="#d0e15">SF101A_MotQuadDetn<span>  Version Information</span>
+    </a></dt><dt>2.1. <a href="#d0e76">Artifacts linked in model</a></dt><dt>3.1. <a href="#d0e145">Objects in SF101A_MotQuadDetn/MotQuadDetn that have Requirements Traceability Links</a></dt><dt>4.1. <a href="#d0e301">Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnInit1 that have Requirements Traceability Links</a></dt><dt>5.1. <a href="#d0e488">Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Direction that have Requirements Traceability Links</a></dt><dt>6.1. <a href="#d0e1001">SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant Requirements Traceability Data</a></dt><dt>6.2. <a href="#d0e1034">Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant that have Requirements Traceability Links</a></dt><dt>7.1. <a href="#d0e1285">SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign Requirements Traceability Data</a></dt><dt>7.2. <a href="#d0e1318">Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign that have Requirements Traceability Links</a></dt><dt>8.1. <a href="#d0e1689">SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant/Quads 1//3 No change in direction Requirements Traceability Data</a></dt><dt>9.1. <a href="#d0e1748">SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant/Quads 2//4 Change in direction Requirements Traceability Data</a></dt><dt>10.1. <a href="#d0e1801">SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign/Determine Motor Torque Command Sign Requirements Traceability Data</a></dt><dt>11.1. <a href="#d0e1866">SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign/Determine Motor Torque Command Sign1 Requirements Traceability Data</a></dt></dl></div><div class="chapter" title="Chapter&nbsp;1.&nbsp;Model Information for &#34;SF101A_MotQuadDetn&#34;"><div class="titlepage"><div><div><h2 class="title"><a name="d0e9"></a>Chapter&nbsp;1.&nbsp;Model Information for "SF101A_MotQuadDetn"</h2></div></div></div><pre class="programlisting">Failed to get RMI data for NxtrAbslt/Abslt_u32_s32. Library "NxtrAbslt" is not loaded.
+Failed to get RMI data for NxtrSign/Sign_s08_s32. Library "NxtrSign" is not loaded.
+Failed to get RMI data for NxtrAbslt/Abslt_f32_f32. Library "NxtrAbslt" is not loaded.
+Failed to get RMI data for NxtrSign/Sign_s08_f32. Library "NxtrSign" is not loaded.
+</pre><div class="table"><a name="d0e15"></a><p class="title"><b>Table&nbsp;1.1.&nbsp;SF101A_MotQuadDetn<span>  Version Information</span>
+    </b></p><div class="table-contents"><table summary="SF101A_MotQuadDetn  Version Information&#xA;    " width="100%" style="border-collapse: collapse;border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; "><colgroup><col width="2880*" align="left"><col width="6720*" align="left"><col width="4320*" align="left"><col width="10080*" align="left"></colgroup><tbody><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>ModelVersion</em></span>
+                </td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">1.205</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>ConfigurationManager</em></span>
+                </td><td style="border-bottom: 0.5pt solid ; " align="left">None</td></tr><tr><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>Created</em></span>
+                </td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">Mon Jan 26 08:58:41 2015</td><td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>Creator</em></span>
+                </td><td style="border-bottom: 0.5pt solid ; " align="left">qzwc4r</td></tr><tr><td style="border-right: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>LastModifiedDate</em></span>
+                </td><td style="border-right: 0.5pt solid ; " align="left">Thu Mar 10 13:30:43 2016</td><td style="border-right: 0.5pt solid ; " align="left">
+                    <span class="emphasis"><em>LastModifiedBy</em></span>
+                </td><td style="" align="left">qzwc4r</td></tr></tbody></table></div></div><br class="table-break"></div><div class="chapter" title="Chapter&nbsp;2.&nbsp;Traceability Summary for &#34;SF101A_MotQuadDetn&#34;"><div class="titlepage"><div><div><h2 class="title"><a name="d0e72"></a>Chapter&nbsp;2.&nbsp;Traceability Summary for "SF101A_MotQuadDetn"</h2></div></div></div><a name="d0e76"></a><div class="table"><p class="title"><b>Table&nbsp;2.1.&nbsp;Artifacts linked in model</b></p><div class="table-contents"><table summary="Artifacts linked in model" border="1" cellspacing="0" fastRender="1"><col width="60*"><col width="540*"><col width="240*"><col width="60*"><thead><tr>
+            <th align="left">ID</th>
+            <th align="left">Artifact names stored by RMI</th>
+            <th align="left">Last modified</th>
+            <th align="left"># links</th>
+        </tr></thead><tbody><tr>
+            <td align="left">DOC1</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-M-0000bb40" target="_top">0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection)</a>
+            </td>
+            <td align="left">14 April 2015 by Price Lefler</td>
+            <td align="left">52</td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;3.&nbsp;System - MotQuadDetn"><div class="titlepage"><div><div><h2 class="title"><a name="8c241de395ce979b7d7397335bec239b"></a>Chapter&nbsp;3.&nbsp;System - MotQuadDetn</h2></div></div></div><div class="mediaobject"><map name="d0e127"><area coords="96,249,126,263" shape="rect" href="#f44a71bcf6b8ad1bc2a9e7a55470b54e"><area coords="96,289,126,303" shape="rect" href="#348cde948c3551d77027db66af0d1b08"><area coords="291,400,391,442" shape="rect" href="#ee3a24f9f426e6003e1016dd7b09e3c3"><area coords="556,249,586,263" shape="rect" href="#6f81da8c5ba618bce1d3188666dc0608"><area coords="556,289,586,303" shape="rect" href="#20ac9ddc866e4c1b83a5eee52728ca5c"></map><img src="./SF101A_MotQuadDetn_requirements_html_files/image-004-sl.png" usemap="%0A                #d0e127" ismap="" border="0"></div><a name="d0e145"></a><div class="table"><p class="title"><b>Table&nbsp;3.1.&nbsp;Objects in SF101A_MotQuadDetn/MotQuadDetn that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in SF101A_MotQuadDetn/MotQuadDetn that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="f44a71bcf6b8ad1bc2a9e7a55470b54e"></a>MotAgCumvAlgndMrf</td>
+            <td align="left">
+                <a name="d0e169"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_27"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-27-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_27</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="6f81da8c5ba618bce1d3188666dc0608"></a>MotDirInsts</td>
+            <td align="left">
+                <a name="d0e199"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_28"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-28-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_28</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="20ac9ddc866e4c1b83a5eee52728ca5c"></a>MotQuad</td>
+            <td align="left">
+                <a name="d0e229"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_39"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-39-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_39</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="348cde948c3551d77027db66af0d1b08"></a>MotTqCmd</td>
+            <td align="left">
+                <a name="d0e259"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_38"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-38-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_38</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;4.&nbsp;System - MotQuadDetnInit1"><div class="titlepage"><div><div><h2 class="title"><a name="ee3a24f9f426e6003e1016dd7b09e3c3"></a>Chapter&nbsp;4.&nbsp;System - MotQuadDetnInit1</h2></div></div></div><div class="mediaobject"><map name="d0e291"><area coords="11,206,41,236" shape="rect" href="#4aa9fa2815161d94cf9d7c94277ac931"><area coords="11,286,41,316" shape="rect" href="#9aba1fc4286da3bcc8082bb820493c50"><area coords="181,206,346,236" shape="rect" href="#11d149620d8cd73e7808756c2990ee83"><area coords="181,286,346,316" shape="rect" href="#88f79e02dd2b766f26b39cb2461b1224"></map><img src="./SF101A_MotQuadDetn_requirements_html_files/image-006-sl.png" usemap="%0A                #d0e291" ismap="" border="0"></div><a name="d0e301"></a><div class="table"><p class="title"><b>Table&nbsp;4.1.&nbsp;Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnInit1 that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnInit1 that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="4aa9fa2815161d94cf9d7c94277ac931"></a>Constant1</td>
+            <td align="left">
+                <a name="d0e325"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_49"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-49-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_49</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="9aba1fc4286da3bcc8082bb820493c50"></a>Constant3</td>
+            <td align="left">
+                <a name="d0e355"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_55"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-55-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_55</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="11d149620d8cd73e7808756c2990ee83"></a>Data Store Write1</td>
+            <td align="left">
+                <a name="d0e385"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_49"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-49-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_49</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="88f79e02dd2b766f26b39cb2461b1224"></a>Data Store Write2</td>
+            <td align="left">
+                <a name="d0e415"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_55"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-55-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_55</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;5.&nbsp;System - Determine_Motor_Direction"><div class="titlepage"><div><div><h2 class="title"><a name="3d70124561a0fe5966abee4ae466e771"></a>Chapter&nbsp;5.&nbsp;System - Determine_Motor_Direction</h2></div></div></div><div class="mediaobject"><map name="d0e447"><area coords="86,14,99,20" shape="rect" href="#ea3757ad39088a05d65adf04d8fcab50"><area coords="242,230,313,239" shape="rect" href="#a235ad5d4b391a665d5ff2083139e1e1"><area coords="86,64,182,76" shape="rect" href="#4616c7207dc92098f321b2d9c496c226"><area coords="732,188,803,199" shape="rect" href="#65b9e5b9391ca4a35eaa24a75fe22a36"><area coords="8,141,56,149" shape="rect" href="#2c2638a6206c79c83dca6f3b14c3e523"><area coords="8,166,56,175" shape="rect" href="#f3c129dba2f901d6f061ebc9699ded48"><area coords="214,13,258,21" shape="rect" href="#14884ad6f176ae1925b8bf54e93c16d0"><area coords="210,63,258,77" shape="rect" href="#b7d330ddaecf6966262c617bb7200d67"><area coords="77,133,86,182" shape="rect" href="#aa411e382aa33a12180a7856288a7b53"></map><img src="./SF101A_MotQuadDetn_requirements_html_files/image-008-sl.png" usemap="%0A                #d0e447" ismap="" border="0"></div><a name="d0e488"></a><div class="table"><p class="title"><b>Table&nbsp;5.1.&nbsp;Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Direction that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Direction that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="a235ad5d4b391a665d5ff2083139e1e1"></a>Constant</td>
+            <td align="left">
+                <a name="d0e512"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_47"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-47-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_47</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="4616c7207dc92098f321b2d9c496c226"></a>Data Store Read1</td>
+            <td align="left">
+                <a name="d0e542"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_46"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-46-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_46</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_44"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-44-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_44</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="65b9e5b9391ca4a35eaa24a75fe22a36"></a>Data Store Write1</td>
+            <td align="left">
+                <a name="d0e597"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_46"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-46-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_46</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_44"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-44-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_44</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="2c2638a6206c79c83dca6f3b14c3e523"></a>From</td>
+            <td align="left">
+                <a name="d0e652"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_46"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-46-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_46</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_44"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-44-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_44</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="f3c129dba2f901d6f061ebc9699ded48"></a>From7</td>
+            <td align="left">
+                <a name="d0e707"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_46"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-46-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_46</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_44"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-44-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_44</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="14884ad6f176ae1925b8bf54e93c16d0"></a>Goto</td>
+            <td align="left">
+                <a name="d0e762"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_46"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-46-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_46</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_44"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-44-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_44</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="b7d330ddaecf6966262c617bb7200d67"></a>Goto3</td>
+            <td align="left">
+                <a name="d0e817"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_46"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-46-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_46</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_44"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-44-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_44</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="ea3757ad39088a05d65adf04d8fcab50"></a>MotAgCumvAlgndMrf</td>
+            <td align="left">
+                <a name="d0e872"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_46"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-46-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_46</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_44"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-44-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_44</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="aa411e382aa33a12180a7856288a7b53"></a>Subtract</td>
+            <td align="left">
+                <a name="d0e927"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_46"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-46-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_46</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_44"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-44-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_44</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;6.&nbsp;System - Determine_Motor_Quadrant"><div class="titlepage"><div><div><h2 class="title"><a name="8d5db75b36490346c692db5f85941d9c"></a>Chapter&nbsp;6.&nbsp;System - Determine_Motor_Quadrant</h2></div></div></div><div class="mediaobject"><map name="d0e984"><area coords="89,86,171,97" shape="rect" href="#7579628f997fd6265daf0a7466122541"><area coords="436,120,518,130" shape="rect" href="#c5434f7adce9d98dd868c20267eec9ed"><area coords="362,243,444,253" shape="rect" href="#35cb987c0bc4b0963419ce506decdf11"><area coords="153,15,231,27" shape="rect" href="#06945b0f09eaf4cac8022f56132b94c4"><area coords="272,89,347,117" shape="rect" href="#cff3733eff84f4ef2e85369c4df01f26"><area coords="668,226,697,256" shape="rect" href="#ef7f6d93cbaf10df582f1eabf850a703"><area coords="552,112,604,139" shape="rect" href="#b6df0b6458300d1474e6e04b642880f1"><area coords="485,235,537,262" shape="rect" href="#db78ce273dbc34ae383bb7dc0c045ab1"><area coords="201,81,227,124" shape="rect" href="#2ee2fab630802c29fcc98d2a24f779b9"></map><img src="./SF101A_MotQuadDetn_requirements_html_files/image-010-sl.png" usemap="%0A                #d0e984" ismap="" border="0"></div><a name="d0e1001"></a><div class="table"><p class="title"><b>Table&nbsp;6.1.&nbsp;SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant Requirements Traceability Data</b></p><div class="table-contents"><table summary="SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:  SF101A_53"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-53-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_53</a>
+            </td>
+        </tr></tbody></table></div></div><a name="d0e1034"></a><div class="table"><p class="title"><b>Table&nbsp;6.2.&nbsp;Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="7579628f997fd6265daf0a7466122541"></a>From</td>
+            <td align="left">
+                <a name="d0e1058"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_54"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-54-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_54</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="c5434f7adce9d98dd868c20267eec9ed"></a>From1</td>
+            <td align="left">
+                <a name="d0e1088"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_54"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-54-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_54</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="35cb987c0bc4b0963419ce506decdf11"></a>From2</td>
+            <td align="left">
+                <a name="d0e1118"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_54"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-54-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_54</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="06945b0f09eaf4cac8022f56132b94c4"></a>Goto</td>
+            <td align="left">
+                <a name="d0e1148"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_54"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-54-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_54</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="cff3733eff84f4ef2e85369c4df01f26"></a>If</td>
+            <td align="left">
+                <a name="d0e1178"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_54"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-54-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_54</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="ef7f6d93cbaf10df582f1eabf850a703"></a>Merge</td>
+            <td align="left">
+                <a name="d0e1208"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_54"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-54-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_54</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="2ee2fab630802c29fcc98d2a24f779b9"></a>Relational Operator</td>
+            <td align="left">
+                <a name="d0e1238"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_54"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-54-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_54</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;7.&nbsp;System - Determine_TqCmd_Sign"><div class="titlepage"><div><div><h2 class="title"><a name="e8d2721ec8e8a2bb237933c386d8b8f6"></a>Chapter&nbsp;7.&nbsp;System - Determine_TqCmd_Sign</h2></div></div></div><div class="mediaobject"><map name="d0e1270"><area coords="77,85,187,96" shape="rect" href="#94c6068a3c7b8ba926720952efc2f791"><area coords="198,218,300,235" shape="rect" href="#ed1b2151485f7af09f2a495a16270b44"><area coords="648,244,761,259" shape="rect" href="#9100b2bd9943e0ea8b9fe2eba8e2c8b6"><area coords="422,139,524,166" shape="rect" href="#b980d72c8c4ff471d1a17beb1f7aa04a"><area coords="351,216,391,236" shape="rect" href="#d222369721b23410e096251e3eeae375"><area coords="289,54,345,76" shape="rect" href="#8a27b394cb8442f7602da18847d25409"><area coords="583,209,606,232" shape="rect" href="#261bf627838d6187b6cf1d8d8e226b2f"><area coords="227,55,244,72" shape="rect" href="#21657ce24a666cdb3ffce8e1a9569454"></map><img src="./SF101A_MotQuadDetn_requirements_html_files/image-012-sl.png" usemap="%0A                #d0e1270" ismap="" border="0"></div><a name="d0e1285"></a><div class="table"><p class="title"><b>Table&nbsp;7.1.&nbsp;SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign Requirements Traceability Data</b></p><div class="table-contents"><table summary="SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:  SF101A_51"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-51-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_51</a>
+            </td>
+        </tr></tbody></table></div></div><a name="d0e1318"></a><div class="table"><p class="title"><b>Table&nbsp;7.2.&nbsp;Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign that have Requirements Traceability Links</b></p><div class="table-contents"><table summary="Objects in SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign that have Requirements Traceability Links" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="180*"><thead><tr>
+            <th align="left">Linked Object</th>
+            <th align="left">Requirements Traceability Data</th>
+        </tr></thead><tbody><tr>
+            <td align="left">
+                <a name="94c6068a3c7b8ba926720952efc2f791"></a>Constant</td>
+            <td align="left">
+                <a name="d0e1342"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_51"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-51-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_51</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_52"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-52-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_52</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="ed1b2151485f7af09f2a495a16270b44"></a>Data Store Read</td>
+            <td align="left">
+                <a name="d0e1397"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_51"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-51-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_51</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_52"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-52-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_52</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="9100b2bd9943e0ea8b9fe2eba8e2c8b6"></a>Data Store Write</td>
+            <td align="left">
+                <a name="d0e1452"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_51"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-51-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_51</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_52"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-52-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_52</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="8a27b394cb8442f7602da18847d25409"></a>If</td>
+            <td align="left">
+                <a name="d0e1507"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_51"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-51-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_51</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_52"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-52-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_52</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="261bf627838d6187b6cf1d8d8e226b2f"></a>Merge</td>
+            <td align="left">
+                <a name="d0e1562"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_51"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-51-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_51</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_52"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-52-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_52</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr><tr>
+            <td align="left">
+                <a name="21657ce24a666cdb3ffce8e1a9569454"></a>Relational Operator</td>
+            <td align="left">
+                <a name="d0e1617"></a><div class="table"><div class="table-contents"><table summary="" border="0" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><tbody><tr>
+                            <td align="left"> 1. </td>
+                            <td align="left">"REQ:  SF101A_51"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-51-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_51</a>
+                            </td>
+                        </tr><tr>
+                            <td align="left">--</td>
+                            <td align="left">------------------------------</td>
+                            <td align="left">------------------------------</td>
+                        </tr><tr>
+                            <td align="left"> 2. </td>
+                            <td align="left">"REQ:  SF101A_52"</td>
+                            <td align="left">
+                                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-52-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_52</a>
+                            </td>
+                        </tr></tbody></table></div></div>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;8.&nbsp;System - Quads 1/3 No change in direction"><div class="titlepage"><div><div><h2 class="title"><a name="b6df0b6458300d1474e6e04b642880f1"></a>Chapter&nbsp;8.&nbsp;System - Quads 1/3 No change in direction</h2></div></div></div><div class="mediaobject"><map name="d0e1674"></map><img src="./SF101A_MotQuadDetn_requirements_html_files/image-014-sl.png" usemap="%0A                #d0e1674" ismap="" border="0"></div><a name="d0e1689"></a><div class="table"><p class="title"><b>Table&nbsp;8.1.&nbsp;SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant/Quads 1//3 No change in direction Requirements Traceability Data</b></p><div class="table-contents"><table summary="SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant/Quads 1//3 No change in direction Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:  SF101A_54"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-54-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_54</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;9.&nbsp;System - Quads 2/4 Change in direction"><div class="titlepage"><div><div><h2 class="title"><a name="db78ce273dbc34ae383bb7dc0c045ab1"></a>Chapter&nbsp;9.&nbsp;System - Quads 2/4 Change in direction</h2></div></div></div><div class="mediaobject"><map name="d0e1733"></map><img src="./SF101A_MotQuadDetn_requirements_html_files/image-016-sl.png" usemap="%0A                #d0e1733" ismap="" border="0"></div><a name="d0e1748"></a><div class="table"><p class="title"><b>Table&nbsp;9.1.&nbsp;SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant/Quads 2//4 Change in direction Requirements Traceability Data</b></p><div class="table-contents"><table summary="SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_Motor_Quadrant/Quads 2//4 Change in direction Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:  SF101A_54"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-54-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_54</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;10.&nbsp;System - Determine Motor Torque Command Sign"><div class="titlepage"><div><div><h2 class="title"><a name="b980d72c8c4ff471d1a17beb1f7aa04a"></a>Chapter&nbsp;10.&nbsp;System - Determine Motor Torque Command Sign</h2></div></div></div><div class="mediaobject"><map name="d0e1792"></map><img src="./SF101A_MotQuadDetn_requirements_html_files/image-018-sl.png" usemap="%0A                #d0e1792" ismap="" border="0"></div><a name="d0e1801"></a><div class="table"><p class="title"><b>Table&nbsp;10.1.&nbsp;SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign/Determine Motor Torque Command Sign Requirements Traceability Data</b></p><div class="table-contents"><table summary="SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign/Determine Motor Torque Command Sign Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:  SF101A_51"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-51-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_51</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">"REQ:  SF101A_52"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-52-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_52</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div><div class="chapter" title="Chapter&nbsp;11.&nbsp;System - Determine Motor Torque Command Sign1"><div class="titlepage"><div><div><h2 class="title"><a name="d222369721b23410e096251e3eeae375"></a>Chapter&nbsp;11.&nbsp;System - Determine Motor Torque Command Sign1</h2></div></div></div><div class="mediaobject"><map name="d0e1859"></map><img src="./SF101A_MotQuadDetn_requirements_html_files/image-020-sl.png" usemap="%0A                #d0e1859" ismap="" border="0"></div><a name="d0e1866"></a><div class="table"><p class="title"><b>Table&nbsp;11.1.&nbsp;SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign/Determine Motor Torque Command Sign1 Requirements Traceability Data</b></p><div class="table-contents"><table summary="SF101A_MotQuadDetn/MotQuadDetn/MotQuadDetnPer1/Determine_TqCmd_Sign/Determine Motor Torque Command Sign1 Requirements Traceability Data" border="1" cellspacing="0" fastRender="1" width="100%"><col width="60*"><col width="600*"><col width="600*"><thead><tr>
+            <th align="left">Link#</th>
+            <th align="left">Link Description</th>
+            <th align="left">Link Target (document name and location ID)</th>
+        </tr></thead><tbody><tr>
+            <td align="left"> 1. </td>
+            <td align="left">"REQ:  SF101A_51"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-51-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_51</a>
+            </td>
+        </tr><tr>
+            <td align="left"> 2. </td>
+            <td align="left">"REQ:  SF101A_52"</td>
+            <td align="left">
+                <a class="ulink" href="http://usmisag-ap40.nexteer.com:8080/doors/redirector/?version=2&amp;prodID=0&amp;urn=urn:telelogic::1-399d8406295f0f5f-O-52-0000bb40" target="_top">DOORS module 0000bb40 (/E-STEER Core/SubSystem Specifications/Application Functions/SF99/SF101A Motor Quadrant Detection), object SF101A_52</a>
+            </td>
+        </tr></tbody></table></div></div><p>
+.
+
+<span> </span>
+</p></div></div></body></html>

@@ -1,0 +1,145 @@
+Verification of ES008A_PwrSply_DataDict
+12-Sep-2016 15:55:16
+Tool Release:  2.41.0
+
+
+
+--------------------------------
+DATA CLASS VIOLATION CHECKS
+--------------------------------
+(errors: 0)
+
+---------------------------------------------------------------
+FDD DEFINITION VARIABLE:	<Type><Number><Variant>  e.g. SF099A
+--------------------------------------------------------------
+(variable: 1, errors: 0)
+
+----------------------------
+DATA DICTIONARY FILENAME:
+----------------------------
+(errors:  0)
+
+------------------------------------------------------------
+RUNNABLE:	<ShoName>Per<Number>  or  <ShoName>Init<Number>
+------------------------------------------------------------
+(variables: 2, errors: 0)
+
+--------------------------------------
+SrvRunnable:	<TriggerName>
+--------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------
+Client:	<TriggerName>
+-------------------------
+Call_Spi_AsyncTransmit      	Name does not match required pattern.
+Call_Spi_AsyncTransmit      	    Call_          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Call_Spi_AsyncTransmit      	    Spi_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Call_Spi_AsyncTransmit      	    Transmit       Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_ReadIB                  	    Spi_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_ReadIB                  	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_WriteIB                 	    Spi_           Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_WriteIB                 	    Write          Unknown Keyword used.Only Nexteer approved Keywords should be used.
+Spi_WriteIB                 	    I              Unknown Keyword used.Only Nexteer approved Keywords should be used.
+(variables: 4, errors: 9)
+
+----------------------------
+INPUT SIGNALS:	<Identity>
+----------------------------
+PhyElecPwrSteerEna          	Cannot match name to list of known Nexteer signals.
+PhyTurnOffDly               	Cannot match name to list of known Nexteer signals.
+(variables: 3, errors: 2)
+
+-----------------------------
+OUTPUT SIGNALS:	<Identity>
+-----------------------------
+(variables: 8, errors: 0)
+
+---------------------------------------
+INTER-RUNNABLE VARIABLES:	<Identity>
+---------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------
+CALIBRATIONS:	<ShoName><Identity>
+------------------------------------
+(variables: 6, errors: 0)
+
+----------------------------------------------
+IMPORTED CALIBRATIONS:	<ShoName><Identity>
+---------------------------------------------
+(variables: 0, errors: 0)
+
+-------------------------------------------
+NON-VOLATILE MEMORY:	<Identity>
+-------------------------------------------
+(variables: 0, errors: 0)
+
+------------------------------------------
+DISPLAY VARIABLES:	d<ShoName><Identity>
+------------------------------------------
+(variables: 0, errors: 0)
+
+-----------------------------------------------
+PER-INSTANCE MEMORY:	<Identity>
+-----------------------------------------------
+PwrSplyReadWrOrderFlg1      	Name does not match required pattern.
+PwrSplyReadWrOrderFlg2      	Name does not match required pattern.
+PwrSplyStrtUpSelfTestCmpl   	Name does not match required pattern.
+(variables: 3, errors: 3)
+
+--------------------------------------------------------------------------------------------
+CONSTANTS:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+SpiConf_SpiChannel_PwrSplyCh1    	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_PwrSplyCh1    	Name does not match required pattern.
+SpiConf_SpiChannel_PwrSplyCh2    	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_PwrSplyCh2    	Name does not match required pattern.
+SpiConf_SpiChannel_PwrSplyCh3    	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_PwrSplyCh3    	Name does not match required pattern.
+SpiConf_SpiChannel_PwrSplyCh4    	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_PwrSplyCh4    	Name does not match required pattern.
+SpiConf_SpiChannel_PwrSplyCh5    	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiChannel_PwrSplyCh5    	Name does not match required pattern.
+SpiConf_SpiSequence_PwrSplySeq1  	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_PwrSplySeq1  	Name does not match required pattern.
+SpiConf_SpiSequence_PwrSplySeq2  	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_PwrSplySeq2  	Name does not match required pattern.
+SpiConf_SpiSequence_PwrSplySeq3  	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_PwrSplySeq3  	Name does not match required pattern.
+SpiConf_SpiSequence_PwrSplySeq4  	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_PwrSplySeq4  	Name does not match required pattern.
+SpiConf_SpiSequence_PwrSplySeq5  	AUTOSAR requires that constants be ALL CAPS.
+SpiConf_SpiSequence_PwrSplySeq5  	Name does not match required pattern.
+(variables: 15, errors: 20)
+
+-------------------------
+CSArguments:	<IDENTITY>
+---------------------------
+(variables: 0, errors: 0)
+
+--------------------------------------------------------------------------------------------
+CONFIGPARAM:	(ALL CAPS) required: 
+						 For "Global" CONSTANTS --- <SHONAME>_<IDENTITY>_<UNITS>_<DATATYPE>
+						 For "Local" CONSTANTS  --- <IDENTITY>_<UNITS>_<DATATYPE>
+-------------------------------------------------------------------------------------------
+(variables: 0, errors: 0)
+
+----------------------------
+NTC SIGNALS:	<Identity>
+----------------------------
+(variables: 5, errors: 0)
+
+------
+OTHER:
+------
+(variables: 0, errors: 0)
+ 
+************************
+Grand Totals:
+47 variables,  34 issues to fix.
+
+
+End of Report

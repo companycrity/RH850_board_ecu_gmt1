@@ -1,0 +1,503 @@
+{
+   "description" : "RTE Analyzer configuration file",
+   "version" : "0.7.0",
+   "BswOsApplication" : "OsApplQMCore0",
+   "DataConsistencyAPIGroupList" : [
+      {
+         "CanBeNested" : "0",
+         "HandleIndex" : "-1",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "DisableAllInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "EnableAllInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "0",
+         "HandleIndex" : "-1",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableGlobalAM",
+               "RequiresTrustedContext" : "0"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableGlobalKM",
+               "RequiresTrustedContext" : "1"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableGlobalUM",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableGlobalAM",
+               "RequiresTrustedContext" : "0"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableGlobalKM",
+               "RequiresTrustedContext" : "1"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableGlobalUM",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "0",
+         "HandleIndex" : "-1",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableLevelAM",
+               "RequiresTrustedContext" : "0"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableLevelKM",
+               "RequiresTrustedContext" : "1"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osDisableLevelUM",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableLevelAM",
+               "RequiresTrustedContext" : "0"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableLevelKM",
+               "RequiresTrustedContext" : "1"
+            },
+            {
+               "CanBeUsedInISRContext" : "0",
+               "Name" : "osEnableLevelUM",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "1",
+         "HandleIndex" : "-1",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "SuspendAllInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "ResumeAllInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "1",
+         "HandleIndex" : "-1",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "SuspendOSInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "ResumeOSInterrupts",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "0",
+         "HandleIndex" : "0",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "GetResource",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "0",
+         "LocksSameCore" : "1",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "ReleaseResource",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      },
+      {
+         "CanBeNested" : "0",
+         "HandleIndex" : "0",
+         "LockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "GetSpinlock",
+               "RequiresTrustedContext" : "0"
+            }
+         ],
+         "LocksOtherCores" : "1",
+         "LocksSameCore" : "0",
+         "UnlockAPIList" : [
+            {
+               "CanBeUsedInISRContext" : "1",
+               "Name" : "ReleaseSpinlock",
+               "RequiresTrustedContext" : "0"
+            }
+         ]
+      }
+   ],
+   "ISRList" : [
+      {
+         "NamePattern" : "Rte_LdComCbk.*"
+      },
+      {
+         "NamePattern" : "Rte_COMCbk.*"
+      },
+      {
+         "NamePattern" : "Rte_GetMirror.*"
+      },
+      {
+         "NamePattern" : "Rte_SetMirror.*"
+      },
+      {
+         "NamePattern" : "Rte_NvMNotifyJobFinished.*"
+      },
+      {
+         "NamePattern" : "Rte_NvMNotifyInitBlock.*"
+      }
+   ],
+   "InitFunctionNamePatternList" : [
+      "Rte_InitMemory",
+      "SchM_Init",
+      "Rte_Start"
+   ],
+   "InlineFunctionNamePatternList" : [
+      "Rte_QAddElement.*",
+      "Rte_QUnqueueElement.*",
+      "Rte_MemClr",
+      "Rte_MemCmp",
+      "Rte_DecDisableFlags.*",
+      "Rte_IncDisableFlags.*"
+   ],
+   "MemCpyFunctionNamePatternList" : [
+      "llvm.memcpy",
+      "Rte_MemCpy.*",
+      "SomeIpXf_MemCpy.*",
+      "VStdMemCpy_Func",
+      "CanTSyn_MemCpy",
+      "CanTp_Util_MemCpy",
+      "IpBase_Copy"
+   ],
+   "NonReentrantFunctionList" : [
+      {
+         "HandleIndex" : "0",
+         "NamePatternList" : [
+            "Com_SendSignal",
+            "Com_InvalidateSignal",
+            "Com_UpdateShadowSignal",
+            "Com_InvalidateSignalGroup"
+         ],
+         "NoConcurrentCallsOnDifferentCores" : "0",
+         "NoConcurrentCallsOnSameCore" : "1"
+      },
+      {
+         "HandleIndex" : "0",
+         "NamePatternList" : [
+            "Com_ReceiveShadowSignal",
+            "Com_ReceiveSignalGroup"
+         ],
+         "NoConcurrentCallsOnDifferentCores" : "0",
+         "NoConcurrentCallsOnSameCore" : "1"
+      },
+      {
+         "HandleIndex" : "0",
+         "NamePatternList" : [
+            "LdCom_TriggerTransmit"
+         ],
+         "NoConcurrentCallsOnDifferentCores" : "0",
+         "NoConcurrentCallsOnSameCore" : "1"
+      },
+      {
+         "HandleIndex" : "0",
+         "NamePatternList" : [
+            "GetSpinlock",
+            "ReleaseSpinlock"
+         ],
+         "NoConcurrentCallsOnDifferentCores" : "0",
+         "NoConcurrentCallsOnSameCore" : "1"
+      },
+      {
+         "HandleIndex" : "-1",
+         "NamePatternList" : [
+            "IocSend_(\\w+)(_\\d+)?",
+            "IocWrite_(\\w+)(_\\d+)?",
+            "IocReceive_(\\w+)",
+            "IocRead_(\\w+)"
+         ],
+         "NoConcurrentCallsOnDifferentCores" : "1",
+         "NoConcurrentCallsOnSameCore" : "1"
+      }
+   ],
+   "NotReportedConcurrentAccessList" : [
+      {
+         "Justification" : "Accesses to the server queue are synchronized with SetEvent and WaitEvent",
+         "VariableNamePattern" : "Rte_CS_ServerQueue_.*"
+      },
+      {
+         "Justification" : "Accesses to the client queue are synchronized with SetEvent and WaitEvent",
+         "VariableNamePattern" : "Rte_CS_ClientQueue_.*"
+      },
+      {
+         "Justification" : "Accesses to the client queue are synchronized with SetEvent and WaitEvent",
+         "VariableNamePattern" : "Rte_CS_ClientQueue2_.*"
+      },
+      {
+         "Justification" : "Only error in runnable stubs. Will be fixed with ESCAN00085617",
+         "VariableNamePattern" : ".*_FctPtr"
+      },
+      {
+         "Justification" : "Accesses to the waiting task list are synchronized with SetEvent and WaitEvent",
+         "VariableNamePattern" : "Rte_CS_WaitingTaskList_.*"
+      }
+   ],
+   "OsApplicationList" : [
+      {
+         "CoreId" : "0",
+         "IsTrusted" : "0",
+         "OsApplicationName" : "OsApplASILCore0",
+         "SafetyLevel" : "3"
+      },
+      {
+         "CoreId" : "0",
+         "IsTrusted" : "0",
+         "OsApplicationName" : "OsApplQMCore0",
+         "SafetyLevel" : "1"
+      },
+      {
+         "CoreId" : "1",
+         "IsTrusted" : "0",
+         "OsApplicationName" : "OsApplQMCore1",
+         "SafetyLevel" : "1"
+      }
+   ],
+   "PlatformSettings" : {
+      "MaxAtomicMemoryAccess" : "2"
+   },
+   "SourceFileList" : [
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TestControl"
+         ],
+         "SourceFile" : "Source/TestControl.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Rte"
+         ],
+         "SourceFile" : "../Rte.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Rte_OsApplASILCore0"
+         ],
+         "SourceFile" : "../Rte_OsApplASILCore0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Rte_OsApplQMCore0"
+         ],
+         "SourceFile" : "../Rte_OsApplQMCore0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/Rte_OsApplQMCore1"
+         ],
+         "SourceFile" : "../Rte_OsApplQMCore1.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/ctASILSwc0"
+         ],
+         "SourceFile" : "Source/ctASILSwc0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_ctASILSwc0"
+         ],
+         "SourceFile" : "Source/TSC_ctASILSwc0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/ctASILSwc1"
+         ],
+         "SourceFile" : "Source/ctASILSwc1.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_ctASILSwc1"
+         ],
+         "SourceFile" : "Source/TSC_ctASILSwc1.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/ctQMSwc0"
+         ],
+         "SourceFile" : "Source/ctQMSwc0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_ctQMSwc0"
+         ],
+         "SourceFile" : "Source/TSC_ctQMSwc0.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/ctQMSwc1"
+         ],
+         "SourceFile" : "Source/ctQMSwc1.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_ctQMSwc1"
+         ],
+         "SourceFile" : "Source/TSC_ctQMSwc1.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/ctQMSwc2"
+         ],
+         "SourceFile" : "Source/ctQMSwc2.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/Rte/Rte_Analyzer/trunk/Application/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_ctQMSwc2"
+         ],
+         "SourceFile" : "Source/TSC_ctQMSwc2.c"
+      }
+   ],
+   "TaskList" : [
+      {
+         "OsApplication" : "OsApplASILCore0",
+         "Preemptive" : "0",
+         "Priority" : "4",
+         "TaskName" : "ASILTaskCore0"
+      },
+      {
+         "OsApplication" : "OsApplQMCore0",
+         "Preemptive" : "0",
+         "Priority" : "100",
+         "TaskName" : "HighPrioQMTaskCore0"
+      },
+      {
+         "OsApplication" : "OsApplQMCore0",
+         "Preemptive" : "1",
+         "Priority" : "2",
+         "TaskName" : "PreemptiveQMTaskCore0"
+      },
+      {
+         "OsApplication" : "OsApplQMCore1",
+         "Preemptive" : "0",
+         "Priority" : "4",
+         "TaskName" : "QMTaskCore1"
+      }
+   ],
+   "TemplateDataBaseDirectory" : "D:\\Rte\\Rte_DaVinciBase\\trunk\\Generator"
+}

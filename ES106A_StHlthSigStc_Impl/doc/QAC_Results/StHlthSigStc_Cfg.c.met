@@ -1,0 +1,1329 @@
+<RDEF> I Includes
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h 21
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc_Type.h 40
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc_Type.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_Type.h 32
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_Type.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte.h 27
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 39
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Platform_Types.h 63
+<R>I C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h 64
+<R>I C:/Component/AR201A_ArCplrSuprt_Impl/include/ASR4.0.3/Compiler.h C:/Component/AR201A_ArCplrSuprt_Impl/tools/contract/Compiler_Cfg.h 56
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_UserTypes.h 41
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_UserTypes.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 39
+<DEFINE> STHLTHSIGSTC_CFG_H C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 23 I DF OM - - - O
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 26
+<DEFINE> STHLTHSIGSTC_H C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 21 I DF OM - - - O
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 24
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/osek.h 25
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/os.h 26
+<DEFINE> GetDataOper C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 34 I DC OT F N p(uc,.) -
+<DEFINE> GetStHlthDataOper C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 38 I DC MB F N p(uc,.) -
+<DEFINE> SamplePerSec C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 39 I DC MB F N us -
+<DEFINE> TaskRef C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 40 I DC MB F N uc -
+<DEFINE> RamStorgOffs C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 41 I DC MB F N uc -
+<DEFINE> NvmStorgOffs C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 43 I DC MB F N uc -
+<DEFINE> StHlthSigStcPrmRec1 C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 45 I DC OT F N {s} -
+<DEFINE> CrcStrtAdr C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 49 I DC MB F N p=ul -
+<DEFINE> StHlthSigStcCrcAdrRec1 C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 50 I DC OT F N {s} -
+<DEFINE> SigPrm C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 55 I DC MB F N p={sStHlthSigStcPrmRec1} -
+<DEFINE> CrcAdr C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 56 I DC MB F N p={sStHlthSigStcCrcAdrRec1} -
+<DEFINE> StHlthSigStcCfgRec1 C:/Component/ES106A_StHlthSigStc_Impl/include/StHlthSigStc.h 58 I DC OT F N {s} -
+<DEFINE> SIGCNT_ULS_U08 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 31 I DF OM - - - O
+<LIT> 22 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 31 34 I DN - F M
+<DEFINE> TOTBUFSIZERAM_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 33 I DF OM - - - O
+<LIT> 66 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 33 34 I DN - F M
+<DEFINE> TOTBUFSIZENVM_CNT_U16 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 35 I DF OM - - - O
+<LIT> 177 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 35 34 I DN - F M
+<DEFINE> MOTISRREF_CNT_U16 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 37 I DF OM - - - O
+<DEFINE> STHLTHOSAPPL_CNT_U16 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 39 I DF OM - - - O
+<DEFINE> NROFCRCAREA_CNT_U08 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 41 I DF OM - - - O
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 41 30 I DN - F M
+<DEFINE> Ary1D_u8_StHlthSigStc1 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 44 I DC OT F N [66,uc] -
+<DEFINE> Ary1D_u32_StHlthSigStc1 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 45 I DC OT F N [22,ul] -
+<DEFINE> Ary1D_f32_StHlthSigStc1 C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 46 I DC OT F N [22,fs] -
+<EXTN> StHlthSigStcCfgRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 48
+<DEFINE> StHlthSigStcCfgRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 48 I DC OV F X ={sStHlthSigStcCfgRec1} S
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_DataHandleType.h 41
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 60
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 65
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 99
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 133
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h 233
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/Rte_StHlthSigStc.h C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h 415
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c C:/Component/AR200A_ArSuprt_Impl/include/ASR4.0.3/Std_Types.h 22
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/os.h 23
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/osek.h 24
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.h 25
+<DEFINE> StHlthSigStc_START_SEC_CODE C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 31 N DF OM - - - O
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h 32
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 56
+<DEFINE> StHlthSigStc_GetCtrlrTStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 35 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetOutpAssiStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 37 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetAbsltMotPosABDifStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 39 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetAbsltMotPosBCDifStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 41 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetAbsltMotPosACDifStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 43 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetDigTqSnsrAStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 45 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetDutyCycStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 47 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetDigTqSnsrBStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 49 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaAStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 51 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetRamEccSngBitCorrnStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 53 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetMotPosStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 55 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetEotImpctStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 57 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaBStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 59 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaCStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 61 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaDStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 63 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaEStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 65 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaFStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 67 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetDigTqIdptSigStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 69 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetCurrMotSumABCStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 71 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetCurrMotSumDEFStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 73 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetFricEstimnStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 75 N DC OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetWhlImbMaxCmpStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 77 N DC OF F I (uc,.) -
+<EXTN> CCT_Range_01_Address C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 82
+<DEFINE> CCT_Range_01_Address C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 82 N DC OV F X =ul S
+<EXTD> StHlthSigStcPrmRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 85
+<LIT> 10 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 90 63 N DN ui F A
+<LIT> 0x0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 92 63 N HN ui F A
+<LIT> 1 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 93 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 98 63 N DN ui F A
+<LIT> 0x3 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 100 63 N HN ui F A
+<LIT> 9 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 101 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 106 63 N DN ui F A
+<LIT> 0x6 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 108 63 N HN ui F A
+<LIT> 17 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 109 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 114 63 N DN ui F A
+<LIT> 0x9 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 116 63 N HN ui F A
+<LIT> 25 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 117 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 122 63 N DN ui F A
+<LIT> 0xc U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 124 63 N HN ui F A
+<LIT> 33 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 125 63 N DN ui F A
+<LIT> 250 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 130 63 N DN ui F A
+<LIT> 0xf U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 132 63 N HN ui F A
+<LIT> 41 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 133 63 N DN ui F A
+<LIT> 10 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 138 63 N DN ui F A
+<LIT> 0x12 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 140 63 N HN ui F A
+<LIT> 49 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 141 63 N DN ui F A
+<LIT> 250 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 146 63 N DN ui F A
+<LIT> 0x15 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 148 63 N HN ui F A
+<LIT> 57 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 149 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 154 63 N DN ui F A
+<LIT> 0x18 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 156 63 N HN ui F A
+<LIT> 65 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 157 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 162 63 N DN ui F A
+<LIT> 0x1b U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 164 63 N HN ui F A
+<LIT> 73 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 165 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 170 63 N DN ui F A
+<LIT> 0x1e U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 172 63 N HN ui F A
+<LIT> 81 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 173 63 N DN ui F A
+<LIT> 100 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 178 63 N DN ui F A
+<LIT> 0x21 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 180 63 N HN ui F A
+<LIT> 89 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 181 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 186 63 N DN ui F A
+<LIT> 0x24 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 188 63 N HN ui F A
+<LIT> 97 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 189 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 194 63 N DN ui F A
+<LIT> 0x27 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 196 63 N HN ui F A
+<LIT> 105 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 197 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 202 63 N DN ui F A
+<LIT> 0x2a U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 204 63 N HN ui F A
+<LIT> 113 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 205 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 210 63 N DN ui F A
+<LIT> 0x2d U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 212 63 N HN ui F A
+<LIT> 121 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 213 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 218 63 N DN ui F A
+<LIT> 0x30 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 220 63 N HN ui F A
+<LIT> 129 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 221 63 N DN ui F A
+<LIT> 250 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 226 63 N DN ui F A
+<LIT> 0x33 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 228 63 N HN ui F A
+<LIT> 137 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 229 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 234 63 N DN ui F A
+<LIT> 0x36 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 236 63 N HN ui F A
+<LIT> 145 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 237 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 242 63 N DN ui F A
+<LIT> 0x39 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 244 63 N HN ui F A
+<LIT> 153 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 245 63 N DN ui F A
+<LIT> 100 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 250 63 N DN ui F A
+<LIT> 0x3c U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 252 63 N HN ui F A
+<LIT> 161 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 253 63 N DN ui F A
+<LIT> 500 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 258 63 N DN ui F A
+<LIT> 0x3f U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 260 63 N HN ui F A
+<LIT> 169 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 261 63 N DN ui F A
+<DEFINE> StHlthSigStcPrmRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 85 N DC OV F X [22,={sStHlthSigStcPrmRec1}] S
+<DEFINE> StHlthSigStcPrmRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 85 N DF OV F X [22,={sStHlthSigStcPrmRec1}] S
+<EXTD> StHlthSigStcCrcAdrRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 266
+<DEFINE> StHlthSigStcCrcAdrRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 266 N DC OV F X [1,={sStHlthSigStcCrcAdrRec1}] S
+<DEFINE> StHlthSigStcCrcAdrRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 266 N DF OV F X [1,={sStHlthSigStcCrcAdrRec1}] S
+<EXTV> StHlthSigStcCrcAdrRecInst CCT_Range_01_Address 269
+<EXTD> StHlthSigStcCfgRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 273
+<DEFINE> StHlthSigStcCfgRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 273 N DR OV F X ={sStHlthSigStcCfgRec1} S
+<DEFINE> StHlthSigStcCfgRecInst C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 273 N DF OV F X ={sStHlthSigStcCfgRec1} S
+<LIT> 0 - P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 275 27 N ON ni F S
+<LIT> 0 - P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 276 30 N ON ni F S
+<EXTV> StHlthSigStcCfgRecInst StHlthSigStcPrmRecInst 275
+<EXTV> StHlthSigStcCfgRecInst StHlthSigStcCrcAdrRecInst 276
+<DEFINE> StHlthSigStc_GetCtrlrTStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 281 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetCtrlrTStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 281 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 283 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 283 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 283 20 N ON ui B O
+<RDEF> C Calls
+<R>C StHlthSigStc_GetCtrlrTStHlthVal Rte_Read_StHlthSigStc_CtrlrTStHlth_Val 285
+<RDEF> X Refers-to
+<R>X StHlthSigStc_GetCtrlrTStHlthVal Rte_Read_StHlthSigStc_CtrlrTStHlth_Val 285 R
+<CTLG> StHlthSigStc_GetCtrlrTStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 282 287 287 287 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetCtrlrTStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetOutpAssiStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 290 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetOutpAssiStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 290 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 292 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 292 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 292 20 N ON ui B O
+<R>C StHlthSigStc_GetOutpAssiStHlthVal Rte_Read_StHlthSigStc_OutpAssiStHlth_Val 294
+<R>X StHlthSigStc_GetOutpAssiStHlthVal Rte_Read_StHlthSigStc_OutpAssiStHlth_Val 294 R
+<CTLG> StHlthSigStc_GetOutpAssiStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 291 296 296 296 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetOutpAssiStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetAbsltMotPosABDifStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 299 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetAbsltMotPosABDifStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 299 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 301 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 301 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 301 20 N ON ui B O
+<R>C StHlthSigStc_GetAbsltMotPosABDifStHlthVal Rte_Read_StHlthSigStc_AbsltMotPosABDifStHlth_Val 303
+<R>X StHlthSigStc_GetAbsltMotPosABDifStHlthVal Rte_Read_StHlthSigStc_AbsltMotPosABDifStHlth_Val 303 R
+<CTLG> StHlthSigStc_GetAbsltMotPosABDifStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 300 305 305 305 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetAbsltMotPosABDifStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetAbsltMotPosBCDifStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 308 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetAbsltMotPosBCDifStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 308 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 310 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 310 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 310 20 N ON ui B O
+<R>C StHlthSigStc_GetAbsltMotPosBCDifStHlthVal Rte_Read_StHlthSigStc_AbsltMotPosBCDifStHlth_Val 312
+<R>X StHlthSigStc_GetAbsltMotPosBCDifStHlthVal Rte_Read_StHlthSigStc_AbsltMotPosBCDifStHlth_Val 312 R
+<CTLG> StHlthSigStc_GetAbsltMotPosBCDifStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 309 314 314 314 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetAbsltMotPosBCDifStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetAbsltMotPosACDifStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 317 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetAbsltMotPosACDifStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 317 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 319 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 319 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 319 20 N ON ui B O
+<R>C StHlthSigStc_GetAbsltMotPosACDifStHlthVal Rte_Read_StHlthSigStc_AbsltMotPosACDifStHlth_Val 321
+<R>X StHlthSigStc_GetAbsltMotPosACDifStHlthVal Rte_Read_StHlthSigStc_AbsltMotPosACDifStHlth_Val 321 R
+<CTLG> StHlthSigStc_GetAbsltMotPosACDifStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 318 323 323 323 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetAbsltMotPosACDifStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetDigTqSnsrAStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 326 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetDigTqSnsrAStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 326 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 328 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 328 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 328 20 N ON ui B O
+<R>C StHlthSigStc_GetDigTqSnsrAStHlthVal Rte_Read_StHlthSigStc_DigTqSnsrAStHlth_Val 330
+<R>X StHlthSigStc_GetDigTqSnsrAStHlthVal Rte_Read_StHlthSigStc_DigTqSnsrAStHlth_Val 330 R
+<CTLG> StHlthSigStc_GetDigTqSnsrAStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 327 332 332 332 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetDigTqSnsrAStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetDutyCycStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 335 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetDutyCycStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 335 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 337 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 337 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 337 20 N ON ui B O
+<R>C StHlthSigStc_GetDutyCycStHlthVal Rte_Read_StHlthSigStc_DutyCycStHlth_Val 339
+<R>X StHlthSigStc_GetDutyCycStHlthVal Rte_Read_StHlthSigStc_DutyCycStHlth_Val 339 R
+<CTLG> StHlthSigStc_GetDutyCycStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 336 341 341 341 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetDutyCycStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetDigTqSnsrBStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 344 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetDigTqSnsrBStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 344 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 346 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 346 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 346 20 N ON ui B O
+<R>C StHlthSigStc_GetDigTqSnsrBStHlthVal Rte_Read_StHlthSigStc_DigTqSnsrBStHlth_Val 348
+<R>X StHlthSigStc_GetDigTqSnsrBStHlthVal Rte_Read_StHlthSigStc_DigTqSnsrBStHlth_Val 348 R
+<CTLG> StHlthSigStc_GetDigTqSnsrBStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 345 350 350 350 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetDigTqSnsrBStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetPhaAStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 353 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaAStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 353 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 355 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 355 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 355 20 N ON ui B O
+<R>C StHlthSigStc_GetPhaAStHlthVal Rte_Read_StHlthSigStc_PhaAStHlth_Val 357
+<R>X StHlthSigStc_GetPhaAStHlthVal Rte_Read_StHlthSigStc_PhaAStHlth_Val 357 R
+<CTLG> StHlthSigStc_GetPhaAStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 354 359 359 359 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaAStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetRamEccSngBitCorrnStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 362 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetRamEccSngBitCorrnStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 362 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 364 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 364 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 364 20 N ON ui B O
+<R>C StHlthSigStc_GetRamEccSngBitCorrnStHlthVal Rte_Read_StHlthSigStc_RamEccSngBitCorrnStHlth_Val 366
+<R>X StHlthSigStc_GetRamEccSngBitCorrnStHlthVal Rte_Read_StHlthSigStc_RamEccSngBitCorrnStHlth_Val 366 R
+<CTLG> StHlthSigStc_GetRamEccSngBitCorrnStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 363 368 368 368 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetRamEccSngBitCorrnStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetMotPosStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 371 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetMotPosStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 371 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 373 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 373 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 373 20 N ON ui B O
+<R>C StHlthSigStc_GetMotPosStHlthVal Rte_Read_StHlthSigStc_MotPosStHlth_Val 375
+<R>X StHlthSigStc_GetMotPosStHlthVal Rte_Read_StHlthSigStc_MotPosStHlth_Val 375 R
+<CTLG> StHlthSigStc_GetMotPosStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 372 377 377 377 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetMotPosStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetEotImpctStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 380 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetEotImpctStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 380 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 382 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 382 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 382 20 N ON ui B O
+<R>C StHlthSigStc_GetEotImpctStHlthVal Rte_Read_StHlthSigStc_EotImpctStHlth_Val 384
+<R>X StHlthSigStc_GetEotImpctStHlthVal Rte_Read_StHlthSigStc_EotImpctStHlth_Val 384 R
+<CTLG> StHlthSigStc_GetEotImpctStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 381 386 386 386 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetEotImpctStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetPhaBStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 389 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaBStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 389 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 391 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 391 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 391 20 N ON ui B O
+<R>C StHlthSigStc_GetPhaBStHlthVal Rte_Read_StHlthSigStc_PhaBStHlth_Val 393
+<R>X StHlthSigStc_GetPhaBStHlthVal Rte_Read_StHlthSigStc_PhaBStHlth_Val 393 R
+<CTLG> StHlthSigStc_GetPhaBStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 390 395 395 395 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaBStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetPhaCStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 398 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaCStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 398 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 400 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 400 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 400 20 N ON ui B O
+<R>C StHlthSigStc_GetPhaCStHlthVal Rte_Read_StHlthSigStc_PhaCStHlth_Val 402
+<R>X StHlthSigStc_GetPhaCStHlthVal Rte_Read_StHlthSigStc_PhaCStHlth_Val 402 R
+<CTLG> StHlthSigStc_GetPhaCStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 399 404 404 404 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaCStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetPhaDStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 407 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaDStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 407 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 409 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 409 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 409 20 N ON ui B O
+<R>C StHlthSigStc_GetPhaDStHlthVal Rte_Read_StHlthSigStc_PhaDStHlth_Val 411
+<R>X StHlthSigStc_GetPhaDStHlthVal Rte_Read_StHlthSigStc_PhaDStHlth_Val 411 R
+<CTLG> StHlthSigStc_GetPhaDStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 408 413 413 413 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaDStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetPhaEStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 416 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaEStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 416 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 418 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 418 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 418 20 N ON ui B O
+<R>C StHlthSigStc_GetPhaEStHlthVal Rte_Read_StHlthSigStc_PhaEStHlth_Val 420
+<R>X StHlthSigStc_GetPhaEStHlthVal Rte_Read_StHlthSigStc_PhaEStHlth_Val 420 R
+<CTLG> StHlthSigStc_GetPhaEStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 417 422 422 422 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaEStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetPhaFStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 425 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetPhaFStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 425 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 427 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 427 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 427 20 N ON ui B O
+<R>C StHlthSigStc_GetPhaFStHlthVal Rte_Read_StHlthSigStc_PhaFStHlth_Val 429
+<R>X StHlthSigStc_GetPhaFStHlthVal Rte_Read_StHlthSigStc_PhaFStHlth_Val 429 R
+<CTLG> StHlthSigStc_GetPhaFStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 426 431 431 431 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaFStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetDigTqIdptSigStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 434 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetDigTqIdptSigStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 434 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 436 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 436 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 436 20 N ON ui B O
+<R>C StHlthSigStc_GetDigTqIdptSigStHlthVal Rte_Read_StHlthSigStc_DigTqIdptSigStHlth_Val 438
+<R>X StHlthSigStc_GetDigTqIdptSigStHlthVal Rte_Read_StHlthSigStc_DigTqIdptSigStHlth_Val 438 R
+<CTLG> StHlthSigStc_GetDigTqIdptSigStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 435 440 440 440 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetDigTqIdptSigStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetCurrMotSumABCStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 443 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetCurrMotSumABCStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 443 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 445 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 445 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 445 20 N ON ui B O
+<R>C StHlthSigStc_GetCurrMotSumABCStHlthVal Rte_Read_StHlthSigStc_CurrMotSumABCStHlth_Val 447
+<R>X StHlthSigStc_GetCurrMotSumABCStHlthVal Rte_Read_StHlthSigStc_CurrMotSumABCStHlth_Val 447 R
+<CTLG> StHlthSigStc_GetCurrMotSumABCStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 444 449 449 449 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetCurrMotSumABCStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetCurrMotSumDEFStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 452 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetCurrMotSumDEFStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 452 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 454 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 454 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 454 20 N ON ui B O
+<R>C StHlthSigStc_GetCurrMotSumDEFStHlthVal Rte_Read_StHlthSigStc_CurrMotSumDEFStHlth_Val 456
+<R>X StHlthSigStc_GetCurrMotSumDEFStHlthVal Rte_Read_StHlthSigStc_CurrMotSumDEFStHlth_Val 456 R
+<CTLG> StHlthSigStc_GetCurrMotSumDEFStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 453 458 458 458 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetCurrMotSumDEFStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetFricEstimnStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 461 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetFricEstimnStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 461 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 463 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 463 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 463 20 N ON ui B O
+<R>C StHlthSigStc_GetFricEstimnStHlthVal Rte_Read_StHlthSigStc_FricEstimnStHlth_Val 465
+<R>X StHlthSigStc_GetFricEstimnStHlthVal Rte_Read_StHlthSigStc_FricEstimnStHlth_Val 465 R
+<CTLG> StHlthSigStc_GetFricEstimnStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 462 467 467 467 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetFricEstimnStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_GetWhlImbMaxCmpStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 470 N DR OF F I (uc,.) -
+<DEFINE> StHlthSigStc_GetWhlImbMaxCmpStHlthVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 470 N DF OF F I (uc,.) -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 472 N DC OV B N uc -
+<DEFINE> RetVal C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 472 N DF OV B N uc -
+<LIT> 0 U P C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 472 20 N ON ui B O
+<R>C StHlthSigStc_GetWhlImbMaxCmpStHlthVal Rte_Read_StHlthSigStc_WhlImbMaxCmpStHlth_Val 474
+<R>X StHlthSigStc_GetWhlImbMaxCmpStHlthVal Rte_Read_StHlthSigStc_WhlImbMaxCmpStHlth_Val 474 R
+<CTLG> StHlthSigStc_GetWhlImbMaxCmpStHlthVal 1
+<CTLG> 1 2
+<CTLG> 2 4
+<CTLGN> 471 476 476 476 
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetWhlImbMaxCmpStHlthVal
+<S>STCYC  1
+<S>STMCC  0 (1:1)
+<S>STMIF  0
+<S>STSUB  1
+<S>STAKI  2
+<S>STLIN  5
+<S>STXLN  3
+<S>STBAK  0
+<S>STELF  0
+<S>STGTO  0
+<S>STKNT  0
+<S>STKDN  0.00   
+<S>STUNV  0
+<S>STLCT  1
+<S>STPTH  1
+<S>STPDN  0.33   
+<S>STPBG  0
+<S>STLOP  0
+<S>STM07  1
+<S>STM19  1
+<S>STAV1  7
+<S>STAV2  7
+<S>STAV3  10
+<S>STST1  3
+<S>STST2  3
+<S>STST3  2
+<S>STPAR  0
+<S>STCAL  1
+<S>STFN1  15
+<S>STFN2  6
+
+<DEFINE> StHlthSigStc_STOP_SEC_CODE C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c 479 N DF OM - - - O
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h 480
+<R>I C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/RteGen/StHlthSigStc_MemMap.h C:/Component/AR200A_ArSuprt_Impl/tools/contract/MemMap.h 128
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetAbsltMotPosABDifStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetAbsltMotPosACDifStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetAbsltMotPosBCDifStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetCtrlrTStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetCurrMotSumABCStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetCurrMotSumDEFStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetDigTqIdptSigStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetDigTqSnsrAStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetDigTqSnsrBStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetDutyCycStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetEotImpctStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetFricEstimnStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetMotPosStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetOutpAssiStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaAStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaBStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaCStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaDStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaEStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetPhaFStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetRamEccSngBitCorrnStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  StHlthSigStc_GetWhlImbMaxCmpStHlthVal
+<S>STRET  1
+<S>STUNR  0
+
+<S>
+<S>STFIL  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNAM  C:/Component/ES106A_StHlthSigStc_Impl/tools/contract/generate/StHlthSigStc_Cfg.c
+<S>STNTB  NON-TOKEN BASED STATISTICS...
+<S>STSCT  22
+<S>STECT  4
+<S>STFNC  22
+<S>STFCO  1
+<S>STTKB  TOKEN BASED STATISTICS...
+<S>STVAR  67
+<S>STOPT  19
+<S>STOPN  157
+<S>STTOT  1388
+<S>STZIP  1012
+<S>STHAL  1226
+<S>STSHN  4255
+<S>STDIF  24.56  
+<S>STEFF  254334
+<S>STVOL  10354
+<S>STDEV  42.39  
+<S>STBUG  4
+<S>STTPP  482
+<S>STTLN  323
+<S>STM20  446
+<S>STM21  939
+<S>STM22  92
+<S>STM28  160
+<S>STM33  110
+<S>STBCS  BASIC COCOMO STATISTICS...
+<S>STBMO  1.115  
+<S>STBMS  1.325  
+<S>STBME  1.500  
+<S>STTDO  2.606  
+<S>STTDS  2.759  
+<S>STTDE  2.846  
+<S>STCOM  COMMENT BASED STATISTICS...
+<S>STCDN  1.016  
+
